@@ -18,14 +18,12 @@ export default function Blog({ posts, texts }) {
       <div className="relative">
         <div className="text-center mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
           <h2 className="text-base font-semibold tracking-wider text-cyan-600 uppercase">
-            {texts.pre}
+            dsds
           </h2>
           <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-            {texts.title}
+            Galeria
           </p>
-          <p className="mt-5 mx-auto max-w-prose text-xl text-gray-500">
-            {texts.text}
-          </p>
+          <p className="mt-5 mx-auto max-w-prose text-xl text-gray-500">dsds</p>
         </div>
         <div className="mt-12 mx-auto max-w-md px-4 grid gap-8 sm:max-w-lg sm:px-6 lg:px-8 lg:grid-cols-3 lg:max-w-7xl">
           {posts.map((post) => (

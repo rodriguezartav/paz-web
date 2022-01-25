@@ -1,18 +1,32 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 
+import Header from "./www/Header";
+import Blog from "./www/Blog";
+
 import { ChevronRightIcon, StarIcon } from "@heroicons/react/solid";
+import Vimeo from "@u-wave/react-vimeo";
 
 const stats = [
+  { label: "Playa Calma", value: "a 10 minutos" },
+  { label: "Playa Paz", value: "$50 a $150 persona" },
+  { label: "Quebrada Bambu", value: "*Comidas y Actividades" },
+  { label: "Poza de Barro", value: "a 5 minutos" },
+  { label: "Templo", value: "En la arena, baño aparte" },
+  { label: "Playa Esquina", value: "Bosque primario frente al mar" },
+  { label: "Sendero de Arena", value: "Bosque primario frente al mar" },
+  { label: "Sendero del Bosque", value: "Bosque primario frente al mar" },
+  { label: "Temazcal", value: "Bosque primario frente al mar" },
+  { label: "Temazcal", value: "Bosque primario frente al mar" },
+];
+
+const stats2 = [
   { label: "Abierto", value: "Diciembre a Septiembre" },
   { label: "Precio", value: "$50 a $150 persona" },
   { label: "Todo Incluido", value: "*Comidas y Actividades" },
   { label: "Casa", value: "2 Cuartos para 8 personas" },
   { label: "Glamping", value: "En la arena, baño aparte" },
   { label: "Ubicación", value: "Bosque primario frente al mar" },
-];
-
-const stats2 = [
   { label: "Beach Lounge", value: "Hamacas, Fogata, Sillones" },
   { label: "Caminatas", value: "Mas de 10 ideas + Corcovado" },
   { label: "Surf & Paddle", value: "Incluido" },
@@ -143,33 +157,39 @@ const footerNavigation = {
   ],
 };
 
-export default function Example() {
+export default function Example(props) {
   return (
-    <div className="bg-white">
+    <div className="bg-stone-100">
+      <Header />
       <main>
         {/* Hero section */}
-        <div className="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-48">
+        <div className="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-24">
           <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
             <div>
-              <div className="mt-20">
+              <div className="mt-10">
                 <div>
                   <a href="#" className="inline-flex space-x-4">
-                    <span className="rounded bg-rose-50 px-2.5 py-1 text-xs font-semibold text-rose-500 tracking-wide uppercase">
+                    <span className="rounded bg-stone-50 px-2.5 py-1 text-xs font-semibold text-violet-600 tracking-wide uppercase">
                       Cabo Matapalo, Peninsula de Osa,
                     </span>
-                    <span className="inline-flex items-center text-sm font-medium text-rose-500 space-x-1">
+                    <span className="inline-flex items-center text-sm font-medium text-sky-600 space-x-1">
                       <span>Costa Rica</span>
                     </span>
                   </a>
                 </div>
                 <div className="mt-6 sm:max-w-xl">
-                  <h1 className="text-4xl font-extrabold text-green-800 tracking-tight sm:text-5xl">
+                  <h1 className="text-6xl font-extrabold text-stone-500 tracking-tight sm:text-6xl">
                     Paz
                   </h1>
-                  <p className="mt-6 text-xl text-gray-500">
-                    Un lugarcito de calma, en el bosque, en la playa, en el
-                    medio de la naturaleza para desconectarse de la mente y
-                    estar presente.
+                  <p className="mt-6 text-xl text-gray-700 px-1">
+                    Un lugarcito de{" "}
+                    <span className="bg-purple-100 px-1">calma</span>, en el{" "}
+                    <span className="bg-green-100 px-1">bosque</span>, en la{" "}
+                    <span className="bg-amber-100 px-1">playa</span>, en medio
+                    de la <span className="bg-lime-100 px-1">naturaleza</span>{" "}
+                    para desconectarse de la{" "}
+                    <span className="bg-red-100 px-1">mente</span> y estar{" "}
+                    <span className="bg-stone-100 px-1">presente</span>
                   </p>
                 </div>
                 <form
@@ -190,7 +210,7 @@ export default function Example() {
                   <div className="mt-4 sm:mt-0 sm:ml-3">
                     <button
                       type="submit"
-                      className="block w-full rounded-md border border-transparent px-5 py-3 bg-rose-500 text-md font-medium text-white shadow hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2 sm:px-10"
+                      className="block w-full rounded-md border border-transparent px-5 py-3 bg-yellow-300 text-md font-medium text-gray-700 shadow hover:bg-violet-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 sm:px-10"
                     >
                       Mantengame informado
                     </button>
@@ -202,194 +222,70 @@ export default function Example() {
 
           <div className="sm:mx-auto sm:max-w-3xl sm:px-6">
             <div className="py-12 sm:relative sm:mt-12 sm:py-16 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-              <div className="hidden sm:block">
-                <div className="absolute inset-y-0 left-1/2 w-screen bg-gray-50 rounded-l-3xl lg:left-80 lg:right-0 lg:w-full" />
-                <svg
-                  className="absolute top-8 right-1/2 -mr-3 lg:m-0 lg:left-0"
-                  width={404}
-                  height={392}
-                  fill="none"
-                  viewBox="0 0 404 392"
-                >
-                  <defs>
-                    <pattern
-                      id="837c3e70-6c3a-44e6-8854-cc48c737b659"
-                      x={0}
-                      y={0}
-                      width={20}
-                      height={20}
-                      patternUnits="userSpaceOnUse"
-                    >
-                      <rect
-                        x={0}
-                        y={0}
-                        width={4}
-                        height={4}
-                        className="text-gray-200"
-                        fill="currentColor"
-                      />
-                    </pattern>
-                  </defs>
-                  <rect
-                    width={404}
-                    height={392}
-                    fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)"
-                  />
-                </svg>
-              </div>
               <div className="relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full lg:pl-48">
-                <img
-                  className="w-full rounded-md shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none"
-                  src="./images/beach.jpeg"
-                  alt=""
-                />
+                <div id="container">
+                  <div id="butterfly">
+                    <div id="leftwing"></div>
+                    <div id="rightwing"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         {/* Testimonial/stats section */}
-        <div className="relative mt-20">
-          <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
-            <div className="relative sm:py-16 lg:py-0">
-              <div
-                aria-hidden="true"
-                className="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
-              >
-                <div className="absolute inset-y-0 right-1/2 w-full bg-gray-50 rounded-r-3xl lg:right-72" />
-                <svg
-                  className="absolute top-8 left-1/2 -ml-3 lg:-right-8 lg:left-auto lg:top-12"
-                  width={404}
-                  height={392}
-                  fill="none"
-                  viewBox="0 0 404 392"
-                >
-                  <defs>
-                    <pattern
-                      id="02f20b47-fd69-4224-a62a-4c9de5c763f7"
-                      x={0}
-                      y={0}
-                      width={20}
-                      height={20}
-                      patternUnits="userSpaceOnUse"
-                    >
-                      <rect
-                        x={0}
-                        y={0}
-                        width={4}
-                        height={4}
-                        className="text-gray-200"
-                        fill="currentColor"
-                      />
-                    </pattern>
-                  </defs>
-                  <rect
-                    width={404}
-                    height={392}
-                    fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)"
-                  />
-                </svg>
-              </div>
-              <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
-                {/* Testimonial card*/}
-                <div className="relative pt-64 pb-10 rounded-2xl shadow-xl overflow-hidden">
-                  <img
-                    className="absolute inset-0 h-full w-full object-cover"
-                    src="./images/me.jpeg"
-                    alt=""
-                  />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-600 via-rose-600 opacity-60" />
-
-                  <div className="relative px-8">
-                    <div></div>
-                    <blockquote className="mt-8">
-                      <div className="relative text-lg font-medium text-white md:flex-grow">
-                        <p className="relative"></p>
-                      </div>
-
-                      <footer className="mt-4">
-                        <p className="text-md font-semibold text-rose-200">
-                          Rober - Fundador
-                        </p>
-                      </footer>
-                    </blockquote>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
-              {/* Content area */}
-              <div className="pt-12 sm:pt-16 lg:pt-20">
-                <h2 className="text-3xl text-green-800 font-extrabold tracking-tight sm:text-4xl">
-                  La paz este con nosotros
-                </h2>
-                <div className="mt-6 text-gray-500 space-y-6">
-                  <p className="text-lg">
-                    Llegue a la peninsula hace 15 años y me quede sin saber
-                    porque. No sabía que buscaba la paz, ni como encontrarla.
-                    Pero algo aquí, a veces, me tranquilizaba.
-                  </p>
-                  <p className="text-md leading-7">
-                    La vida me dio una propiedad sagrada de bosque y playa que
-                    realmente aprecio. Se me han revelado lugares, espacios y
-                    momentos que reconozco como templos naturales. Cuando uno
-                    está realmente presente aparencen sentimientos sencillos
-                    pero muy importantes. Pasa la calma, la alegria, el silencio
-                    y si uno se queda muy quieto y tranquilo es posible que pase
-                    la paz.
-                  </p>
-
-                  <p className="text-md leading-7">
-                    Se construyo un comedor y varias estaciones de glamping-tico
-                    en la playa para que otras personas que al igual que yo -
-                    sabiendo o sin saber - tambien buscan un momento paz puedan
-                    practicar o aprender la presencia en la naturaleza en un
-                    lugar magico lleno de arboles, animales, aves, tortugas,
-                    estrellas y arena.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="relative bg-white pt-20 pb-20">
+          <h2 className="text-center text-3xl leading-8 font-extrabold tracking-tight text-stone-600 sm:text-4xl">
+            Templos Naturales de Paz
+          </h2>
+          <p className="mt-4 max-w-3xl mx-auto leading-8 text-center text-2xl text-stone-600">
+            Este es un espacio para la exploracion de los aspectos mas sutiles
+            de nuestra existencia.{" "}
+            <span className="bg-purple-300 px-1">La paz</span>, sin dogmas, sin
+            drogas, sin gurus. Guiados por la fuente natural de la que creemos
+            ser <span className="bg-green-200 px-1">parte</span> pero muchas
+            veces nos sentimos <span className="bg-red-200 px-1"> aparte.</span>
+          </p>
         </div>
 
+        <Content1 />
+
         {/* Logo cloud section */}
-        <div className="mt-32">
+
+        <div className="mt-12">
           <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
             <div className="lg:grid lg:grid-cols-2 lg:gap-24 ">
               <div>
-                <h2 className=" font-extrabold text-green-800 tracking-tight sm:text-3xl mb-5">
-                  Desconectado de la civiliación pero contectado con la
-                  naturaleza
+                <h2 className="text-2xl mb-3 text-lime-800 leading-7 mt-5">
+                  Hospedaje
                 </h2>
 
-                <p className="text-md text-gray-700 leading-7">
-                  La razón de ser de este lugar es brindar un espacio para la
-                  exploracion de los aspectos mas sutiles de la naturaleza
-                  humana guiados por la fuente natural de la que somos parte - y
-                  que ahí por un momento dismuniya la pensadera y la separación
-                  aparente en ambos. Todo esta pensado y diseñado para eso.
+                <p className="text-lg text-gray-500 leading-7">
+                  Con + de 15 años viviendo aqui, sin electricidad, agua, ni
+                  nada "civilizado" hemos encontrado un balance constructivo.
                 </p>
-
-                <h2 className="text-2xl leading-7 mt-5">Hospedaje</h2>
-
                 <div className="mt-6">
-                  <p className="text-md leading-7">
-                    Con 15 años de experiencia viviendo aqui, sin electricidad,
-                    agua, ni nada "civilizado" hemos encontrado un balance
-                    constructivo. Nos gusta dormir bien, con buenos abanicos,
-                    camas y sin mosquitos. Nos gusta la belleza, los espacios
-                    abiertos, y hacemos nuestros propios muebles para estar
-                    comodos en calor y humedad. El hospedaje es muy versatil con
-                    espacio para 18 personas entre los glampings y la casa. Todo
-                    se puede reservar por separado, o la propiedad entera.
+                  <p className="text-lg text-gray-500 leading-7">
+                    Nos gusta dormir bien, con buenos abanicos, camas y sin
+                    mosquitos. Nos gusta el arte, la buena comida, los espacios
+                    abiertos, techos altos, y hacemos nuestros propios muebles
+                    para estar comodos en calor y humedad. Rustico cuando debe
+                    de serlo y moderno cuando hace falta.
                   </p>
 
-                  <h2 className="text-2xl leading-7 mt-5">Ubicación</h2>
+                  <p className="text-lg mt-5  text-gray-500 leading-7">
+                    El hospedaje es muy versatil con espacio para 18 personas
+                    entre los glampings y la casa. Todo se puede reservar por
+                    separado, o la propiedad entera.
+                  </p>
 
-                  <p className="text-md leading-7">
+                  <h2 className="text-2xl mb-3 text-lime-800 leading-7 mt-5">
+                    Ubicación
+                  </h2>
+
+                  <p className="text-lg text-gray-500 leading-7">
                     Cabo Mata Palo en la Peninsula de Osa es mágico, no hace
                     falta agregarle nada. En nuestra propiedad viven las 4
                     especies de monos, pizotes, lapas, tucanes, tortugas,
@@ -398,95 +294,30 @@ export default function Example() {
                     somos la vida.
                   </p>
                 </div>
-              </div>
-              <div className="mt-12  gap-0.5 lg:mt-0">
-                <div className="mt-1">
-                  <dl className="grid grid-cols-2 gap-x-4 gap-y-8">
-                    {stats.map((stat) => (
-                      <div key={stat.label} className=" border-gray-100 ">
-                        <dt className="text-md font-medium text-gray-500">
-                          {stat.label}
-                        </dt>
-                        <dd className="text-3xl font-extrabold tracking-tight text-green-800">
-                          {stat.value}
-                        </dd>
-                      </div>
-                    ))}
-                  </dl>
-                  <div className="mt-10">
-                    <p
-                      href="#"
-                      className="text-md p-4 font-medium bg-green-700 text-white"
-                    >
-                      Las personas que nos visitan tienen como prioridad
-                      practicar o aprender la presencia en la naturaleza en este
-                      pedacito de calma y silencio.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div className="mt-32">
-          <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-            <div className="lg:grid lg:grid-cols-2 lg:gap-24 ">
-              <div className="mt-12  gap-0.5 lg:mt-0">
-                <div className="">
-                  <dl className="grid grid-cols-2 gap-x-4 gap-y-8">
-                    {stats2.map((stat) => (
-                      <div key={stat.label} className=" border-gray-100 pt-6">
-                        <dt className="text-md font-medium text-gray-500">
-                          {stat.label}
-                        </dt>
-                        <dd className="text-2xl font-extrabold tracking-tight text-green-800">
-                          {stat.value}
-                        </dd>
-                      </div>
-                    ))}
-                  </dl>
-                </div>
-              </div>
-
-              <div>
-                <h2 className="text-3xl font-extrabold text-green-800 tracking-tight sm:text-4xl">
-                  Actividades
-                </h2>
                 <p className="text-md leading-7"></p>
                 <div className="mt-6">
-                  <p className="text-md leading-7">
-                    Dicen los sabios que el secreto de la vida es el balance
-                    entre lo interno y externo. Pero muchas veces es bueno hacer
-                    actividades físicas para que luego se mas sencillo
-                    profundizar.
-                  </p>
-
-                  <h2 className="text-2xl leading-7 mt-5">
+                  <h2 className="text-2xl mb-3 text-lime-800 leading-7 mt-5">
                     Actividades Externas
                   </h2>
 
-                  <p className="text-md leading-7">
-                    Constantemente invertimos en equipo de surf principiante
-                    para adulto y niño, paddle board, pesca, hacemos temazcales,
-                    y recomendamos caminatas aqui cerca de todo nivel. Hay
-                    kilometros de playas virgen solitaria, pozas, bosque
-                    primario, cataratas...
+                  <p className="text-lg text-gray-500 leading-7">
+                    Dicen los sabios que el secreto de la vida es el balance
+                    entre lo interno y externo. El cuerpo y la mente necesitan
+                    movimiento diario, y aquí nos encanta disfrutar la vida. A
+                    parte de espacios para hacer yoga, chi kung y meditacion
+                    contamos con equipo de surf para adultos y niños
+                    principiantes, paddle-board, kayak, pesca y en el area hay
+                    mucha caminatas a cascadas, rios y montañas incluida una de
+                    las joyas espirituales y naturales de Costa Rica la caminata
+                    a Sirena en el PN Corcovado.
                   </p>
 
-                  <h2 className="text-2xl leading-7 mt-5">Artes Internas</h2>
+                  <h2 className="text-lg text-lime-800 mb-3 leading-7 mt-5">
+                    Para veteranos
+                  </h2>
 
-                  <p className="text-md leading-7">
-                    El resto es espontaneo, compartimos consejos y damos
-                    recomendaciones de donde y cuando ir ( ojala solos ) a estar
-                    presente en la naturaleza. Al final del día nos sentamos al
-                    fuego a conversar y recapitular casual, como compañeros de
-                    viaje que somos.
-                  </p>
-
-                  <h2 className="text-2xl leading-7 mt-5">Para veteranos</h2>
-
-                  <p className="text-md leading-7">
+                  <p className="text-lg text-gray-500 leading-7">
                     Este lugar es tambien ideal para personas que quieran
                     profundizar su practica de forma privada y asilada. Realizar
                     un ayuno, silencio, un retiro auto-dirigido de Yoga,
@@ -496,9 +327,27 @@ export default function Example() {
                   </p>
                 </div>
               </div>
+              <div className="mt-12  gap-0.5 lg:mt-0">
+                <div className="">
+                  <dl className="grid grid-cols-2 gap-x-4 gap-y-8">
+                    {stats2.map((stat) => (
+                      <div key={stat.label} className=" border-gray-100 pt-6">
+                        <dt className="text-md font-medium text-amber-900">
+                          {stat.label}
+                        </dt>
+                        <dd className="text-xl  tracking-tight text-lime-800">
+                          {stat.value}
+                        </dd>
+                      </div>
+                    ))}
+                  </dl>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
+        <Blog posts={props.posts} />
 
         {/* CTA section */}
         <div className="relative mt-24 sm:mt-32 sm:py-16">
@@ -538,7 +387,7 @@ export default function Example() {
             </svg>
           </div>
           <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-            <div className="relative rounded-2xl px-6 py-10 bg-rose-600 overflow-hidden shadow-xl sm:px-12 sm:py-20">
+            <div className="relative rounded-2xl px-6 py-10 bg-sky-600 overflow-hidden shadow-xl sm:px-12 sm:py-20">
               <div
                 aria-hidden="true"
                 className="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0"
@@ -551,12 +400,12 @@ export default function Example() {
                   viewBox="0 0 1463 360"
                 >
                   <path
-                    className="text-rose-800 text-opacity-40"
+                    className="text-violet-800 text-opacity-40"
                     fill="currentColor"
                     d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z"
                   />
                   <path
-                    className="text-rose-700 text-opacity-40"
+                    className="text-purple-700 text-opacity-40"
                     fill="currentColor"
                     d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z"
                   />
@@ -565,7 +414,7 @@ export default function Example() {
               <div className="relative">
                 <div className="sm:text-center">
                   <h2 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
-                    Agendemos un Zoom de 15 minutos
+                    Reserve con un Zoom en 15 minutos
                   </h2>
                   <p className="mt-6 mx-auto max-w-2xl text-lg text-rose-100">
                     La mejor manera de explicar lo que hacemos, como lo hacemos
@@ -623,5 +472,153 @@ export default function Example() {
         </div>
       </footer>
     </div>
+  );
+}
+
+/*
+  This example requires Tailwind CSS v2.0+ 
+  
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/typography'),
+    ],
+  }
+  ```
+*/
+function Content1() {
+  return (
+    <div className="relative  bg-white">
+      <div className="lg:absolute lg:inset-0">
+        <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
+          <img
+            className="h-56 w-full object-cover lg:absolute lg:h-full"
+            src="/images/beach.jpeg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div className="relative  px-4  sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-2">
+        <div className="lg:col-start-2 lg:pl-8">
+          <div className="text-base mb-28 max-w-prose mx-auto lg:max-w-lg lg:ml-auto lg:mr-0">
+            <h3 className="text-2xl font-extrabold text-stone-500 tracking-tight sm:text-3xl">
+              Se trata de practicar o aprender a estar presente en la naturaleza
+            </h3>
+
+            <p className="text-lg mt-5 text-gray-500 leading-7">
+              Un templo natural es un momento donde la belleza, la paz y la
+              alegria se manifiestan en un lugar. Todos los hemos vivido.
+            </p>
+
+            <p className="text-lg mt-5 text-gray-500 leading-7">
+              Sin embargo hay algo en nosotros, algo que activamos con el
+              pensamiento, con las historias que nos contamos y con nuestras
+              creencias que nos separa y{" "}
+              <span className="bg-red-300 px-1">no</span> nos permite
+              experimentar la belleza.
+            </p>
+
+            <h2 className="text-2xl text-stone-500 leading-7 mt-5">
+              Como se llama el curso, que religion es, cual es el horario?
+            </h2>
+
+            <p className="text-lg mt-5 text-gray-500 leading-7">
+              No hay una autoridad para la paz, la belleza, el amor y la
+              alegria. El universo no tiene un horario, todo pasa cuando pasa.
+            </p>
+
+            <p className="text-lg mt-5 text-gray-500 leading-7">
+              No hay manual, ni un carnet para pertenecer, ni nada que aprender.
+              No hay nada que alcanzar, como un arbol, ya existimos.
+            </p>
+
+            <p className="text-lg  mt-5 p-2  bg-violet-200 text-center text-gray-800 rounded-md leading-7">
+              Aqui lo que hacemos es buscar lugares y momentos magicos en la
+              naturaleza, en un lugar que esta lleno de ellos.
+            </p>
+
+            <p className="text-lg mt-5 text-gray-500 leading-7">
+              Nos entregamos con total presencia al momento para estar lo mas
+              cerca posible de ese existir y lo mas largo de lo que nos separa
+              de el.
+            </p>
+
+            <p className="text-lg mt-5 text-gray-500 leading-7">
+              Hay ideas, consejos, somos amigos y al final del día nos sentamos
+              en la fogata, a conversar como compañeros de viaje que somos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* This example requires Tailwind CSS v2.0+ */
+function Test() {
+  return (
+    <section className="py-12 bg-gray-50 overflow-hidden md:py-20 lg:py-24">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative">
+          <blockquote className="mt-10">
+            <div className="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-gray-900">
+              <p>
+                &ldquo; Llegue a la peninsula hace mas de 15 años, y me quede,
+                sin saber porque. No sabía que buscaba paz, ni tampoco como
+                encontrarla. <br />
+                Pero algo aquí me la mostró.&rdquo;
+              </p>
+
+              <p className="text-lg mt-8 text-gray-500 mb-8">
+                Con el tiempo, la vida se convirtio en un gran reto y esta
+                busqueda se convirtio en algo necesario para sobrevivir. Mi
+                mantra personal es "estas en buenas manos" y con el he
+                atravezado las noches mas oscuras solo para darme cuenta al
+                amanecer que siempre tuve todo lo que necesité, preparado por
+                algo mucho mas grande que yo, desde antes del anochecer.
+              </p>
+
+              <p>
+                Este lugar es parte de eso, y lo que realmente quiero es
+                compartirlo con otros que tambien valoren o necesiten la paz.
+              </p>
+            </div>
+            <footer className="mt-8">
+              <div className="md:flex md:items-center md:justify-center">
+                <div className="md:flex-shrink-0">
+                  <img
+                    className="mx-auto h-14 w-18 rounded-full"
+                    src="./images/me.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div className="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
+                  <div className="text-base font-medium text-gray-900">
+                    Rober
+                  </div>
+
+                  <svg
+                    className="hidden md:block mx-1 h-5 w-5 text-indigo-600"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M11 0h3L9 20H6l5-20z" />
+                  </svg>
+
+                  <div className="text-base font-medium text-gray-500">
+                    Cuidador
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
   );
 }

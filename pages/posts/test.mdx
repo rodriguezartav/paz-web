@@ -1,42 +1,51 @@
 import Layout from "../../components/Layout";
 
-I’m the CTO of Mogi. We help enterprise marketing teams measure their progress week by week generating models from their behavior, comparing those against the current moment and projecting it towards the future to make sure the ship stays on track.
+CREEMOS QUE EN LA VIDA, EN EL UNIVERSO - MAS ALLA DE NUESTRA MENTE -
+EXISTE LA CIENCIA
 
-One of the hardest tasks for our company is to onboard hundreds of users within an enterprise organization. Users are distributed globally, belong to a broad spectrum of departments and are immersed in office dynamics.
+UNA EXPLICACIÓN PARA TODO RAZONABLE, PREDECIBLE, ENTENDIBLE Y REPRODUCIBLE
 
-We use Slack as our primary communication channel, our Slack App called Mogi.ai publishes relevant newsletter-type information to our customers. But there’s a whole universe of information and we need a real web or mobile app to present it - so we need to move hundreds of users from Slack into our web app.
+QUE SI COMPLETAMOS SUFICIENTES PIEZAS DEL ROMPECABEZAS, ALGÚN DÍA LO CONOCEREMOS DE VERDAD
 
-Creating users, adding emails, resetting passwords and coordinating between several departments to onboard hundreds of people wastes lot’s of energy and creates lot’s of friction - a barrier between our tool and the users we are serving.
+CREEMOS ADENTRO QUE LA IDEA DEL MISTERIO INFINITO Y ETERNO, SU RAZÓN, SU PROPÓSITO, Y POR ENDE EL NUESTRO,
+ES ENTENDERLO Y ESO ES EVIDENCIA DE LO LIMITADO QUE ES NUESTRO PENSAMIENTO
 
-Given our technology stack involving NextJS and Next-Auth, we came up with a clever solution. Instead of onboarding all this users, let’s just send them a magic link, on demand, in Slack. This way all they need to do is click the Link, and they’ll be automatically onboard.
+PERO EL MISTERIO SE MUEVE, ES COMO LA MAREA, COMO LA ARENA, COMO EL CAUSE DE UN RIO
 
-The solution is fairly simple, we use the same logic from Next Auth’s Email Provider to generate the link, store the verification token in the database but instead of email it to the user, we send it in a private message to the user via Slack.
+PODEMOS MEDIR LOS PLANETAS Y LOS ECLIPSES PERO QUE GANAMOS REALMENTE SABIENDO DEL SIGUIENTE ATARDECER
 
-I had to read most of the code in Next-Auth to understand the specific mechanics and use it to our advantage, the important part is the coordination on how the token is generated, hashed, stored in the DB and sent to the user. In general the code that is sent to the use is un-hashed, while the one that is stored in the DB is hashed. And the user click’s the link and sends to code, it’s hashed and compared
+CUANDO NO PODEMOS ESTAR PRESENTES CON EL QUE TENEMOS AL FRENTE
 
-Our infrastructure runs an independent API (that takes care of all the Slack App interactions ) from our front-end web application. So we just need to keep the same hash mechanism in both and then we can generate links from the API, send them to Slack and validate them on the actual app.
+IGNORAMOS LO AUTENTICO Y ÚNICO DE UN MOMENTO, VIVO, INFINITAMENTE CONECTADO Y POR ENDE REALMENTE INTELIGENTE
 
-We still have not fully tested this approach but I feel it’s promising, since navigating organization politics, convincing someone to maintain hundreds of users, and them convincing/guiding each of those users to register with a new app, create a password, and remember it one week from today it’s not realistic.
+PARA BUSCAR, CON LA MENTE, EL COMÚN DENOMINADOR PARA TODOS. COMO UN TONTO TURISTA VIAJA POR EL MUNDO
 
-So I taught it may be a good idea to drop it here and see what the community thinks about it.
+SIN DARNOS CUENTA, DE LO MAS SENCILLO Y OBVIO DE LA VIDA
+
+SI QUIERES CONOCER A ALGUIEN, LO SALUDAS, LO TOCAS, LO ATIENDES, LO APRECIAS.
+
+QUE SENTIDO TIENE ENTENDERLO, SI CAMBIA CADA MAÑANA Y COMO LA GENTE, SE ESCONDE SI NO TE SIENTE
+
+ASÍ SON LOS MOMENTOS, SON COMO LAS FLORES, EXPRESIONES REALES Y VIVAS DEL UNIVERSO CON ALGO IMPORTANTE QUE DECIR Y LO DICE EN CANCION, Y SINO LO DICE EN REVOLCON
+
+ENTRE TODOS DEBEMOS ESCOGER, SI LO QUEREMOS ENTENDER O QUEREMOS SER PARTE Y VIVIR CON EL
 
 export default ({ children }) => <Layout>{children}</Layout>;
 
 export const meta = {
   id: 1,
-  title: "My take on enterprise user onboarding for SaaS",
+  title: "Sobre la ciencia y el universo",
   date: "Dic 22, 2021",
   datetime: "2021-12-02",
   category: "Article",
   imageUrl:
     "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
   preview:
-    "One of the hardest tasks for our company is to onboard hundreds of users within an enterprise organization. Users are distributed globally, belong to a broad spectrum of departments and are immersed in office dynamics.",
+    "Creemos que en la vida, en el universo - mas alla de nuestra mente - existe la ciencia",
   author: {
-    name: "Roberto Rodriguez",
-    imageUrl:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    name: "rober",
+    imageUrl: "./images/me.jpeg",
     href: "#",
   },
-  readingLength: "6 min",
+  readingLength: "2 min",
 };
