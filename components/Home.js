@@ -295,7 +295,7 @@ export default function Example(props) {
             </svg>
           </div>
           <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-            <div className="relative rounded-2xl px-6 py-10 bg-sky-600 overflow-hidden shadow-xl sm:px-12 sm:py-20">
+            <div className="relative rounded-2xl px-6 py-10 bg-lime-600 overflow-hidden shadow-xl sm:px-12 sm:py-20">
               <div
                 aria-hidden="true"
                 className="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0"
@@ -308,12 +308,12 @@ export default function Example(props) {
                   viewBox="0 0 1463 360"
                 >
                   <path
-                    className="text-violet-800 text-opacity-40"
+                    className="text-green-800 text-opacity-40"
                     fill="currentColor"
                     d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z"
                   />
                   <path
-                    className="text-purple-700 text-opacity-40"
+                    className="text-lime-700 text-opacity-40"
                     fill="currentColor"
                     d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z"
                   />
@@ -537,7 +537,7 @@ const features = [
   {
     name: "Casa de Alquiler",
     description:
-      "Frente al mar, con una playa 'privada' en el bosque primario con visitas diarias de todos la vida del Parque Nacional Corcovado. 2 Habitaciones para 4 personas cada una, cocina equipada y condimentada, sala y comedor amplios.",
+      "Frente al mar, con una playa 'privada' en el bosque primario con visitas diarias de toda la vida del Parque Nacional Corcovado. 2 Habitaciones para 4 personas cada una, cocina equipada y condimentada, sala y comedor amplios.",
     icon: GlobeAltIcon,
   },
   {
@@ -571,9 +571,9 @@ function Feature() {
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-stone-600 sm:text-4xl">
             Un lugar para encontrarse
           </p>
-          <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+          <p className="mt-4 max-w-3xl text-xl text-gray-500 lg:mx-auto">
             Paz es nuestro hogar, es de donde venimos, lo que somos cuando no
-            hacemos nada. Llegue aquí persiguiendo la paz, y en estos templos
+            hacemos nada. Llegue aquí persiguiendo la paz y en estos templos
             naturales entendí que me venia persiguiendo a mi y todo lo que tenia
             que hacer era parar.
           </p>
