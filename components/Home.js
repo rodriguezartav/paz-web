@@ -576,6 +576,7 @@ function Feature() {
             hacemos nada. Llegue aquí persiguiendo la paz y en estos templos
             naturales entendí que me venia persiguiendo a mi y todo lo que tenia
             que hacer era parar.
+            <br /> <strong>@fui_rober</strong>
           </p>
         </div>
 
