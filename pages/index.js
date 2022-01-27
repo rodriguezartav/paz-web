@@ -1,5 +1,3 @@
-import fs from "fs";
-import path from "path";
 import matter from "gray-matter";
 import Head from "next/head";
 import { useRouter } from "next/router";
@@ -16,20 +14,3 @@ export default function HomeApp({}) {
     </div>
   );
 }
-
-/*
-export const getStaticProps = async () => {
-  const postsDirectory = path.join(process.cwd(), "pages", "posts");
-  const files = fs.readdirSync(postsDirectory);
-
-  const posts = files.map((filename) => {
-    const { meta } = require("./posts/" + filename);
-    return { ...meta, slug: "posts/" + filename };
-  });
-  return {
-    props: {
-      posts,
-    },
-  };
-};
-*/
