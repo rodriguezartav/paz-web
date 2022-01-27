@@ -573,10 +573,9 @@ function Feature() {
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
             Paz es nuestro hogar, es de donde venimos, lo que somos cuando no
-            hacemos nada. Llegue aquí persiguiendola, y en estos templos
-            naturales entendí que en verdad me venia persiguiendo a mi y todo lo
-            que tenia que hacer era parar. Hoy lo comparta con quien quiera -
-            por un momento - <strong>parar</strong>
+            hacemos nada. Llegue aquí persiguiendo la paz, y en estos templos
+            naturales entendí que me venia persiguiendo a mi y todo lo que tenia
+            que hacer era parar.
           </p>
         </div>
 
