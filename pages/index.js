@@ -9,14 +9,15 @@ import Texts from "../texts";
 import { useSession, signIn, signOut } from "next-auth/react";
 import { useEffect } from "react";
 
-export default function HomeApp({ posts }) {
+export default function HomeApp({}) {
   return (
     <div>
-      <Home texts={Texts} posts={posts} />
+      <Home texts={Texts} posts={{}} />
     </div>
   );
 }
 
+/*
 export const getStaticProps = async () => {
   const postsDirectory = path.join(process.cwd(), "pages", "posts");
   const files = fs.readdirSync(postsDirectory);
@@ -31,3 +32,4 @@ export const getStaticProps = async () => {
     },
   };
 };
+*/
