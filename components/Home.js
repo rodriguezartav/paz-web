@@ -7,6 +7,13 @@ import Blog from "./www/Blog";
 import { ChevronRightIcon, StarIcon } from "@heroicons/react/solid";
 import Vimeo from "@u-wave/react-vimeo";
 
+import {
+  AnnotationIcon,
+  GlobeAltIcon,
+  LightningBoltIcon,
+  ScaleIcon,
+} from "@heroicons/react/outline";
+
 const stats = [
   { label: "Playa Calma", value: "a 10 minutos" },
   { label: "Playa Paz", value: "$50 a $150 persona" },
@@ -160,7 +167,6 @@ const footerNavigation = {
 export default function Example(props) {
   return (
     <div className="bg-stone-100">
-      <Header />
       <main>
         {/* Hero section */}
         <div className="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-24">
@@ -223,10 +229,10 @@ export default function Example(props) {
           <div className="sm:mx-auto sm:max-w-3xl sm:px-6">
             <div className="py-12 sm:relative sm:mt-12 sm:py-16 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
               <div className="relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full lg:pl-48">
-                <div id="container">
-                  <div id="butterfly">
-                    <div id="leftwing"></div>
-                    <div id="rightwing"></div>
+                <div id="container" _>
+                  <div id="butterfly_">
+                    <div id="leftwing_"></div>
+                    <div id="rightwing_"></div>
                   </div>
                 </div>
               </div>
@@ -234,122 +240,24 @@ export default function Example(props) {
           </div>
         </div>
 
-        {/* Testimonial/stats section */}
+        <Feature />
 
         <div className="relative bg-white pt-20 pb-20">
           <h2 className="text-center text-3xl leading-8 font-extrabold tracking-tight text-stone-600 sm:text-4xl">
-            Templos Naturales de Paz
+            Visita los templos naturales de paz
           </h2>
           <p className="mt-4 max-w-3xl mx-auto leading-8 text-center text-2xl text-stone-600">
-            Este es un espacio para la exploracion de los aspectos mas sutiles
-            de nuestra existencia.{" "}
-            <span className="bg-purple-300 px-1">La paz</span>, sin dogmas, sin
-            drogas, sin gurus. Guiados por la fuente natural de la que creemos
-            ser <span className="bg-green-200 px-1">parte</span> pero muchas
-            veces nos sentimos <span className="bg-red-200 px-1"> aparte.</span>
+            Un programa opcional para sacarle mas provecho a su visita.
+            <br />
+            sin dogmas, sin drogas, sin gurus
           </p>
         </div>
 
         <Content1 />
 
-        {/* Logo cloud section */}
+        {/*  <Blog posts={props.posts} />
 
-        <div className="mt-12">
-          <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-            <div className="lg:grid lg:grid-cols-2 lg:gap-24 ">
-              <div>
-                <h2 className="text-2xl mb-3 text-lime-800 leading-7 mt-5">
-                  Hospedaje
-                </h2>
-
-                <p className="text-lg text-gray-500 leading-7">
-                  Con + de 15 años viviendo aqui, sin electricidad, agua, ni
-                  nada "civilizado" hemos encontrado un balance constructivo.
-                </p>
-                <div className="mt-6">
-                  <p className="text-lg text-gray-500 leading-7">
-                    Nos gusta dormir bien, con buenos abanicos, camas y sin
-                    mosquitos. Nos gusta el arte, la buena comida, los espacios
-                    abiertos, techos altos, y hacemos nuestros propios muebles
-                    para estar comodos en calor y humedad. Rustico cuando debe
-                    de serlo y moderno cuando hace falta.
-                  </p>
-
-                  <p className="text-lg mt-5  text-gray-500 leading-7">
-                    El hospedaje es muy versatil con espacio para 18 personas
-                    entre los glampings y la casa. Todo se puede reservar por
-                    separado, o la propiedad entera.
-                  </p>
-
-                  <h2 className="text-2xl mb-3 text-lime-800 leading-7 mt-5">
-                    Ubicación
-                  </h2>
-
-                  <p className="text-lg text-gray-500 leading-7">
-                    Cabo Mata Palo en la Peninsula de Osa es mágico, no hace
-                    falta agregarle nada. En nuestra propiedad viven las 4
-                    especies de monos, pizotes, lapas, tucanes, tortugas,
-                    arboles abuelos, flores, plantas, mariposas, noches
-                    estrelladas, playas virgenes solas, y entre todos, unidos,
-                    somos la vida.
-                  </p>
-                </div>
-
-                <p className="text-md leading-7"></p>
-                <div className="mt-6">
-                  <h2 className="text-2xl mb-3 text-lime-800 leading-7 mt-5">
-                    Actividades Externas
-                  </h2>
-
-                  <p className="text-lg text-gray-500 leading-7">
-                    Dicen los sabios que el secreto de la vida es el balance
-                    entre lo interno y externo. El cuerpo y la mente necesitan
-                    movimiento diario, y aquí nos encanta disfrutar la vida. A
-                    parte de espacios para hacer yoga, chi kung y meditacion
-                    contamos con equipo de surf para adultos y niños
-                    principiantes, paddle-board, kayak, pesca y en el area hay
-                    mucha caminatas a cascadas, rios y montañas incluida una de
-                    las joyas espirituales y naturales de Costa Rica la caminata
-                    a Sirena en el PN Corcovado.
-                  </p>
-
-                  <h2 className="text-lg text-lime-800 mb-3 leading-7 mt-5">
-                    Para veteranos
-                  </h2>
-
-                  <p className="text-lg text-gray-500 leading-7">
-                    Este lugar es tambien ideal para personas que quieran
-                    profundizar su practica de forma privada y asilada. Realizar
-                    un ayuno, silencio, un retiro auto-dirigido de Yoga,
-                    Meditación, Chi Kung. Apoyamos, asistimos, aconsejamos y
-                    hasta organizamos para grupos de amigos y familias con la
-                    posibilidad de agregar Satsang al atardecer.
-                  </p>
-                </div>
-              </div>
-              <div className="mt-12  gap-0.5 lg:mt-0">
-                <div className="">
-                  <dl className="grid grid-cols-2 gap-x-4 gap-y-8">
-                    {stats2.map((stat) => (
-                      <div key={stat.label} className=" border-gray-100 pt-6">
-                        <dt className="text-md font-medium text-amber-900">
-                          {stat.label}
-                        </dt>
-                        <dd className="text-xl  tracking-tight text-lime-800">
-                          {stat.value}
-                        </dd>
-                      </div>
-                    ))}
-                  </dl>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <Blog posts={props.posts} />
-
-        {/* CTA section */}
+        CTA section */}
         <div className="relative mt-24 sm:mt-32 sm:py-16">
           <div aria-hidden="true" className="hidden sm:block">
             <div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50 rounded-r-3xl" />
@@ -620,5 +528,173 @@ function Test() {
         </div>
       </div>
     </section>
+  );
+}
+
+/* This example requires Tailwind CSS v2.0+ */
+
+const features = [
+  {
+    name: "Casa de Alquiler",
+    description:
+      "Frente al mar, con una playa 'privada' en el bosque primario con visitas diarias de todos la vida del Parque Nacional Corcovado. 2 Habitaciones para 4 personas cada una, cocina equipada y condimentada, sala y comedor amplios.",
+    icon: GlobeAltIcon,
+  },
+  {
+    name: "Actividades Incluidas",
+    description:
+      "Surf para niños y adultos princiante, paseos en kayak, paddleboard, pesca, caminatas, meditaciones, temazcal, fogatas, baños de barro en el mar, 'grounding', 'forest-bathing' y otras tecnicas anti-stress",
+    icon: ScaleIcon,
+  },
+  {
+    name: "Detox de Stress y Pantallas",
+    description:
+      "Programa para profesionales, ejecutivos y empresas. Cupo para 20 personas con alimentación, actividades fisicas, emocionales no invasivas y espirituales no dogmaticas. Incluye Temazcal ( Sauna Detox ).",
+    icon: LightningBoltIcon,
+  },
+  {
+    name: "Retreats Individuales",
+    description:
+      "Glampings en una playa privada, aislada, en la arena. Para quien busque un espacio para produnfizar luego de un retreat de Vipassna, Yoga, Meditación y Ayuno - o para una transición importante en la vida. ",
+    icon: AnnotationIcon,
+  },
+];
+
+function Feature() {
+  return (
+    <div className="py-12 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="lg:text-center">
+          <h2 className="text-base text-lime-800 font-semibold tracking-wide uppercase">
+            Conectado al Parque Nacional Corcovado*
+          </h2>
+          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-stone-600 sm:text-4xl">
+            Un lugar para encontrarse
+          </p>
+          <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+            Paz es nuestro hogar, es de donde venimos, lo que somos cuando no
+            hacemos nada. Llegue aquí persiguiendola, y en estos templos
+            naturales entendí que en verdad me venia persiguiendo a mi y todo lo
+            que tenia que hacer era parar. Hoy lo comparta con quien quiera -
+            por un momento - <strong>parar</strong>
+          </p>
+        </div>
+
+        <div className="mt-10">
+          <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+            {features.map((feature) => (
+              <div key={feature.name} className="relative">
+                <dt>
+                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-lime-700 text-stone-200">
+                    <feature.icon className="h-6 w-6" aria-hidden="true" />
+                  </div>
+                  <p className="ml-16 text-lg leading-6 font-medium text-gray-900">
+                    {feature.name}
+                  </p>
+                </dt>
+                <dd className="mt-2 ml-16 text-base text-gray-500">
+                  {feature.description}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Hospedaje() {
+  return (
+    <div className="mt-12 bg-stone-200 py-20">
+      <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-24 ">
+          <div>
+            <h2 className="text-2xl mb-3 text-lime-800 leading-7 mt-5">
+              Hospedaje
+            </h2>
+
+            <p className="text-lg text-gray-500 leading-7">
+              Con + de 15 años viviendo aqui, sin electricidad, agua, ni nada
+              "civilizado" hemos encontrado un balance constructivo.
+            </p>
+            <div className="mt-6">
+              <p className="text-lg text-gray-500 leading-7">
+                Nos gusta dormir bien, con buenos abanicos, camas y sin
+                mosquitos. Nos gusta el arte, la buena comida, los espacios
+                abiertos, techos altos, y hacemos nuestros propios muebles para
+                estar comodos en calor y humedad. Rustico cuando debe de serlo y
+                moderno cuando hace falta.
+              </p>
+
+              <p className="text-lg mt-5  text-gray-500 leading-7">
+                El hospedaje es muy versatil con espacio para 18 personas entre
+                los glampings y la casa. Todo se puede reservar por separado, o
+                la propiedad entera.
+              </p>
+
+              <h2 className="text-2xl mb-3 text-lime-800 leading-7 mt-5">
+                Ubicación
+              </h2>
+
+              <p className="text-lg text-gray-500 leading-7">
+                Cabo Mata Palo en la Peninsula de Osa es mágico, no hace falta
+                agregarle nada. En nuestra propiedad viven las 4 especies de
+                monos, pizotes, lapas, tucanes, tortugas, arboles abuelos,
+                flores, plantas, mariposas, noches estrelladas, playas virgenes
+                solas, y entre todos, unidos, somos la vida.
+              </p>
+            </div>
+
+            <p className="text-md leading-7"></p>
+            <div className="mt-6">
+              <h2 className="text-2xl mb-3 text-lime-800 leading-7 mt-5">
+                Actividades Externas
+              </h2>
+
+              <p className="text-lg text-gray-500 leading-7">
+                Dicen los sabios que el secreto de la vida es el balance entre
+                lo interno y externo. El cuerpo y la mente necesitan movimiento
+                diario, y aquí nos encanta disfrutar la vida. A parte de
+                espacios para hacer yoga, chi kung y meditacion contamos con
+                equipo de surf para adultos y niños principiantes, paddle-board,
+                kayak, pesca y en el area hay mucha caminatas a cascadas, rios y
+                montañas incluida una de las joyas espirituales y naturales de
+                Costa Rica la caminata a Sirena en el PN Corcovado.
+              </p>
+
+              <h2 className="text-lg text-lime-800 mb-3 leading-7 mt-5">
+                Para veteranos
+              </h2>
+
+              <p className="text-lg text-gray-500 leading-7">
+                Este lugar es tambien ideal para personas que quieran
+                profundizar su practica de forma privada y asilada. Realizar un
+                ayuno, silencio, un retiro auto-dirigido de Yoga, Meditación,
+                Chi Kung. Apoyamos, asistimos, aconsejamos y hasta organizamos
+                para grupos de amigos y familias con la posibilidad de agregar
+                Satsang al atardecer.
+              </p>
+            </div>
+          </div>
+          <div className="mt-12  gap-0.5 lg:mt-0">
+            <div className="">
+              <dl className="grid grid-cols-2 gap-x-4 gap-y-8">
+                {stats2.map((stat) => (
+                  <div key={stat.label} className=" border-gray-100 pt-6">
+                    <dt className="text-md font-medium text-amber-900">
+                      {stat.label}
+                    </dt>
+                    <dd className="text-xl  tracking-tight text-lime-800">
+                      {stat.value}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
