@@ -11,11 +11,11 @@ export default function Punch() {
           </p>
 
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            With overy 1800 species of tres, 800 of birds, 100 mammals there's
-            plenty to see. Well traveled visitors often tells us that this is
-            the greatest amount of wildlife they seen anywhere in the world. But
-            they also tell us that simply looking at them does not neccesarily
-            make their trip meaningful.
+            With overy 1800 species of tres, 800 birds and over 100 mammals
+            there's plenty to see. Well traveled visitors often tells us that
+            this is the greatest amount of wildlife they seen anywhere in the
+            world. But they also tell us that simply looking at them does not
+            neccesarily make their trip meaningful.
           </p>
 
           <p className="my-10 max-w-2xl text-xl bg-lime-50 border-2 p-5 text-stone-500 lg:mx-auto">
