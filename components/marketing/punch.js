@@ -7,37 +7,25 @@ export default function Punch() {
             So much more, than the most biodiverse place on earth
           </h2>
           <p className="my-5 text-3xl leading-8 font-extrabold tracking-tight text-stone-600 sm:text-4xl">
-            What makes a wildlife experience, meaningful?
-          </p>
-
-          <p className="mt-4 max-w-2xl text-xl text-lime-800 lg:mx-auto">
-            We must explore:
-          </p>
-          <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            What's the difference between seeing animals in a zoo and in the
-            wild?
+            An authentic wildlife & wellness vacation
           </p>
 
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            Will we be fullfilled once we see them all?
+            With overy 1800 species of tres, 800 of birds, 100 mammals there's
+            plenty to see. Well traveled visitors often tells us that this is
+            the greatest amount of wildlife they seen anywhere in the world. But
+            they also tell us that simply looking at them does not neccesarily
+            make their trip meaningful.
           </p>
 
-          <p className="mt-10 max-w-3xl text-xl text-gray-500 lg:mx-auto">
-            Or is there more to it? <br />
-            Could it be related to the state of mind,
+          <p className="my-10 max-w-2xl text-xl bg-lime-50 border-2 p-5 text-stone-500 lg:mx-auto">
+            <strong className="block mb-1">
+              The magic of nature is felt because of connection
+            </strong>
+            This place, my job - my purpose in life - everything exists so that
+            you, your familiy and friends go beyond seeing and into feeling
             <br />
-            of us, <br />
-            humans,
-            <br />
-            when actually present in nature?
-          </p>
-
-          <p className="my-14 max-w-2xl text-xl bg-violet-50 p-5 text-stone-500 lg:mx-auto">
-            This place, my job - my purpose in life - is for you, your familiy
-            and friends to slow down enought to go beyond seeing - to feel the
-            meaning in nature and feel at home
-            <br />
-            <small>Roberto - Owner & Manager</small>
+            <small>Rober - Owner & Manager</small>
           </p>
         </div>
       </div>

@@ -66,10 +66,10 @@ export default function Example() {
                 </h2>
                 <p className="mt-4 text-lg text-gray-500">
                   Floor to cealing screened windows to watch all the wildlife as
-                  they flow by the house. Bring all your family + friends: two
-                  bedrooms, two bathrooms and 8 comfy resort grade beds. Split
-                  your group in boys and girls, parents and kids and add a fun
-                  camping vibe to your adventure!
+                  they flow by the house. Big Ass Fans &trade; for superb
+                  ventilation and 8 resort grade beds. Split the rooms for boys
+                  and girls, parents and kids and add a fun camping vibe to your
+                  adventure!
                 </p>
 
                 <p className="mt-4 text-lg text-gray-500">
@@ -85,6 +85,19 @@ export default function Example() {
                   right on the sand for the best posible experience in Costa
                   Rica.
                 </p>
+              </div>
+              <div className="mt-8 border-t border-gray-200 pt-6">
+                <blockquote>
+                  <div>
+                    <p className="text-base text-gray-500">
+                      &ldquo;The house is 1690 square feet hermetically
+                      screened. Two bedrooms, two bathrooms with hot water,
+                      kitchen, dinning room and lounge. Additional space for 8
+                      extra people in glamping tents with a max occupancy of
+                      16&rdquo;
+                    </p>
+                  </div>
+                </blockquote>
               </div>
             </div>
           </div>

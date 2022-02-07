@@ -23,29 +23,26 @@ export default function Example() {
                 </span>
               </div>
               <div className="mt-6">
-                <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
+                <h2 className="text-3xl font-extrabold tracking-tight text-stone-700">
                   Natural Wellness
                 </h2>
+                <p className=" text-lg text-lime-800">
+                  It's simple and it's free.
+                </p>
+
+                <p className="mt-4 text-lg text-gray-500">
+                  Discover wellness is the traditional costarrican way - it's
+                  called Pura Vida and it represents the way we use natural
+                  beauty. Leave your troubles behind, find a magical spot, and
+                  have a great time.
+                </p>
+
                 <p className="mt-4 text-lg text-gray-500">
                   This is the most biodiverse place on earth, the most magical
                   place in Costa Rica, the last lowlands rain forest in Central
                   America, the home of the Jaguar, the Tapir, the Harp Eagle,
-                  where whales come to give birth. Wellness centers, decks and
-                  temples are for the city, we don't need them here.
-                </p>
-
-                <p className="mt-4 text-lg text-gray-500">
-                  The root of our problems - if we seek wellness - is that we
-                  live too fast. We need to calm down, be silent, stay still,
-                  put down the heavy weight of thought so that we slow down
-                  enought to re-join the flow of nature. It's simple and it's
-                  free.
-                </p>
-
-                <p className="mt-4 text-lg text-gray-500">
-                  Our approach to wellness is the traditional costarrican way.
-                  Leave your troubles behind, find a magical spot, and spend
-                  some time there.
+                  where whales come to give birth - we don't need to add
+                  anything!
                 </p>
 
                 <p className="mt-4 text-lg text-gray-500">
@@ -55,9 +52,17 @@ export default function Example() {
                   solo-bonefire under the stars is a favorite!
                 </p>
 
+                <p className="my-4 max-w-2xl text-md bg-lime-50 border-2 p-3 text-stone-500 lg:mx-auto">
+                  The root of our disconection is the speed we run our lives. So
+                  calm down, be silent, stay still, put down the heavy weight of
+                  thought as to slow down enought to re-join the flow of nature.
+                  You'll know, when you hear the song of the forest...
+                </p>
+
                 <p className="mt-4 text-lg text-gray-500">
-                  Our staff takes care of the heavylifting and I am available
-                  most of the time for one-on-one sessions.
+                  Our staff takes care of the heavylifting and I
+                  (@roberto_rodriguez_artavia) am available most of the time for
+                  one-on-one sessions.
                 </p>
               </div>
             </div>
@@ -87,31 +92,37 @@ export default function Example() {
               </div>
               <div className="mt-6">
                 <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-                  The Jungles of Corcovado
+                  The Jungles of Peace in Corcovado
                 </h2>
                 <p className="mt-4 text-lg text-gray-500">
                   Our 2 acre property is located on one of the last patches of
-                  primary rainforest on the beach. It won't last forever, but
-                  it's here now and the animals love it, and we love them.
+                  primary rainforest on the beach. Everyone, specially animals
+                  love it here.
                 </p>
 
                 <p className="mt-4 text-lg text-gray-500">
-                  Part of it is because of our scientific arm with Saimiri
-                  Non-Profit organiation. So we know what food, trees and plants
-                  to preserve for the whole food chain. But we suspect that they
-                  also love the beach! We are constantly visited by the four
-                  species of monkeys, scarlet maccaws, toucans, pavones,
-                  pizontes, ant eaters, the Tapir came once as well as wild
-                  hogs. Tracks and sightings of felines are common. You can see
-                  the whales from the beach, swim with turtles.
+                  Part of it is because of our scientific arm with the Saimiri
+                  Non-Profit organization. Most people think about tress in
+                  terms of size, but whats important is the food they provide.
+                  So we know what food, trees and plants to preserve for the
+                  whole food chain.
+                </p>
+                <p className="mt-4 text-lg text-gray-500">
+                  But we suspect that they also love the beach! We are
+                  constantly visited by the four species of monkeys, scarlet
+                  maccaws, toucans, pavones, pizontes, ant eaters, the Tapir and
+                  wild hogs have visited here. Tracks and sightings of felines
+                  are possible. You can see the whales from the beach, swim with
+                  turtles.
                 </p>
 
                 <p className="mt-4 text-lg text-gray-500">
-                  Instead of building the house right on the beach, we protected
-                  a beautifll patch of primary forest with ancient gigantic
-                  trees. It's an amazing ecosystem full of the stangest insects,
-                  butterflies, beautifill birds and the coolest birds of pray. A
-                  beachfront primary forest is very rare this days.
+                  Instead of having the house right on the beach, we gave 150
+                  feet of space protecting a beautifll patch of primary forest
+                  with ancient gigantic trees. It's an amazing ecosystem full of
+                  the stangest insects, butterflies, beautifill birds and the
+                  coolest birds of pray. A beachfront primary forest is very
+                  rare this days and it's worth preserving.
                 </p>
 
                 <p className="mt-4 text-lg text-gray-500">
@@ -119,7 +130,7 @@ export default function Example() {
                   used to it.
                 </p>
 
-                <div className="mt-6">This is for real!</div>
+                <p className="mt-4 text-lg text-gray-500">This is for real!</p>
               </div>
             </div>
           </div>
