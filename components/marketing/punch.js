@@ -11,7 +11,7 @@ export default function Punch() {
           </p>
 
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            With overy 1800 species of tres, 800 birds and over 100 mammals
+            With overy 1800 species of trees, 800 birds and over 100 mammals
             there's plenty to see. Well traveled visitors often tells us that
             this is the greatest amount of wildlife they seen anywhere in the
             world. But they also tell us that simply looking at them does not
