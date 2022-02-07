@@ -7,7 +7,7 @@ export default function Punch() {
             So much more, than the most biodiverse place on earth
           </h2>
           <p className="my-5 text-3xl leading-8 font-extrabold tracking-tight text-stone-600 sm:text-4xl">
-            What makes a wildlife experience, meaningfull?
+            What makes a wildlife experience, meaningful?
           </p>
 
           <p className="mt-4 max-w-2xl text-xl text-lime-800 lg:mx-auto">
@@ -35,7 +35,7 @@ export default function Punch() {
           <p className="my-14 max-w-2xl text-xl bg-violet-50 p-5 text-stone-500 lg:mx-auto">
             This place, my job - my purpose in life - is for you, your familiy
             and friends to slow down enought to go beyond seeing - to feel the
-            meaning in nature
+            meaning in nature and feel at home
             <br />
             <small>Roberto - Owner & Manager</small>
           </p>
