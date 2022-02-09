@@ -13,15 +13,14 @@ export default function Example(props) {
 
         <Hero />
         <div className="flex">
-          <div className=" w-64 h-14 bg-violet-300"></div>
-          <div className=" flex-auto  bg-violet-400"></div>
-          <div className=" w-64 bg-lime-100"></div>
-          <div className=" w-64 bg-lime-800"></div>
+          <div className=" w-64 h-14 bg-violet-200"></div>
+          <div className=" flex-auto  bg-violet-300"></div>
           <div className="flex-auto bg-sky-400"></div>
           <div className="flex-auto bg-sky-300"></div>
-          <div className="flex-auto bg-amber-300"></div>{" "}
-          <div className="flex-auto bg-amber-400"></div>{" "}
+          <div className=" w-64 bg-lime-100"></div>
+          <div className="flex-auto bg-amber-200"></div>{" "}
           <div className="flex-auto bg-stone-500"></div>
+          <div className=" w-64 bg-lime-700"></div>
           <div className="flex-auto bg-amber-900"></div>
           <div className="flex-auto bg-black"></div>
         </div>
