@@ -3,7 +3,7 @@ import { XIcon } from "@heroicons/react/outline";
 
 export default function Example() {
   return (
-    <div className="relative bg-lime-600">
+    <div className="relative bg-stone-500">
       <div className="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
         <div className="pr-16 sm:text-center sm:px-16">
           <p className="font-medium text-white">
