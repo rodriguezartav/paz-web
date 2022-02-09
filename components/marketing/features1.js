@@ -9,7 +9,7 @@ export default function Example() {
           <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
             <div>
               <div>
-                <span className="h-12 w-12 rounded-md flex items-center justify-center bg-violet-500">
+                <span className="h-12 w-12 rounded-md flex items-center justify-center bg-amber-800">
                   <MoonIcon className="h-6 w-6 text-white" aria-hidden="true" />
                 </span>
               </div>
