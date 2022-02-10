@@ -19,10 +19,8 @@ export default function Example(props) {
           <div className="flex-auto bg-sky-300"></div>
           <div className=" w-64 bg-lime-100"></div>
           <div className="flex-auto bg-amber-200"></div>{" "}
-          <div className="flex-auto bg-stone-500"></div>
-          <div className=" w-64 bg-lime-800"></div>
-          <div className="flex-auto bg-amber-900"></div>
-          <div className="flex-auto bg-black"></div>
+          <div className="flex-auto bg-stone-400"></div>
+          <div className=" w-64 bg-lime-700"></div>
         </div>
 
         <Punch />
