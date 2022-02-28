@@ -16,7 +16,7 @@ import {
 } from "@heroicons/react/solid";
 
 export default function Slideover({ parentView }) {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const [view, setView] = useState("profile");
 
