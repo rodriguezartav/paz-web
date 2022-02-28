@@ -21,7 +21,7 @@ export default function Hero(props) {
                   </div>
                   <div className="mt-6 sm:max-w-xl">
                     <h1 className="text-6xl font-extrabold text-stone-500   tracking-tight sm:text-6xl">
-                      Paz
+                      Paz (in construction)
                     </h1>
                     <p className="mt-6 text-xl text-gray-700 px-1">
                       Meaningful Wildlife Vacations <br /> Transformational
