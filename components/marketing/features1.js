@@ -21,7 +21,7 @@ const texts = {
       paragraphs: [
         `Floor to cealing screened windows to watch all the wildlife as
     they flow by the house. Big Ass Fans for superb
-    ventilation and 8 resort grade beds.\n\r Split the rooms for boys
+    ventilation in two extra large bedroms with 4 indivudla resort grade beds each.\n\r Split the rooms for boys
     and girls, parents and kids and add a fun camping vibe to your
     adventure!\n\rFull kitchen with condiments and supplies. Bring your food - or
     - send us your shopping list and it will be sorted when you
