@@ -26,7 +26,7 @@ export default function Example({ setView }) {
           <Header selected={selectedView} setSelected={setSelectedView} />
         </div>
         <div className="mt-20 -z-10">
-          <Hero selectedView={selectedView} />
+          {selectedView == "vacations" && <Hero selectedView={selectedView} />}
 
           <div className="flex">
             <div className=" w-64 h-1 bg-violet-200"></div>
