@@ -13,66 +13,39 @@ const texts = {
                   maccaws, toucans, pavones, pizontes, ant eaters, the Tapir and
                   wild hogs have visited here. Tracks and sightings of felines
                   are possible. You can see the whales from the beach, swim with
-                  turtles.
-                `,
-
-        `Part of it is because of our scientific arm with the Saimiri
-                  Non-Profit organization. Most people think about tress in
-                  terms of size, but whats important is the food they provide.
-                  So we know what food, trees and plants to preserve for the
-                  whole food chain.
-                `,
-        `
-                  Instead of having the house right on the beach, we gave 150
-                  feet of space protecting a beautifll patch of primary forest
-                  with ancient gigantic trees. It's an amazing ecosystem full of
-                  the stangest insects, butterflies, beautifill birds and the
-                  coolest birds of pray. A beachfront primary forest is very
-                  rare this days and it's worth preserving.
+                  turtles.\n\rDiscover wellness is the traditional costarrican way - it's
+                  called Pura Vida and it represents the way we use natural
+                  beauty. Leave your troubles behind, find a magical spot, and
+                  have a great time.\n\rThe root of our disconection is the speed we run our lives. So
+                  calm down, be silent, stay still, put down the heavy weight of
+                  thought as to slow down enought to re-join the flow of nature.
+                  You'll know you made it when you hear the song of the forest...
                 `,
       ],
       caption:
-        "Life and sound is so abundant that it takes a while to get used to it",
+        "Life and sound is so abundant that it takes at least a day to get used to it",
     },
     right: {
       images: ["map.png"],
       title: "Location",
       paragraphs: [
         `
-                  Discover wellness is the traditional costarrican way - it's
-                  called Pura Vida and it represents the way we use natural
-                  beauty. Leave your troubles behind, find a magical spot, and
-                  have a great time.
-                `,
-        `
-                  This is the most biodiverse place on earth, the most magical
-                  place in Costa Rica, the last lowlands rain forest in Central
-                  America, the home of the Jaguar, the Tapir, the Harp Eagle,
-                  where whales come to give birth - we don't need to add
-                  anything!
-                `,
+                The Osa the Peninsula is the last frontier in Costa Rica. Unspolied and pristine it's considered the most biodiverse place on earth,
+                meaning it's packed densily with wildlife. The jaguar and 7 other species of felines lives here, tapir, ant eaters, sloths, the scarlet maccaw, 
+                humpback and shark whales, turtles, rays, the 4 species of monkeys, 900 types of huge trees and the most amazing insects yet to be discoved and named.\n\r
+                We are located on the tip of the peninsula in Cabo Matapalo, a 2 acre beach front property covered in forest. We are blessed with an area of primary forest, 
+                a cozy little white sand beach, a sand bottom creek, 4 swimming spots near by, a small bay to paddleboard with beginner and intermediate waves for surfing right in front.
+      `,
         `
                   Activities are included, and there are over 45 of them to
                   choose from. Some are in the property and some require hiking.
                   Some require equipment, like paddle boards and kayaking. The
                   solo-bonefire under the stars is a favorite!
-                `,
-        `
-                  The root of our disconection is the speed we run our lives. So
-                  calm down, be silent, stay still, put down the heavy weight of
-                  thought as to slow down enought to re-join the flow of nature.
-                  You'll know, when you hear the song of the forest...
-                `,
-        `
-                
-                  Our staff takes care of the heavylifting and I
-                  (@roberto_rodriguez_artavia) am available most of the time for
-                  one-on-one sessions.
-                `,
+       `,
       ],
 
       caption:
-        "But they also tell us that simply looking at wildlife does not make for a meaningful trip.",
+        "Cabo Mata Palo can be reached via the scenic Coastal Highway by car (3.5 hours from Jaco) or by taking a beatiful short flight from SJO airport ( 45 minutes flight + 25 minute Taxi ).",
     },
   },
   retreats: {
@@ -104,24 +77,6 @@ const texts = {
                 America, the home of the Jaguar, the Tapir, the Harp Eagle,
                 where whales come to give birth - we don't need to add
                 anything!
-              `,
-        `
-                Activities are included, and there are over 45 of them to
-                choose from. Some are in the property and some require hiking.
-                Some require equipment, like paddle boards and kayaking. The
-                solo-bonefire under the stars is a favorite!
-              `,
-        `
-                The root of our disconection is the speed we run our lives. So
-                calm down, be silent, stay still, put down the heavy weight of
-                thought as to slow down enought to re-join the flow of nature.
-                You'll know, when you hear the song of the forest...
-              `,
-        `
-              
-                Our staff takes care of the heavylifting and I
-                (@roberto_rodriguez_artavia) am available most of the time for
-                one-on-one sessions.
               `,
       ],
 

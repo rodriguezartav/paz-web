@@ -17,7 +17,7 @@ import Blog from "./marketing/blog";
 import { useState } from "react";
 
 export default function Example({ setView }) {
-  let [selectedView, setSelectedView] = useState("retreats");
+  let [selectedView, setSelectedView] = useState("vacations");
 
   return (
     <div className="bg-stone-100 object-cover ">

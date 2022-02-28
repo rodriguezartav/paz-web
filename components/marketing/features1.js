@@ -9,21 +9,21 @@ const texts = {
       images: ["beach.jpg"],
       title: "The Beach Lounge",
       paragraphs: [
-        "Discover why our little secluded beach is a favorite among scarlet maccaws and the 4 species of monkeys. Spend your days - and nights - alone under the shadow of palm trees and the sound of waves.",
+        `Discover why our little secluded beach is a favorite among scarlet maccaws and the 4 species of monkeys. Spend your days - and nights - alone under the shadow of palm trees and the sound of waves.\n\rThe beach lounge is the retreat's main attraction and activity. Is where everyone wants to spend their days and nights.
+        \n\rThe lounge is located in a private & cozy sandy beach under palm trees, 3 steps above the pacific ocean's turquioise and emmerald water. 
+       `,
       ],
-      caption:
-        "But they also tell us that simply looking at wildlife does not make for a meaningful trip.",
+      caption: "",
     },
     right: {
       images: ["house.jpg"],
       title: "Comfy Jungle House",
       paragraphs: [
         `Floor to cealing screened windows to watch all the wildlife as
-    they flow by the house. Big Ass Fans &trade; for superb
-    ventilation and 8 resort grade beds. Split the rooms for boys
+    they flow by the house. Big Ass Fans for superb
+    ventilation and 8 resort grade beds.\n\r Split the rooms for boys
     and girls, parents and kids and add a fun camping vibe to your
-    adventure!`,
-        `Full kitchen with condiments and supplies. Bring your food - or
+    adventure!\n\rFull kitchen with condiments and supplies. Bring your food - or
     - send us your shopping list and it will be sorted when you
     arrive - or request a typical costarican cook: the friendliness
     and love of our culture is the main condiment in our gastronomy.
@@ -32,8 +32,7 @@ const texts = {
     right on the sand for the best posible experience in Costa Rica.`,
       ],
 
-      caption:
-        "But they also tell us that simply looking at wildlife does not make for a meaningful trip.",
+      caption: "",
     },
   },
   retreats: {
