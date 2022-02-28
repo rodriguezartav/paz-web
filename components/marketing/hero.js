@@ -24,12 +24,11 @@ export default function Hero(props) {
                       Paz
                     </h1>
                     <p className="mt-6 text-xl text-gray-700 px-1">
-                      Private Beach Lounge | Comfy Jungle House | Natural
-                      Wellness
+                      Meaningful Wildlife Vacations <br /> Transformational
+                      Wellness Retreats
                     </p>
                     <small className="text-xs text-gray-500 mx-1  block pb-10 md:pb-0">
-                      Exercise - Relax - Connect with wildlife - Rest - Become
-                      enchanted - Find your Peace
+                      Relax - Enjoy - Heal
                     </small>
                   </div>
                 </div>

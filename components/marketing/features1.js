@@ -1,117 +1,105 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { MoonIcon, SparklesIcon } from "@heroicons/react/outline";
+import { PlusIcon } from "@heroicons/react/solid";
+import Features from "./features";
 
-export default function Example() {
+const texts = {
+  vacations: {
+    left: {
+      images: ["beach.jpg"],
+      title: "The Beach Lounge",
+      paragraphs: [
+        "Discover why our little secluded beach is a favorite among scarlet maccaws and the 4 species of monkeys. Spend your days - and nights - alone under the shadow of palm trees and the sound of waves.",
+      ],
+      caption:
+        "But they also tell us that simply looking at wildlife does not make for a meaningful trip.",
+    },
+    right: {
+      images: ["house.jpg"],
+      title: "Comfy Jungle House",
+      paragraphs: [
+        `Floor to cealing screened windows to watch all the wildlife as
+    they flow by the house. Big Ass Fans &trade; for superb
+    ventilation and 8 resort grade beds. Split the rooms for boys
+    and girls, parents and kids and add a fun camping vibe to your
+    adventure!`,
+        `Full kitchen with condiments and supplies. Bring your food - or
+    - send us your shopping list and it will be sorted when you
+    arrive - or request a typical costarican cook: the friendliness
+    and love of our culture is the main condiment in our gastronomy.
+  `,
+        `Ask us for a free upgrade and we'll setup big glaming tents
+    right on the sand for the best posible experience in Costa Rica.`,
+      ],
+
+      caption:
+        "But they also tell us that simply looking at wildlife does not make for a meaningful trip.",
+    },
+  },
+  retreats: {
+    left: {
+      images: ["jungle.jpg"],
+      title: "Nature is our guide",
+      paragraphs: [
+        `Some people are beautiful, but meeting someone who is amazing makes an impact. With nature, when we are able to go pass seeing and into connecting
+        at a deeper level that impact heals us.\n\rStress is the result of not being present in this moment. Being in the mind thinking and solving problems. 
+        It's how modern humans live. Practicing being present in nature can be fun and effortless. It also creates a positive feedback loop (healing) that you can then bring to your everyday activities, even when you are not in nature. `,
+      ],
+      caption:
+        "Activities include surfing & paddleboarding, hiking, bonefires, snorkeling, sitting or walking alone in a pristine beach, swimming in sunsets, laying in a hammock under a palm tree, star gazing, bathing in creaks and mud baths - under the optional coaching of Paz resident guide @rober_en_paz",
+    },
+    right: {
+      images: ["house.jpg"],
+      title: "Comfy Jungle House with good food",
+      paragraphs: [
+        `Retreats are based in our beach house, a comfortable space with floor to cealing screened windows designed to mantain constant presence in nature.
+        The two bedrooms with space for 4 people each have all the amenities of a hotel room. The lounge is the place to chill while wildlife literally swing by the house.\n\rLocal women share their wisdom, culture and local food 
+        ( including leassons ) using the kitchen as medicine to produce three healty meels a day, juices and drinks with lot's of in between surprises.`,
+        `Full kitchen with condiments and supplies. Bring your food - or
+    - send us your shopping list and it will be sorted when you
+    arrive - or request a typical costarican cook: the friendliness
+    and love of our culture is the main condiment in our gastronomy.
+  `,
+        `Ask us for a free upgrade and we'll setup big glaming tents
+    right on the sand for the best posible experience in Costa Rica.`,
+      ],
+
+      caption:
+        "Rooms, single beds and food diets are made to match each retreat. In mixed retreats, rooms are divided by gender. Food is as organic as possible both vegetarian and omnivore friendly. ",
+    },
+  },
+  teachers: {
+    left: {
+      images: ["beach.jpg"],
+      title: "The Beach Lounge",
+      paragraphs: [
+        ` The retreat will have the company of countless animals, birds and butterflies. The song of nature will play from start to end.\n\r In general Paz is inspired by mother nature and all recomended activities are meant to take advantage of the pure and undisturbed presence of the 4 elements of life. \n\rThe lounge will be arranged according to each retreat with options for meditation, satsang, yoga, music, writting, bonefires, Qi Gong, or anything else.\n\r This location is pristine, everything is as it must be, we - the caretakers here, do our best to honor the spirit of life with lovely actions and behaviors towards ourselfs and others every day.`,
+      ],
+      caption:
+        "Activities include surfing & paddleboarding, hiking, bonefires, snorkeling, sitting or walking alone in a pristine beach, swimming in sunsets, laying in a hammock under a palm tree, star gazing, bathing in creaks, mud baths and more.",
+    },
+    right: {
+      images: ["house.jpg"],
+      title: "Comfy Jungle House",
+      paragraphs: [
+        `Floor to cealing screened windows to watch all the wildlife as
+    they flow by the house. Big Ass Fans for superb
+    ventilation and 8 resort grade individual beds split into two large bedrooms with their own bathrooms with hot water. \n\r
+    Full range of kitchen arrangments where you can bring your own chef, use our local cooks, or work with us on the menu and selecting specialized staff.\n\r
+        Ask us for a free upgrade and we'll setup big glaming tents
+    right on the sand for advanced exersices and the best posible experience in Costa Rica.\n\r Me an my staff will be on call for anything you might need, from cleaning to lighting the bonefire, carring stuff or the creation of a private protected perimeter during intimate activities.`,
+      ],
+
+      caption: "",
+    },
+  },
+};
+
+export default function Features1(props) {
   return (
-    <div className="relative bg-white pt-16 pb-32 overflow-hidden">
-      <div className="relative">
-        <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-          <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
-            <div>
-              <div>
-                <span className="h-12 w-12 rounded-md flex items-center justify-center bg-amber-800">
-                  <MoonIcon className="h-6 w-6 text-white" aria-hidden="true" />
-                </span>
-              </div>
-              <div className="mt-6">
-                <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-                  The Beach Lounge
-                </h2>
-                <p className="mt-4 text-lg text-gray-500">
-                  Discover why our little secluded beach is a favorite among
-                  scarlet maccaws and the 4 species of monkeys. Spend your days
-                  - and nights - alone under the shadow of palm trees and the
-                  sound of waves.
-                </p>
-              </div>
-            </div>
-            <div className="mt-8 border-t border-gray-200 pt-6">
-              <blockquote>
-                <div>
-                  <p className="text-base text-gray-500">
-                    &ldquo;All beaches in Costa Rica are public, but our small
-                    beach is so secluded you'll see more wildlife than people
-                    walking by.&rdquo;
-                  </p>
-                </div>
-              </blockquote>
-            </div>
-          </div>
-          <div className="mt-12 sm:mt-16 lg:mt-0">
-            <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-              <img
-                className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                src="./images/beach.jpg"
-                alt="Inbox user interface"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="mt-24">
-        <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-          <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
-            <div>
-              <div>
-                <span className="h-12 w-12 rounded-md flex items-center justify-center bg-lime-500">
-                  <SparklesIcon
-                    className="h-6 w-6 text-white"
-                    aria-hidden="true"
-                  />
-                </span>
-              </div>
-              <div className="mt-6">
-                <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-                  Comfy Jungle house
-                </h2>
-                <p className="mt-4 text-lg text-gray-500">
-                  Floor to cealing screened windows to watch all the wildlife as
-                  they flow by the house. Big Ass Fans &trade; for superb
-                  ventilation and 8 resort grade beds. Split the rooms for boys
-                  and girls, parents and kids and add a fun camping vibe to your
-                  adventure!
-                </p>
-
-                <p className="mt-4 text-lg text-gray-500">
-                  Full kitchen with condiments and supplies. Bring your food -
-                  or - send us your shopping list and it will be sorted when you
-                  arrive - or request a typical costarican cook: the
-                  friendliness and love of our culture is the main condiment in
-                  our gastronomy.
-                </p>
-
-                <p className="mt-4 text-lg text-gray-500">
-                  Ask us for a free upgrade and we'll setup big glaming tents
-                  right on the sand for the best posible experience in Costa
-                  Rica.
-                </p>
-              </div>
-              <div className="mt-8 border-t border-gray-200 pt-6">
-                <blockquote>
-                  <div>
-                    <p className="text-base text-gray-500">
-                      &ldquo;The house is 1690 square feet hermetically
-                      screened. Two bedrooms, two bathrooms with hot water,
-                      kitchen, dinning room and lounge. Additional space for 8
-                      extra people in glamping tents with a max occupancy of
-                      16&rdquo;
-                    </p>
-                  </div>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-          <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
-            <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-              <img
-                className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                src="./images/house.jpg"
-                alt="Customer profile user interface"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Features
+      left={texts[props.selectedView].left}
+      right={texts[props.selectedView].right}
+    />
   );
 }
