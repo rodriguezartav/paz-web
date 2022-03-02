@@ -16,7 +16,7 @@ import Blog from "./marketing/blog";
 
 import { useState } from "react";
 
-export default function Example({ setView }) {
+export default function Example({ setView, posts }) {
   let [selectedView, setSelectedView] = useState("vacations");
 
   return (
@@ -43,7 +43,7 @@ export default function Example({ setView }) {
 
           <Features2 selectedView={selectedView} />
 
-          {selectedView != "vacations" && <Blog />}
+          {selectedView != "vacations" && <Blog posts={posts} />}
         </div>
       </main>
 

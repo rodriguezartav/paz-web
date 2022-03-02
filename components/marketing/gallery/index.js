@@ -48,10 +48,7 @@ export default function Example({ setView, parentView }) {
               </div>
             </div>
             <div className="mt-1">
-              <p className="text-sm text-indigo-300">
-                Get started by filling in the information below to create your
-                quote or reservation.
-              </p>
+              <p className="text-sm text-indigo-300">Enjoy our latest videos</p>
             </div>
           </div>
           <div className="flex flex-1 flex-col justify-between">

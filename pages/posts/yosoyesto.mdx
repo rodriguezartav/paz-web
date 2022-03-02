@@ -1,0 +1,24 @@
+import Layout from "../../components/Layout";
+
+export const meta = {
+  title: "Libro: Yo soy esto",
+  author: "Roberto Rodriguez",
+  photo: "images/me.jpeg",
+  description:
+    "En el 2019 tuve una experiencia muy cercana a la muerte que me llevo a recorrer muchos pasillos de mi mente por los que nunca hubiera pasado sino fuera por eso. Este libro recorre estas enseñansas.",
+  types: ["vacations", "retreats", "teachers"],
+  date: "2022-02-28",
+};
+
+En el 2019 tuve una experiencia muy cercana a la muerte que me llevo a recorrer muchos pasillos de mi mente por los que nunca hubiera pasado sino fuera por eso. Desde mi interior tuve que volver a construirme, volver a nacer y al hacerlo tuve la oportunidad de cuestionar, profundizar y valorar todo como si fuera la primera vez.
+![Libro yo soy esto](/images/libro.png "Yo soy esto")
+
+Este es mi primer libro y es una invitación a ver la vida desde esa perspectiva. Lo hago con la esperanza que otros puedan reflexionar sobre lo que viví y así tener impacto positivo en sus vidas - sin tener que pasar por ahí.
+
+## En pre-orden
+
+El libro esta disponible en Amazón para ser pre-ordenado como eBook Kindle y sera publicado a mas tardar el 1 de Mayo 2022. En ese momento tambien estara disponble como "paperback" y traducido al idioma ingles.
+
+[Link al libro en Amazón](https://www.amazon.com/dp/B09TLF5LVB?ref_=pe_3052080_276849420)
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>;

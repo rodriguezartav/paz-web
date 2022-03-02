@@ -54,7 +54,7 @@ export default function Profile({ setView }) {
                         <span className="sr-only">Online</span>
                       </span>
                     </div>
-                    <p className="text-sm text-gray-500">@roberto_en_paz</p>
+                    <p className="text-sm text-gray-500">@rober_en_paz</p>
                   </div>
                   <div className="mt-5 flex flex-wrap space-y-3 sm:space-y-0 sm:space-x-3">
                     <button
