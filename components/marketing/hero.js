@@ -5,7 +5,7 @@ export default function Hero(props) {
         <main className="relative">
           {/* Hero section */}
           <img className="object-cover object-top" src="./images/templo.jpeg" />
-          <div className=" md:absolute top-12 pt-8     bg-gray-50 opacity-80 lg:py-14">
+          <div className=" md:absolute top-12 pt-8  bg-gray-50 opacity-80 lg:pt-10 ">
             <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
               <div>
                 <div className="">
@@ -27,8 +27,10 @@ export default function Hero(props) {
                       Meaningful Wildlife Vacations <br /> Transformational
                       Wellness Retreats
                     </p>
-                    <small className="text-xs text-gray-500 mx-1  block pb-10 md:pb-0">
-                      Relax - Enjoy - Heal
+                    <small className="text-lg text-purple-700 mx-1  block pb-0 md:pb-0 ">
+                      <a href="http://airbnb.com/h/pazz" target="_blank">
+                        <img src="/images/airbnb.svg" className="h-20 w-20" />
+                      </a>
                     </small>
                   </div>
                 </div>
