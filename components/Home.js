@@ -19,6 +19,9 @@ import { useState } from "react";
 export default function Example({ setView, posts }) {
   let [selectedView, setSelectedView] = useState("vacations");
 
+  const [sideView, setSideView] = useState("profile");
+  const [sideViewOpen, setSideViewOpen] = useState(false);
+
   return (
     <div className="bg-stone-100 object-cover ">
       <main className="relative">
@@ -47,7 +50,20 @@ export default function Example({ setView, posts }) {
         </div>
       </main>
 
-      <Slideover parentView={selectedView} />
+      <Banner
+        onClick={() => {
+          setSideView("profile");
+          setSideViewOpen(true);
+        }}
+      />
+
+      <Slideover
+        open={sideViewOpen}
+        setOpen={setSideViewOpen}
+        view={sideView}
+        setView={setSideView}
+        parentView={selectedView}
+      />
     </div>
   );
 }

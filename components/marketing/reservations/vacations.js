@@ -11,19 +11,21 @@ import {
 } from "@heroicons/react/solid";
 import { useState } from "react";
 
-export default function Example({ setView, parentView }) {
+export default function Example({
+  setView,
+  parentView,
+  email,
+  setEmail,
+  checkIn,
+  setCheckIn,
+  nights,
+  setNights,
+  persons,
+  setPersons,
+  comments,
+  setComments,
+}) {
   let [formSent, setFormSent] = useState(false);
-
-  let [name, setName] = useState("");
-  let [email, setEmail] = useState("");
-  let [nights, setNights] = useState(3);
-  let [persons, setPersons] = useState(2);
-
-  let [whatsapp, setWhatsApp] = useState("");
-
-  function onSave() {
-    setFormSent(true);
-  }
 
   function renderForm() {
     if (parentView == "vacations") return renderVacationForm();
@@ -47,6 +49,8 @@ export default function Example({ setView, parentView }) {
                   </label>
                   <div className="mt-1">
                     <input
+                      value={email}
+                      onChange={(e) => setEmail(e.currentTarget.value)}
                       type="email"
                       name="email"
                       id="email"
@@ -65,6 +69,8 @@ export default function Example({ setView, parentView }) {
                   </label>
                   <div className="mt-1">
                     <input
+                      value={checkIn}
+                      onChange={(e) => setCheckIn(e.currentTarget.value)}
                       type="date"
                       name="date"
                       id="date"
@@ -83,6 +89,10 @@ export default function Example({ setView, parentView }) {
                   </label>
                   <div className="mt-1">
                     <input
+                      value={nights}
+                      onChange={(e) =>
+                        setNights(parseInt(e.currentTarget.value))
+                      }
                       type="number"
                       min="1"
                       max="60"
@@ -119,6 +129,8 @@ export default function Example({ setView, parentView }) {
                   </label>
                   <div className="mt-1">
                     <textarea
+                      onChange={(e) => setComments(e.currentTarget.value)}
+                      value={comments}
                       id="description"
                       name="description"
                       placeholder="Check-in, # of Nights, # of People"
@@ -166,7 +178,7 @@ function NumberOfPeople(props) {
       {[2, 3, 4, 5, 6, 7, 8].map((item, index) => {
         return (
           <button
-            onClick={() => props.onClick(item)}
+            onClick={() => props.onChange(item)}
             type="button"
             className={`${index == 0 ? first : index == 6 ? last : normal} ${
               item == props.value ? "bg-violet-400" : "bg-white"

@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { useMutate, useFetch } from "../../helpers/useFetch";
 import Vacations from "./reservations/vacations";
 import Retreats from "./reservations/retreats";
 import Hosts from "./reservations/hosts";
@@ -16,7 +16,22 @@ export default function Example({ setView, parentView }) {
   let [nights, setNights] = useState(3);
   let [persons, setPersons] = useState(2);
 
-  function onSave() {
+  let [checkIn, setCheckIn] = useState("");
+
+  let [comments, setComments] = useState("");
+
+  const {
+    response,
+    error: mutateError,
+    isLoading,
+    mutate,
+  } = useMutate("/api/reservations/");
+
+  async function onSave() {
+    const r = await mutate(
+      { name, email, nights, persons, checkIn, comments },
+      `/api/reservations`
+    );
     setFormSent(true);
   }
 
@@ -24,7 +39,21 @@ export default function Example({ setView, parentView }) {
     return <Result />;
   }
   function renderForm() {
-    if (parentView == "vacations") return <Vacations />;
+    if (parentView == "vacations")
+      return (
+        <Vacations
+          email={email}
+          setEmail={setEmail}
+          nights={nights}
+          persons={persons}
+          setPersons={setPersons}
+          setNights={setNights}
+          checkIn={checkIn}
+          setCheckIn={setCheckIn}
+          comments={comments}
+          setComments={setComments}
+        />
+      );
     if (parentView == "retreats") return <Retreats />;
     else return <Hosts />;
   }

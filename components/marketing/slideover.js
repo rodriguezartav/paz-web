@@ -15,11 +15,13 @@ import {
   CurrencyDollarIcon,
 } from "@heroicons/react/solid";
 
-export default function Slideover({ parentView }) {
-  const [open, setOpen] = useState(false);
-
-  const [view, setView] = useState("profile");
-
+export default function Slideover({
+  parentView,
+  view,
+  setView,
+  open,
+  setOpen,
+}) {
   return (
     <>
       {/* 
