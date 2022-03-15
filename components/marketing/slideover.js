@@ -36,65 +36,6 @@ export default function Slideover({
         open={open}
         setOpen={setOpen}
       />
-      <div className="fixed inset-x-0 bottom-0">
-        <div className="bg-stone-200 opacity-90">
-          <div className="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
-            <div className="flex items-center justify-center flex-wrap">
-              <div
-                onClick={() => {
-                  setOpen(true);
-                  setView("profile");
-                }}
-                className=" flex-1 flex items-center"
-              >
-                <span className="flex p-2 rounded-lg bg-sky-400">
-                  <UserIcon className="h-3 w-3 text-white" aria-hidden="true" />
-                </span>
-                <p className="ml-3 font-medium text-stone-700 truncate">
-                  <span className="md:hidden">Connect</span>
-                  <span className="hidden md:inline">Connect</span>
-                </p>
-              </div>
-              <div
-                onClick={() => {
-                  setOpen(true);
-                  setView("reservations");
-                }}
-                className="flex-1 flex items-center"
-              >
-                <span className="flex p-2 rounded-lg bg-purple-800">
-                  <CurrencyDollarIcon
-                    className="h-3 w-3 text-white"
-                    aria-hidden="true"
-                  />
-                </span>
-                <p className="ml-3 font-medium text-stone-700 truncate">
-                  <span className="md:hidden">Prices</span>
-                  <span className="hidden md:inline">Prices</span>
-                </p>
-              </div>
-              <div
-                onClick={() => {
-                  setOpen(true);
-                  setView("gallery");
-                }}
-                className=" flex-1 flex "
-              >
-                <span className="flex p-2 rounded-lg bg-yellow-400">
-                  <VideoCameraIcon
-                    className="h-3 w-3 text-white"
-                    aria-hidden="true"
-                  />
-                </span>
-                <p className="ml-3 font-medium text-stone-700 truncate">
-                  <span className="md:hidden">Videos</span>
-                  <span className="hidden md:inline">Videos</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </>
   );
 }
@@ -115,15 +56,11 @@ function Slide({ open, setOpen, view, setView, parentView }) {
 
   return (
     <Transition.Root show={open} as={Fragment}>
-      <Dialog
-        as="div"
-        className="fixed inset-0 overflow-hidden z-50"
-        onClose={setOpen}
-      >
-        <div className="absolute inset-0 overflow-hidden">
+      <Dialog as="div" className="fixed inset-0   z-50" onClose={setOpen}>
+        <div className="absolute inset-0 ">
           <Dialog.Overlay className="absolute inset-0" />
 
-          <div className="pointer-events-none  fixed inset-y-0 right-10 md:right-0 flex max-w-full pl-10 sm:pl-16">
+          <div className="  fixed inset-y-0 right-0 md:right-0 flex max-w-full  sm:pl-16">
             <Transition.Child
               as={Fragment}
               enter="transform transition ease-in-out duration-500 sm:duration-700"
@@ -133,7 +70,7 @@ function Slide({ open, setOpen, view, setView, parentView }) {
               leaveFrom="translate-x-0"
               leaveTo="translate-x-full"
             >
-              <div>
+              <div className=" overflow-y-scroll ">
                 {view == "profile" && <Profile setView={setView} />}
 
                 {view == "connect" && <Connect setView={setView} />}

@@ -26,7 +26,15 @@ export default function Example({ setView, posts }) {
     <div className="bg-stone-100 object-cover ">
       <main className="relative">
         <div className="fixed top-0 left-0 right-0 z-40 bg-white shadow-sm">
-          <Header selected={selectedView} setSelected={setSelectedView} />
+          <Header
+            selected={selectedView}
+            setSelected={setSelectedView}
+            open={sideViewOpen}
+            setOpen={setSideViewOpen}
+            view={sideView}
+            setView={setSideView}
+            parentView={selectedView}
+          />
         </div>
         <div className="mt-20 -z-10">
           {selectedView == "vacations" && <Hero selectedView={selectedView} />}

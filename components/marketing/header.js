@@ -1,70 +1,53 @@
 /* This example requires Tailwind CSS v2.0+ */
-const steps = [
-  {
-    id: "Friends & Family",
-    name: "Vacations",
-    href: "#",
-    code: "vacations",
-    status: "complete",
-  },
-  {
-    id: "For Me",
-    code: "retreats",
-    name: "De-stress Retreats",
-    href: "#",
-    status: "other",
-  },
-  {
-    id: "For Women",
-    code: "teachers",
-    name: "Healing Retreats",
-    href: "#",
-    status: "upcoming",
-  },
+const navigation = [
+  { name: "Contact", href: "profile" },
+  { name: "Pricing", href: "reservations" },
+  { name: "Videos", href: "gallery" },
 ];
 
-export default function Header(props) {
-  let { selected, onSelect } = props;
-
+export default function Header({ parentView, view, setView, open, setOpen }) {
   return (
-    <nav aria-label="Progress">
-      <ol role="list" className="  flex  space-x-8 md:mx-2 md:mb-5 ">
-        {steps.map((step) => (
-          <li
-            onClick={() => {
-              props.setSelected(step.code);
-            }}
-            key={step.name}
-            className="flex-1 md:px-2"
-          >
-            {selected === step.code ? (
-              <a className="group pl-4 py-2 flex flex-col border-l-4 border-violet-600 hover:border-violet-800 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-b-4">
-                <span className="text-xs text-violet-600 font-semibold tracking-wide uppercase group-hover:text-violet-800">
-                  {step.id}
-                </span>
-                <span className="text-sm font-medium">{step.name}</span>
-              </a>
-            ) : selected === step.code ? (
-              <a
-                className="pl-4 py-2 flex flex-col border-l-4 border-violet-600 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-b-4"
-                aria-current="step"
-              >
-                <span className="text-xs text-violet-600 font-semibold tracking-wide uppercase">
-                  {step.id}
-                </span>
-                <span className="text-sm font-medium">{step.name}</span>
-              </a>
-            ) : (
-              <a className="group pl-4 py-2 flex flex-col border-l-4 border-gray-200 hover:border-gray-300 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-b-4">
-                <span className="text-xs text-gray-500 font-semibold tracking-wide uppercase group-hover:text-gray-700">
-                  {step.id}
-                </span>
-                <span className="text-sm font-medium">{step.name}</span>
-              </a>
-            )}
-          </li>
-        ))}
-      </ol>
-    </nav>
+    <header className="bg-gradient-to-r from-violet-500 to-rose-300 border-b-2 border-white">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
+        <div className="w-full py-6 flex items-center justify-between border-b border-indigo-500 lg:border-none">
+          <div className="flex items-center">
+            <a href="#">
+              <span className="sr-only">Workflow</span>
+              <h1 className="text-5xl font-extrabold text-white   tracking-tight sm:text-5xl">
+                Paz
+              </h1>
+            </a>
+            <div className="hidden ml-10 space-x-8 lg:block">
+              {navigation.map((link) => (
+                <a
+                  key={link.name}
+                  onClick={() => {
+                    setOpen(true);
+                    setView(link.href);
+                  }}
+                  className="text-base font-medium text-white hover:text-indigo-50"
+                >
+                  {link.name}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="py-4 flex flex-wrap justify-center space-x-6 lg:hidden">
+          {navigation.map((link) => (
+            <a
+              key={link.name}
+              onClick={() => {
+                setOpen(true);
+                setView(link.href);
+              }}
+              className="text-base font-medium text-white hover:text-indigo-50"
+            >
+              {link.name}
+            </a>
+          ))}
+        </div>
+      </nav>
+    </header>
   );
 }
