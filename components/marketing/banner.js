@@ -5,9 +5,20 @@ import { Transition } from "@headlessui/react";
 export default function Example({ onClick }) {
   const [show, setShow] = useState(false);
 
+  const [offset, setOffset] = useState(0);
+
   useEffect(() => {
-    setTimeout(() => {
-      setShow(true);
+    const onScroll = () => setOffset(window.pageYOffset);
+    // clean up code
+    window.removeEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    setInterval(() => {
+      if (window.pageYOffset > 1000) setShow(true);
+      else setShow(false);
     }, 5000);
   }, []);
 
@@ -16,7 +27,7 @@ export default function Example({ onClick }) {
       {/* Global notification live region, render this permanently at the end of the document */}
       <div
         aria-live="assertive"
-        className="fixed inset-0 bottom-14 sm:top-24  flex items-end px-4 py-6 pointer-events-none sm:p-6 sm:items-start"
+        className="fixed inset-0 bottom-14 sm:top-44  flex items-end px-4 py-6 pointer-events-none sm:p-6 sm:items-start"
       >
         <div className="w-full flex flex-col items-center space-y-4 sm:items-end">
           {/* Notification panel, dynamically insert this into the live region when it needs to be displayed */}

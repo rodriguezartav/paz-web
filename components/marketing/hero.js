@@ -1,14 +1,29 @@
+import { useEffect, useState, useRef } from "react";
+
+const images = ["house_2.jpg", "templo.jpeg", "beach.jpg", "lounge_1.jpg"];
+
 export default function Hero(props) {
+  const [index, setIndex] = useState(0);
+  const indexRef = useRef(0);
+
+  useEffect(() => {
+    let interval = setInterval(() => {
+      console.log(indexRef.current, images.length);
+      if (indexRef.current < images.length - 1)
+        indexRef.current = indexRef.current + 1;
+      else indexRef.current = 0;
+      setIndex(indexRef.current);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div>
-      <div className="bg-purple-100 object-cover  py-8 sm:py-0">
+      <div className="object-cover  py-8 sm:py-0 ">
         <main className="relative">
           {/* Hero section */}
 
-          <div
-            style={{ top: "400px" }}
-            className=" md:absolute  pt-16 top-100  bg-gradient-to-br from-violet-500 to-rose-300 opacity-80 lg:pt-10 border-l-0 border-white border-2 "
-          >
+          <div className=" md:absolute  pt-16 top-40  bg-gradient-to-br from-violet-500 to-rose-300 opacity-80 lg:pt-10 border-l-0 border-white border-2 ">
             <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
               <div>
                 <div className="mt-6 sm:max-w-xl">
@@ -42,7 +57,10 @@ export default function Hero(props) {
               </div>
             </div>
           </div>
-          <img className="object-cover object-top" src="./images/templo.jpeg" />
+          <img
+            className="object-cover object-top w-full"
+            src={`./images/${images[indexRef.current]}`}
+          />
         </main>
       </div>
     </div>
