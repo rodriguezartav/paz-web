@@ -4,6 +4,8 @@ import { DefaultSeo } from "next-seo";
 import Script from "next/script";
 import { MDXProvider } from "@mdx-js/react";
 
+import Document, { Html, Head, Main, NextScript } from "next/document";
+
 const CustomLink = (props) => {
   const href = props.href;
   const isInternalLink = href && (href.startsWith("/") || href.startsWith("#"));
@@ -33,6 +35,13 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   heap.load("1604821807")`,
           }}
         />
+
+        <Head>
+          <meta
+            name="“facebook-domain-verification”"
+            content='“46be10golmw8ehrdc2rcx6qn1v92e8"'
+          />
+        </Head>
 
         <DefaultSeo
           title="Paz | Cabo Mata Palo | Corcovado | Costa Rica"
