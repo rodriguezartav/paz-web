@@ -38,6 +38,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
           title="Paz | Cabo Mata Palo | Corcovado | Costa Rica"
           description="Meaningful Wildlife Vacations and Transformational Wellness Retreats"
           canonical="https://paz.co.cr/"
+          facebook-domain-verification="46be10golmw8ehrdc2rcx6qn1v92e8"
           openGraph={{
             url: "https://paz.co.cr/",
             title: "Paz | Cabo Mata Palo | Corcovado | Costa Rica",
