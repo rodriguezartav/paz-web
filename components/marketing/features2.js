@@ -3,27 +3,25 @@ import Features from "./features";
 const texts = {
   vacations: {
     left: {
-      images: ["jungle.jpg"],
-      title: "The Jungles of Peace in Corcovado",
+      images: ["templo2.png"],
+      title: "De-stress and natural connection course",
       paragraphs: [
-        `         Our 2 acre property is located on one of the last patches of
-                  primary rainforest on the beach. Everyone, specially animals
-                  love it here. Many species of animals live here.\n\rWe are
-                  constantly visited by the four species of monkeys, scarlet
-                  maccaws, toucans, pavones, pizontes, ant eaters, the Tapir and
-                  wild hogs have visited here. Tracks and sightings of felines
-                  are possible. You can see the whales from the beach, swim with
-                  turtles.\n\rDiscover wellness is the traditional costarrican way - it's
-                  called Pura Vida and it represents the way we use natural
-                  beauty. Leave your troubles behind, find a magical spot, and
-                  have a great time.\n\rThe root of our disconection is the speed we run our lives. So
-                  calm down, be silent, stay still, put down the heavy weight of
-                  thought as to slow down enought to re-join the flow of nature.
-                  You'll know you made it when you hear the song of the forest...
-                `,
+        `Paz (peace) is the feeling I hope that you experience while being here. It's not the opposite of stress, it's the result of being aware to the mechanisms of stress
+         and the mastery to overcome them at any time.\n\r
+
+      It's the indescribable presence that’s felt when we are truly here. Instead of thinking and creating situations that are not in front of us. \n\r
+      
+      Here in Paz, it's easy to find a spot where nothing related to us is happending. Were nothing needs to be done, and yet everything happends wonderfully.\n\r
+      
+         In this course we'll use nature and observation. Simple things like sitting on the beach, hicking on the jungle, watching a bonefire, looking at the sunset. To surface our behavior and become aware of our particular stress mechanics.\n\r
+
+         We'll use you own insights and my diverse background in internal arts to find the mix of technics that work best for you. \n\r
+         
+         The goal is to develop the awareness to observe our state of mind and discover the internal arts ( mind,heart,++ ) 
+         that resonate with you to start or further enhance your self-healing intent.`,
       ],
-      caption:
-        "Life and sound is so abundant that it takes at least a day to get used to it",
+      caption: `The course is optional, it's much more about doing than about taklking. It can be shared or private and made to fit each person. 
+      It may include required de-stress fisical activities like running, walking, swimming, paddle boarding.`,
     },
     right: {
       images: ["map.png"],

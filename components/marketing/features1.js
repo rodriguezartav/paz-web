@@ -6,11 +6,14 @@ import Features from "./features";
 const texts = {
   vacations: {
     left: {
-      images: ["beach.jpg"],
+      images: ["beach1.jpg"],
       title: "The Beach Lounge",
       paragraphs: [
-        `Discover why our little secluded beach is a favorite among scarlet maccaws and the 4 species of monkeys. Spend your days - and nights - alone under the shadow of palm trees and the sound of waves.\n\rThe beach lounge is the retreat's main attraction and activity. Is where everyone wants to spend their days and nights.
-        \n\rThe lounge is located in a private & cozy sandy beach under palm trees, 3 steps above the pacific ocean's turquioise and emmerald water. 
+        `This is the opportunity to enjoy a little secluded beach all to yourself.
+        Paz is located in a small gulf where it's hard to see someone walking down the beach. 
+        \n\rRight in front of the house (50 steps) you'll find a little sandy inlet, under the shadow of palm trees that we outfitted with hammocs and comfy furniture where you'll want to spend day and night.\n\r
+        
+        Discover why it's a favorite among scarlet maccaws and the 4 species of monkeys. Catch a wave, go paddle boarding or take a dip in the pacific ocean's turquioise and emmerald waters. 
        `,
       ],
       caption: "",
@@ -21,7 +24,7 @@ const texts = {
       paragraphs: [
         `Floor to cealing screened windows to watch all the wildlife as
     they flow by the house. Big Ass Fans for superb
-    ventilation in two extra large bedroms with 4 indivudla resort grade beds each.\n\r Split the rooms for boys
+    ventilation in two extra large bedroms with 4 individual resort grade beds each.\n\r Split the rooms for boys
     and girls, parents and kids and add a fun camping vibe to your
     adventure!\n\rFull kitchen with condiments and supplies. Bring your food - or
     - send us your shopping list and it will be sorted when you

@@ -28,8 +28,7 @@ export default function Hero(props) {
               <div>
                 <div className="mt-6 sm:max-w-xl">
                   <p className="mt-6 text-2xl text-white px-1">
-                    Meaningful Wildlife Vacations <br /> Transformational
-                    Wellness Retreats
+                    Meaningful Vacations <br /> Transformational Retreats
                   </p>
 
                   <div className="">
@@ -43,24 +42,17 @@ export default function Hero(props) {
                         </span>
                       </a>
                     </div>
-
-                    <small className="text-lg text-purple-100 bg-stone-200 px-3 rounded-xl mx-1 mt-5 h-15 my-3 opacity-80 w-20 p-1  block mb-6 md:pb-0 ">
-                      <a href="http://airbnb.com/h/pazz" target="_blank">
-                        <img
-                          src="/images/airbnb.svg"
-                          className=" text-purple-100 h-10 w-20"
-                        />
-                      </a>
-                    </small>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <img
-            className="object-cover h-max-screen object-top w-screen"
-            src={`./images/${images[indexRef.current]}`}
-          />
+          <header>
+            <video autoPlay loop muted>
+              <source src="./videos/bkgfix.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </header>
         </main>
       </div>
     </div>

@@ -28,16 +28,7 @@ const components = {
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
     <MDXProvider components={components}>
-      <SessionProvider session={session}>
-        <Script
-          dangerouslySetInnerHTML={{
-            __html: `window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
-  heap.load("1604821807")`,
-          }}
-        />
-
-
-  <Script
+      <Script
         src="https://www.googletagmanager.com/gtag/js?id=UA-223279626-1"
         strategy="afterInteractive"
       />
@@ -45,41 +36,40 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
-          gtag(‘js’, new Date());
-          gtag(‘config’, ‘UA-223279626-1’);
+          gtag("js", new Date());
+          gtag("config", "UA-223279626-1");
         `}
       </Script>
 
-        <DefaultSeo
-          additionalMetaTags={[
+      <DefaultSeo
+        additionalMetaTags={[
+          {
+            property: "facebook-domain-verification",
+            content: "46be10golmw8ehrdc2rcx6qn1v92e8",
+          },
+        ]}
+        title="Paz | Cabo Mata Palo | Corcovado | Costa Rica"
+        description="Meaningful Wildlife Vacations and Transformational Wellness Retreats"
+        canonical="https://paz.co.cr/"
+        facebook-domain-verification="46be10golmw8ehrdc2rcx6qn1v92e8"
+        openGraph={{
+          url: "https://paz.co.cr/",
+          title: "Paz | Cabo Mata Palo | Corcovado | Costa Rica",
+          description:
+            "Meaningful Wildlife Vacations and Transformational Wellness Retreats",
+          images: [
             {
-              property: "facebook-domain-verification",
-              content: "46be10golmw8ehrdc2rcx6qn1v92e8",
+              url: "https://paz.co.cr/images/templo.jpeg",
+              width: 1800,
+              height: 1000,
+              alt: "Beach Lounge",
+              type: "image/jpeg",
             },
-          ]}
-          title="Paz | Cabo Mata Palo | Corcovado | Costa Rica"
-          description="Meaningful Wildlife Vacations and Transformational Wellness Retreats"
-          canonical="https://paz.co.cr/"
-          facebook-domain-verification="46be10golmw8ehrdc2rcx6qn1v92e8"
-          openGraph={{
-            url: "https://paz.co.cr/",
-            title: "Paz | Cabo Mata Palo | Corcovado | Costa Rica",
-            description:
-              "Meaningful Wildlife Vacations and Transformational Wellness Retreats",
-            images: [
-              {
-                url: "https://paz.co.cr/images/templo.jpeg",
-                width: 1800,
-                height: 1000,
-                alt: "Beach Lounge",
-                type: "image/jpeg",
-              },
-            ],
-            site_name: "Paz",
-          }}
-        />
-        <Component {...pageProps} />
-      </SessionProvider>
+          ],
+          site_name: "Paz",
+        }}
+      />
+      <Component {...pageProps} />
     </MDXProvider>
   );
 }

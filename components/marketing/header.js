@@ -1,8 +1,8 @@
 /* This example requires Tailwind CSS v2.0+ */
 const navigation = [
-  { name: "Contact", href: "profile" },
-  { name: "Pricing", href: "reservations" },
-  { name: "Videos", href: "gallery" },
+  { name: "AirBnB Rentals", href: "https://airbnb.com/h/pazz" },
+  { name: "En Paz - The Book", href: "/posts/yosoyesto" },
+  { name: "Contact", view: "profile" },
 ];
 
 export default function Header({ parentView, view, setView, open, setOpen }) {
@@ -21,9 +21,16 @@ export default function Header({ parentView, view, setView, open, setOpen }) {
               {navigation.map((link) => (
                 <a
                   key={link.name}
+                  target={
+                    link.href && link.href.includes("https") ? "_blank" : ""
+                  }
+                  href={link.href ? link.href : ""}
                   onClick={() => {
-                    setOpen(true);
-                    setView(link.href);
+                    if (link.href) return;
+                    else {
+                      setOpen(true);
+                      setView(link.view);
+                    }
                   }}
                   className="text-base font-medium text-white hover:text-indigo-50"
                 >
