@@ -17,7 +17,7 @@ const texts = {
 
          We'll use you own insights and my diverse background in internal arts to find the mix of technics that work best for you. \n\r
          
-         The goal is to develop the awareness to observe our state of mind and discover the internal arts ( mind,heart,++ ) 
+         Our goal is to develop the awareness to observe our state of mind, uncover the source of it's conditining and discover the internal arts ( mind,heart,++ ) 
          that resonate with you to start or further enhance your self-healing intent.`,
       ],
       caption: `The course is optional, it's much more about doing than about taklking. It can be shared or private and made to fit each person. 
