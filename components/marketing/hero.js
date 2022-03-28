@@ -19,28 +19,35 @@ export default function Hero(props) {
 
   return (
     <div>
-      <div className="object-cover  py-8 sm:py-0 h-screen overflow-y-hidden ">
-        <main className="relative">
+      <div className="  bg-stone-600">
+        <main className="relative grid-cols-1 sm:grid-cols-8 grid ">
           {/* Hero section */}
 
-          <div className=" md:absolute  pt-16 top-40  bg-gradient-to-br from-violet-500 to-rose-300 opacity-80 lg:pt-10 border-l-0 border-white border-2 ">
-            <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
+          <video
+            className="col-span-1 sm:col-span-4    w-2xl  "
+            autoPlay
+            loop
+            muted
+          >
+            <source src="./videos/result_2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <div className=" hidden sm:block sm:col-span-3   pt-16  border-l-2 border-white   bg-purple-300 to-stone-300 opacity-80 lg:pt-10 ">
+            <div className=" px-4 sm:max-w-3xl   ">
               <div>
-                <div className="mt-6 sm:max-w-xl">
-                  <p className="mt-6 text-2xl text-white px-1">
-                    Meaningful Vacations <br /> Transformational Retreats
+                <div className=" sm:max-w-xl">
+                  <p className=" text-2xl text-white ">Meaningful Vacations</p>
+                  <p className=" text-xl text-white ">
+                    Transformational Retreats
                   </p>
 
-                  <div className="">
-                    <div>
-                      <a href="#" className="inline-flex space-x-2 mb-10 ml-2">
-                        <span className="rounded   py-1 text-xs font-semibold text-stone-800 tracking-wide uppercase">
-                          Cabo Matapalo, Peninsula de Osa,
-                        </span>
-                        <span className="inline-flex items-center text-sm font-medium text-sky-200 ">
-                          <span>Costa Rica</span>
-                        </span>
-                      </a>
+                  <div className="mt-44">
+                    <div className="rounded  mt-10 text-xs font-semibold text-stone-700 tracking-wide uppercase">
+                      Cabo Matapalo, Peninsula de Osa,
+                    </div>
+                    <div className="text-xs font-medium text-stone-700 ">
+                      Costa Rica
                     </div>
                   </div>
                 </div>
@@ -48,10 +55,7 @@ export default function Hero(props) {
             </div>
           </div>
 
-          <video className=" w-full " autoPlay loop muted>
-            <source src="./videos/result.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <div className="  hidden sm:block sm:col-span-1   pt-16  border-l-2 border-white bg-purple-200  lg:pt-10 "></div>
         </main>
       </div>
     </div>

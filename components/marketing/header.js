@@ -7,7 +7,7 @@ const navigation = [
 
 export default function Header({ parentView, view, setView, open, setOpen }) {
   return (
-    <header className="bg-gradient-to-r from-violet-500 to-rose-300 border-b-2 border-white">
+    <header className="bg-gradient-to-r from-lime-500 to-rose-300 border-b-2 border-white">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
         <div className="w-full py-6 flex items-center justify-between border-b border-indigo-500 lg:border-none">
           <div className="flex items-center">
@@ -25,9 +25,11 @@ export default function Header({ parentView, view, setView, open, setOpen }) {
                     link.href && link.href.includes("https") ? "_blank" : ""
                   }
                   href={link.href ? link.href : ""}
-                  onClick={() => {
-                    if (link.href) return;
+                  onClick={(e) => {
+                    if (link.href) return true;
                     else {
+                      e.preventDefault();
+                      e.stopPropagation();
                       setOpen(true);
                       setView(link.view);
                     }
@@ -44,9 +46,16 @@ export default function Header({ parentView, view, setView, open, setOpen }) {
           {navigation.map((link) => (
             <a
               key={link.name}
+              target={link.href && link.href.includes("https") ? "_blank" : ""}
+              href={link.href ? link.href : ""}
               onClick={() => {
-                setOpen(true);
-                setView(link.href);
+                if (link.href) return true;
+                else {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setOpen(true);
+                  setView(link.view);
+                }
               }}
               className="text-base font-medium text-white hover:text-indigo-50"
             >

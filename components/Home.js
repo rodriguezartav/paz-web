@@ -29,7 +29,7 @@ export default function Example({ setView, posts }) {
   return (
     <div className="bg-stone-100 object-cover ">
       <main className="relative">
-        <div className="fixed top-0 left-0 right-0 z-40 bg-white shadow-sm">
+        <div className="">
           <Header
             selected={selectedView}
             setSelected={setSelectedView}
@@ -39,8 +39,7 @@ export default function Example({ setView, posts }) {
             setView={setSideView}
             parentView={selectedView}
           />
-        </div>
-        <div className="mt-20 -z-10">
+
           {selectedView == "vacations" && <Hero selectedView={selectedView} />}
 
           <div className="flex">
@@ -60,9 +59,8 @@ export default function Example({ setView, posts }) {
 
           <Cta />
 
-          <News />
-
           <Blog posts={posts} />
+          <News />
         </div>
       </main>
 

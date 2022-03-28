@@ -4,11 +4,11 @@ const texts = {
     text_1:
       "A lovely two bedroom house for 8. Steps away from a beach lounge with palm trees, a meditation deck, comfy furniture and hammocks all for yourself. ",
     text_2:
-      "Primary forest with miles of pristine beach, huge trees. Abundant wildlife on site, this is for real the most biodiverse place on earth.",
+      "Primary forest with miles of pristine beach, huge trees. Abundant wildlife on site, this the most biodiverse place on earth. For real ",
     text_3:
       "Concierge service for Ocean & Jungle activities (some are included). Optional kitchen package may include grocery shopping, cook or chef.",
     text_4:
-      "Optional de-stress and natural connection course where @rober.enpaz.cr shares his experience, insights and secret spots where he learned to heal from cronic stress and PTSD.",
+      "Optional de-stress and natural connection course where @rober.enpaz.cr shares his experience, insights and secret spots where he learned to heal from cronic stress.",
     reason_1:
       "I came here in my 20's following my heart. It took me 10 years to find this land and 6 to build it off the grid. I did it for myself because I need it - now I can share it with you. ",
   },
@@ -34,24 +34,24 @@ const texts = {
 
 export default function Punch(props) {
   return (
-    <div className="py-20 bg-gray-50">
+    <div className="py-20 pt-10 bg-gray-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-left">
           <h2 className="my-5 text-3xl leading-8 font-extrabold tracking-tight text-stone-600 sm:text-4xl">
             {texts[props.selectedView].title}
           </h2>
 
-          <div className="mt-4 max-w-2xl  lg:mx-auto">
-            <p className="text-xl text-gray-500  ">
+          <div className="mt-4 max-w-2xl  lg:mx-auto text-lg sm:text-xl">
+            <p className=" text-gray-500  ">
               {texts[props.selectedView].text_1}
             </p>
-            <p className="text-xl mt-8 text-gray-500  ">
+            <p className="mt-8 text-gray-500 ">
               {texts[props.selectedView].text_2}
             </p>
-            <p className="text-xl mt-8 text-gray-500 ">
+            <p className=" mt-8 text-gray-500 ">
               {texts[props.selectedView].text_3}
             </p>
-            <p className="text-xl mt-8 text-gray-500 ">
+            <p className=" mt-8 text-gray-500 ">
               {texts[props.selectedView].text_4}
             </p>
             <br /> <br />

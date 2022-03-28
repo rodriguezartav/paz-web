@@ -7,8 +7,8 @@ export default function Example() {
           <span className="block">Ready book your vacation?</span>
         </h2>
         <p className="mt-4 max-w-7xl text-lg leading-6 text-stone-700">
-          Send me a message after making the reservation and I'll add a 10%
-          discount to your booking.
+          Send me a message via AirBnb after making the reservation and I'll add
+          a 10% discount to your booking.
         </p>
         <div className="mt-8 flex justify-center">
           <div className="inline-flex rounded-md shadow">
