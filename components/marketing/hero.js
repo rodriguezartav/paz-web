@@ -47,12 +47,11 @@ export default function Hero(props) {
               </div>
             </div>
           </div>
-          <header>
-            <video autoPlay loop muted>
-              <source src="./videos/bkgfix.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </header>
+
+          <video className=" w-full " autoPlay loop muted>
+            <source src="./videos/result.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </main>
       </div>
     </div>

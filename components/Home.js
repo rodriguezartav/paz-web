@@ -10,6 +10,10 @@ import Comment from "./marketing/comment";
 import Features3 from "./marketing/features3";
 import Images from "./marketing/images";
 
+import Cta from "./marketing/cta";
+
+import News from "./marketing/news";
+
 import Slideover from "./marketing/slideover";
 
 import Blog from "./marketing/blog";
@@ -54,7 +58,11 @@ export default function Example({ setView, posts }) {
 
           <Features2 selectedView={selectedView} />
 
-          {selectedView != "vacations" && <Blog posts={posts} />}
+          <Cta />
+
+          <News />
+
+          <Blog posts={posts} />
         </div>
       </main>
 
