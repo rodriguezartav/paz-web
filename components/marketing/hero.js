@@ -3,47 +3,46 @@ import { useEffect, useState, useRef } from "react";
 const images = ["house_2.jpg", "templo.jpeg", "beach.jpg", "lounge_1.jpg"];
 
 export default function Hero(props) {
-  const [index, setIndex] = useState(0);
-  const indexRef = useRef(0);
+  const video1Ref = useRef();
 
-  useEffect(() => {
-    let interval = setInterval(() => {
-      console.log(indexRef.current, images.length);
-      if (indexRef.current < images.length - 1)
-        indexRef.current = indexRef.current + 1;
-      else indexRef.current = 0;
-      setIndex(indexRef.current);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
+  function onEnd() {
+    setTimeout(function () {
+      console.log(video1Ref.current);
+
+      video1Ref.current.play();
+    }, 2000);
+  }
 
   return (
     <div>
       <div className="  bg-stone-600">
-        <main className="relative grid-cols-1 sm:grid-cols-8 grid ">
+        <main className="relative grid-cols-1 sm:grid-cols-8 hidden  sm:grid">
           {/* Hero section */}
 
           <video
+            poster="/images/video-bkg.jpg"
+            ref={video1Ref}
+            onEnded={onEnd}
             className="col-span-1 sm:col-span-4    w-2xl  "
             autoPlay
-            loop
             muted
           >
             <source src="./videos/result_2.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
           </video>
 
           <div className=" hidden sm:block sm:col-span-3   pt-16  border-l-2 border-white   bg-purple-300 to-stone-300 opacity-80 lg:pt-10 ">
             <div className=" px-4 sm:max-w-3xl   ">
-              <div>
+              <div className="relative">
                 <div className=" sm:max-w-xl">
                   <p className=" text-2xl text-white ">Meaningful Vacations</p>
-                  <p className=" text-xl text-white ">
+                  <p className=" text-sm uppercase text-white ">
                     Transformational Retreats
                   </p>
 
-                  <div className="mt-44">
-                    <div className="rounded  mt-10 text-xs font-semibold text-stone-700 tracking-wide uppercase">
+                  <PlayIcon />
+
+                  <div className="">
+                    <div className="rounded  text-xs font-semibold text-stone-700 tracking-wide uppercase">
                       Cabo Matapalo, Peninsula de Osa,
                     </div>
                     <div className="text-xs font-medium text-stone-700 ">
@@ -55,9 +54,45 @@ export default function Hero(props) {
             </div>
           </div>
 
-          <div className="  hidden sm:block sm:col-span-1   pt-16  border-l-2 border-white bg-purple-200  lg:pt-10 "></div>
+          <div className=" hidden sm:block sm:col-span-1   pt-16  border-l-2 border-white bg-purple-200  lg:pt-10 "></div>
+        </main>
+
+        <main className="relative    sm:hidden">
+          <img src="/images/video-bkg.jpg" className="w-full" />
+          <div className="absolute -top-12 left-16 opacity-80">
+            <PlayIcon />
+          </div>
         </main>
       </div>
+    </div>
+  );
+}
+
+function PlayIcon() {
+  return (
+    <div className="flex my-28">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-24 w-24 text-white  ml-20 "
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+        />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
+      </svg>
+      <span className="pt-8 hidden sm:block text-purple-100 text-2xl">
+        Play Video
+      </span>
     </div>
   );
 }

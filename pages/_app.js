@@ -69,6 +69,8 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
           site_name: "Paz",
         }}
       />
+      <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+
       <Component {...pageProps} />
     </MDXProvider>
   );
