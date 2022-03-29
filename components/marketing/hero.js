@@ -228,7 +228,7 @@ export default function Hero(props) {
             </div>
           </div>
           <video
-            poster="/images/house.jpg"
+            poster="/images/video-bkg.jpg"
             ref={video2Ref}
             onEnded={onEnd}
             className="col-span-1 sm:col-span-4  border-l-2 border-white   w-2xl  "
