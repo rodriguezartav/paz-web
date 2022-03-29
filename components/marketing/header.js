@@ -7,7 +7,7 @@ const navigation = [
 
 export default function Header({ parentView, view, setView, open, setOpen }) {
   return (
-    <header className="bg-gradient-to-r from-lime-500 to-rose-300 border-b-2 border-white">
+    <header className="bg-gradient-to-l from-violet-500 to-purple-300 border-white border-b-2 ">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
         <div className="w-full py-6 flex items-center justify-between border-b border-indigo-500 lg:border-none">
           <div className="flex items-center">

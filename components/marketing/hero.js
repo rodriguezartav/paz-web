@@ -16,26 +16,28 @@ export default function Hero(props) {
   return (
     <div>
       <div className="  bg-stone-600">
-        <main className="relative grid-cols-1 sm:grid-cols-8 hidden  sm:grid">
+        <main className=" grid-cols-1 sm:grid-cols-8 hidden  sm:grid">
           {/* Hero section */}
 
           <video
             poster="/images/video-bkg.jpg"
             ref={video1Ref}
             onEnded={onEnd}
-            className="col-span-1 sm:col-span-4    w-2xl  "
+            className="col-span-1 sm:col-span-4  border-l-2 border-white   w-2xl  "
             autoPlay
             muted
           >
             <source src="./videos/result_2.mp4" type="video/mp4" />
           </video>
 
-          <div className=" hidden sm:block sm:col-span-3   pt-16  border-l-2 border-white   bg-purple-300 to-stone-300 opacity-80 lg:pt-10 ">
+          <div className=" hidden sm:block sm:col-span-3 pt-16  border-l-2 border-white bg-purple-400 to-stone-300 opacity-80 lg:pt-10 ">
             <div className=" px-4 sm:max-w-3xl   ">
               <div className="relative">
                 <div className=" sm:max-w-xl">
-                  <p className=" text-2xl text-white ">Meaningful Vacations</p>
-                  <p className=" text-sm uppercase text-white ">
+                  <p className=" text-2xl text-white shadow-sm ">
+                    Meaningful Vacations
+                  </p>
+                  <p className=" text-sm uppercase text-violet-800  ">
                     Transformational Retreats
                   </p>
 
@@ -54,7 +56,7 @@ export default function Hero(props) {
             </div>
           </div>
 
-          <div className=" hidden sm:block sm:col-span-1   pt-16  border-l-2 border-white bg-purple-200  lg:pt-10 "></div>
+          <div className=" hidden sm:block sm:col-span-1   pt-16  border-l-2 border-white bg-gradient-to-br from-violet-500 to-purple-300  lg:pt-10 "></div>
         </main>
 
         <main className="relative    sm:hidden">
