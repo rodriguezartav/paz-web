@@ -4,7 +4,7 @@ const texts = {
     text_1:
       "A lovely two bedroom house for 8. Steps away from a beach lounge with palm trees, a meditation deck, comfy furniture and hammocks all for yourself. ",
     text_2:
-      "Primary forest with miles of pristine beach, huge trees. Abundant wildlife on site, this the most biodiverse place on earth. For real ",
+      "Primary forest with miles of pristine beach, huge trees. Abundant wildlife on site, this is the most biodiverse place on earth. For real ",
     text_3:
       "Concierge service for Ocean & Jungle activities (some are included). Optional kitchen package may include grocery shopping, cook or chef.",
     text_4:
