@@ -42,6 +42,12 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
       </Script>
 
       <DefaultSeo
+        additionalLinkTags={[
+          {
+            rel: "icon",
+            href: "https://paz.co.cr/images/favicon.png",
+          },
+        ]}
         additionalMetaTags={[
           {
             property: "facebook-domain-verification",
