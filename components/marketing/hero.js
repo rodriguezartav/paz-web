@@ -73,20 +73,35 @@ export default function Hero(props) {
         </main>
 
         <main className="relative    sm:hidden">
-          <div className=" absolute bottom-0 w-full  sm:col-span-3 pt-2 border-l-2 border-white  bg-gradient-to-br from-violet-400 to-violet-500 opacity-80 lg:pt-10 ">
+          <div className=" absolute bottom-0 w-full  sm:col-span-3 pt-1 pb-1 border-l-2 border-white  bg-gradient-to-br from-violet-400 to-violet-500 opacity-80   ">
             <div className=" sm:max-w-3xl   ">
               <div className="relative">
-                <div className=" sm:max-w-xl pl-4 ">
+                <div className=" sm:max-w-xl pl-4  ">
                   <div className="flex">
-                    <img
-                      className="h-20 w-20"
-                      src="/marketing/logo/svg/paz_blanco.svg"
-                    />
-                    <div className="pt-4">
-                      <p className=" text-2xl text-white shadow-sm ">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-12 w-12 mt-0 text-white    "
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    <div className="pt-0 ml-2">
+                      <p className=" text-2xl text-white  ">
                         Meaningful Vacations
                       </p>
-                      <p className=" text-sm uppercase text-violet-800  ">
+                      <p className=" text-sm uppercase text-violet-50  ">
                         Transformational Retreats
                       </p>
                     </div>
@@ -103,6 +118,7 @@ export default function Hero(props) {
             onEnded={onEnd}
             className="col-span-1 sm:col-span-4  border-l-2 border-white   w-2xl  "
             autoPlay
+            controls
             muted
           >
             <source src="./videos/result_2.mp4" type="video/mp4" />
