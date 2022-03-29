@@ -59,7 +59,6 @@ export default function Example({ setView, posts }) {
 
           <Cta />
 
-          <Blog posts={posts} />
           <News />
         </div>
       </main>
