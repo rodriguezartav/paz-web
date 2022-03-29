@@ -10,7 +10,7 @@ const texts = {
     text_4:
       "Optional de-stress and natural connection course where @rober.enpaz.cr shares his experience, insights and secret spots where he learned to heal from cronic stress.",
     reason_1:
-      "I came here in my 20's following my heart. It took me 10 years to find this land and 6 to build it off the grid. I did it for myself because I need it - now I can share it with you. ",
+      "I came here in my 20's following my heart. It took me 10 years to find this land and 6 to build it off the grid./n/r I did it for myself because I need it - now I can share it with you. ",
   },
   retreats: {
     title: "Nature guided De-Stress retreats",
@@ -69,13 +69,13 @@ export default function Punch(props) {
                     @rober.enpaz.cr
                   </a>
                 </h4>
-                <p className="mt-1 bg-stone-100 p-2 text-lg md:text-sm">
+                <div className=" bg-stone-100 p-2 pt-0 text-sm ">
                   {texts[props.selectedView].reason_1
                     .split("/n/r")
                     .map((item) => (
-                      <p>{item}</p>
+                      <p className="text-xs">{item}</p>
                     ))}
-                </p>
+                </div>
               </div>
             </div>
           </div>
