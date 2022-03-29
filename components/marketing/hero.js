@@ -149,25 +149,6 @@ export default function Hero(props) {
                     </div>
                   </div>
 
-                  <p className="text-sm text-white ml-2">+videos</p>
-                  <div className=" flex border-b  ml-4 mr-10 hover:bg-purple-300 hover:cursor-pointer border-purple-800  pb-2 pt-2 ">
-                    {renderVideoItem({
-                      showPlay: true,
-                      showPause: false,
-                      title: "dsd",
-                      subtitle: "dsds",
-                    })}
-                  </div>
-
-                  <div className="flex ml-4 mr-10 border-b hover:bg-purple-300 hover:cursor-pointer border-purple-800 pb-2 pt-2 ">
-                    {renderVideoItem({
-                      showPlay: false,
-                      showPause: true,
-                      title: "dsd",
-                      subtitle: "dsds",
-                    })}
-                  </div>
-
                   <div className="mt-20">
                     <div className="rounded  text-xs font-semibold text-stone-100 tracking-wide uppercase">
                       Cabo Matapalo, Peninsula de Osa,
