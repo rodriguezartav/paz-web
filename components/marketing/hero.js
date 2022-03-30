@@ -126,7 +126,7 @@ export default function Hero(props) {
   return (
     <div>
       <div className="  bg-stone-600">
-        <main className=" grid-cols-1 sm:grid-cols-8 hidden  bg-white  sm:grid">
+        <main className=" grid-cols-1  sm:grid-cols-8 grid  bg-white  sm:grid">
           {/* Hero section */}
           <div className="w-full object-cover col-span-1 sm:col-span-6  border-l-2 border-white">
             <div className="  w-full flex justify-center">
@@ -134,7 +134,7 @@ export default function Hero(props) {
             </div>
           </div>
 
-          <div className="   hidden sm:col-span-2 sm:block">
+          <div className="  cols-span-1  sm:col-span-2 sm:block">
             <div className=" h-full pt-12  border-l-2 border-white  bg-gradient-to-br from-stone-50 to-stone-100 opacity-80 lg:pt-6 ">
               <div className=" sm:max-w-3xl   ">
                 <div className="relative">
@@ -155,15 +155,33 @@ export default function Hero(props) {
                       </div>
                     </div>
 
-                    <p className="p-5 pt-0 text-stone-700 text-md">
-                      Private resort experience in our 2-acre beachfront
-                      property with your own beach.
+                    <p className="p-5 pt-6 px-7 text-stone-700 text-md">
+                      Private Lodge experience with your own beach lounge,
+                      paddle and longboards.
                     </p>
 
-                    <p className="p-5 pt-0 text-stone-700 text-md">
-                      Join a course with Paz host @rober.enpaz.cr to reduce
-                      stress and feel connected in the most biodiverse place on
-                      earth. Take it home with you and transform your life.
+                    <p className="p-5 px-6 pt-0 text-stone-700 text-md">
+                      Request a course with Paz founder{" "}
+                      <a
+                        href="https://instagram.com/rober.enpaz.cr"
+                        target="_blank"
+                      >
+                        @rober.enpaz.cr
+                      </a>{" "}
+                      and learn to use nature and Paz magical local spots to
+                      reduce stress and feel an authentic conection with nature
+                    </p>
+
+                    <p className="p-5 pt-0 px-7 text-lime-700 text-sm">
+                      * Corcovado is the most biodiverse place on earth, use it
+                      as an opportunity to transform your life,
+                    </p>
+
+                    <p className="p-5 pt-0 text-justify px-7 text-lime-700 text-sm">
+                      * The course is tailor-made and includes hiking,
+                      waterfalls, mud baths, floating, surfing, sunset
+                      paddleboarding and bonefires performed in a way that leads
+                      to effortless presence and meditaton.
                     </p>
 
                     {/* 
@@ -201,57 +219,6 @@ export default function Hero(props) {
               </div>
             </div>
           </div>
-        </main>
-
-        <main className="relative    sm:hidden">
-          <div className=" absolute bottom-0 w-full  sm:col-span-3 pt-1 pb-1 border-l-2 border-white  bg-gradient-to-br from-violet-400 to-violet-500 opacity-80   ">
-            <div className=" sm:max-w-3xl   ">
-              <div className="relative">
-                <div className=" sm:max-w-xl pl-4  ">
-                  <div className="flex">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-12 w-12 mt-0 text-white    "
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-                      />
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                    <div className="pt-0 ml-2">
-                      <p className=" text-2xl text-white  ">
-                        Meaningful Vacations
-                      </p>
-                      <p className=" text-sm uppercase text-violet-50  ">
-                        Transformational Retreats
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <video
-            poster="/images/video-bkg.jpg"
-            ref={video2Ref}
-            onEnded={onEnd}
-            className="col-span-1 sm:col-span-4  border-l-2 border-white   w-2xl  "
-            autoPlay
-            loop
-            muted
-          >
-            <source src="./videos/result_2.mp4" type="video/mp4" />
-          </video>
         </main>
       </div>
     </div>
