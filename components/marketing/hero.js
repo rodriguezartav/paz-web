@@ -1,10 +1,10 @@
 import { useEffect, useState, useRef, createRef } from "react";
 
 const images = [
-  "/images/house_2.jpg",
-  "/images/templo.jpeg",
+  "/images/house.jpg",
   "/images/beach.jpg",
-  "/images/lounge_1.jpg",
+  "/images/beach1.jpg",
+  "/images/house_2.jpg",
 ];
 
 let videos = [
@@ -156,7 +156,7 @@ export default function Hero(props) {
                     </div>
 
                     <p className="p-5 pt-0 text-stone-700 text-md">
-                      A private resort experience in our 2-acre beachfront
+                      Private resort experience in our 2-acre beachfront
                       property with your own beach.
                     </p>
 
