@@ -1,6 +1,11 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, createRef } from "react";
 
-const images = ["house_2.jpg", "templo.jpeg", "beach.jpg", "lounge_1.jpg"];
+const images = [
+  "/images/house_2.jpg",
+  "/images/templo.jpeg",
+  "/images/beach.jpg",
+  "/images/lounge_1.jpg",
+];
 
 let videos = [
   { title: "Green Waves", subtitle: "Chill where the ocean meets Paz", id: 1 },
@@ -25,11 +30,15 @@ export default function Hero(props) {
   const video1Ref = useRef();
   const video2Ref = useRef();
 
+  const imageRef = useRef();
+
   const [currentVideo, setCurrentVideo] = useState(1);
   const [autoPlayCount, setAutoPlayCount] = useState(0);
   const [isVideoInAutoPlay, setIsVideoInAutoPlay] = useState(true);
   const videoInAutoPlayRef = useRef(isVideoInAutoPlay);
   const setVideoInAutoPlayRef = useRef(setIsVideoInAutoPlay);
+
+  const [imageIndex, setImageIndex] = useState(0);
 
   const autoPlayCountRef = useRef(autoPlayCount);
   const setAutoPlayCountRef = useRef(setAutoPlayCount);
@@ -117,56 +126,80 @@ export default function Hero(props) {
   return (
     <div>
       <div className="  bg-stone-600">
-        <main className=" grid-cols-1 sm:grid-cols-8 hidden  sm:grid">
+        <main className=" grid-cols-1 sm:grid-cols-8 hidden  bg-white  sm:grid">
           {/* Hero section */}
-          <video
-            poster="/images/video-bkg.jpg"
-            ref={video1Ref}
-            className="col-span-1 sm:col-span-4  border-l-2 border-white   w-2xl  "
-            autoPlay
-            loop
-            muted
-          >
-            <source src="./videos/result_2.mp4" type="video/mp4" />
-          </video>
-          <div className=" hidden sm:block sm:col-span-3 pt-12  border-l-2 border-white  bg-gradient-to-r from-purple-400 to-pink-300 opacity-80 lg:pt-6 ">
-            <div className=" sm:max-w-3xl   ">
-              <div className="relative">
-                <div className=" sm:max-w-xl pl-4    ">
-                  <div className="flex  hover:bg-purple-300 hover:cursor-pointer mb-10 ">
-                    <img
-                      className="h-20 w-20"
-                      src="/marketing/logo/svg/paz_blanco.svg"
-                    />
+          <div className="w-full object-cover col-span-1 sm:col-span-6  border-l-2 border-white">
+            <div className="  w-full flex justify-center">
+              <Carousel height={`calc(100vh - 100px)`} />
+            </div>
+          </div>
 
-                    <div className="pt-3">
-                      <p className=" text-2xl text-white ">
-                        Meaningful Vacations
-                      </p>
-                      <p className=" text-sm uppercase text-violet-800  ">
-                        TRANSFORMATIONAL RETREATS
-                      </p>
-                    </div>
-                  </div>
+          <div className="   hidden sm:col-span-2 sm:block">
+            <div className=" h-full pt-12  border-l-2 border-white  bg-gradient-to-br from-stone-50 to-stone-100 opacity-80 lg:pt-6 ">
+              <div className=" sm:max-w-3xl   ">
+                <div className="relative">
+                  <div className=" sm:max-w-xl pl-0    ">
+                    <div className="flex  hover:cursor-pointer  ">
+                      <img
+                        className="h-20 w-20"
+                        src="/marketing/logo/svg/paz_lila_tronco_color.svg"
+                      />
 
-                  <div className="mt-20">
-                    <div className="rounded  text-xs font-semibold text-stone-100 tracking-wide uppercase">
-                      Cabo Matapalo, Peninsula de Osa,
+                      <div className="pt-3">
+                        <p className=" text-xl text-violet-600 ">
+                          Transformational Vacations
+                        </p>
+                        <p className=" text-sm uppercase text-violet-600  ">
+                          with nature & de-stress courses
+                        </p>
+                      </div>
                     </div>
-                    <div className="text-xs font-medium text-stone-200 ">
-                      Costa Rica
+
+                    <p className="p-5 pt-0 text-stone-800 text-md">
+                      A private resort experience in our 2-acre beachfront
+                      property with your own beach.
+                    </p>
+
+                    <p className="p-5 pt-0 text-stone-900 text-md">
+                      Join a course with Paz host @rober.enpaz.cr to reduce
+                      stress and feel connected in the most biodiverse place on
+                      earth. Take it home with you and transform your life.
+                    </p>
+
+                    {/* 
+                    <p className="text-sm text-white ml-4">+videos</p>
+                    <div className=" flex border-b  ml-4 mr-10 hover:bg-purple-300 hover:cursor-pointer border-purple-800  pb-2 pt-2 ">
+                      {renderVideoItem({
+                        showPlay: true,
+                        showPause: false,
+                        title: "dsd",
+                        subtitle: "dsds",
+                      })}
+                    </div>
+
+                    <div className="flex ml-4 mr-10 border-b hover:bg-purple-300 hover:cursor-pointer border-purple-800 pb-2 pt-2 ">
+                      {renderVideoItem({
+                        showPlay: false,
+                        showPause: true,
+                        title: "dsd",
+                        subtitle: "dsds",
+                      })}
+                    </div>
+
+                    */}
+
+                    <div className="mt-20 ml-4">
+                      <div className="rounded  text-xs font-semibold text-purple-800 tracking-wide uppercase">
+                        Cabo Matapalo, Peninsula de Osa,
+                      </div>
+                      <div className="text-xs font-medium text-purple-900 ">
+                        Costa Rica
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className="  hidden overflow-hidden sm:block sm:col-span-1  border-l-2 opacity-80 border-white  ">
-            <div
-              style={{ width: 500 }}
-              className=" h-full bg-gradient-to-bl from-pink-300 to-pink-400 "
-            ></div>
           </div>
         </main>
 
@@ -251,3 +284,107 @@ function PlayIcon() {
     </div>
   );
 }
+
+const Carousel = (props) => {
+  // We will start by storing the index of the current image in the state.
+  const [currentImage, setCurrentImage] = useState(0);
+
+  // We are using react ref to 'tag' each of the images. Below will create an array of
+  // objects with numbered keys. We will use those numbers (i) later to access a ref of a
+  // specific image in this array.
+  const refs = images.reduce((acc, val, i) => {
+    acc[i] = createRef();
+    return acc;
+  }, {});
+
+  const scrollToImage = (i) => {
+    // First let's set the index of the image we want to see next
+    setCurrentImage(i);
+    // Now, this is where the magic happens. We 'tagged' each one of the images with a ref,
+    // we can then use built-in scrollIntoView API to do eaxactly what it says on the box - scroll it into
+    // your current view! To do so we pass an index of the image, which is then use to identify our current
+    // image's ref in 'refs' array above.
+    refs[i].current.scrollIntoView({
+      //     Defines the transition animation.
+      behavior: "smooth",
+      //      Defines vertical alignment.
+      block: "nearest",
+      //      Defines horizontal alignment.
+      inline: "start",
+    });
+  };
+
+  // Some validation for checking the array length could be added if needed
+  const totalImages = images.length;
+
+  // Below functions will assure that after last image we'll scroll back to the start,
+  // or another way round - first to last in previousImage method.
+  const nextImage = () => {
+    if (currentImage >= totalImages - 1) {
+      scrollToImage(0);
+    } else {
+      scrollToImage(currentImage + 1);
+    }
+  };
+
+  const previousImage = () => {
+    if (currentImage === 0) {
+      scrollToImage(totalImages - 1);
+    } else {
+      scrollToImage(currentImage - 1);
+    }
+  };
+
+  // Tailwind styles. Most importantly notice position absolute, this will sit relative to the carousel's outer div.
+  const arrowStyle =
+    "absolute text-white text-2xl z-10 bg-black h-10 w-10 rounded-full opacity-75 flex items-center justify-center";
+
+  // Let's create dynamic buttons. It can be either left or right. Using
+  // isLeft boolean we can determine which side we'll be rendering our button
+  // as well as change its position and content.
+  const sliderControl = (isLeft) => (
+    <button
+      type="button"
+      onClick={isLeft ? previousImage : nextImage}
+      className={`${arrowStyle} ${isLeft ? "left-2" : "right-2"}`}
+      style={{ top: "40%" }}
+    >
+      <span role="img" aria-label={`Arrow ${isLeft ? "left" : "right"}`}>
+        {isLeft ? "◀" : "▶"}
+      </span>
+    </button>
+  );
+
+  return (
+    // Images are placed using inline flex. We then wrap an image in a div
+    // with flex-shrink-0 to stop it from 'shrinking' to fit the outer div.
+    // Finally the image itself will be 100% of a parent div. Outer div is
+    // set with position relative, so we can place our cotrol buttons using
+    // absolute positioning on each side of the image.
+    <div className="flex justify-center w-full items-center">
+      <div className="relative w-full">
+        <div
+          style={{
+            "scroll-snap-type": "x mandatory",
+            "-webkit-overflow-scrolling": "touch",
+            "scrollbar-width": "none",
+            "-ms-overflow-style": "none",
+          }}
+          className="carousel inline-flex overflow-x-hidden"
+        >
+          {sliderControl(true)}
+          {images.map((img, i) => (
+            <div className="w-full flex-shrink-0" key={img} ref={refs[i]}>
+              <img
+                src={img}
+                style={{ height: props.height }}
+                className="w-full overflow-y-hidden object-cover"
+              />
+            </div>
+          ))}
+          {sliderControl()}
+        </div>
+      </div>
+    </div>
+  );
+};
