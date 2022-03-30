@@ -146,21 +146,21 @@ export default function Hero(props) {
                       />
 
                       <div className="pt-3">
-                        <p className=" text-xl text-violet-600 ">
+                        <p className=" text-xl text-violet-700 ">
                           Transformational Vacations
                         </p>
-                        <p className=" text-sm uppercase text-violet-600  ">
-                          with nature & de-stress courses
+                        <p className=" text-md  text-stone-700  ">
+                          with nature connection courses
                         </p>
                       </div>
                     </div>
 
-                    <p className="p-5 pt-0 text-stone-800 text-md">
+                    <p className="p-5 pt-0 text-stone-700 text-md">
                       A private resort experience in our 2-acre beachfront
                       property with your own beach.
                     </p>
 
-                    <p className="p-5 pt-0 text-stone-900 text-md">
+                    <p className="p-5 pt-0 text-stone-700 text-md">
                       Join a course with Paz host @rober.enpaz.cr to reduce
                       stress and feel connected in the most biodiverse place on
                       earth. Take it home with you and transform your life.
