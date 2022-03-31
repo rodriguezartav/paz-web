@@ -2,10 +2,10 @@ import { useEffect, useState, useRef, createRef } from "react";
 import Carousel from "./carousel";
 
 const images = [
-  "/images/house.jpg",
-  "/images/beach.jpg",
-  "/images/beach1.jpg",
-  "/images/house_2.jpg",
+  "/images/hero/house.jpg",
+  "/images/hero/beach.jpg",
+  "/images/hero/jungle.jpg",
+  "/images/hero/templo.jpg",
 ];
 
 let videos = [
