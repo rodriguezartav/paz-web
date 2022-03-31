@@ -63,13 +63,6 @@ export default function Example({ setView, posts }) {
         </div>
       </main>
 
-      <Banner
-        onClick={() => {
-          setSideView("profile");
-          setSideViewOpen(true);
-        }}
-      />
-
       <Slideover
         open={sideViewOpen}
         setOpen={setSideViewOpen}

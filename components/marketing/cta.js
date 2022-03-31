@@ -4,7 +4,7 @@ export default function Example() {
     <div className="bg-white">
       <div className="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <h2 className="text-3xl font-extrabold tracking-tight text-purple-700 sm:text-4xl">
-          <span className="block">Ready book your vacation?</span>
+          <span className="block">Ready to book your vacation?</span>
         </h2>
         <p className="mt-4 max-w-7xl text-lg leading-6 text-stone-700">
           Send me a message via AirBnb after making the reservation and I'll add

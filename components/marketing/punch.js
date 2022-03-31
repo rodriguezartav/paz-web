@@ -6,9 +6,9 @@ const texts = {
     text_2:
       "Primary forest with miles of pristine beach, huge trees. Abundant wildlife on site, you'll be able to spend lot's of time with all sorts of wildlife in the property. ",
     text_3:
-      "Tailor-made kitchen package only include grocery shopping, a kitchen assistant all the way to full 3 meal course with local cook or chef. You can design the menu or leave it all to us.  ",
+      "Tailor-made kitchen package. Choose from a kitchen assistant all the way to a full 3 meal course prepared by a local cook or chef. You choose who designs the menu and buy's the groceries. You or us.",
     text_4:
-      "Concierge service for Ocean & Jungle activities. Every vacation includes a hicking tour to the waterfall, bonefires ",
+      "Concierge service for Ocean & Jungle activities. Every vacation includes a hicking tour to the waterfall and bonefires.",
 
     reason_1:
       "I came here in my 20's following my heart. It took me 10 years to find this land and 6 to build it off the grid./n/r I did it for myself because I need it - now I can share it with you. ",

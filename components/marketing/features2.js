@@ -3,7 +3,7 @@ import Features from "./features";
 const texts = {
   vacations: {
     left: {
-      images: ["templo2.png"],
+      images: ["/images/templo2.png", "/images/beach.jpg"],
       title: "De-stress and natural connection course",
       paragraphs: [
         `Paz (peace) is the feeling I hope that you experience while being here. It's not the opposite of stress, it's the result of being aware to the mechanisms of stress
@@ -23,7 +23,7 @@ const texts = {
       caption: ``,
     },
     right: {
-      images: ["map.png"],
+      images: ["/images/map.png", "/images/templo2.png"],
       title: "Location",
       paragraphs: [
         `

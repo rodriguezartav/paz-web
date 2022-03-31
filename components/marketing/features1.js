@@ -6,7 +6,12 @@ import Features from "./features";
 const texts = {
   vacations: {
     left: {
-      images: ["beach1.jpg"],
+      images: [
+        "/images/lounge/final/4.jpeg",
+        "/images/lounge/final/5.jpeg",
+        "/images/lounge/final/3.jpeg",
+        "/images/lounge/final/6.jpeg",
+      ],
       title: "The Beach Lounge",
       paragraphs: [
         `This is your opportunity to enjoy a little secluded beach all to yourself.
@@ -19,7 +24,13 @@ const texts = {
       caption: "",
     },
     right: {
-      images: ["house.jpg"],
+      images: [
+        "/images/house/final/12.jpeg",
+        "/images/house/final/16.jpeg",
+        "/images/house/final/19.jpeg",
+        "/images/house/final/21.jpeg",
+        "/images/house/final/5.jpeg",
+      ],
       title: "Comfy Jungle House",
       paragraphs: [
         `Floor to cealing screened windows to watch all the wildlife as
@@ -40,7 +51,7 @@ const texts = {
   },
   retreats: {
     left: {
-      images: ["jungle.jpg"],
+      images: ["/images/jungle.jpg", "/images/house.jpg"],
       title: "Nature is our guide",
       paragraphs: [
         `Some people are beautiful, but meeting someone who is amazing makes an impact. With nature, when we are able to go pass seeing and into connecting
@@ -51,7 +62,7 @@ const texts = {
         "Activities include surfing & paddleboarding, hiking, bonefires, snorkeling, sitting or walking alone in a pristine beach, swimming in sunsets, laying in a hammock under a palm tree, star gazing, bathing in creaks and mud baths - under the optional coaching of Paz resident guide @rober_en_paz",
     },
     right: {
-      images: ["house.jpg"],
+      images: ["/images/house.jpg", "/images/house.jpg"],
       title: "Comfy Jungle House with good food",
       paragraphs: [
         `Retreats are based in our beach house, a comfortable space with floor to cealing screened windows designed to mantain constant presence in nature.
@@ -72,7 +83,7 @@ const texts = {
   },
   teachers: {
     left: {
-      images: ["beach.jpg"],
+      images: ["/images/beach.jpg", "/images/house.jpg"],
       title: "The Beach Lounge",
       paragraphs: [
         ` The retreat will have the company of countless animals, birds and butterflies. The song of nature will play from start to end.\n\r In general Paz is inspired by mother nature and all recomended activities are meant to take advantage of the pure and undisturbed presence of the 4 elements of life. \n\rThe lounge will be arranged according to each retreat with options for meditation, satsang, yoga, music, writting, bonefires, Qi Gong, or anything else.\n\r This location is pristine, everything is as it must be, we - the caretakers here, do our best to honor the spirit of life with lovely actions and behaviors towards ourselfs and others every day.`,
@@ -81,7 +92,7 @@ const texts = {
         "Activities include surfing & paddleboarding, hiking, bonefires, snorkeling, sitting or walking alone in a pristine beach, swimming in sunsets, laying in a hammock under a palm tree, star gazing, bathing in creaks, mud baths and more.",
     },
     right: {
-      images: ["house.jpg"],
+      images: ["/images/house.jpg", "/images/house.jpg"],
       title: "Comfy Jungle House",
       paragraphs: [
         `Floor to cealing screened windows to watch all the wildlife as

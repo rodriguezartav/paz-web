@@ -1,7 +1,9 @@
+import { useEffect, useState, useRef, createRef } from "react";
 /* This example requires Tailwind CSS v2.0+ */
 import { SparklesIcon } from "@heroicons/react/outline";
 import { PlusIcon } from "@heroicons/react/solid";
-import { useState } from "react";
+
+import Carousel from "./carousel";
 
 export default function Features1(props) {
   return (
@@ -33,9 +35,9 @@ export default function Features1(props) {
 function FeaturesRight(props) {
   return (
     <div className="mt-14">
-      <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-        <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
-          <div>
+      <div className="lg:mx-auto lg:max-w-8xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
+        <div className="px-4 max-w-xl mx-auto  sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2  ">
+          <div className="lg:mr-20">
             <div>
               <span className="h-12 w-12 rounded-md flex items-center justify-center bg-lime-500">
                 <SparklesIcon
@@ -49,10 +51,12 @@ function FeaturesRight(props) {
                 {props.title}
               </h2>
               <div className="block md:hidden mt-5 ">
-                <img
-                  className="  w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                  src={`./images/${props.images[0]}`}
-                  alt="Customer profile user interface"
+                <Carousel
+                  images={props.images}
+                  classes={
+                    "w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+                  }
+                  height={`100%`}
                 />
               </div>
               <Paragraphs items={props.paragraphs} />
@@ -68,10 +72,12 @@ function FeaturesRight(props) {
         </div>
         <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1 hidden md:block">
           <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-            <img
-              className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-              src={`./images/${props.images[0]}`}
-              alt="Customer profile user interface"
+            <Carousel
+              images={props.images}
+              classes={
+                "w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+              }
+              height={`100%`}
             />
           </div>
         </div>
@@ -82,8 +88,8 @@ function FeaturesRight(props) {
 
 function FeaturesLeft(props) {
   return (
-    <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-      <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
+    <div className="lg:mx-auto lg:max-w-8xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
+      <div className="px-4 lg:ml-20 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
         <div>
           <div>
             <span className="h-12 w-12 rounded-md flex items-center justify-center bg-lime-500">
@@ -95,10 +101,12 @@ function FeaturesLeft(props) {
               {props.title}
             </h2>
             <div className="block md:hidden mt-5 relative ">
-              <img
-                className=" block md:hidden mt-5 w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                src={`./images/${props.images[0]}`}
-                alt="Inbox user interface"
+              <Carousel
+                images={props.images}
+                cls={
+                  "block md:hidden mt-5 w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                }
+                height={`100%`}
               />
             </div>
             <Paragraphs items={props.paragraphs} />
@@ -114,10 +122,12 @@ function FeaturesLeft(props) {
       </div>
       <div className="mt-12 sm:mt-16 lg:mt-0 hidden md:block">
         <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full relative">
-          <img
-            className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-            src={`./images/${props.images[0]}`}
-            alt="Inbox user interface"
+          <Carousel
+            images={props.images}
+            cls={
+              "w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+            }
+            height={`100%`}
           />
         </div>
       </div>
