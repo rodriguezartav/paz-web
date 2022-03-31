@@ -4,11 +4,12 @@ const texts = {
     text_1:
       "A lovely two bedroom house for 8. Steps away from a beach lounge with palm trees, a meditation deck, comfy furniture and hammocks all for yourself. ",
     text_2:
-      "Primary forest with miles of pristine beach, huge trees. Abundant wildlife on site, this is the most biodiverse place on earth. For real ",
+      "Primary forest with miles of pristine beach, huge trees. Abundant wildlife on site, you'll be able to spend lot's of time with all sorts of wildlife in the property. ",
     text_3:
-      "Concierge service for Ocean & Jungle activities (some are included). Optional kitchen package may include grocery shopping, cook or chef.",
+      "Tailor-made kitchen package only include grocery shopping, a kitchen assistant all the way to full 3 meal course with local cook or chef. You can design the menu or leave it all to us.  ",
     text_4:
-      "Optional de-stress and natural connection course where @rober.enpaz.cr shares his experience, insights and secret spots where he learned to heal from cronic stress.",
+      "Concierge service for Ocean & Jungle activities. Every vacation includes a hicking tour to the waterfall, bonefires ",
+
     reason_1:
       "I came here in my 20's following my heart. It took me 10 years to find this land and 6 to build it off the grid./n/r I did it for myself because I need it - now I can share it with you. ",
   },
@@ -51,11 +52,13 @@ export default function Punch(props) {
             <p className=" mt-8 text-gray-500 ">
               {texts[props.selectedView].text_3}
             </p>
+
             <p className=" mt-8 text-gray-500 ">
               {texts[props.selectedView].text_4}
             </p>
-            <br /> <br />
-            <br />
+
+            {/*
+           
             <div className="flex text-left ">
               <div className="mr-4 flex-shrink-0  overflow-hidden">
                 <img
@@ -63,6 +66,8 @@ export default function Punch(props) {
                   src="./images/me.jpeg"
                 />
               </div>
+             
+             
               <div>
                 <h4 className="text-lg font-bold text-violet-800">
                   <a href="http://instagram.com/rober_en_paz" target="_blank">
@@ -77,7 +82,11 @@ export default function Punch(props) {
                     ))}
                 </div>
               </div>
+
+
             </div>
+
+                    */}
           </div>
         </div>
       </div>

@@ -168,8 +168,8 @@ export default function Hero(props) {
                       >
                         @rober.enpaz.cr
                       </a>{" "}
-                      and learn to use nature and Paz magical local spots to
-                      reduce stress and feel an authentic conection with nature
+                      and learn to use nature and magical local spots to reduce
+                      stress and feel an authentic conection with life.
                     </p>
 
                     <p className="p-5 pt-0 px-7 text-lime-700 text-sm">
@@ -178,7 +178,7 @@ export default function Hero(props) {
                     </p>
 
                     <p className="p-5 pt-0 text-justify px-7 text-lime-700 text-sm">
-                      * The course is tailor-made and includes hiking,
+                      * The course is tailor-made and may include hiking,
                       waterfalls, mud baths, floating, surfing, sunset
                       paddleboarding and bonefires performed in a way that leads
                       to effortless presence and meditaton.

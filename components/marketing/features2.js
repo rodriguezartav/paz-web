@@ -9,9 +9,9 @@ const texts = {
         `Paz (peace) is the feeling I hope that you experience while being here. It's not the opposite of stress, it's the result of being aware to the mechanisms of stress
          and the mastery to overcome them at any time.\n\r
 
-      It's the indescribable presence that’s felt when we are truly here. Instead of thinking and creating situations that are not in front of us. \n\r
+      It's the indescribable presence that’s felt when we are truly here. Instead of thinking about situations that are not here in front of us. \n\r
       
-      Here in Paz, it's easy to find a spot where nothing related to us is happending. Were nothing needs to be done, and yet everything happends wonderfully.\n\r
+      Here in Paz, it's easy to find a spot where nothing 'human' is happending, nothing needs to be done, and yet everything happends wonderfully. We can just be present, drop the weight of our shoulders and let things happend.\n\r
       
          In this course we'll use nature and observation. Simple things like sitting on the beach, hicking on the jungle, watching a bonefire, looking at the sunset. To surface our behavior and become aware of our particular stress mechanics.\n\r
 
@@ -20,8 +20,7 @@ const texts = {
          Our goal is to develop the awareness to observe our state of mind, uncover the source of it's conditining and discover the internal arts ( mind,heart,++ ) 
          that resonate with you to start or further enhance your self-healing intent.`,
       ],
-      caption: `The course is optional, it's much more about doing than about taklking. It can be shared or private and made to fit each person. 
-      It may include required de-stress fisical activities like running, walking, swimming, paddle boarding.`,
+      caption: ``,
     },
     right: {
       images: ["map.png"],
