@@ -1,8 +1,9 @@
 import { useEffect, useState, useRef, createRef } from "react";
 
-export default function Carousel({ height, images }) {
+export default function Carousel({ height, images, auto }) {
   // We will start by storing the index of the current image in the state.
   const [currentImage, setCurrentImage] = useState(0);
+  const [autoSlide, setAutoSlide] = useState(auto);
 
   // We are using react ref to 'tag' each of the images. Below will create an array of
   // objects with numbered keys. We will use those numbers (i) later to access a ref of a
@@ -12,14 +13,39 @@ export default function Carousel({ height, images }) {
     return acc;
   }, {});
 
-  const scrollToImage = (i) => {
+  const refOfRefs = useRef();
+
+  useEffect(() => {
+    refOfRefs.current = refs;
+  }, [refs]);
+
+  useEffect(() => {
+    let timer;
+    if (autoSlide) {
+      timer = setTimeout(() => {
+        if (auto) {
+          if (currentImage == 2) {
+            setAutoSlide(false);
+            clearTimeout(timer);
+            timer = null;
+          } else nextImage(refOfRefs.current);
+        }
+      }, autoSlide);
+    }
+    return () => (timer ? clearTimeout(timer) : null);
+  }, [refs]);
+
+  const scrollToImage = (i, refOfRefs) => {
     // First let's set the index of the image we want to see next
-    setCurrentImage(i);
+
     // Now, this is where the magic happens. We 'tagged' each one of the images with a ref,
     // we can then use built-in scrollIntoView API to do eaxactly what it says on the box - scroll it into
     // your current view! To do so we pass an index of the image, which is then use to identify our current
     // image's ref in 'refs' array above.
-    refs[i].current.scrollIntoView({
+
+    const ref = refOfRefs && refOfRefs.current ? refOfRefs[i] : refs[i];
+
+    ref.current.scrollIntoView({
       //     Defines the transition animation.
       behavior: "smooth",
       //      Defines vertical alignment.
@@ -27,6 +53,7 @@ export default function Carousel({ height, images }) {
       //      Defines horizontal alignment.
       inline: "start",
     });
+    setCurrentImage(i);
   };
 
   // Some validation for checking the array length could be added if needed
@@ -34,11 +61,11 @@ export default function Carousel({ height, images }) {
 
   // Below functions will assure that after last image we'll scroll back to the start,
   // or another way round - first to last in previousImage method.
-  const nextImage = () => {
+  const nextImage = (refOfRefs) => {
     if (currentImage >= totalImages - 1) {
-      scrollToImage(0);
+      scrollToImage(0, refOfRefs);
     } else {
-      scrollToImage(currentImage + 1);
+      scrollToImage(currentImage + 1, refOfRefs);
     }
   };
 

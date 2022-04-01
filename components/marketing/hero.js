@@ -4,7 +4,11 @@ import Carousel from "./carousel";
 const images = [
   "/images/hero/house.jpg",
   "/images/hero/beach.jpg",
-  "/images/hero/jungle.jpg",
+  "/images/hero/8.jpg",
+  "/images/hero/house2.jpg",
+  "/images/hero/4.jpg",
+  "/images/hero/6.jpg",
+
   "/images/hero/templo.jpg",
 ];
 
@@ -131,7 +135,11 @@ export default function Hero(props) {
           {/* Hero section */}
           <div className="w-full object-cover col-span-1 sm:col-span-6  border-l-2 border-white">
             <div className="  w-full flex justify-center">
-              <Carousel images={images} height={`calc(100vh - 100px)`} />
+              <Carousel
+                auto={3300}
+                images={images}
+                height={`calc(100vh - 100px)`}
+              />
             </div>
           </div>
 
@@ -151,18 +159,18 @@ export default function Hero(props) {
                           Transformational Vacations
                         </p>
                         <p className=" text-md  text-stone-700  ">
-                          with nature connection courses
+                          with wildlife, activities and courses
                         </p>
                       </div>
                     </div>
 
                     <p className="p-5 pt-6 px-7 text-stone-700 text-md">
-                      Private Lodge experience with your own beach lounge,
-                      paddle and longboards.
+                      Private Lodge experience in the jungle surrounding
+                      Corcovado with your own beach lounge
                     </p>
 
                     <p className="p-5 px-6 pt-0 text-stone-700 text-md">
-                      Request a course with Paz founder{" "}
+                      Join a course with Paz founder{" "}
                       <a
                         href="https://instagram.com/rober.enpaz.cr"
                         target="_blank"
