@@ -2,9 +2,10 @@ import { useEffect, useState, useRef, createRef } from "react";
 import Carousel from "./carousel";
 
 const images = [
+  "/images/hero/8.jpg",
   "/images/hero/house.jpg",
   "/images/hero/beach.jpg",
-  "/images/hero/8.jpg",
+
   "/images/hero/house2.jpg",
   "/images/hero/4.jpg",
   "/images/hero/6.jpg",
@@ -159,18 +160,20 @@ export default function Hero(props) {
                           Transformational Vacations
                         </p>
                         <p className=" text-md  text-stone-700  ">
-                          with wildlife, activities and courses
+                          Inner peace is the souvenir
                         </p>
                       </div>
                     </div>
 
                     <p className="p-5 pt-6 px-7 text-stone-700 text-md">
-                      Private Lodge experience in the jungle surrounding
-                      Corcovado with your own beach lounge
+                      Experience Corcovado by renting our Jungle Lodge.
+                      #BeachFront #BeachLounge #Surfing #Wildlife #Wellness
+                      #AllForYourself
                     </p>
 
                     <p className="p-5 px-6 pt-0 text-stone-700 text-md">
-                      Join a course with Paz founder{" "}
+                      For the ultimate experience, join a course with Paz
+                      founder{" "}
                       <a
                         href="https://instagram.com/rober.enpaz.cr"
                         target="_blank"

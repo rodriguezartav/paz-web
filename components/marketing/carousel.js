@@ -70,6 +70,7 @@ export default function Carousel({ height, images, auto }) {
   };
 
   const previousImage = () => {
+    setAutoSlide(false);
     if (currentImage === 0) {
       scrollToImage(totalImages - 1);
     } else {
