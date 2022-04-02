@@ -167,14 +167,19 @@ export default function Hero(props) {
 
                     <p className="p-5 pt-6 px-7 text-stone-700 text-md">
                       Experience Corcovado by renting our Jungle Lodge.
-                      #BeachFront #BeachLounge #Surfing #Wildlife #Wellness
-                      #AllForYourself
+                      <span className="bg-sky-100 ml-1">#BeachFront</span>{" "}
+                      <span className="bg-yellow-100 ml-1">#BeachLounge</span>{" "}
+                      <span className="bg-blue-100 ml-1">#Surfing</span>
+                      <span className="bg-lime-100  ml-1">#Wildlife</span>
+                      <span className="bg-purple-100 ml-1">#Wellness</span>{" "}
+                      <span className="bg-stone-100 ml-1">#AllForYourself</span>
                     </p>
 
                     <p className="p-5 px-6 pt-0 text-stone-700 text-md">
                       For the ultimate experience, join a course with Paz
                       founder{" "}
                       <a
+                        className="text-purple-600"
                         href="https://instagram.com/rober.enpaz.cr"
                         target="_blank"
                       >

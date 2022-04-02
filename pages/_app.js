@@ -54,25 +54,32 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
             content: "46be10golmw8ehrdc2rcx6qn1v92e8",
           },
         ]}
-        title="Paz | Cabo Mata Palo | Corcovado | Costa Rica"
-        description="Meaningful Wildlife Vacations and Transformational Wellness Retreats"
+        title="Paz Corcovado| Jungle Lodge in Osa Peninsula | Costa Rica"
+        description="Experience Corcovado by renting our Jungle Lodge and plan your transformational vacation"
         canonical="https://paz.co.cr/"
         facebook-domain-verification="46be10golmw8ehrdc2rcx6qn1v92e8"
         openGraph={{
           url: "https://paz.co.cr/",
-          title: "Paz | Cabo Mata Palo | Corcovado | Costa Rica",
+          title: "Paz Corcovado| Jungle Lodge in Osa Peninsula | Costa Rica",
           description:
-            "Meaningful Wildlife Vacations and Transformational Wellness Retreats",
+            "Experience Corcovado by renting our Jungle Lodge and plan your transformational vacation",
           images: [
             {
-              url: "https://paz.co.cr/images/templo.jpeg",
+              url: "https://paz.co.cr/images/hero/house.jpg",
               width: 1800,
               height: 1000,
-              alt: "Beach Lounge",
+              alt: "Beach Lodge",
+              type: "image/jpeg",
+            },
+            {
+              url: "https://paz.co.cr/images/hero/8.jpg",
+              width: 1800,
+              height: 1000,
+              alt: "Beach View",
               type: "image/jpeg",
             },
           ],
-          site_name: "Paz",
+          site_name: "Paz Corcovado",
         }}
       />
       <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
