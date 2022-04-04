@@ -1,22 +1,11 @@
-import Footer from "./marketing/footer";
-import Hero from "./marketing/hero";
-import Punch from "./marketing/punch";
-import Features1 from "./marketing/features1";
-import Features2 from "./marketing/features2";
-import Banner from "./marketing/banner";
-import Header from "./marketing/header";
-import GridList from "./marketing/videos";
-import Comment from "./marketing/comment";
-import Features3 from "./marketing/features3";
-import Images from "./marketing/images";
-
-import Cta from "./marketing/cta";
-
-import News from "./marketing/news";
-
-import Slideover from "./marketing/slideover";
-
-import Blog from "./marketing/blog";
+import Hero from "../components/marketing/hero";
+import Punch from "../components/marketing/punch";
+import Features1 from "../components/marketing/features1";
+import Features2 from "../components/marketing/features2";
+import Header from "../components/marketing/header";
+import Cta from "../components/marketing/cta";
+import News from "../components/marketing/news";
+import Slideover from "../components/marketing/slideover";
 
 import { useState } from "react";
 

@@ -29,15 +29,15 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
     <MDXProvider components={components}>
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=UA-223279626-1"
-        strategy="afterInteractive"
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-F5HMX4JSCJ"
       />
       <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag("js", new Date());
-          gtag("config", "UA-223279626-1");
+          gtag("config", "G-F5HMX4JSCJ");
         `}
       </Script>
 

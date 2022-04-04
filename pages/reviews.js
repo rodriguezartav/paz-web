@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { promises as fs } from "fs";
 import path from "path";
-import Home from "../views/Home";
+import Reviews from "../views/Reviews";
 import Texts from "../texts";
 
 export async function getStaticProps() {
@@ -34,7 +34,7 @@ export async function getStaticProps() {
 export default function HomeApp({ posts }) {
   return (
     <div>
-      <Home texts={Texts} posts={posts} />
+      <Reviews texts={Texts} posts={posts} />
     </div>
   );
 }

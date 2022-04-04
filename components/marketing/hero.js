@@ -166,13 +166,15 @@ export default function Hero(props) {
                     </div>
 
                     <p className="p-5 pt-6 px-7 text-stone-700 text-md">
-                      Experience Corcovado by renting our Jungle Lodge.
+                      Experience Corcovado by renting our Beachfront Jungle
+                      Villa.
+                      <br />
                       <span className="bg-sky-100 ml-1">#BeachFront</span>{" "}
                       <span className="bg-yellow-100 ml-1">#BeachLounge</span>{" "}
-                      <span className="bg-blue-100 ml-1">#Surfing</span>
-                      <span className="bg-lime-100  ml-1">#Wildlife</span>
+                      <span className="bg-blue-100 ml-1">#Surfing</span>{" "}
+                      <span className="bg-lime-100  ml-1">#Wildlife</span>{" "}
                       <span className="bg-purple-100 ml-1">#Wellness</span>{" "}
-                      <span className="bg-stone-100 ml-1">#AllForYourself</span>
+                      <span className="bg-rose-100 ml-1">#AllForYourself</span>
                     </p>
 
                     <p className="p-5 px-6 pt-0 text-stone-700 text-md">
@@ -180,10 +182,10 @@ export default function Hero(props) {
                       founder{" "}
                       <a
                         className="text-purple-600"
-                        href="https://instagram.com/rober.enpaz.cr"
+                        href="https://instagram.com/rober.paz.co.cr"
                         target="_blank"
                       >
-                        @rober.enpaz.cr
+                        @rober.paz.co.cr
                       </a>{" "}
                       and learn to use nature and magical local spots to reduce
                       stress and feel an authentic conection with life.
