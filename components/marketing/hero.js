@@ -166,9 +166,8 @@ export default function Hero(props) {
                     </div>
 
                     <p className="p-5 pt-6 px-7 text-stone-700 text-md">
-                      Experience Corcovado by renting our Beachfront Jungle
-                      Villa.
-                      <br />
+                      Paz is a pristine & private beach retreat. A mistical
+                      place that helps you deepen your experience of life. ,
                       <span className="bg-sky-100 ml-1">#BeachFront</span>{" "}
                       <span className="bg-yellow-100 ml-1">#BeachLounge</span>{" "}
                       <span className="bg-blue-100 ml-1">#Surfing</span>{" "}
@@ -182,10 +181,10 @@ export default function Hero(props) {
                       founder{" "}
                       <a
                         className="text-purple-600"
-                        href="https://instagram.com/rober.paz.co.cr"
+                        href="https://instagram.com/paz_corcovado"
                         target="_blank"
                       >
-                        @rober.paz.co.cr
+                        @rober
                       </a>{" "}
                       and learn to use nature and magical local spots to reduce
                       stress and feel an authentic conection with life.
@@ -202,6 +201,18 @@ export default function Hero(props) {
                       paddleboarding and bonefires performed in a way that leads
                       to effortless presence and meditaton.
                     </p>
+
+                    <div className="mt-8 flex justify-center">
+                      <div className="inline-flex rounded-md shadow">
+                        <a
+                          target="_blank"
+                          href="https://airbnb.com/h/pazz"
+                          className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700"
+                        >
+                          Book in Airbnb
+                        </a>
+                      </div>
+                    </div>
 
                     {/* 
                     <p className="text-sm text-white ml-4">+videos</p>

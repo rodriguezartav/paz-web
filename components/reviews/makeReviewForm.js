@@ -1,20 +1,3 @@
-/*
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
-
 const reviews = {
   average: 4,
   totalCount: 1624,
@@ -41,12 +24,15 @@ const reviews = {
 };
 
 import { StarIcon } from "@heroicons/react/solid";
+import { useState } from "react";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 function Review(props) {
+  const [count, setCount] = useState(0);
+
   return (
     <div>
       <label
@@ -58,9 +44,10 @@ function Review(props) {
       <div className="flex items-center">
         {[0, 1, 2, 3, 4].map((rating) => (
           <StarIcon
+            onClick={() => setCount(rating + 1)}
             key={rating}
             className={classNames(
-              reviews.average > rating ? "text-yellow-400" : "text-gray-300",
+              count > rating ? "text-yellow-400" : "text-gray-300",
               "flex-shrink-0 h-5 w-5"
             )}
             aria-hidden="true"
@@ -71,31 +58,23 @@ function Review(props) {
   );
 }
 
-export default function Example() {
+export default function ReviewForm() {
+  const [starts, setStars] = useState(0);
+  const [name, setName] = useState(0);
+  const [review, setReview] = useState(0);
+  const [password, setPassword] = useState(0);
+  const [feedback, setFeedback] = useState(0);
+
   return (
     <div className="space-y-8 divide-y divide-gray-200">
       <div className="space-y-8 divide-y divide-gray-200">
         <div>
           <div className="sm:col-span-6 mt-8">
-            <Review label={"How would you rate the beach lounge"} />
-          </div>
-
-          <div className="mt-6 grid grid-cols-1  gap-x-4 sm:grid-cols-6">
-            <div className="sm:col-span-3">
-              {" "}
-              <div className="sm:col-span-6 ">
-                <Review label={"Rate the house"} />
-              </div>
-            </div>
-            <div className="sm:col-span-3">
-              <div className="sm:col-span-6">
-                <Review label={"Rate your Host"} />
-              </div>
-            </div>
-          </div>
-
-          <div className="sm:col-span-6 mt-8">
-            <Review label={"How would you rate your general stay"} />
+            <Review
+              setStars={setStars}
+              stars={stars}
+              label={"How would you rate your stay at Paz"}
+            />
           </div>
 
           <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
@@ -108,6 +87,8 @@ export default function Example() {
               </label>
               <div className="mt-1">
                 <input
+                  value={name}
+                  onChange={(e) => setName(e.currentTarget.value)}
                   type="text"
                   name="first-name"
                   id="first-name"
@@ -127,6 +108,8 @@ export default function Example() {
               <div className="mt-1">
                 <input
                   type="text"
+                  value={password}
+                  onChange={(e) => setPassword(e.currentTarget.value)}
                   name="last-name"
                   id="last-name"
                   autoComplete="family-name"
@@ -141,12 +124,14 @@ export default function Example() {
                 htmlFor="about"
                 className="block text-sm font-medium text-gray-700"
               >
-                Review ( Public )
+                Review ( for web site )
               </label>
               <div className="mt-1">
                 <textarea
-                  id="about"
-                  name="about"
+                  value={review}
+                  onChange={(e) => setReview(e.currentTarget.value)}
+                  id="review"
+                  name="review"
                   rows={3}
                   className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md"
                   defaultValue={""}
@@ -162,10 +147,12 @@ export default function Example() {
                 htmlFor="about"
                 className="block text-sm font-medium text-gray-700"
               >
-                Please share the reason behind any low rating, so we can improve
+                Please share only with us anything we can improve
               </label>
               <div className="mt-1">
                 <textarea
+                  value={feedback}
+                  onChange={(e) => setFeedback(e.currentTarget.value)}
                   id="about"
                   name="about"
                   rows={3}
