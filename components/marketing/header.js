@@ -1,10 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-const navigation = [
-  { name: "House", href: "https://airbnb.com/h/pazz" },
-  { name: "Beach", href: "/posts/yosoyesto" },
-  { name: "Retreat", view: "profile" },
-  { name: "Osa Peninsula", view: "profile" },
-];
+const navigation = [];
 
 export default function Header({ parentView, view, setView, open, setOpen }) {
   return (
