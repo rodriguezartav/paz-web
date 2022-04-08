@@ -25,7 +25,24 @@ export default function Example() {
     mutate,
   } = useMutate("/api/followers/");
 
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof url != "undefined") {
+        window.location = url;
+      }
+    };
+    gtag("event", "conversion", {
+      send_to: "AW-10878250661/acu9CP2Lr7EDEKXdk8Mo",
+      event_callback: callback,
+    });
+    return false;
+  }
+
   async function onSave() {
+    try {
+      gtag_report_conversion();
+    } catch (e) {}
+
     setFormSent(true);
     const r = await mutate({ whatsapp }, `/api/followers`);
   }

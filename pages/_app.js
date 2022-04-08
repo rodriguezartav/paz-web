@@ -42,23 +42,6 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
         `}
       </Script>
 
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          function gtag_report_conversion(url) {
-            var callback = function () {
-              if (typeof(url) != 'undefined') {
-                window.location = url;
-              }
-            };
-            gtag('event', 'conversion', {
-                'send_to': 'AW-10878250661/P240CKaH_LADEKXdk8Mo',
-                'event_callback': callback
-            });
-            return false;
-          }
-        `}
-      </Script>
-
       <DefaultSeo
         additionalLinkTags={[
           {

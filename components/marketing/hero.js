@@ -51,6 +51,19 @@ export default function Hero(props) {
 
   function onEnd() {}
 
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof url != "undefined") {
+        window.location = url;
+      }
+    };
+    gtag("event", "conversion", {
+      send_to: "AW-10878250661/P240CKaH_LADEKXdk8Mo",
+      event_callback: callback,
+    });
+    return false;
+  }
+
   function renderPlayinIcon({ showPlay, showPause, showPending }) {
     if (showPause)
       return (
@@ -205,6 +218,11 @@ export default function Hero(props) {
                     <div className="mt-8 flex justify-center">
                       <div className="inline-flex rounded-md shadow">
                         <a
+                          onClick={(params) => {
+                            try {
+                              gtag_report_conversion(params);
+                            } catch (e) {}
+                          }}
                           target="_blank"
                           href="https://airbnb.com/h/pazz"
                           className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700"
