@@ -5,11 +5,13 @@ import path from "path";
 import Osa from "../views/OsaTravelGuide";
 import Texts from "../texts";
 
-import GuidedItems from "../data/guide";
-
 export async function getStaticProps() {
   const res = await fetch(`${process.env.API_URL}/api/guidedItems`);
   const guideditems = await res.json();
+
+  const resTypes = await fetch(`${process.env.API_URL}/api/guideTypes`);
+
+  const guideTypes = await resTypes.json();
 
   const postsDirectory = path.join(process.cwd(), "pages/posts");
   const filenames = await fs.readdir(postsDirectory);
@@ -17,7 +19,6 @@ export async function getStaticProps() {
   const files = await Promise.all(
     filenames.map(async (filename) => {
       const { meta } = await import("./posts/" + filename);
-
       return { ...meta, filename: filename };
     })
   );
@@ -30,27 +31,27 @@ export async function getStaticProps() {
   });
 
   const items = guideditems.map((item) => {
-    return {
-      ...item,
-      path: `/osa-travel-guide/${item.uri}`,
-      images: item.images || [],
-      image: item.images ? item.images[0] : {},
-      details: item.details || [],
-    };
+    return item;
   });
 
   return {
     props: {
       guidedItems: items,
+      filters: guideTypes,
       posts,
     },
   };
 }
 
-export default function HomeApp({ posts, guidedItems }) {
+export default function HomeApp({ posts, guidedItems, filters }) {
   return (
     <div>
-      <Osa texts={Texts} guidedItems={guidedItems} posts={posts} />
+      <Osa
+        texts={Texts}
+        filters={filters}
+        guidedItems={guidedItems}
+        posts={posts}
+      />
     </div>
   );
 }

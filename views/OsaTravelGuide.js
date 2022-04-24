@@ -245,6 +245,7 @@ function classNames(...classes) {
 
 export default function OsaTravelGuideView(props) {
   let products = props.guidedItems;
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
@@ -295,7 +296,7 @@ export default function OsaTravelGuideView(props) {
 
                 {/* Filters */}
                 <form className="mt-4">
-                  {filters.map((section) => (
+                  {props.filters.map((section) => (
                     <Disclosure
                       as="div"
                       key={section.name}
@@ -305,7 +306,7 @@ export default function OsaTravelGuideView(props) {
                         <fieldset>
                           <legend className="w-full px-2">
                             <Disclosure.Button className="w-full p-2 flex items-center justify-between text-gray-400 hover:text-gray-500">
-                              <span className="text-sm font-medium text-gray-900">
+                              <span className="text-sm capitalize font-medium text-gray-900">
                                 {section.name}
                               </span>
                               <span className="ml-6 h-7 flex items-center">
@@ -384,13 +385,13 @@ export default function OsaTravelGuideView(props) {
 
               <div className="hidden lg:block">
                 <form className="divide-y divide-gray-200 space-y-10">
-                  {filters.map((section, sectionIdx) => (
+                  {props.filters.map((section, sectionIdx) => (
                     <div
                       key={section.name}
                       className={sectionIdx === 0 ? null : "pt-10"}
                     >
                       <fieldset>
-                        <legend className="block text-sm font-medium text-gray-900">
+                        <legend className="block capitalize text-sm font-medium text-gray-900">
                           {section.name}
                         </legend>
                         <div className="pt-6 space-y-3">
