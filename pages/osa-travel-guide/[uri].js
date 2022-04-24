@@ -8,7 +8,7 @@ import GuidedItems from "../../data/guide";
 export async function getStaticPaths() {
   // Return a list of possible value for id
 
-  const res = await fetch("http://localhost:3000/api/guidedItems");
+  const res = await fetch(`${process.env.API_URL}/api/guidedItems`);
   const guideditems = await res.json();
 
   const ids = guideditems.map((item) => {
@@ -22,13 +22,13 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const res = await fetch("http://localhost:3000/api/guidedItems");
+  const res = await fetch(`${process.env.API_URL}/api/guidedItems`);
   const guideditems = await res.json();
 
   return {
     props: {
       relatedProducts: guideditems,
-      item: guideditems.filter((item) => item.uri == params.uri)[0],
+      item: {guideditems.filter((item) => item.uri == params.uri)[0],
     },
   };
 }

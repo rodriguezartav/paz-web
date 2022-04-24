@@ -8,7 +8,7 @@ import Texts from "../texts";
 import GuidedItems from "../data/guide";
 
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:3000/api/guidedItems");
+  const res = await fetch(`${process.env.API_URL}/api/guidedItems`);
   const guideditems = await res.json();
 
   const postsDirectory = path.join(process.cwd(), "pages/posts");
@@ -38,8 +38,6 @@ export async function getStaticProps() {
       details: item.details || [],
     };
   });
-
-  console.log(items);
 
   return {
     props: {
