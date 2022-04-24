@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef, createRef } from "react";
+import { isMobile } from "react-device-detect";
 
 export default function Carousel({ height, images, auto }) {
   // We will start by storing the index of the current image in the state.
@@ -104,7 +105,7 @@ export default function Carousel({ height, images, auto }) {
     // Finally the image itself will be 100% of a parent div. Outer div is
     // set with position relative, so we can place our cotrol buttons using
     // absolute positioning on each side of the image.
-    <div className="flex  h-full justify-center w-full items-center">
+    <div className="flex  sm:h-full justify-center w-full items-center">
       <div className="relative w-full">
         <div
           style={{
@@ -118,14 +119,14 @@ export default function Carousel({ height, images, auto }) {
           {sliderControl(true)}
           {images.map((img, i) => (
             <div
-              className="w-full  h-full flex-shrink-0"
+              className="w-full  sm:h-full flex-shrink-0"
               key={img}
               ref={refs[i]}
             >
               <img
                 src={img}
-                style={{ height: height }}
-                className={"w-full h-full  overflow-y-hidden object-cover"}
+                style={{ height: isMobile ? "auto" : height }}
+                className={"w-full sm:h-full  overflow-y-hidden object-cover"}
               />
             </div>
           ))}

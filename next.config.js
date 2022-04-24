@@ -9,6 +9,12 @@ module.exports = withMDX({
         destination: "/posts/yosoyesto",
         permanent: true,
       },
+      {
+        source: "/play",
+        destination:
+          "https://open.spotify.com/artist/5iR7YvWgvzgv3JIc3b0TvK?si=7YbuSAOBRgGCv-cojyuaBg",
+        permanent: true,
+      },
     ];
   },
   pageExtensions: ["js", "jsx", "mdx"],

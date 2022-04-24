@@ -1,9 +1,13 @@
 import { useEffect, useState, useRef, createRef } from "react";
 import Carousel from "./carousel";
+import { isMobile } from "react-device-detect";
+
+import ImageGrid from "./imageGrid";
 
 const images = [
-  "/images/hero/8.jpg",
   "/images/hero/house.jpg",
+  "/images/hero/8.jpg",
+
   "/images/hero/beach.jpg",
 
   "/images/hero/house2.jpg",
@@ -62,6 +66,48 @@ export default function Hero(props) {
       event_callback: callback,
     });
     return false;
+  }
+
+  function renderTags() {
+    return (
+      <div className="hidden: sm:block p-5 pt-2 px-7 text-stone-700 text-md">
+        {" "}
+        <span className="bg-sky-100 ml-1">#BeachFront</span>
+        {", "}
+        <span className="bg-yellow-100 ml-1">#BeachLounge</span>{" "}
+        <span className="bg-blue-100 ml-1">#SurfInFront</span>{" "}
+        <span className="bg-lime-100  ml-1">#Wildlife Observation</span>{" "}
+        <span className="bg-purple-100 ml-1">#Relax</span>{" "}
+        <span className="bg-rose-100 ml-1">#Reconnect</span>
+      </div>
+    );
+  }
+
+  function renderDescriptionText() {
+    return (
+      <>
+        <div className="sm:flex pt-3 ml-8 sm:ml-0">
+          <img
+            className="h-20 w-20 hidden sm:block"
+            src="/marketing/logo/svg/paz_lila_tronco_color.svg"
+          />
+          <div>
+            <p className=" text-xl text-violet-700 ">
+              Transformational Vacations
+            </p>
+            <p className=" text-md  text-stone-700  ">
+              Inner peace is the souvenir
+            </p>
+          </div>
+        </div>
+
+        <p className="p-5 pt-6 px-7 text-stone-700 text-md">
+          Paz {"\u270C"} is a beach front villa {"🏖️"} in the Osa Peninsula.
+          Rent our private retreat to relax within nature & play in the pristine
+          beaches of the wildlife capital of Costa Rica.
+        </p>
+      </>
+    );
   }
 
   function renderPlayinIcon({ showPlay, showPause, showPending }) {
@@ -144,78 +190,30 @@ export default function Hero(props) {
   }
   return (
     <div>
-      <div className="  bg-stone-600">
-        <main className=" grid-cols-1  sm:grid-cols-8 grid  bg-white  sm:grid">
+      <div className="  bg-stone-100">
+        <main className=" grid-cols-1  sm:grid-cols-8 grid   sm:grid">
           {/* Hero section */}
+
+          <div className="sm:hidden">{renderDescriptionText()}</div>
+
           <div className="w-full object-cover col-span-1 sm:col-span-6  border-l-2 border-white">
-            <div className="  w-full flex justify-center">
-              <Carousel
-                auto={3300}
-                images={images}
-                height={`calc(100vh - 100px)`}
-              />
+            <div className=" mt-10 pl-10  w-full flex justify-center">
+              <ImageGrid images={images} />
             </div>
           </div>
 
           <div className="  cols-span-1  sm:col-span-2 sm:block">
-            <div className=" h-full pt-12  border-l-2 border-white  bg-gradient-to-br from-stone-50 to-stone-100 opacity-80 lg:pt-6 ">
+            <div className=" h-full pt-12  lg:pt-6 ">
               <div className=" sm:max-w-3xl   ">
                 <div className="relative">
                   <div className=" sm:max-w-xl pl-0    ">
-                    <div className="flex  hover:cursor-pointer  ">
-                      <img
-                        className="h-20 w-20"
-                        src="/marketing/logo/svg/paz_lila_tronco_color.svg"
-                      />
-
-                      <div className="pt-3">
-                        <p className=" text-xl text-violet-700 ">
-                          Transformational Vacations
-                        </p>
-                        <p className=" text-md  text-stone-700  ">
-                          Inner peace is the souvenir
-                        </p>
-                      </div>
+                    <div className=" hidden sm:block hover:cursor-pointer  ">
+                      {renderDescriptionText()}
                     </div>
 
-                    <p className="p-5 pt-6 px-7 text-stone-700 text-md">
-                      Paz is a pristine & private beach retreat. A mistical
-                      place that helps you deepen your experience of life. ,
-                      <span className="bg-sky-100 ml-1">#BeachFront</span>{" "}
-                      <span className="bg-yellow-100 ml-1">#BeachLounge</span>{" "}
-                      <span className="bg-blue-100 ml-1">#Surfing</span>{" "}
-                      <span className="bg-lime-100  ml-1">#Wildlife</span>{" "}
-                      <span className="bg-purple-100 ml-1">#Wellness</span>{" "}
-                      <span className="bg-rose-100 ml-1">#AllForYourself</span>
-                    </p>
+                    {renderTags()}
 
-                    <p className="p-5 px-6 pt-0 text-stone-700 text-md">
-                      For the ultimate experience, join a course with Paz
-                      founder{" "}
-                      <a
-                        className="text-purple-600"
-                        href="https://instagram.com/paz_corcovado"
-                        target="_blank"
-                      >
-                        @rober
-                      </a>{" "}
-                      and learn to use nature and magical local spots to reduce
-                      stress and feel an authentic conection with life.
-                    </p>
-
-                    <p className="p-5 pt-0 px-7 text-lime-700 text-sm">
-                      * Corcovado is the most biodiverse place on earth, use it
-                      as an opportunity to transform your life,
-                    </p>
-
-                    <p className="p-5 pt-0 text-justify px-7 text-lime-700 text-sm">
-                      * The course is tailor-made and may include hiking,
-                      waterfalls, mud baths, floating, surfing, sunset
-                      paddleboarding and bonefires performed in a way that leads
-                      to effortless presence and meditaton.
-                    </p>
-
-                    <div className="mt-8 flex justify-center">
+                    <div className="flex justify-center my-7">
                       <div className="inline-flex rounded-md shadow">
                         <a
                           onClick={(params) => {
@@ -232,29 +230,7 @@ export default function Hero(props) {
                       </div>
                     </div>
 
-                    {/* 
-                    <p className="text-sm text-white ml-4">+videos</p>
-                    <div className=" flex border-b  ml-4 mr-10 hover:bg-purple-300 hover:cursor-pointer border-purple-800  pb-2 pt-2 ">
-                      {renderVideoItem({
-                        showPlay: true,
-                        showPause: false,
-                        title: "dsd",
-                        subtitle: "dsds",
-                      })}
-                    </div>
-
-                    <div className="flex ml-4 mr-10 border-b hover:bg-purple-300 hover:cursor-pointer border-purple-800 pb-2 pt-2 ">
-                      {renderVideoItem({
-                        showPlay: false,
-                        showPause: true,
-                        title: "dsd",
-                        subtitle: "dsds",
-                      })}
-                    </div>
-
-                    */}
-
-                    <div className="mt-20 ml-4">
+                    <div className="mt-2 ml-8">
                       <div className="rounded  text-xs font-semibold text-purple-800 tracking-wide uppercase">
                         Cabo Matapalo, Peninsula de Osa,
                       </div>

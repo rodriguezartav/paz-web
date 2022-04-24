@@ -42,10 +42,6 @@ export default function Example({ setView, posts }) {
 
           <Punch selectedView={selectedView} />
 
-          <Features1 selectedView={selectedView} />
-
-          <Features2 selectedView={selectedView} />
-
           <Cta />
 
           <News />

@@ -55,15 +55,16 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
             content: "46be10golmw8ehrdc2rcx6qn1v92e8",
           },
         ]}
-        title="Paz Corcovado| Jungle Lodge in Osa Peninsula | Costa Rica"
-        description="Experience Corcovado by renting our Jungle Lodge and plan your transformational vacation"
+        title="Paz Corcovado | Beachfront Villa in Osa Peninsula | Costa Rica"
+        description="Paz ✌ is a beach front villa 🏖️ in the Osa Peninsula. Rent our private retreat to relax, be in nature & play in the pristine beach of real & wild Costa Rica."
         canonical="https://paz.co.cr/"
         facebook-domain-verification="46be10golmw8ehrdc2rcx6qn1v92e8"
         openGraph={{
           url: "https://paz.co.cr/",
-          title: "Paz Corcovado| Jungle Lodge in Osa Peninsula | Costa Rica",
+          title:
+            "Paz Corcovado | Beachfront Villa in Osa Peninsula | Costa Rica",
           description:
-            "Experience Corcovado by renting our Jungle Lodge and plan your transformational vacation",
+            "Paz ✌ is a beach front villa 🏖️ in the Osa Peninsula. Rent our private retreat to relax, be in nature & play in the pristine beach of real & wild Costa Rica.",
           images: [
             {
               url: "https://paz.co.cr/images/hero/house.jpg",
