@@ -72,8 +72,11 @@ export default function Example({ item }) {
                   >
                     {({ selected }) => (
                       <>
+                        <span className=" text-sm capitalize left-0 z-20 absolute -bottom-6">
+                          {item.name}
+                        </span>
                         <span className="sr-only">{image.name}</span>
-                        <span className="absolute inset-0 rounded-md overflow-hidden">
+                        <span className="absolute z-10 inset-0 rounded-md overflow-hidden">
                           <img
                             src={image.src}
                             alt=""

@@ -1,7 +1,11 @@
 import Division from "./division";
 
 /* This example requires Tailwind CSS v2.0+ */
-const navigation = [];
+const navigation = [
+  { name: "Paz Villa", href: "/villa" },
+  { name: "Experience", href: "/experience" },
+  { name: "Travel Guide", href: "/osa-travel-guide" },
+];
 
 export default function Header({ parentView, view, setView, open, setOpen }) {
   return (
