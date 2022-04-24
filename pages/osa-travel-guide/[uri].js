@@ -29,7 +29,7 @@ export async function getStaticProps({ params }) {
 
   return {
     props: {
-      relatedProducts: guideditems.all,
+      relatedProducts: guideditem.all,
       item: guideditem.one,
     },
   };
