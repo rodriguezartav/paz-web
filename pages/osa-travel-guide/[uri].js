@@ -27,9 +27,11 @@ export async function getStaticProps({ params }) {
   );
   const guideditem = await res.json();
 
+  console.log(guideditem.all);
+
   return {
     props: {
-      relatedProducts: guideditem.all,
+      relatedProducts: guideditem.all || [],
       item: guideditem.one,
     },
   };
