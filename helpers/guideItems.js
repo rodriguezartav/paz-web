@@ -4,7 +4,7 @@ export default function GuideItems(options = {}, headers) {
   const knex = getKnex();
 
   return {
-    getUserWithCustomer() {
+    getOne(uri) {
       return knex
         .table("guide_items")
         .select("guide_items.*", "guide_item_types.name as type_name")
@@ -13,7 +13,7 @@ export default function GuideItems(options = {}, headers) {
           "guide_items.guide_item_type_id",
           "guide_item_types.id"
         )
-        .where("customer_id", options.user.customer_id)
+        .where("uri", uri)
         .first();
     },
 
