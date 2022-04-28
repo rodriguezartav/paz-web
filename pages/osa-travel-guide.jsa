@@ -7,7 +7,12 @@ import Texts from "../texts";
 
 export async function getStaticProps() {
   const res = await fetch(`${process.env.API_URL}/api/guidedItems`);
-  const guideditems = await res.json();
+  let guideditems = [];
+  try {
+    guideditems = await res.json();
+  } catch (e) {
+    console.log(e.message);
+  }
 
   const resTypes = await fetch(`${process.env.API_URL}/api/guideTypes`);
 
