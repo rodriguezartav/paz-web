@@ -10,6 +10,11 @@ module.exports = withMDX({
         permanent: true,
       },
       {
+        source: "/1",
+        destination: "https://www.amazon.com/dp/B09TLF5LVB",
+        permanent: true,
+      },
+      {
         source: "/play",
         destination:
           "https://open.spotify.com/artist/5iR7YvWgvzgv3JIc3b0TvK?si=7YbuSAOBRgGCv-cojyuaBg",

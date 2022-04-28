@@ -15,38 +15,21 @@ import { isMobile } from "react-device-detect";
 import { useState } from "react";
 
 const images = [
-  "/images/hero/8.jpg",
   "/images/hero/house.jpg",
-  "/images/hero/beach.jpg",
+  "/images/house/room1/1.jpg",
 
-  "/images/hero/house2.jpg",
+  "/images/house/kitchen/4.jpeg",
+
+  "/images/house/room2/1.jpg",
   "/images/hero/4.jpg",
   "/images/hero/6.jpg",
 
-  "/images/hero/templo.jpg",
+  "/images/house/room2/1.jpg",
 ];
 
 const texts = {
   vacations: {
     left: {
-      images: [
-        "/images/lounge/final/4.jpeg",
-        "/images/lounge/final/5.jpeg",
-        "/images/lounge/final/3.jpeg",
-        "/images/lounge/final/6.jpeg",
-      ],
-      title: "The Beach Lounge",
-      paragraphs: [
-        `This is your opportunity to enjoy a little secluded beach all to yourself.
-          Paz is located in a small gulf where it's hard to see someone walking down the beach. 
-          \n\rRight in front of the house (50 steps) you'll find a little sandy inlet, under the shadow of palm trees that we outfitted with hammocs and comfy furniture where you'll want to spend day and night.\n\r
-          
-          Discover why it's a favorite among scarlet maccaws and the 4 species of monkeys. Catch a wave, go paddle boarding or take a dip in the pacific ocean's turquioise and emmerald waters. 
-         `,
-      ],
-      caption: "",
-    },
-    right: {
       images: [
         "/images/house/final/12.jpeg",
         "/images/house/final/16.jpeg",
@@ -54,67 +37,98 @@ const texts = {
         "/images/house/final/21.jpeg",
         "/images/house/final/5.jpeg",
       ],
-      title: "Comfy Jungle House",
+      title: "The Living Room",
       paragraphs: [
-        `Floor to cealing screened windows to watch all the wildlife as
-      they flow by the house. Big Ass Fans for superb
-      ventilation in two extra large bedroms with 4 individual or 2 king resort grade beds each.\n\r Split the rooms for boys
-      and girls, parents and kids and add a fun camping vibe to your
-      adventure!\n\rFull kitchen with condiments and supplies. Bring your food - or
+        `Designed with huge screened windows to observe and be in
+        nature all day long. No other house in the area is fully
+        screened from bugs.You'll see monkeys fliying from branch to branch, morpho butterfiles, scarlet maccaws, huge trees and it's leaves
+         dancing with the wind and playing with the light. The sound of the ocean, of the forest, it's really quite an experience - and our guests love it.
+         \n\rBluetooth speakers, fans and cross ventilation, well balanced lighting, 
+        handmade furniture - we created and improved this home over the span of 7 years so that it 
+        fits perfectly with the surrondings. It feels increible to be here.\n\rThe house, it's location and our intention when 
+        we created it is part of the holistic experience of Paz.
+        
+        `,
+      ],
+
+      caption: "",
+    },
+
+    right: {
+      images: [
+        "/images/house/kitchen/4.jpeg",
+
+        "/images/house/kitchen/2.jpeg",
+        "/images/house/kitchen/3.jpeg",
+
+        "/images/house/kitchen/5.jpeg",
+        "/images/house/kitchen/6.jpeg",
+        "/images/house/kitchen/7.jpeg",
+      ],
+      title: "Kitchen & Dinning",
+      paragraphs: [
+        `Full kitchen with condiments and supplies. Bring your food - or
       - send us your shopping list and it will be sorted when you
       arrive - or request a typical costarican cook: the friendliness
       and love of our culture is the main condiment in our gastronomy.
-    `,
-        `Ask us for a free upgrade and we'll setup big glaming tents
-      right on the sand for the best posible experience in Costa Rica.`,
+    \n\rThe kitchen has everything you need to prepare your meals, and we have stocked it with good quality pots, pans, plates, knives.
+    Also a large refrigerator, coffee maker, blender. Do notice that since we are an off-grid operation we don't have an oven, microwave or toster available.`,
       ],
-
       caption: "",
     },
   },
 
   rooms: {
     left: {
-      images: ["/images/templo2.png", "/images/beach.jpg"],
-      title: "De-stress and natural connection course",
+      images: [
+        "/images/house/room1/1.jpg",
+        "/images/house/room1/2.jpg",
+        "/images/house/room1/3.jpg",
+        "/images/house/room1/4.jpg",
+        "/images/house/room1/5.jpg",
+
+        "/images/house/room2/1.jpg",
+        "/images/house/room2/2.jpg",
+        "/images/house/room2/3.jpg",
+      ],
+      title: "The Rooms",
       paragraphs: [
-        `Paz (peace) is the feeling I hope that you experience while being here. It's not the opposite of stress, it's the result of being aware to the mechanisms of stress
-           and the mastery to overcome them at any time.\n\r
-  
-        It's the indescribable presence that’s felt when we are truly here. Instead of thinking about situations that are not here in front of us. \n\r
-        
-        Here in Paz, it's easy to find a spot where nothing 'human' is happending, nothing needs to be done, and yet everything happends wonderfully. We can just be present, drop the weight of our shoulders and let things happend.\n\r
-        
-           In this course we'll use nature and observation. Simple things like sitting on the beach, hicking on the jungle, watching a bonefire, looking at the sunset. To surface our behavior and become aware of our particular stress mechanics.\n\r
-  
-           We'll use you own insights and my diverse background in internal arts to find the mix of technics that work best for you. \n\r
-           
-           Our goal is to develop the awareness to observe our state of mind, uncover the source of it's conditining and discover the internal arts ( mind,heart,++ ) 
-           that resonate with you to start or further enhance your self-healing intent.`,
+        `The most important thing for a room in the jungle is that it's very well ventiladed both natural and with fans. 
+        We have the best fans in the world for that and very good ventilation from very large windows. The second most important
+        thing in a room and matresses, pillows and linens. We also made a good investment so that you have a good and comfortable sleep.
+        \n\r
+        The rooms can be arranged as 4 twin beds or as 2 kings beds, and each room has space for 4 guests.
+        \n\r
+        The bathrooms are spacious, clean and they have got good hot water.`,
       ],
       caption: ``,
     },
     right: {
-      images: ["/images/map.png", "/images/templo2.png"],
-      title: "Location",
-      paragraphs: [
-        `
-                  The Osa the Peninsula is the last frontier in Costa Rica. Unspolied and pristine it's considered the most biodiverse place on earth,
-                  meaning it's packed densily with wildlife. The jaguar and 7 other species of felines lives here, tapir, ant eaters, sloths, the scarlet maccaw, 
-                  humpback and shark whales, turtles, rays, the 4 species of monkeys, 900 types of huge trees and the most amazing insects yet to be discoved and named.\n\r
-                  We are located on the tip of the peninsula in Cabo Matapalo, a 2 acre beach front property covered in forest. We are blessed with an area of primary forest, 
-                  a cozy little white sand beach, a sand bottom creek, 4 swimming spots near by, a small bay to paddleboard with beginner and intermediate waves for surfing right in front.
-        `,
-        `
-                    Activities are included, and there are over 45 of them to
-                    choose from. Some are in the property and some require hiking.
-                    Some require equipment, like paddle boards and kayaking. The
-                    solo-bonefire under the stars is a favorite!
-         `,
+      images: [
+        "/images/lounge/2.jpg",
+        "/images/lounge/3.jpg",
+        "/images/lounge/4.jpg",
+        "/images/lounge/1.jpg",
+        "/images/lounge/5.jpg",
+        "/images/lounge/4_4.jpg",
+        "/images/lounge/6.jpg",
+        "/images/lounge/7.jpg",
+        "/images/lounge/8.jpg",
+        "/images/lounge/9.jpg",
+        "/images/lounge/10.jpg",
+        "/images/lounge/11.jpg",
+        "/images/lounge/12.jpg",
+        "/images/lounge/13.jpg",
       ],
-
-      caption:
-        "Cabo Mata Palo can be reached via the scenic Coastal Highway by car (3.5 hours from Jaco) or by taking a beatiful short flight from SJO airport ( 45 minutes flight + 25 minute Taxi ).",
+      title: "The beach lounge",
+      paragraphs: [
+        `This is your opportunity to enjoy a little secluded beach all to yourself.
+        Paz is located in a small gulf where it's hard to see someone walking down the beach. 
+        \n\rRight in front of the house (50 steps) you'll find a little sandy inlet, under the shadow of palm trees that we outfitted with hammocs and comfy furniture where you'll want to spend day and night.\n\r
+        
+        Discover why it's a favorite among scarlet maccaws and the 4 species of monkeys. Catch a wave, go paddle boarding or take a dip in the pacific ocean's turquioise and emmerald waters. 
+       `,
+      ],
     },
   },
 };
@@ -162,19 +176,6 @@ export default function Example({ setView, posts }) {
           </div>
 
           <ImageGrid images={images} />
-
-          <div className="py-20 pt-10 bg-gray-50">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="lg:text-left text-gray-500">
-                <p className="text-lg mt-5 ">
-                  The house is designed to observe nature with large screened
-                  windows, no other house is fully screened from bugs. Lot's of
-                  places to chill inside and outside. Hundreds of birds and
-                  animals live here.
-                </p>
-              </div>
-            </div>
-          </div>
 
           <div className="flex">
             <div className=" w-64 h-1 bg-violet-200"></div>
