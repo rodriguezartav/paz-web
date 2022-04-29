@@ -170,56 +170,6 @@ export default function Example({ setView, posts }) {
             </div>
           </div>
 
-          <ImageGrid images={images} />
-
-          <h2 className="mx-auto text-purple-500 max-w-7xl sm:max-w-6xl text-left pt-18 text-2xl">
-            Local Activities
-          </h2>
-
-          <div className="mx-auto mt-10 max-w-7xl">
-            <Areas
-              activities={[
-                {
-                  name: "Surf Lessons",
-                  title: "4 twin or 2 King beds",
-
-                  icons: [],
-                },
-                {
-                  name: "Tree Climbing",
-                  title: "4 twin or 2 King beds",
-
-                  icons: [],
-                },
-                {
-                  name: "Dolphine and Whale Tour",
-                  title: "Fully stocked kitchen + condiments",
-
-                  icons: [],
-                },
-                {
-                  name: "Paddleboard Tour",
-                  title: "Large and cumfy, area with jungle view",
-
-                  icons: [],
-                },
-                {
-                  name: "Corcovado National Park",
-                  title: "Large wood table for 8",
-
-                  icons: [],
-                },
-
-                {
-                  name: "Guided Hikes",
-                  title: "Bonefire by the house with sofa & chairs",
-
-                  icons: [],
-                },
-              ]}
-            />
-          </div>
-
           <Features
             left={texts["vacations"].left}
             right={texts["vacations"].right}

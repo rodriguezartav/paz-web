@@ -20,6 +20,12 @@ module.exports = withMDX({
           "https://open.spotify.com/artist/5iR7YvWgvzgv3JIc3b0TvK?si=7YbuSAOBRgGCv-cojyuaBg",
         permanent: true,
       },
+      {
+        source: "/p3",
+        destination:
+          "https://open.spotify.com/album/0k47gvTkdfgCs0U7PZnRv6?si=J6Ey3eNJSOqxAH-cClcskA",
+        permanent: true,
+      },
     ];
   },
   pageExtensions: ["js", "jsx", "mdx"],
