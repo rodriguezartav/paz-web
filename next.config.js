@@ -9,11 +9,7 @@ module.exports = withMDX({
         destination: "/posts/yosoyesto",
         permanent: true,
       },
-      {
-        source: "/1",
-        destination: "https://www.amazon.com/dp/B09TLF5LVB",
-        permanent: true,
-      },
+
       {
         source: "/play",
         destination:

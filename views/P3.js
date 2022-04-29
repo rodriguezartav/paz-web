@@ -47,7 +47,7 @@ const product = {
     {
       id: 1,
       name: "Robeto Rodriguez",
-      src: "/images/me_flauta.jpeg",
+      src: "/images/me_enpaz.jpg",
       alt: "Roberto Rodriguez",
     },
     // More images...
@@ -107,22 +107,22 @@ export default function Example() {
           <div className="lg:grid lg:grid-cols-2 lg:gap-x-8 lg:items-start">
             {/* Image gallery */}
 
-            <div style={{ padding: "55% 0 0 0", position: "relative" }}>
-              <iframe
-                src="https://player.vimeo.com/video/704606733?h=b57e13437a&badge=0&autopause=0&player_id=0&app_id=58479"
-                frameBorder={0}
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "100%",
-                }}
-                title="atardecder_full.mp4"
-              />
-            </div>
+            <Tab.Group as="div" className="flex flex-col-reverse">
+              {/* Image selector */}
+              <div className="hidden mt-6 w-full max-w-2xl mx-auto sm:block lg:max-w-none"></div>
+
+              <Tab.Panels className="w-full aspect-w-1 aspect-h-1">
+                {product.images.map((image) => (
+                  <Tab.Panel key={image.id}>
+                    <img
+                      src={image.src}
+                      alt={image.alt}
+                      className="w-full h-full object-center object-cover sm:rounded-lg"
+                    />
+                  </Tab.Panel>
+                ))}
+              </Tab.Panels>
+            </Tab.Group>
 
             {/* Product info */}
             <div className="mt-10 px-4 sm:px-0 sm:mt-16 lg:mt-0">
