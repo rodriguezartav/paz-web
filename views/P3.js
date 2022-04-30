@@ -66,7 +66,7 @@ const product = {
     },
   ],
   description: `
-  Luego de que un atardecer y yo nos hiciéramos amigos jugando en el mar; y el no se quería ir. Me vine para la casa con ganas de tocar su melodía con ese cariño que me dejó.
+  Luego que un atardecer y yo nos hiciéramos amigos jugando en el mar; y el no se quería ir. Me vine para la casa con ganas de tocar su melodía con ese cariño que me dejó.
   
   Se me ocurrió grabarla en video también… y como me costó conectarme de verdad, quitarme y dejarla salir.
   
@@ -132,7 +132,7 @@ export default function Example() {
 
               <div className="mt-3">
                 <h2 className="sr-only">Product information</h2>
-                <p className="text-xl text-gray-900">{product.price}</p>
+                <p className="text-md text-gray-900">Studio: {product.price}</p>
               </div>
 
               {/* Reviews */}
