@@ -17,6 +17,7 @@
   ```
 */
 import Header from "../components/marketing/header";
+import Footer from "../components/marketing/footer";
 
 import { Fragment, useState } from "react";
 import {
@@ -48,6 +49,18 @@ const product = {
       id: 1,
       name: "Robeto Rodriguez",
       src: "/images/me_enpaz.jpg",
+      alt: "Roberto Rodriguez",
+    },
+    {
+      id: 1,
+      name: "Robeto Rodriguez",
+      src: "/images/book/enpaz_1.png",
+      alt: "Roberto Rodriguez",
+    },
+    {
+      id: 1,
+      name: "Robeto Rodriguez",
+      src: "/images/book/enpaz_2.png",
       alt: "Roberto Rodriguez",
     },
     // More images...
@@ -113,14 +126,51 @@ export default function Example() {
           <div className="lg:grid lg:grid-cols-2 lg:gap-x-8 lg:items-start">
             {/* Image gallery */}
 
-            <div className="flex flex-col-reverse">
-              <div className="w-full aspect-w-1 aspect-h-1">
-                <img
-                  className="w-full h-full object-center object-cover sm:rounded-lg"
-                  src="images/me_enpaz.jpg"
-                />
+            <Tab.Group as="div" className="flex flex-col-reverse">
+              {/* Image selector */}
+              <div className="hidden mt-6 w-full max-w-2xl mx-auto sm:block lg:max-w-none">
+                <Tab.List className="grid grid-cols-4 gap-6">
+                  {product.images.map((image) => (
+                    <Tab
+                      key={image.id}
+                      className="relative h-24 bg-white rounded-md flex items-center justify-center text-sm font-medium uppercase text-gray-900 cursor-pointer hover:bg-gray-50 focus:outline-none focus:ring focus:ring-offset-4 focus:ring-opacity-50"
+                    >
+                      {({ selected }) => (
+                        <>
+                          <span className="sr-only">{image.name}</span>
+                          <span className="absolute inset-0 rounded-md overflow-hidden">
+                            <img
+                              src={image.src}
+                              alt=""
+                              className="w-full h-full object-center object-cover"
+                            />
+                          </span>
+                          <span
+                            className={classNames(
+                              selected ? "ring-indigo-500" : "ring-transparent",
+                              "absolute inset-0 rounded-md ring-2 ring-offset-2 pointer-events-none"
+                            )}
+                            aria-hidden="true"
+                          />
+                        </>
+                      )}
+                    </Tab>
+                  ))}
+                </Tab.List>
               </div>
-            </div>
+
+              <Tab.Panels className="w-full aspect-w-1 aspect-h-1">
+                {product.images.map((image) => (
+                  <Tab.Panel key={image.id}>
+                    <img
+                      src={image.src}
+                      alt={image.alt}
+                      className="w-full h-full object-center object-cover sm:rounded-lg"
+                    />
+                  </Tab.Panel>
+                ))}
+              </Tab.Panels>
+            </Tab.Group>
 
             {/* Product info */}
             <div className="mt-10 px-4 sm:px-0 sm:mt-16 lg:mt-0">
@@ -136,10 +186,21 @@ export default function Example() {
               <div className="mt-4 flex sm:flex-col1">
                 <a
                   target="_blank"
-                  href="https://www.amazon.com/dp/B09TLF5LVB"
+                  href="/files/enpaz.pdf"
                   className="max-w-xs flex-1 bg-purple-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500 sm:w-full"
                 >
-                  View in Amazon
+                  Solo por hoy - Descargar PDF
+                </a>
+              </div>
+
+              <div className="mt-10 flex sm:flex-col1">
+                <a
+                  target="_blank"
+                  href="https://www.amazon.com/dp/B09TLF5LVB"
+                  className="max-w-xs text-center flex-1 bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500 sm:w-full"
+                >
+                  Ver en Amazon
+                  <br /> ( gratis para Kindle )
                 </a>
               </div>
 
@@ -203,7 +264,7 @@ export default function Example() {
                     href="https://www.amazon.com/dp/B09TLF5LVB"
                     className="max-w-xs flex-1 bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500 sm:w-full"
                   >
-                    Buy in Amazon
+                    Comprar/Buy Amazon
                   </a>
                 </div>
               </form>
@@ -211,6 +272,7 @@ export default function Example() {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
