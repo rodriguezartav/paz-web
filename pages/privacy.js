@@ -1,4 +1,4 @@
-import Home from "../views/privacy";
+import Home from "../views/legal/privacy";
 
 export default function HomeApp() {
   return (
