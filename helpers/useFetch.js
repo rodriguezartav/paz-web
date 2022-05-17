@@ -18,7 +18,9 @@ export function useFetch(url, options) {
         const json = await res.json();
         setResponse(json);
         setIsLoading(false);
+        setError(null);
       } catch (error) {
+        setIsLoading(false);
         setError(error);
       }
     };
@@ -38,6 +40,7 @@ export function useMutate(
   const [isLoading, setIsLoading] = React.useState(false);
 
   const mutate = async (body, dynamicUrl) => {
+    setError(null);
     setIsLoading(true);
     try {
       const res = await fetch(dynamicUrl || url, {
@@ -50,12 +53,17 @@ export function useMutate(
 
       const json = await res.json();
       if (res.status != 200) {
+        setIsLoading(false);
         return setError(json);
       }
       setResponse(json);
       setIsLoading(false);
+      setError(null);
+
       return json;
     } catch (error) {
+      setIsLoading(false);
+      setSuccess(null);
       setError(error.message || error);
     }
   };
