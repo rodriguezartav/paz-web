@@ -21,7 +21,7 @@ export default function HomeApp({
     >
       <div className="container px-4 mx-auto">
         <div className="flex flex-wrap lg:items-center -mx-4">
-          <div className="w-full md:w-1/2 px-4 mb-16 md:mb-0">
+          <div className=" hidden sm:block w-full md:w-1/2 px-4 mb-16 md:mb-0">
             <div className=" max-h-screen overflow-hidden relative mx-auto md:ml-0 max-w-max">
               <img
                 className="absolute z-10 -left-8 -top-8 w-28 md:w-auto text-yellow-400"
@@ -45,6 +45,22 @@ export default function HomeApp({
             >
               {title}
             </h1>
+
+            <div className=" block sm:hidden w-full md:w-1/2 px-4 mb-16 md:mb-0">
+              <div className=" max-h-screen overflow-hidden relative mx-auto md:ml-0 max-w-max">
+                <img
+                  className="absolute z-10 -left-8 -top-8 w-28 md:w-auto text-yellow-400"
+                  src="flex-ui-assets/elements/circle3-yellow.svg"
+                  alt=""
+                />
+                <img
+                  className="absolute z-10 -right-7 -bottom-8 w-28 md:w-auto text-blue-500"
+                  src="flex-ui-assets/elements/dots3-blue.svg"
+                  alt=""
+                />
+                <img src={image} alt="" />
+              </div>
+            </div>
             <p className="mb-6 text-lg md:text-xl text-gray-500 font-medium">
               {subtitle}
             </p>

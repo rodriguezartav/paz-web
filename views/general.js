@@ -38,14 +38,14 @@ export default function Example() {
 
       <HeaderTop
         button_1={{
-          text: "Alquiler Propiedad en AirBnb",
+          text: "Alquilar Propiedad en AirBnb",
           href: "https://airbnb.com/h/pazz",
         }}
         button_2={{ text: "Participar en un retiro", href: "/retreat" }}
         logoBefore={true}
         title="El propósito de este lugar es que todos experimentemos un momento de paz"
         subtitle="Hay dos formas de visitar:"
-        image="/images/beach.jpg"
+        image={{ src: "/images/beach.jpg", width: 1000, height: 700 }}
       />
 
       <HeaderLeft
@@ -116,20 +116,6 @@ export default function Example() {
         t2_description="2 Cuartos con camas 3 individuales y glampings para 2 personas. La cocina se usa para meriendas personales."
         t3_title="Frente al mar"
         t3_description="La casa esta a 50 pasos de la arena y en el medio un bosque de arboles de mas de 50 metros de altura."
-        image="/images/house.jpg"
-      />
-
-      <FeaturesCenter
-        title="En las actividades de cada retiro damos ideas de cómo aplicar la presencia en la naturaleza"
-        subtitle="Esta es la dirección de Paz y cada persona decide cuanto, como y cuando incorporarla."
-        t1_title="Que tipo de actividades son?"
-        t1_description="Aquí hay de todo por hacer, y nos gusta hacerlas de forma divertida y aventurera. Desde lecciones de surf y paddle, caminatas a cascadas, fogatas. Simplemente le recordamos estar presente."
-        t2_title="Para quien son?"
-        t2_description="Para todos! Familias, amigos, viejos y jovenes. La diversidad es el corazón de paz. No hay que saber meditar, ni saber surfear, ni haber estado en el monte. Ser humano con ganas de estar vivo."
-        t3_title="Que es la presencía?"
-        t3_description="Es tan sencillo que cuesta explicarlo. Es simplemente estar presente en el lugar donde estamos, viviendo lo que esta pasando en vez de estar pensando en lugares y cosas que no estan."
-        t4_title="Como se aprende la presencia?"
-        t4_description="No se aprende, ya todos las sabemos. Se practica. En un lugar lleno de belleza y magia de vida. Con una intención hacia eso y el apoyo del espiritú de la naturaleza - que siempre esta - es mas facil, eso es todo"
         image="/images/house.jpg"
       />
 

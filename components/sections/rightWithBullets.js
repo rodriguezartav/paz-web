@@ -121,7 +121,7 @@ export default function HomeApp({
               </div>
             </div>
           </div>
-          <div className="w-full md:w-1/2 px-4">
+          <div className="hidden sm:block w-full md:w-1/2 px-4">
             <div className="relative mx-auto md:mr-0 max-w-max">
               <img
                 className="absolute z-10 -left-8 -top-8 w-28 md:w-auto text-yellow-400"
