@@ -56,7 +56,9 @@ export default function HomeApp({
                   />
                 </svg>
               </div>
-              <h3 className="mb-4 text-xl md:text-2xl leading-tight font-bold">
+              <h3
+                className={`mb-4 text-xl md:text-2xl leading-tight font-bold  text-${color}`}
+              >
                 {t1_title}
               </h3>
               <p className="text-coolGray-500 font-medium">{t1_description}</p>
@@ -76,7 +78,9 @@ export default function HomeApp({
                   />
                 </svg>
               </div>
-              <h3 className="mb-4 text-xl md:text-2xl leading-tight font-bold">
+              <h3
+                className={`mb-4 text-xl md:text-2xl leading-tight font-bold  text-${color}`}
+              >
                 {t2_title}
               </h3>
               <p className="text-coolGray-500 font-medium">{t2_description}</p>
@@ -101,7 +105,9 @@ export default function HomeApp({
                   />
                 </svg>
               </div>
-              <h3 className="mb-4 text-xl md:text-2xl leading-tight font-bold">
+              <h3
+                className={`mb-4 text-xl md:text-2xl leading-tight font-bold  text-${color}`}
+              >
                 {t3_title}
               </h3>
               <p className="text-coolGray-500 font-medium">{t3_description}</p>
@@ -121,7 +127,9 @@ export default function HomeApp({
                   />
                 </svg>
               </div>
-              <h3 className="mb-4 text-xl md:text-2xl leading-tight font-bold">
+              <h3
+                className={`mb-4 text-xl md:text-2xl leading-tight font-bold  text-${color}`}
+              >
                 {t4_title}
               </h3>
               <p className="text-coolGray-500 font-medium">{t4_description}</p>

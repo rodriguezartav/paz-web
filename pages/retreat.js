@@ -1,10 +1,8 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
+
 import { promises as fs } from "fs";
 import path from "path";
 import Home from "../views/retreat";
-import Texts from "../texts";
-import Header from "../components/marketing/header";
 
 export async function getStaticProps() {
   const postsDirectory = path.join(process.cwd(), "pages/posts");

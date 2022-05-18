@@ -38,10 +38,12 @@ export function useMutate(
   const [response, setResponse] = React.useState(null);
   const [error, setError] = React.useState(null);
   const [isLoading, setIsLoading] = React.useState(false);
+  const [isSuccess, setIsSucccess] = React.useState(null);
 
   const mutate = async (body, dynamicUrl) => {
     setError(null);
     setIsLoading(true);
+    setIsSucccess(null);
     try {
       const res = await fetch(dynamicUrl || url, {
         body: JSON.stringify(body),
@@ -52,21 +54,23 @@ export function useMutate(
       });
 
       const json = await res.json();
-      if (res.status != 200) {
+      if (res.status >= 400) {
         setIsLoading(false);
+        setIsSucccess(false);
+        setResponse(null);
         return setError(json);
       }
       setResponse(json);
       setIsLoading(false);
       setError(null);
-
+      setIsSucccess(true);
       return json;
     } catch (error) {
       setIsLoading(false);
-      setSuccess(null);
+      setIsSucccess(false);
       setError(error.message || error);
     }
   };
 
-  return { response, error, isLoading, mutate };
+  return { response, error, isLoading, isSuccess, mutate };
 }

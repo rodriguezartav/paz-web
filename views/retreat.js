@@ -33,8 +33,8 @@ export default function Example() {
     <div className=" antialiased bg-body text-body font-body">
       <Link href="/">
         <img
-          className="mt-20 mx-auto relative w-44 h-44"
-          src="/marketing/logo/png/lila_solo_v2.png"
+          className="mt-28 mx-auto relative w-44 h-44 mb-10"
+          src="/marketing/logo/png/blanco_fondo color_v2.png"
           alt=""
         />
       </Link>

@@ -51,7 +51,7 @@ export default function HomeApp({
             {legend}
           </span>
           <h3
-            className={`mb-6 text-indigo-500 text-4xl md:text-5xl leading-tight font-bold tracking-tighter text-${color}`}
+            className={`mb-6text-4xl md:text-5xl leading-tight font-bold tracking-tighter text-${color}`}
           >
             {title}
           </h3>
@@ -77,7 +77,9 @@ export default function HomeApp({
             </div>
             <div className="w-full md:flex-1 md:pt-3">
               <div className="md:max-w-sm">
-                <h3 className="mb-4 text-xl md:text-2xl leading-tight text-coolGray-900 font-bold">
+                <h3
+                  className={`mb-4 text-xl md:text-2xl leading-tight font-bold  text-${color}`}
+                >
                   {t1_title}
                 </h3>
                 <p className="text-coolGray-500 font-medium">
@@ -105,7 +107,9 @@ export default function HomeApp({
             </div>
             <div className="w-full md:flex-1 md:pt-3">
               <div className="md:max-w-sm">
-                <h3 className="mb-4 text-xl md:text-2xl leading-tight text-coolGray-900 font-bold">
+                <h3
+                  className={`mb-4 text-xl md:text-2xl leading-tight font-bold  text-${color}`}
+                >
                   {t2_title}
                 </h3>
                 <p className="text-coolGray-500 font-medium">
@@ -133,7 +137,9 @@ export default function HomeApp({
             </div>
             <div className="w-full md:flex-1 md:pt-3">
               <div className="md:max-w-sm">
-                <h3 className="mb-4 text-xl md:text-2xl leading-tight text-coolGray-900 font-bold">
+                <h3
+                  className={`mb-4 text-xl md:text-2xl leading-tight font-bold  text-${color}`}
+                >
                   {t3_title}
                 </h3>
                 <p className="text-coolGray-500 font-medium">

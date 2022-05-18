@@ -31,7 +31,7 @@ export default function Example() {
       <Link href="/">
         <img
           className="mt-20 mx-auto relative w-44 h-44"
-          src="/marketing/logo/png/lila_solo_v2.png"
+          src="/marketing/logo/png/blanco_fondo color_v2.png"
           alt=""
         />
       </Link>
@@ -110,14 +110,12 @@ export default function Example() {
       <Application
         title="La villa principal"
         subtitle="Ventanas gigantes con cedazo americano permiten ver el bosque en su totalidad. Los animales nos pasan a la par. Monos, Tucanes, Lapas, mariposas morpho, gavilanes, pavones, pizotes, perezoso, hormigueros y una vez una danta y dos ocelotes,"
-        t1_title="2 Bedrooms with 4 Beds each"
-        t1_description="Incluye 3 comidas, estacion de cafe y te, todas las actividades y transporte si viene en flysansa.com"
-        t2_title="Full Kitchen, Living & Dinning"
-        t2_description="Quisimos que estar en la casa se sintiera como acampar, pero con la comidad de una casa de playa. Ventanas gigantes con cedazos americanos nos hacen sentir afuera, pero estar adentro protegidos y comodos."
-        t3_title="50 Steps from the Sand"
-        t3_description="Otros retiros son para los que se quieren divertir, y para eso damos clases introductorias de surf y paddle board en el mar. En un pequeño rinconcito de Osa tan maravilloso que no se puede describir, solo vivir."
-        t4_title="Exploración de positas"
-        t4_description="La oportunidad de hacer un viaje de todo el día al parque nacional corcovado. Saliendo desde Paz, con transporte en bote y guia recomendado. No esta incluido en los precios."
+        t1_title="Para alquilar"
+        t1_description="Dos cuartos con cama king para 8 personas, cocina completa, sala comedor."
+        t2_title="Para retiros"
+        t2_description="2 Cuartos con camas 3 individuales y glampings para 2 personas. La cocina se usa para meriendas personales."
+        t3_title="Frente al mar"
+        t3_description="La casa esta a 50 pasos de la arena y en el medio un bosque de arboles de mas de 50 metros de altura."
         image="/images/house.jpg"
       />
 
@@ -154,14 +152,26 @@ export default function Example() {
         image="/images/house.jpg"
       />
 
+      <HeaderTop
+        button_1={{
+          text: "Alquiler Propiedad en AirBnb",
+          href: "https://airbnb.com/h/pazz",
+        }}
+        button_2={{ text: "Participar en un retiro", href: "/retreat" }}
+        logoBefore={true}
+        title="El propósito de este lugar es que todos experimentemos un momento de paz"
+        subtitle="Hay dos formas de visitar:"
+      />
+
       <Cta
-        title="Paz es un ambiente no dogmático sin profesor - donde todos estamos en lo mismo. Porque esa es la verdad de la vida."
-        subtitle="Todo fue diseñado, construido y es guiado por su fundador Roberto ( @monodepaz ) que utilizó todas estas herramientas para salir de situaciones muy retadoras de vida y sus consecuencia de salud mental. Ahora dedica su vida como cuidador de este lugar y compañero de todos los que nos visitan."
-        line2="Incluye 3 comidas, estacion de cafe y te, todas las actividades y transporte si viene en flysansa.com"
-        line3="Fogatas y BBQ's en la playa"
-        image="/marketing/logo/png/paz_lila__v2.png"
-        button={{ text: "Más información sobre los retiros", href: "/retreat" }}
-        href="de todas formas gracias por su visita"
+        title="Que le parece?"
+        subtitle="Cuentenos lo que esta buscando"
+        post_title="Gracias por su mensaje"
+        post_subtitle="Le gustaria una respuesta?"
+        button={{
+          post_text: "Sí",
+          text: "Enviar",
+        }}
       />
 
       <Footer />
