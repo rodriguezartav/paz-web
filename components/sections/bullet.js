@@ -83,7 +83,13 @@ export default function HomeApp({
             </div>
           </div>
           <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
-            <img className="mx-auto" src="/images/beach.jpeg" alt="" />
+            <Image
+              width={1000}
+              height={750}
+              className="mx-auto"
+              src="/images/beach.jpeg"
+              alt=""
+            />
           </div>
           <div className="w-full lg:w-1/3 lg:pt-6 px-4">
             <div className="p-8 lg:mb-6 text-center hover:bg-white rounded-md hover:shadow-xl transition duration-200">

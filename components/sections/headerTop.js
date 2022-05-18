@@ -102,7 +102,7 @@ export default function HomeApp({
               />
             </svg>
             <div className="relative overflow-hidden rounded-7xl">
-              <img src={image} />
+              <Image width={1000} height={700} src={image} />
               <video
                 className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 min-h-full min-w-full max-w-none"
                 poster="flex-ui-assets/images/testimonials/video-frame.jpeg"
