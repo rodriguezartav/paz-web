@@ -20,7 +20,7 @@ export default function HomeApp({
   return (
     <section className="relative mb-20 ">
       <div className="relative  bg-white opacity-90 overflow-hidden">
-        <div className={` pb-6 sm:pb-0  `}>
+        <div className={` pb-24   sm:pb-${!image ? 6 : 52}  `}>
           <div className="container px-4 mx-auto">
             <div className="mx-auto text-center max-w-4xl">
               {legend && (
@@ -39,7 +39,7 @@ export default function HomeApp({
       </div>
 
       {image && (
-        <div className="container px-4 py-20 md:pb-12 mx-auto -mt-20 sm:mt-4 ">
+        <div className="container px-4 py-20 md:pb-12 mx-auto -mt-40 md:-mt-72">
           <div className="relative mx-auto max-w-max">
             <img
               className="absolute z-20 -left-8 -top-8 w-28 md:w-auto"
@@ -75,16 +75,6 @@ export default function HomeApp({
                 height={image.height}
                 src={image.src}
               />
-              <video
-                className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 min-h-full min-w-full max-w-none"
-                poster="flex-ui-assets/images/testimonials/video-frame.jpeg"
-                muted
-              >
-                <source
-                  src="https://static.shuffle.dev/files/video-placeholder.mp4"
-                  type="video/mp4"
-                />
-              </video>
             </div>
           </div>
         </div>

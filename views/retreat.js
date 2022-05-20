@@ -54,8 +54,7 @@ export default function Example() {
         t3_description="Otros retiros son para los que se quieren divertir, y para eso damos clases introductorias de surf y paddle board en el mar. En un pequeño rinconcito de Osa tan maravilloso que no se puede describir, solo vivir."
         t4_title="Exploración de positas"
         t4_description="La oportunidad de hacer un viaje de todo el día al parque nacional corcovado. Saliendo desde Paz, con transporte en bote y guia recomendado. No esta incluido en los precios."
-        image="/images/jungle.jpg"
-        button={{ text: "Conocer mas  (pronto)", href: "#" }}
+        image={{ src: "/images/jungle.jpg", width: 1000, height: 700 }}
       />
       <RightPlain
         title="Otros retiros son para los que se quieren divertir"
@@ -68,11 +67,10 @@ export default function Example() {
         t3_description="Otros retiros son para los que se quieren divertir, y para eso damos clases introductorias de surf y paddle board en el mar. En un pequeño rinconcito de Osa tan maravilloso que no se puede describir, solo vivir."
         t4_title="Exploración de positas"
         t4_description="La oportunidad de hacer un viaje de todo el día al parque nacional corcovado. Saliendo desde Paz, con transporte en bote y guia recomendado. No esta incluido en los precios."
-        image="/images/video-bkg.jpg"
-        button={{ text: "Conocer mas (pronto)", href: "#" }}
+        image={{ src: "/images/video-bkg.jpg", width: 1000, height: 700 }}
       />
       <How
-        title="Todo lo que va necesitar"
+        title="Tienen todo lo que realmente se necesita para estar bien"
         subtitle="Venga y no se preocupe por nada."
         t1_title="Todo incluido"
         t1_description="3 comidas, cafe y te y meriendas"
@@ -82,7 +80,7 @@ export default function Example() {
         t3_description="Cuartos o glamping para 2 y 3 personas."
         t4_title="Viaje a PN Corcovado (extra)"
         t4_description="Viaje al parque en bote el pen-último día"
-        image={"/images/templo.jpeg"}
+        image={{ src: "/images/templo.jpeg", width: 1000, height: 700 }}
         button={{ text: "Conocer mas (pronto)", href: "#" }}
       />
       <Features
@@ -148,7 +146,7 @@ export default function Example() {
         t3_description="Otros retiros son para los que se quieren divertir, y para eso damos clases introductorias de surf y paddle board en el mar. En un pequeño rinconcito de Osa tan maravilloso que no se puede describir, solo vivir."
         t4_title="Exploración de positas"
         t4_description="La oportunidad de hacer un viaje de todo el día al parque nacional corcovado. Saliendo desde Paz, con transporte en bote y guia recomendado. No esta incluido en los precios."
-        image="/images/templo2.jpg"
+        image={{ src: "/images/templo2.jpg", width: 1000, height: 700 }}
         button={{ text: "Conocer mas (pronto)", href: "#" }}
       />
 
@@ -156,7 +154,7 @@ export default function Example() {
         onComplete={(e) => console.log(e)}
         title="Reciba precios, ofertas y detalles sobre nuestros retiros"
         subtitle="Estamos alistandonos para lanzar los primeros retiros con precios muy accesibles. Registrese si le interesa saber cuando los lancemos."
-        image="/images/jungle.jpg"
+        image={{ src: "/images/jungle.jpg", width: 1000, height: 700 }}
         button={{ text: "Si, quiero ir", onClick: () => {} }}
       />
       <Footer />

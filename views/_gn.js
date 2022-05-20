@@ -50,20 +50,20 @@ export default function Example() {
         image={{ src: "/images/beach.jpg", width: 1000, height: 700 }}
       />
 
-      <RightPlain
-        legend={"Ubicación"}
-        title="Viva la naturaleza como en ningún otro lugar"
-        subtitle={`En un bosque con arboles gigantes que meditan frente al mar. En el lugar mas biodiverso del mundo, lleno de pajaritos, mariposas y animales. 
-        La sensación de estar aquí es una fuente de aventura y admiración. Con humildad compartimos la experiencia de 20 años aprendiendo a conectarnos con este bello lugar.`}
-        image={{ src: "/images/jungle.jpg", width: 1000, height: 700 }}
-      />
-
       <HeaderLeft
         legend="Peninsula de Osa, Costa Rica"
         title="Se siente como estar en un parque nacional"
         color="lime-700"
         subtitle="Creamos una experiencia que se siente como acampar en la playa y el bosque pero con la protección de una casa comoda"
         image={{ src: "/images/house.jpg", width: 1000, height: 700 }}
+      />
+
+      <RightPlain
+        legend={"Ubicación"}
+        title="Viva la naturaleza como en ningún otro lugar"
+        subtitle={`En un bosque con arboles gigantes que meditan frente al mar. En el lugar mas biodiverso del mundo, lleno de pajaritos, mariposas y animales. 
+        La sensación de estar aquí es una fuente de aventura y admiración. Con humildad compartimos la experiencia de 20 años aprendiendo a conectarnos con este bello lugar.`}
+        image={{ src: "/images/jungle.jpg", width: 1000, height: 700 }}
       />
 
       {/*
@@ -83,6 +83,21 @@ export default function Example() {
       />
 
       */}
+
+      <RightWithBullets
+        legend="La propiedad"
+        title={`Venga a descansar, pero tambien a profundizar`}
+        subtitle=" "
+        t1_title="Un templo natural"
+        t1_description="Tratamos a La Peninsula de Osa y a este lugar como una universidad de enseñanza de la naturaleza para el hombre. Como todo en la vida, las cosas son lo que queremos que sean."
+        t2_title="100% desconectados del mundo"
+        t2_description="Estamos a 10 km despues del pueblo mas lejano de Costa Rica. Camino el PN Corcovado. Aquí no llega la electricidad, el agua, ni nada mas. La electricidad la generamos con el sol y el agua nos la da la tierra."
+        t3_title="Construido con intuición, respecto y amor"
+        t3_description="Nunca hubieron planos y todo lo hacemos aquī mismo poco a poco, observando y siguiendo la inspiración. Ha tomado mucho tiempo darle el punto. El respecto al bosque y el mar esta por encima de lo demas."
+        t4_title="Viaje a PN Corcovado (extra)"
+        t4_description="Viaje al parque en bote el pen-último día"
+        image={{ src: "/images/wellness.jpg", width: 800, height: 600 }}
+      />
 
       <RightPlain
         title="La playa"
@@ -112,8 +127,8 @@ export default function Example() {
         image={{ src: "/images/lounge/1.jpg", width: 1000, height: 700 }}
       />
 
-      <RightPlain
-        title="Hospedaje Natural"
+      <LeftWithBullets
+        title="La casa del mono"
         subtitle="Ventanas gigantes con cedazo americano permiten ver el bosque en su totalidad. Los animales nos pasan a la par. Monos, Tucanes, Lapas, mariposas morpho, gavilanes, pavones, pizotes, perezoso, hormigueros y una vez una danta y dos ocelotes,"
         t1_title="Para alquilar"
         t1_description="Dos cuartos con cama king para 8 personas, cocina completa, sala comedor."
