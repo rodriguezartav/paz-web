@@ -47,81 +47,79 @@ export default function Example() {
         logoBefore={true}
         title="El propósito de este lugar es que todos experimentemos un momento de paz"
         subtitle="Hay dos formas de visitar:"
-        image={{ src: "/images/beach.jpg", width: 1000, height: 700 }}
+        image={{
+          src: "optimized/lounge/drone_300.jpg",
+          width: 1100,
+        }}
       />
 
       <RightPlain
         legend={"Ubicación"}
-        title="Viva la naturaleza como en ningún otro lugar"
-        subtitle={`En un bosque con arboles gigantes que meditan frente al mar. En el lugar mas biodiverso del mundo, lleno de pajaritos, mariposas y animales. 
-        La sensación de estar aquí es una fuente de aventura y admiración. Con humildad compartimos la experiencia de 20 años aprendiendo a conectarnos con este bello lugar.`}
-        image={{ src: "/images/jungle.jpg", width: 1000, height: 700 }}
+        title="Un lugar para aprender a conectar con la vida"
+        subtitle={`Aprovechamos el lugar mas biodiverso del mundo es para superar la superficialidad humana y encontrar el lugar donde todos somos naturaleza.`}
+        image={{
+          src: "/optimized/forest/big_trees.jpg",
+          width: 750,
+          height: 1000,
+        }}
+      />
+
+      <LeftPlain
+        title="Un lugar para librarse de las preocupaciones y relajarse hasta donde no hay mas"
+        subtitle="Perciba el espacio en todas sus direcciones, descubra la verdadera belleza del momento y disfrute del silencio adentro y afuera. Aproveche nuestros consejos sobre la presencia en cada momento para aprender a disfrutar de este lugar."
+        t1_title="Caminatas a Cataratas"
+        t1_description="Incluye 3 comidas, estacion de cafe y te, todas las actividades y transporte si viene en flysansa.com"
+        t2_title="Fogatas y BBQ's en la playa"
+        t2_description="Quisimos que estar en la casa se sintiera como acampar, pero con la comidad de una casa de playa. Ventanas gigantes con cedazos americanos nos hacen sentir afuera, pero estar adentro protegidos y comodos."
+        t3_title="Lecciones de Surf y Paddleboard"
+        t3_description="Otros retiros son para los que se quieren divertir, y para eso damos clases introductorias de surf y paddle board en el mar. En un pequeño rinconcito de Osa tan maravilloso que no se puede describir, solo vivir."
+        t4_title="Exploración de positas"
+        t4_description="La oportunidad de hacer un viaje de todo el día al parque nacional corcovado. Saliendo desde Paz, con transporte en bote y guia recomendado. No esta incluido en los precios."
+        image={{
+          src: "/optimized/beach/sun_palm2.jpeg",
+          width: 750,
+          height: 700,
+        }}
+      />
+
+      <RightPlain
+        title="...para divertirse como un costarricense"
+        subtitle="En Costa Rica hay una forma particular de disfrutar de la vida. Una profundida espiritual, pero tambien un liviano sentido del humor siempre buscando una sonrisa."
+        t1_title="Caminatas a Cataratas"
+        t1_description="Incluye 3 comidas, estacion de cafe y te, todas las actividades y transporte si viene en flysansa.com"
+        t2_title="Fogatas y BBQ's en la playa"
+        t2_description="Quisimos que estar en la casa se sintiera como acampar, pero con la comidad de una casa de playa. Ventanas gigantes con cedazos americanos nos hacen sentir afuera, pero estar adentro protegidos y comodos."
+        t3_title="Lecciones de Surf y Paddleboard"
+        t3_description="Otros retiros son para los que se quieren divertir, y para eso damos clases introductorias de surf y paddle board en el mar. En un pequeño rinconcito de Osa tan maravilloso que no se puede describir, solo vivir."
+        t4_title="Exploración de positas"
+        t4_description="La oportunidad de hacer un viaje de todo el día al parque nacional corcovado. Saliendo desde Paz, con transporte en bote y guia recomendado. No esta incluido en los precios."
+        image={{
+          src: "/optimized/beach/video-bkg.jpg",
+          width: 960,
+          height: 700,
+        }}
       />
 
       <HeaderLeft
         legend="Peninsula de Osa, Costa Rica"
-        title="Se siente como estar en un parque nacional"
+        title="...que se siente como estar en un parque nacional"
         color="lime-700"
         subtitle="Creamos una experiencia que se siente como acampar en la playa y el bosque pero con la protección de una casa comoda"
-        image={{ src: "/images/house.jpg", width: 1000, height: 700 }}
-      />
-
-      {/*
-      <RightWithBullets
-        legend="La propiedad"
-        title={`La historia dice que el fundador de Paz termino de leer el "Diario de un Yogi" de P. Yogananda`}
-        subtitle=" y esa misma noche... se le apareció en un sueño y le dio instrucciones especificas de que hacer en este lugar. El día siguiente empezó y 7 años despues el mar le puso Paz"
-        t1_title="Un templo natural"
-        t1_description="Tratamos a La Peninsula de Osa y a este lugar como una universidad de enseñanza de la naturaleza para el hombre. Como todo en la vida, las cosas son lo que queremos que sean."
-        t2_title="100% desconectados del mundo"
-        t2_description="Estamos a 10 km despues del pueblo mas lejano de Costa Rica. Camino el PN Corcovado. Aquí no llega la electricidad, el agua, ni nada mas. La electricidad la generamos con el sol y el agua nos la da la tierra."
-        t3_title="Construido con intuición, respecto y amor"
-        t3_description="Nunca hubieron planos y todo lo hacemos aquī mismo poco a poco, observando y siguiendo la inspiración. Ha tomado mucho tiempo darle el punto. El respecto al bosque y el mar esta por encima de lo demas."
-        t4_title="Viaje a PN Corcovado (extra)"
-        t4_description="Viaje al parque en bote el pen-último día"
-        image={{ src: "/images/wellness.jpg", width: 800, height: 600 }}
-      />
-
-      */}
-
-      <RightPlain
-        title="La playa"
-        subtitle="Esto es un regalo del mar, cuando vengan verán. Una playita con palmeras, almendros donde llegan las lapas y los monos. Tenemos un templo para relajarse, hamacas y sillones en un rincón fresquito muy solitario de Osa."
-        t1_title="Caminatas a Cataratas"
-        t1_description="Incluye 3 comidas, estacion de cafe y te, todas las actividades y transporte si viene en flysansa.com"
-        t2_title="Fogatas y BBQ's en la playa"
-        t2_description="Quisimos que estar en la casa se sintiera como acampar, pero con la comidad de una casa de playa. Ventanas gigantes con cedazos americanos nos hacen sentir afuera, pero estar adentro protegidos y comodos."
-        t3_title="Lecciones de Surf y Paddleboard"
-        t3_description="Otros retiros son para los que se quieren divertir, y para eso damos clases introductorias de surf y paddle board en el mar. En un pequeño rinconcito de Osa tan maravilloso que no se puede describir, solo vivir."
-        t4_title="Exploración de positas"
-        t4_description="La oportunidad de hacer un viaje de todo el día al parque nacional corcovado. Saliendo desde Paz, con transporte en bote y guia recomendado. No esta incluido en los precios."
-        image={{ src: "/images/lounge_3.jpg", width: 1000, height: 700 }}
-      />
-
-      <LeftPlain
-        title="Las olas y el mar"
-        subtitle="Estamos a 2km de donde el golfo dulce se encuentra con el oceano pacifico. Aguas azul turquesa que se alternan con verde esmeralda. Por el frente pasan las ballenas y esta lleno de tortugas. En una bahia quebrada donde hay buenas olas para suerfear, muuuucho espacio para salir a remar. Pero tambien pozas y rincones para flotar y nadar."
-        t1_title="Caminatas a Cataratas"
-        t1_description="Incluye 3 comidas, estacion de cafe y te, todas las actividades y transporte si viene en flysansa.com"
-        t2_title="Fogatas y BBQ's en la playa"
-        t2_description="Quisimos que estar en la casa se sintiera como acampar, pero con la comidad de una casa de playa. Ventanas gigantes con cedazos americanos nos hacen sentir afuera, pero estar adentro protegidos y comodos."
-        t3_title="Lecciones de Surf y Paddleboard"
-        t3_description="Otros retiros son para los que se quieren divertir, y para eso damos clases introductorias de surf y paddle board en el mar. En un pequeño rinconcito de Osa tan maravilloso que no se puede describir, solo vivir."
-        t4_title="Exploración de positas"
-        t4_description="La oportunidad de hacer un viaje de todo el día al parque nacional corcovado. Saliendo desde Paz, con transporte en bote y guia recomendado. No esta incluido en los precios."
-        image={{ src: "/images/lounge/1.jpg", width: 1000, height: 700 }}
+        image={{
+          src: "/optimized/house/living/master.jpeg",
+          width: 730,
+          height: 700,
+        }}
       />
 
       <RightPlain
-        title="Hospedaje Natural"
-        subtitle="Ventanas gigantes con cedazo americano permiten ver el bosque en su totalidad. Los animales nos pasan a la par. Monos, Tucanes, Lapas, mariposas morpho, gavilanes, pavones, pizotes, perezoso, hormigueros y una vez una danta y dos ocelotes,"
-        t1_title="Para alquilar"
-        t1_description="Dos cuartos con cama king para 8 personas, cocina completa, sala comedor."
-        t2_title="Para retiros"
-        t2_description="2 Cuartos grandes con 4 camas individuales y glampings para 2 personas. La cocina se usa para meriendas personales."
-        t3_title="Frente al mar"
-        t3_description="La casa esta a 50 pasos de la arena y en el medio un bosque de arboles de mas de 50 metros de altura."
-        image={{ src: "/images/house.jpg", width: 800, height: 600 }}
+        title="...y tiene una programa para recordar como vivir en Paz"
+        subtitle="La paz de adentro es un programa único desarrollado por nuestro fundador para si mismo, y cuya esencia esta en cada detalle, cada actividad y cada momento. "
+        image={{
+          src: "/optimized/art/meditation.jpg",
+          width: 800,
+          height: 600,
+        }}
       />
 
       <Links
@@ -140,7 +138,7 @@ export default function Example() {
           src: "./images/logos/airbnb.svg",
           href: "https://airbnb.com/h/pazz",
         }}
-        image={{ src: "/images/me_flauta.jpg", width: 1000, height: 700 }}
+        image={{ src: "/optimized/me/me_flauta.jpg", width: 450, height: 700 }}
       />
 
       <HeaderBottom

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import Image from "next/image";
+import Image from "../Image";
 
 export default function HomeApp({
   title,
@@ -9,7 +9,6 @@ export default function HomeApp({
   image,
   subtitle,
   button,
-  onClick,
 }) {
   return (
     <section
