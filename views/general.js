@@ -56,7 +56,7 @@ export default function Example() {
       <RightPlain
         legend={"Ubicación"}
         title="Un lugar para aprender a conectar con la vida"
-        subtitle={`Aprovechamos el lugar mas biodiverso del mundo es para superar la superficialidad humana y encontrar el lugar donde todos somos naturaleza.`}
+        subtitle={`Aprovechamos el lugar mas biodiverso del mundo para superar la superficialidad humana y encontrar el lugar donde todos somos naturaleza.`}
         image={{
           src: "/optimized/forest/big_trees.jpg",
           width: 750,
@@ -65,7 +65,7 @@ export default function Example() {
       />
 
       <LeftPlain
-        title="Un lugar para librarse de las preocupaciones y relajarse hasta donde no hay mas"
+        title="Un lugar para librarse de las preocupaciones y relajarse hasta donde ya no hay"
         subtitle="Perciba el espacio en todas sus direcciones, descubra la verdadera belleza del momento y disfrute del silencio adentro y afuera. Aproveche nuestros consejos sobre la presencia en cada momento para aprender a disfrutar de este lugar."
         t1_title="Caminatas a Cataratas"
         t1_description="Incluye 3 comidas, estacion de cafe y te, todas las actividades y transporte si viene en flysansa.com"

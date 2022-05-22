@@ -13,6 +13,7 @@ import HeaderTop from "../components/sections/headerTop";
 import HeaderLeft from "../components/sections/headerLeft";
 
 import RightWithBullets from "../components/sections/rightWithBullets";
+import LeftWithBullets from "../components/sections/leftWithBullets";
 
 import Features from "../components/sections/features";
 
@@ -43,22 +44,40 @@ export default function Example() {
         title="Los retiros de Paz son como vacaciónes individuales para hacer una pausa y regresar mejor de lo que se salió"
         subtitle="Nuestra receta es un poco de aventura, naturaleza hasta que no quepa y mucha relajación fuera de la zona de confort."
       />
-      <LeftPlain
-        title="Los retiros son temáticos, algunos son orientados a la naturtaleza"
-        subtitle="los arboles, los animales y las plantas. Caminatas a cataratas, exploración de positas en playas desiertas. Conocer el Parque Nacional Corcovado"
-        t1_title="Caminatas a Cataratas"
-        t1_description="Incluye 3 comidas, estacion de cafe y te, todas las actividades y transporte si viene en flysansa.com"
-        t2_title="Fogatas y BBQ's en la playa"
-        t2_description="Quisimos que estar en la casa se sintiera como acampar, pero con la comidad de una casa de playa. Ventanas gigantes con cedazos americanos nos hacen sentir afuera, pero estar adentro protegidos y comodos."
-        t3_title="Lecciones de Surf y Paddleboard"
-        t3_description="Otros retiros son para los que se quieren divertir, y para eso damos clases introductorias de surf y paddle board en el mar. En un pequeño rinconcito de Osa tan maravilloso que no se puede describir, solo vivir."
+      <LeftWithBullets
+        title="Los retiros son temáticos, algunos son orientados a la naturaleza"
+        subtitle="Los arboles, los animales y las plantas. Caminatas a cataratas, exploración de positas en playas desiertas. Conocer el Parque Nacional Corcovado"
+        t1_title="Caminatas orientadas a la conexión espiritual con la naturaleza"
+        t1_description="En el bosque, en cascadas y en la playa"
+        t2_title="Momentos de presencia en la naturaleza"
+        t2_description="Usamos el fuego, el agua, el barro y cualquier otra razón para practicar el estar si pensar."
+        t3_title="Acompañamiento cientifico y tour opcional al Parque Nacional Corcovado"
+        t3_description="Los retiros de naturaleza tienen la asistencia de nuestra biologa MSC residente y fundadora de Saimiri NGO"
         t4_title="Exploración de positas"
         t4_description="La oportunidad de hacer un viaje de todo el día al parque nacional corcovado. Saliendo desde Paz, con transporte en bote y guia recomendado. No esta incluido en los precios."
         image={{ src: "/raw/wildlife/maccaw.webp", width: 1000, height: 700 }}
       />
-      <RightPlain
+      <RightWithBullets
         title="Otros retiros son para los que se quieren divertir"
-        subtitle="Damos clases introductorias de surf y paddle board en el mar. Mas fogatas, bbq's, musica y baile. En un pequeño rinconcito de Osa tan maravilloso que no se puede describir, solo vivir."
+        subtitle="Un retiro para los que nos gusta el movimiento y la aventura, siempre enfocado en la conexión con la naturaleza y los elementos"
+        t1_title="Lecciones de Surf y Paddleboard"
+        t1_description="Le eseñamos a surfear o usar un Paddleboard justo al frente de nuestra propiedad, con un enfoque espirutual conocido como Soul Surfing "
+        t2_title="Fogatas y BBQ's en la playa"
+        t2_description=""
+        t3_title="Todo orientado a la presencia y conexión en la naturaleza"
+        t3_description=""
+        t4_title="Exploración de positas"
+        t4_description="La oportunidad de hacer un viaje de todo el día al parque nacional corcovado. Saliendo desde Paz, con transporte en bote y guia recomendado. No esta incluido en los precios."
+        image={{
+          src: "/optimized/beach/paddle_from_sea.jpeg",
+          width: 745,
+          height: 700,
+        }}
+      />
+
+      <RightPlain
+        title="...y nuestro retiro insignia para los que se quieren explorar a sí mismos"
+        subtitle="De forma practica y no-dogmatica exploramos los aspectos mas sutiles de la conciencia y profundizamos en quien somos en verdad con el proposito inicial de sanarnos las cosas duras de la vida. Un retiro para toda la vida."
         t1_title="Caminatas a Cataratas"
         t1_description="Incluye 3 comidas, estacion de cafe y te, todas las actividades y transporte si viene en flysansa.com"
         t2_title="Fogatas y BBQ's en la playa"
@@ -68,7 +87,7 @@ export default function Example() {
         t4_title="Exploración de positas"
         t4_description="La oportunidad de hacer un viaje de todo el día al parque nacional corcovado. Saliendo desde Paz, con transporte en bote y guia recomendado. No esta incluido en los precios."
         image={{
-          src: "/optimized/beach/paddle_from_sea.jpeg",
+          src: "/optimized/lounge/templo_from_back.jpg",
           width: 745,
           height: 700,
         }}
@@ -91,6 +110,8 @@ export default function Example() {
         }}
         button={{ text: "Conocer mas (pronto)", href: "#" }}
       />
+      {/*
+
       <Features
         title="En las actividades de cada retiro damos ideas de cómo aplicar la presencia en la naturaleza "
         subtitle="La presencia es un esfuerzo que se hace por estar en el lugar donde estamos y no pensando en otras de cosas de lado. La presencia es el camino más corto a la paz, esta aquī, ya, y no se necesita creer, hacer, ni ser nada más."
@@ -143,24 +164,8 @@ export default function Example() {
           },
         ]}
       />
-      <RightPlain
-        title="Tenemos otros retiros para los que se quieren explorar a sí mismos, aunque nunca lo hayan hecho"
-        subtitle="Acopañamiento para revisar su vida, hacer una pausa, descansar, sanarse de las cosas duras de la vida, una desconexión de su historia personal, buscar otra perspectiva, hablar con la naturaleza, con el mar, con la fogata que es lo mismo que hablar con el uno mismo verdadero y tomar decisiones importantes o mejor aun descubrir dimensiones nuevas de uno mismo que hacen esas decisiones irrelevantes."
-        t1_title="Caminatas a Cataratas"
-        t1_description="Incluye 3 comidas, estacion de cafe y te, todas las actividades y transporte si viene en flysansa.com"
-        t2_title="Fogatas y BBQ's en la playa"
-        t2_description="Quisimos que estar en la casa se sintiera como acampar, pero con la comidad de una casa de playa. Ventanas gigantes con cedazos americanos nos hacen sentir afuera, pero estar adentro protegidos y comodos."
-        t3_title="Lecciones de Surf y Paddleboard"
-        t3_description="Otros retiros son para los que se quieren divertir, y para eso damos clases introductorias de surf y paddle board en el mar. En un pequeño rinconcito de Osa tan maravilloso que no se puede describir, solo vivir."
-        t4_title="Exploración de positas"
-        t4_description="La oportunidad de hacer un viaje de todo el día al parque nacional corcovado. Saliendo desde Paz, con transporte en bote y guia recomendado. No esta incluido en los precios."
-        image={{
-          src: "/optimized/lounge/templo_from_back.jpg",
-          width: 745,
-          height: 700,
-        }}
-        button={{ text: "Conocer mas (pronto)", href: "#" }}
-      />
+
+      */}
 
       <Signup
         onComplete={(e) => console.log(e)}
