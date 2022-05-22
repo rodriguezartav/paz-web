@@ -94,7 +94,7 @@ export default function Example() {
         t4_title="Exploración de positas"
         t4_description="La oportunidad de hacer un viaje de todo el día al parque nacional corcovado. Saliendo desde Paz, con transporte en bote y guia recomendado. No esta incluido en los precios."
         image={{
-          src: "/optimized/beach/video-bkg.jpg",
+          src: "/raw/wildlife/titis.webp",
           width: 960,
           height: 700,
         }}
