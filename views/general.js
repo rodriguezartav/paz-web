@@ -83,7 +83,7 @@ export default function Example() {
       />
 
       <RightPlain
-        title="...para divertirse como un costarricense"
+        title="Un lugar para divertirse como un costarricense"
         subtitle="En Costa Rica hay una forma particular de disfrutar de la vida. Una profundida espiritual, pero tambien un liviano sentido del humor siempre buscando una sonrisa."
         t1_title="Caminatas a Cataratas"
         t1_description="Incluye 3 comidas, estacion de cafe y te, todas las actividades y transporte si viene en flysansa.com"
