@@ -41,11 +41,11 @@ export default function Example() {
       </Link>
       <HeaderTop
         logoBefore={true}
-        title="Los retiros de Paz son vacaciónes con un proposito de transformación"
-        subtitle={`Nuestra receta es única. Tiene uns espiritú aventurero, una relación cercana con la naturaleza y facilita la dimensión espiritual de la vida`}
+        title="Los retiros de Paz son vacaciónes con proposito de transformación"
+        subtitle={`Nuestra receta es única. Tiene un espiritú aventurero, una relación cercana con la naturaleza viva y facilita la dimensión espiritual de la vida`}
       />
       <LeftWithBullets
-        title="Para sentir una conexión con la naturaleza, y recibir una respuesta del espiritú vivo de la vida, tenemos que exponernos a ella autentica y humildemente"
+        title="Para sentir una conexión con la naturaleza, y tener respuesta del espiritú vivo de la vida, tenemos que exponernos a ella autentica y humildemente"
         subtitle="Los arboles, los animales y las plantas no son objetos para ser fotografiados, son los guias y el ejemplo de como debemos vivir - si realmente queremos paz"
         t1_title="Caminatas orientadas a la conexión espiritual con la naturaleza"
         t1_description="En el bosque, en cascadas y en la playa"
@@ -77,7 +77,7 @@ export default function Example() {
 
       <LeftWithBullets
         title="Si realmente queremos transformar nuestra vida de preocupaciones, inconformidades y enojos en creatividad, libertad y alegria - eso solo se puede hacer desde el corazón y solo lo puede hacer uno"
-        subtitle="La balanza de la vida moderna esta inclinada hacia el pensamiento y su momentum controla cada decisión. Tratamos de contrarestarlo con tecnicas, creecnias e ideas - pero todo eso solo son mas pensamientos."
+        subtitle="La balanza de la vida moderna esta inclinada hacia el pensamiento y su momentum controla cada decisión. Tratamos de contrarestarlo con tecnicas, creencias e ideas - pero todo eso solo son mas pensamientos."
         t1_title="El retiro es un curso para recordar como se vive desde el corazón"
         t1_description="La coherencia entre la mente y el corazón es nuestro estado natural, ya todos lo vivimos y no se olvida - como andar en bicicleta."
         t2_title="Un curso vivo, no dogamtico y no profesorado donde el ingrediente magico somos todos"
