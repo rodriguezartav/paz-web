@@ -8,7 +8,7 @@ import How from "../components/sections/how";
 import Cta from "../components/sections/cta";
 import Application from "../components/sections/application";
 import Bullet from "../components/sections/bullet";
-
+import Pricing from "../components/sections/pricing";
 import HeaderTop from "../components/sections/headerTop";
 import HeaderLeft from "../components/sections/headerLeft";
 
@@ -45,7 +45,7 @@ export default function Example() {
         subtitle={`Nuestra receta es única. Tiene un espiritú aventurero, una relación cercana con la naturaleza viva y facilita la dimensión espiritual de la vida`}
       />
       <LeftWithBullets
-        title="Para sentir una conexión con la naturaleza, y tener respuesta del espiritú vivo de la vida, tenemos que exponernos a ella autentica y humildemente"
+        title="Para sentir la conexión con la naturaleza - percibir la respuesta del espiritu de la vida - tenemos que exponernos a ella autentica y humildemente."
         subtitle="Los arboles, los animales y las plantas no son objetos para ser fotografiados, son los guias y el ejemplo de como debemos vivir - si realmente queremos paz"
         t1_title="Caminatas orientadas a la conexión espiritual con la naturaleza"
         t1_description="En el bosque, en cascadas y en la playa"
@@ -76,14 +76,14 @@ export default function Example() {
       />
 
       <LeftWithBullets
-        title="Si realmente queremos transformar nuestra vida de preocupaciones, inconformidades y enojos en creatividad, libertad y alegria - eso solo se puede hacer desde el corazón y solo lo puede hacer uno"
-        subtitle="La balanza de la vida moderna esta inclinada hacia el pensamiento y su momentum controla cada decisión. Tratamos de contrarestarlo con tecnicas, creencias e ideas - pero todo eso solo son mas pensamientos."
+        title="Para realmente transformar nuestras preocupaciones, inconformidades y enojos en creatividad, libertad y alegria no basta con un cambio de pensamiento."
+        subtitle="La balanza de la vida moderna esta inclinada hacia el pensamiento y su momentum controla cada decisión. Tratamos de contrarestarlo con tecnicas, creencias e ideas - pero esos tambien son pensamientos. El mundo nuevo se vive con la sabiduria del corazón."
         t1_title="El retiro es un curso para recordar como se vive desde el corazón"
         t1_description="La coherencia entre la mente y el corazón es nuestro estado natural, ya todos lo vivimos y no se olvida - como andar en bicicleta."
         t2_title="Un curso vivo, no dogamtico y no profesorado donde el ingrediente magico somos todos"
-        t2_description="Estamos juntos en esta vida porque la dirección para recordar y descubrir las dimensiones invencibles de nuestro existir es un trabajo en equipo."
+        t2_description="Estamos juntos en esta vida porque la dirección para recordar y descubrir las dimensiones mas puras de nuestro existir - es un trabajo en equipo."
         t3_title="Transformarnos, es reconocer de primera mano que nos somos un pensamiento"
-        t3_description="El retiro es un espacio para vencer la resistencia a profundizar en lo que somos en verdad. Cada quien a su estilo y a su ritmo con el apoyo de la madre naturaleza, de todos nuestros ancestros que nos ayudan en cada momento y del abrazo de los que estamos aquí."
+        t3_description="El retiro es un espacio para reconocer que la resistencia a profundizar mas alla de donde el pensamiento puede llegar - es solo un pensamiento."
         images={[
           {
             src: "/optimized/lounge/templo_from_back.jpg",
@@ -93,81 +93,11 @@ export default function Example() {
         ]}
       />
 
-      <How
-        title="Los retiros tienen lo que realmente se necesita para estar bien"
-        subtitle="Venga y no se preocupe por nada."
-        t1_title="Todo incluido"
-        t1_description="3 comidas, cafe y te y meriendas"
-        t2_title="Actividades, guias y equipo"
-        t2_description="Todas las actividades según el retiro"
-        t3_title="Hospedaje frente al mar"
-        t3_description="Cuartos o glamping para 2 y 3 personas."
-        t4_title="Viaje a PN Corcovado (extra)"
-        t4_description="Viaje al parque en bote el pen-último día"
-        images={[
-          {
-            src: "/optimized/house/dinning/dinning_full.JPG",
-            width: 750,
-            height: 700,
-          },
-        ]}
+      <Pricing
+        legend={"Precios"}
+        title={"Retiros empiezan el segundo jueves de cada mes"}
+        subtitle="Duración opcional de 5 a 7 días"
       />
-      {/*
-
-      <Features
-        title="En las actividades de cada retiro damos ideas de cómo aplicar la presencia en la naturaleza "
-        subtitle="La presencia es un esfuerzo que se hace por estar en el lugar donde estamos y no pensando en otras de cosas de lado. La presencia es el camino más corto a la paz, esta aquī, ya, y no se necesita creer, hacer, ni ser nada más."
-        list={[
-          {
-            title: "Caminatas en Silencio",
-            description:
-              "Vamos a cataratas, explorando posas en km's de playas y bosques. Aquí no hay que caminar mucho para ver animales y estar en el bosque, lo hacemos mas que nada para adentrarnos en nosotros mismos.",
-          },
-          {
-            title: "Surf y Paddleboard",
-            description:
-              "El deporte de Osa es el surf, es lo que hacemos para divertirnos. Tenemos olas para principiantes e intermedias frente a la casa. Salir en paddle a hablar con al atardecer es la cereza del pastel.",
-          },
-          {
-            title: "Fuego",
-            description:
-              "El fuego es uno de los maestros del retiro. Tenemos dos areas para hacer fogatas una por el bosque y otra en la playa. Nos encanta el fuego, jugar, bailar, hablar y estar con él. Cosas que ya todos hemos hecho.  ",
-          },
-          {
-            title: "Agua",
-            description:
-              "El agua es la medicina del retiro y la reina del lugar. La lluvia para salir a correr, jugar y bailar en un bosque de playa, ningun niño se la pierde; y es lo que mas necesitamos. Tenemos el mar, quebradas y pozas.",
-          },
-          {
-            title: "Tierra ",
-            description:
-              "Ir al bosque, salirse del sendero, ponerse de rodillas y tocar la tierra. Ver de que esta hecha, es la tierra de un bosque primario, es lo mas vivo que hay en el mundo. Tambien tenemos una poza con barro para cubrirse de piez a cabeza cuando quiera.",
-          },
-          {
-            title: "Fiesta",
-            description:
-              "Es dificil imaginarse una fiesta sin pachanga, alchol y drogas. Nos es tan facil desinhibierse, olvidarse de quien te esta mirando, que estan pensado y sobre todo hay que poner de parte de uno para estar alegre. Hoy en día, no hay nada mas importante que aprender.",
-          },
-
-          {
-            title: "Charlas",
-            description:
-              "Un retiro exitoso se da cuando al final, ojala antes. Llegamos a un punto donde estamos comodos sin hacer nada. Para eso hacemos todo lo demas.",
-          },
-          {
-            title: "Circulos Conversatorios",
-            description:
-              "Un retiro exitoso se da cuando al final, ojala antes. Llegamos a un punto donde estamos comodos sin hacer nada. Para eso hacemos todo lo demas.",
-          },
-          {
-            title: "Nada",
-            description:
-              "Un retiro exitoso se da cuando al final, ojala antes. Llegamos a un punto donde estamos comodos sin hacer nada. Para eso hacemos todo lo demas.",
-          },
-        ]}
-      />
-
-      */}
 
       <Signup
         onComplete={(e) => console.log(e)}
