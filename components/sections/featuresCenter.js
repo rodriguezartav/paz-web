@@ -6,7 +6,7 @@ export default function HomeApp({
   title,
   legend,
   color = "indigo-500",
-  image,
+  images,
   subtitle,
   t1_description,
   t1_title,

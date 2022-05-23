@@ -41,59 +41,60 @@ export default function Example() {
       </Link>
       <HeaderTop
         logoBefore={true}
-        title="Los retiros de Paz son como vacaciónes individuales para hacer una pausa y regresar mejor de lo que se salió"
-        subtitle="Nuestra receta es un poco de aventura, naturaleza hasta que no quepa y mucha relajación fuera de la zona de confort."
+        title="Los retiros de Paz son vacaciónes con un proposito de transformación"
+        subtitle={`Nuestra receta es única. Tiene uns espiritú aventurero, una relación cercana con la naturaleza y facilita la dimensión espiritual de la vida`}
       />
       <LeftWithBullets
-        title="Los retiros son temáticos, algunos son orientados a la naturaleza"
-        subtitle="Los arboles, los animales y las plantas. Caminatas a cataratas, exploración de positas en playas desiertas. Conocer el Parque Nacional Corcovado"
+        title="Para sentir una conexión con la naturaleza, y recibir una respuesta del espiritú vivo de la vida, tenemos que exponernos a ella autentica y humildemente"
+        subtitle="Los arboles, los animales y las plantas no son objetos para ser fotografiados, son los guias y el ejemplo de como debemos vivir - si realmente queremos paz"
         t1_title="Caminatas orientadas a la conexión espiritual con la naturaleza"
         t1_description="En el bosque, en cascadas y en la playa"
         t2_title="Momentos de presencia en la naturaleza"
-        t2_description="Usamos el fuego, el agua, el barro y cualquier otra razón para practicar el estar si pensar."
-        t3_title="Acompañamiento cientifico y tour opcional al Parque Nacional Corcovado"
-        t3_description="Los retiros de naturaleza tienen la asistencia de nuestra biologa MSC residente y fundadora de Saimiri NGO"
-        t4_title="Exploración de positas"
-        t4_description="La oportunidad de hacer un viaje de todo el día al parque nacional corcovado. Saliendo desde Paz, con transporte en bote y guia recomendado. No esta incluido en los precios."
-        image={{ src: "/raw/wildlife/maccaw.webp", width: 1000, height: 700 }}
+        t2_description="Usamos el fuego, el agua, el barro y todas las actividades para practicar el estar presente y meditar espontaneamente, sin esfuerzo."
+        t3_title="Espacios de silencio y reflexión para la auto sanación"
+        t3_description="Una vez descubiertas y disueltas las ideas que generan las tensiones, nos podemos concentrar en nosotros mismos y escucharnos. Las soluciones llegan solas desde adentro."
+        images={[
+          { src: "/raw/wildlife/maccaw.webp", width: 1000, height: 700 },
+        ]}
       />
       <RightWithBullets
-        title="Otros retiros son para los que se quieren divertir"
-        subtitle="Un retiro para los que nos gusta el movimiento y la aventura, siempre enfocado en la conexión con la naturaleza y los elementos"
+        title="Si lo que buscamos es la felicidad, empecemos por disfrutar y pasarla muy bien."
+        subtitle="Aprovechamos nuestra ubicación en el bosque mas biodiverso del mundo y frente al mar del Golfo Dulce en un lugar muy remoto para tener una experiencia muy divertida"
         t1_title="Lecciones de Surf y Paddleboard"
         t1_description="Le eseñamos a surfear o usar un Paddleboard justo al frente de nuestra propiedad, con un enfoque espirutual conocido como Soul Surfing "
-        t2_title="Fogatas y BBQ's en la playa"
-        t2_description=""
-        t3_title="Todo orientado a la presencia y conexión en la naturaleza"
-        t3_description=""
-        t4_title="Exploración de positas"
-        t4_description="La oportunidad de hacer un viaje de todo el día al parque nacional corcovado. Saliendo desde Paz, con transporte en bote y guia recomendado. No esta incluido en los precios."
-        image={{
-          src: "/optimized/beach/paddle_from_sea.jpeg",
-          width: 745,
-          height: 700,
-        }}
+        t2_title="Fogatas, BBQ's y hamacas en la playa"
+        t2_description="No hay nada mas sanador que sentarse en la playa, en la arena, bajo las estrellas y frente a una fogata con amigos a reirnos, comer rico y conversar sobre la vida."
+        t3_title="Baile y música como expresion del alma"
+        t3_description="Una fiesta a la antigua, con fuego y danza libre. Una oportunidad para recordar a nuestros ancestros y como se divertian sanando su mente, viviendo libres desde el corazón"
+        images={[
+          {
+            src: "/optimized/beach/paddle_from_sea.jpeg",
+            width: 745,
+            height: 700,
+          },
+        ]}
       />
 
-      <RightPlain
-        title="...y nuestro retiro insignia para los que se quieren explorar a sí mismos"
-        subtitle="De forma practica y no-dogmatica exploramos los aspectos mas sutiles de la conciencia y profundizamos en quien somos en verdad con el proposito inicial de sanarnos las cosas duras de la vida. Un retiro para toda la vida."
-        t1_title="Caminatas a Cataratas"
-        t1_description="Incluye 3 comidas, estacion de cafe y te, todas las actividades y transporte si viene en flysansa.com"
-        t2_title="Fogatas y BBQ's en la playa"
-        t2_description="Quisimos que estar en la casa se sintiera como acampar, pero con la comidad de una casa de playa. Ventanas gigantes con cedazos americanos nos hacen sentir afuera, pero estar adentro protegidos y comodos."
-        t3_title="Lecciones de Surf y Paddleboard"
-        t3_description="Otros retiros son para los que se quieren divertir, y para eso damos clases introductorias de surf y paddle board en el mar. En un pequeño rinconcito de Osa tan maravilloso que no se puede describir, solo vivir."
-        t4_title="Exploración de positas"
-        t4_description="La oportunidad de hacer un viaje de todo el día al parque nacional corcovado. Saliendo desde Paz, con transporte en bote y guia recomendado. No esta incluido en los precios."
-        image={{
-          src: "/optimized/lounge/templo_from_back.jpg",
-          width: 745,
-          height: 700,
-        }}
+      <LeftWithBullets
+        title="Si realmente queremos transformar nuestra vida de preocupaciones, inconformidades y enojos en creatividad, libertad y alegria - eso solo se puede hacer desde el corazón y solo lo puede hacer uno"
+        subtitle="La balanza de la vida moderna esta inclinada hacia el pensamiento y su momentum controla cada decisión. Tratamos de contrarestarlo con tecnicas, creecnias e ideas - pero todo eso solo son mas pensamientos."
+        t1_title="El retiro es un curso para recordar como se vive desde el corazón"
+        t1_description="La coherencia entre la mente y el corazón es nuestro estado natural, ya todos lo vivimos y no se olvida - como andar en bicicleta."
+        t2_title="Un curso vivo, no dogamtico y no profesorado donde el ingrediente magico somos todos"
+        t2_description="Estamos juntos en esta vida porque la dirección para recordar y descubrir las dimensiones invencibles de nuestro existir es un trabajo en equipo."
+        t3_title="Transformarnos, es reconocer de primera mano que nos somos un pensamiento"
+        t3_description="El retiro es un espacio para vencer la resistencia a profundizar en lo que somos en verdad. Cada quien a su estilo y a su ritmo con el apoyo de la madre naturaleza, de todos nuestros ancestros que nos ayudan en cada momento y del abrazo de los que estamos aquí."
+        images={[
+          {
+            src: "/optimized/lounge/templo_from_back.jpg",
+            width: 1000,
+            height: 700,
+          },
+        ]}
       />
+
       <How
-        title="Tienen todo lo que realmente se necesita para estar bien"
+        title="Los retiros tienen lo que realmente se necesita para estar bien"
         subtitle="Venga y no se preocupe por nada."
         t1_title="Todo incluido"
         t1_description="3 comidas, cafe y te y meriendas"
@@ -103,12 +104,13 @@ export default function Example() {
         t3_description="Cuartos o glamping para 2 y 3 personas."
         t4_title="Viaje a PN Corcovado (extra)"
         t4_description="Viaje al parque en bote el pen-último día"
-        image={{
-          src: "/optimized/house/dinning/dinning_full.JPG",
-          width: 750,
-          height: 700,
-        }}
-        button={{ text: "Conocer mas (pronto)", href: "#" }}
+        images={[
+          {
+            src: "/optimized/house/dinning/dinning_full.JPG",
+            width: 750,
+            height: 700,
+          },
+        ]}
       />
       {/*
 

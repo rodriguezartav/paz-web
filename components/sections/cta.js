@@ -9,7 +9,7 @@ import { useMutate } from "../../helpers/useFetch";
 export default function HomeApp({
   title,
   color = "indigo-500",
-  image,
+  images,
   button,
   post_subtitle,
   post_title,

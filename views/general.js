@@ -33,39 +33,41 @@ export default function Example() {
       <Link href="/">
         <img
           className="mt-20 mx-auto relative w-44 h-44"
-          src="/marketing/logo/png/blanco_fondo color_v2.png"
+          src="/marketing/logo/png/paz_lila_tronco_color_v2.png"
           alt=""
         />
       </Link>
 
       <HeaderTop
-        button_1={{
-          text: "Alquilar Propiedad en AirBnb",
-          href: "https://airbnb.com/h/pazz",
-        }}
-        button_2={{ text: "Participar en un retiro", href: "/retreat" }}
         logoBefore={true}
-        title="El propósito de este lugar es que todos experimentemos un momento de paz"
-        subtitle="Hay dos formas de visitar:"
-        image={{
-          src: "optimized/lounge/drone_300.jpg",
-          width: 1100,
-        }}
+        title="Unos días en el bosque y la playa para recordar como vivir en paz"
+        images={[
+          {
+            src: "optimized/beach/drone_e_300.PNG",
+            width: 960,
+          },
+          {
+            src: "optimized/lounge/hammocks.jpg",
+            width: 960,
+          },
+        ]}
       />
 
       <RightPlain
         legend={"Ubicación"}
-        title="Un lugar para aprender a conectar con la vida"
+        title="conectandonos con la vida"
         subtitle={`Aprovechamos el lugar mas biodiverso del mundo para superar la superficialidad humana y encontrar el lugar donde todos somos naturaleza.`}
-        image={{
-          src: "/optimized/forest/big_trees.jpg",
-          width: 750,
-          height: 1000,
-        }}
+        images={[
+          {
+            src: "/optimized/forest/big_trees.jpg",
+            width: 750,
+            height: 1000,
+          },
+        ]}
       />
 
       <LeftPlain
-        title="Un lugar para librarse de las preocupaciones y relajarse hasta donde ya no hay"
+        title="liberandonos de las preocupaciones"
         subtitle="Perciba el espacio en todas sus direcciones, descubra la verdadera belleza del momento y disfrute del silencio adentro y afuera. Aproveche nuestros consejos sobre la presencia en cada momento para aprender a disfrutar de este lugar."
         t1_title="Caminatas a Cataratas"
         t1_description="Incluye 3 comidas, estacion de cafe y te, todas las actividades y transporte si viene en flysansa.com"
@@ -75,15 +77,17 @@ export default function Example() {
         t3_description="Otros retiros son para los que se quieren divertir, y para eso damos clases introductorias de surf y paddle board en el mar. En un pequeño rinconcito de Osa tan maravilloso que no se puede describir, solo vivir."
         t4_title="Exploración de positas"
         t4_description="La oportunidad de hacer un viaje de todo el día al parque nacional corcovado. Saliendo desde Paz, con transporte en bote y guia recomendado. No esta incluido en los precios."
-        image={{
-          src: "/optimized/beach/sun_palm2.jpeg",
-          width: 750,
-          height: 700,
-        }}
+        images={[
+          {
+            src: "/optimized/beach/sun_palm2.jpeg",
+            width: 750,
+            height: 700,
+          },
+        ]}
       />
 
       <RightPlain
-        title="Un lugar para divertirse como un costarricense"
+        title="divirtiendonos como si vivieramos aquí"
         subtitle="En Costa Rica hay una forma particular de disfrutar de la vida. Una profundida espiritual, pero tambien un liviano sentido del humor siempre buscando una sonrisa."
         t1_title="Caminatas a Cataratas"
         t1_description="Incluye 3 comidas, estacion de cafe y te, todas las actividades y transporte si viene en flysansa.com"
@@ -93,33 +97,39 @@ export default function Example() {
         t3_description="Otros retiros son para los que se quieren divertir, y para eso damos clases introductorias de surf y paddle board en el mar. En un pequeño rinconcito de Osa tan maravilloso que no se puede describir, solo vivir."
         t4_title="Exploración de positas"
         t4_description="La oportunidad de hacer un viaje de todo el día al parque nacional corcovado. Saliendo desde Paz, con transporte en bote y guia recomendado. No esta incluido en los precios."
-        image={{
-          src: "/raw/wildlife/titis.webp",
-          width: 960,
-          height: 700,
-        }}
+        images={[
+          {
+            src: "/raw/wildlife/titis.webp",
+            width: 960,
+            height: 700,
+          },
+        ]}
       />
 
       <HeaderLeft
         legend="Peninsula de Osa, Costa Rica"
-        title="...que se siente como estar en un parque nacional"
+        title="un lugar que se siente como estar en un parque nacional"
         color="lime-700"
         subtitle="Creamos una experiencia que se siente como acampar en la playa y el bosque pero con la protección de una casa comoda"
-        image={{
-          src: "/optimized/house/living/master.jpeg",
-          width: 730,
-          height: 700,
-        }}
+        images={[
+          {
+            src: "/optimized/house/living/master.jpeg",
+            width: 730,
+            height: 700,
+          },
+        ]}
       />
 
       <RightPlain
-        title="...y tiene una programa para recordar como vivir en Paz"
-        subtitle="La paz de adentro es un programa único desarrollado por nuestro fundador para si mismo, y cuya esencia esta en cada detalle, cada actividad y cada momento. "
-        image={{
-          src: "/optimized/art/meditation.jpg",
-          width: 800,
-          height: 600,
-        }}
+        title="pero en verdad es un templo natural muy especial"
+        subtitle="El espiritú de la madre naturaleza esta presente aquī. La escuchamos y la queremos. Es la guia en esta aventura por realmente encontrarla en nosotros mismos."
+        images={[
+          {
+            src: "/optimized/art/meditation.jpg",
+            width: 800,
+            height: 600,
+          },
+        ]}
       />
 
       <Links
@@ -138,7 +148,9 @@ export default function Example() {
           src: "./images/logos/airbnb.svg",
           href: "https://airbnb.com/h/pazz",
         }}
-        image={{ src: "/optimized/me/me_flauta.jpg", width: 450, height: 700 }}
+        images={[
+          { src: "/optimized/me/me_flauta.jpg", width: 450, height: 700 },
+        ]}
       />
 
       <HeaderBottom

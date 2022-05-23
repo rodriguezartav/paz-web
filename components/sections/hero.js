@@ -5,7 +5,7 @@ import Image from "../Image";
 export default function HomeApp({
   title,
   legend,
-  image,
+  images,
   color = "indigo-500",
   subtitle,
   button,
