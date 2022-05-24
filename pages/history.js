@@ -2,8 +2,8 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { promises as fs } from "fs";
 import path from "path";
-import ES from "../views/es/general";
-import EN from "../views/en/general";
+import ES from "../views/es/history";
+import EN from "../views/en/history";
 
 import Header from "../components/Header";
 

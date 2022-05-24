@@ -1,22 +1,22 @@
-import Header from "../components/marketing/header";
-import Footer from "../components/marketing/footer";
-import Hero from "../components/sections/hero";
-import Left from "../components/sections/left";
-import LeftPlain from "../components/sections/leftPlain";
-import RightPlain from "../components/sections/rightPlain";
-import How from "../components/sections/how";
-import Cta from "../components/sections/cta";
-import Application from "../components/sections/application";
-import Links from "../components/sections/links";
+import Header from "../../components/Header";
+import Footer from "../../components/marketing/footer";
+import Hero from "../../components/sections/hero";
+import Left from "../../components/sections/left";
+import LeftPlain from "../../components/sections/leftPlain";
+import RightPlain from "../../components/sections/rightPlain";
+import How from "../../components/sections/how";
+import Cta from "../../components/sections/cta";
+import Application from "../../components/sections/application";
+import Links from "../../components/sections/links";
 
-import FeaturesCenter from "../components/sections/featuresCenter";
+import FeaturesCenter from "../../components/sections/featuresCenter";
 
-import HeaderTop from "../components/sections/headerTop";
-import HeaderBottom from "../components/sections/headerBottom";
-import HeaderLeft from "../components/sections/headerLeft";
+import HeaderTop from "../../components/sections/headerTop";
+import HeaderBottom from "../../components/sections/headerBottom";
+import HeaderLeft from "../../components/sections/headerLeft";
 
-import RightWithBullets from "../components/sections/rightWithBullets";
-import LeftWithBullets from "../components/sections/leftWithBullets";
+import RightWithBullets from "../../components/sections/rightWithBullets";
+import LeftWithBullets from "../../components/sections/leftWithBullets";
 
 import { Fragment, useState } from "react";
 import Link from "next/link";
@@ -32,7 +32,7 @@ export default function Example() {
     <div className=" antialiased bg-body text-body font-body">
       <Link href="/">
         <img
-          className="mt-20 mx-auto relative w-44 h-44"
+          className="mt-10 mx-auto relative w-44 h-44"
           src="/marketing/logo/png/paz_lila_tronco_color_v2.png"
           alt=""
         />
@@ -40,7 +40,7 @@ export default function Example() {
 
       <HeaderTop
         logoBefore={true}
-        title="Unos días en el bosque y la playa para recordar como vivir en paz"
+        title="...días en el bosque a la orilla del mar para recordar como vivir en paz"
         images={[
           {
             src: "optimized/beach/drone_e_300.PNG",

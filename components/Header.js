@@ -1,22 +1,40 @@
+import Link from "next/link";
+
+import { useRouter } from "next/router";
+
 /* This example requires Tailwind CSS v2.0+ */
-const navigation = [
-  { name: "Solutions", href: "#" },
-  { name: "Pricing", href: "#" },
-  { name: "Docs", href: "#" },
-  { name: "Company", href: "#" },
+const navigationES = [
+  { name: "Retiro", href: "/retreat" },
+  { name: "Precios", href: "/pricing" },
+  { name: "Historia", href: "/history" },
+  { name: "Libreria", href: "/library" },
 ];
 
-export default function Example() {
+const navigationEN = [
+  { name: "Retreat", href: "/retreat" },
+  { name: "Pricing", href: "/pricing" },
+  { name: "History", href: "history" },
+  { name: "Library", href: "/library" },
+];
+export default function Example({ locale }) {
+  let navigation = locale == "en" ? navigationEN : navigationES;
+  const router = useRouter();
+  function changeLocale(nextLocale) {
+    return () => {
+      const { pathname, asPath, query } = router;
+      router.push({ pathname, query }, asPath, { locale: nextLocale });
+    };
+  }
+
   return (
-    <header className="bg-indigo-600">
+    <header className="bg-stone-100">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
-        <div className="w-full py-6 flex items-center justify-between border-b border-indigo-500 lg:border-none">
+        <div className="w-full py-1 flex items-center justify-between border-b border-indigo-500 lg:border-none">
           <div className="flex items-center">
-            <a href="#">
-              <span className="sr-only">Workflow</span>
+            <a href="/">
               <img
-                className="h-10 w-auto"
-                src="https://tailwindui.com/img/logos/workflow-mark.svg?color=white"
+                className="w-14"
+                src="/marketing/logo/png/lila_solo_v2.png"
                 alt=""
               />
             </a>
@@ -25,7 +43,7 @@ export default function Example() {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-base font-medium text-white hover:text-indigo-50"
+                  className="text-base font-medium text-indigo-500 hover:text-indigo-400"
                 >
                   {link.name}
                 </a>
@@ -34,16 +52,17 @@ export default function Example() {
           </div>
           <div className="ml-10 space-x-4">
             <a
-              href="#"
-              className="inline-block bg-indigo-500 py-2 px-4 border border-transparent rounded-md text-base font-medium text-white hover:bg-opacity-75"
+              onClick={changeLocale("es")}
+              className="inline-block bg-white py-2 px-4 border border-indigo-200 rounded-md text-base font-medium text-indigo-500 hover:bg-opacity-75"
             >
-              Sign in
+              Español
             </a>
+
             <a
-              href="#"
-              className="inline-block bg-white py-2 px-4 border border-transparent rounded-md text-base font-medium text-indigo-600 hover:bg-indigo-50"
+              onClick={changeLocale("en")}
+              className="inline-block bg-white py-2 px-4 border border-indigo-200 rounded-md text-base font-medium text-indigo-500 hover:bg-indigo-50"
             >
-              Sign up
+              English
             </a>
           </div>
         </div>
@@ -52,7 +71,7 @@ export default function Example() {
             <a
               key={link.name}
               href={link.href}
-              className="text-base font-medium text-white hover:text-indigo-50"
+              className="text-base font-medium text-indigo-500 hover:text-indigo-50"
             >
               {link.name}
             </a>

@@ -1,8 +1,11 @@
 import Head from "next/head";
-
+import { useRouter } from "next/router";
 import { promises as fs } from "fs";
 import path from "path";
-import Home from "../views/retreat";
+import ES from "../views/es/retreat";
+import EN from "../views/en/retreat";
+
+import Header from "../components/Header";
 
 export async function getStaticProps() {
   const postsDirectory = path.join(process.cwd(), "pages/posts");
@@ -31,9 +34,12 @@ export async function getStaticProps() {
 }
 
 export default function HomeApp({ posts }) {
+  const router = useRouter();
+
   return (
     <div className="antialiased bg-body text-body font-body">
-      <Home />
+      <Header locale={router.locale} />
+      {router.locale == "en" ? <EN /> : <ES />}
     </div>
   );
 }

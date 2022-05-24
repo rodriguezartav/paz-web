@@ -5,7 +5,7 @@ import Image from "../Image";
 export default function HomeApp({
   title,
   line1,
-  color = "indigo-500",
+  color = "indigo-400",
   line2,
   line3,
   button_1,
@@ -29,7 +29,7 @@ export default function HomeApp({
                 </span>
               )}
               <h1
-                className={`mb-6 text-indigo-500 text-3xl md:text-5xl lg:text-6xl leading-tight font-bold tracking-tighter text-${color}`}
+                className={`mb-6   text-3xl md:text-5xl lg:text-6xl leading-tight font-bold tracking-tighter text-${color}`}
               >
                 {title}
               </h1>
