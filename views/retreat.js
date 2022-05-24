@@ -45,7 +45,7 @@ export default function Example() {
         subtitle={`Nuestra receta es única. Tiene un espiritú aventurero, una relación cercana con la naturaleza viva y facilita la dimensión espiritual de la vida`}
       />
       <LeftWithBullets
-        title="Para sentir la conexión con la naturaleza - percibir la respuesta del espiritu de la vida - tenemos que exponernos a ella autentica y humildemente."
+        title="Para sentir la conexión con la naturaleza - percibirla - tenemos que exponernos a ella autentica y humildemente."
         subtitle="Los arboles, los animales y las plantas no son objetos para ser fotografiados, son los guias y el ejemplo de como debemos vivir - si realmente queremos paz"
         t1_title="Caminatas orientadas a la conexión espiritual con la naturaleza"
         t1_description="En el bosque, en cascadas y en la playa"
