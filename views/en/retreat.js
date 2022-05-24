@@ -20,6 +20,8 @@ import Signup from "../../components/sections/signupForm";
 import RightWithBullets from "../../components/sections/rightWithBullets";
 import LeftWithBullets from "../../components/sections/leftWithBullets";
 
+import Calendar from "../../components/sections/calendar";
+
 import { Fragment, useState } from "react";
 import Link from "next/link";
 
@@ -75,27 +77,80 @@ export default function Example() {
       />
 
       <LeftWithBullets
-        title="A change of thought is not enought to transform our worry, discontent and anger into creativity, freedom and joy."
-        subtitle="The balance of modern life is titled towards thought and it's momentum control our decisions. We try to counter with beliefs, ideas and technics. But those too are thoughts. The new world is created out of wisdom of the heart."
+        title="What most of us really want is to transform our discontent, worry and anger. Into creativity, freedom, joy, acceptance and gratitud - peace."
+        subtitle="The balance of modern life is titled towards thought and it's momentum controls our decisions. We try to counter with beliefs, ideas and technics. But those are also thoughts... We must learn how to transced toughts, concepts and believes."
         t1_title="This retreat is a reminder of how to live from the heart."
         t1_description="La coherencia entre la mente y el corazón es nuestro estado natural, ya todos lo vivimos y no se olvida - como andar en bicicleta."
-        t2_title="Embeded with a non-dogmatic course that's alive. Where the magical ingredient is each one of us"
-        t2_description="Estamos juntos en esta vida porque la dirección para recordar y descubrir las dimensiones más puras de nuestro existir - es un trabajo en equipo."
+        t2_title="A non-dogmatic sponataneous course, created from personal first hand experience aimed at having personal first hand experience."
+        t2_description="  Where the magical ingredient is each one of us Estamos juntos en esta vida porque la dirección para recordar y descubrir las dimensiones más puras de nuestro existir - es un trabajo en equipo."
         t3_title="Transforming into our true selfs is simply recognizing we are not a tought."
         t3_description="El retiro es un espacio para reconocer que la resistencia a profundizar más allá de donde el pensamiento puede llegar - es sólo un pensamiento."
         images={[
           {
             src: "/optimized/lounge/templo_from_back.jpg",
             width: 1000,
+            transformations: [
+              { cropMode: "extract", height: 850, width: 1000 },
+            ],
             height: 700,
           },
         ]}
       />
 
       <Pricing
-        legend={"Precios"}
-        title={"Retiros empiezan el segundo jueves de cada mes"}
+        legend={"Pricing"}
+        title={"Retreats start the second thursday of each month"}
         subtitle="Duración opcional de 5 a 7 días"
+        period="night"
+        prices={[
+          {
+            title: "Nature & Adventure",
+            price: 200,
+            subtitle: "Rate for Shared Double Room",
+            button: "Book today with $100",
+            list: [
+              "3 health meals",
+              "Te, Coffe nd Fruit station",
+              "1 surf/paddle class each día",
+              "Hikes and workgroups in nature",
+              "All group activities (bonefire, bbq, etc)",
+              "1 Private session per day",
+            ],
+          },
+          {
+            title: "Nature",
+            price: 159,
+            subtitle: "Rate for Shared Double Room",
+            button: "Book today with $100",
+            list: [
+              "3 health meals",
+              "Te, Coffe nd Fruit station",
+
+              "Hikes and workgroups in nature",
+              "All group activities (bonefire, bbq, etc)",
+              "1 Private session per day",
+            ],
+          },
+          {
+            title: "Silence and Meditation",
+            price: 99,
+            subtitle: "Rate for Shared Double Room",
+            button: "Book today with $100",
+            list: [
+              "3 health meals",
+              "Te, Coffe nd Fruit station",
+
+              "All group activities (bonefire, bbq, etc)",
+              "1 Private session per day",
+            ],
+          },
+        ]}
+      />
+
+      <Calendar
+        legend={"Retreat Schedule"}
+        title={"Check out our calendar of events"}
+        subtitle="Select the month you are interested in"
       />
 
       <Signup

@@ -121,7 +121,7 @@ export default function Example() {
       />
 
       <RightPlain
-        title="pero en verdad es un templo natural muy especial"
+        title="Un templo natural sagrado en la Peninsula del Cacique Osa de los Terrabas"
         subtitle="El espiritú de la madre naturaleza esta presente aquī. La escuchamos y la queremos. Es la guia en esta aventura por realmente encontrarla en nosotros mismos."
         images={[
           {

@@ -100,9 +100,9 @@ export default function Example() {
 
       <HeaderLeft
         legend="Peninsula de Osa, Costa Rica"
-        title="feels like being in a National Park"
+        title="Feels like being in a National Park"
         color="lime-700"
-        subtitle="By designing and building everything ourselfs, we crafted an unique experience that feels like camping on the forest by the beach, with the comfort of a beachfront villa."
+        subtitle="We crafted an unique experience that feels like camping on the forest by the beach, with the comfort of a villa. By designing and building everything ourselfs we poured our intention into every corner of the house."
         images={[
           {
             src: "/optimized/house/living/master.jpeg",
@@ -113,7 +113,7 @@ export default function Example() {
       />
 
       <RightPlain
-        title="but in actuality, it's a very special natural temple"
+        title="A sacred natural temple in chief Osa's peninsula of the Térraba tribe"
         subtitle="The spirit of mother nature is present here, we listen and love her. She's the guide in this adventure of finding her in ourselves."
         images={[
           {

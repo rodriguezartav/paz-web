@@ -98,6 +98,48 @@ export default function Example() {
         legend={"Precios"}
         title={"Retiros empiezan el segundo jueves de cada mes"}
         subtitle="Duración opcional de 5 a 7 días"
+        period="noche"
+        prices={[
+          {
+            title: "Naturaleza y Aventura",
+            price: 200,
+            subtitle: "Tarifa cuarto doble compartido",
+            button: "Reserve ya con $100",
+            list: [
+              "3 comidas saludables para todo gusto",
+              "Estación de cafe, frutas y té",
+              "1 clases de surf/paddle por día",
+              "Caminatas y practicas en la naturaleza",
+              "Todas las actividades en grupo",
+              "1 sesión privada de consultas diaria",
+            ],
+          },
+          {
+            title: "Naturaleza",
+            price: 159,
+            subtitle: "Tarifa cuarto doble compartido",
+            button: "Reserve ya con $100",
+            list: [
+              "3 comidas saludables para todo gusto",
+              "Estación de cafe, frutas y té",
+              "Caminatas y practicas en la naturaleza",
+              "Todas las actividades en grupo",
+              "1 sesión privada de consultas diaria",
+            ],
+          },
+          {
+            title: "Meditación y Silencio",
+            price: 99,
+            subtitle: "Tarifa cuarto doble compartido",
+            button: "Reserve ya con $100",
+            list: [
+              "3 comidas saludables para todo gusto",
+              "Estación de cafe, frutas y té",
+              "Todas las actividades en grupo",
+              "1 sesión privada de consultas diaria",
+            ],
+          },
+        ]}
       />
 
       <Signup

@@ -13,7 +13,7 @@ export default function MyImage(props) {
     if (index != images.length - 1) setIndex(nextIndex);
   }, 2500);
 
-  let { src, width } = images[index];
+  let { src, width, transformations } = images[index];
 
   return (
     <IKImage
@@ -21,11 +21,13 @@ export default function MyImage(props) {
       lqip={{ active: true, quality: 1 }}
       path={src}
       width={width + "px"}
-      transformation={[
-        {
-          width: width,
-        },
-      ]}
+      transformation={
+        transformations || [
+          {
+            width: width,
+          },
+        ]
+      }
     />
   );
 }
