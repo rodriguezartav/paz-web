@@ -219,11 +219,11 @@ export default function Example() {
         color="lime-700"
         subtitle={`
         
-        Nosotros confiamos que este lugar tiene un proposito que traciende lo material. Por eso a la hora de crearlo no nos sentamos a pensar como hacerlo ni contratamos diseño o construcción. Todo desde esta pagina web, el nombre, el logo; el diseño de las instalaciones, hasta el sistema solar eléctrico es hecho de esa forma, por nosotros y nuestro equipo.
+        Nosotros confiamos que este lugar tiene un proposito que traciende lo material. Por eso a la hora de crearlo no nos sentamos a pensar como hacerlo ni contratamos diseño o construcción. Desde esta pagina web, el nombre, el logo; el diseño de las instalaciones, hasta el sistema solar eléctrico es hecho de esa forma, por nosotros y nuestro equipo.
 
-        Hemos intentado que todo aquí sea intuitivo y espontaneo, dejando que las cosas se hagan a travez de uno, sin tener que estar pensando y resolviendo uno solo; haciendo enrredos si salio mal o sacando pecho si se hizo bien.\n
+        Hemos intentado que todo aquí sea intuitivo y espontaneo, dejando que las cosas se hagan a travez de uno, sin tener que estar pensando y resolviendo uno solo; culpando a otros si salio mal o sacando pecho si se hizo bien.\n
   
-        Habrán lugares mas lindos y mejores paginas, claro. Pero en verdad nosotros no estamos compitiendo. Esa es una de las ventajas de vivir en Paz. Como un árbol cuando pasa el viento y suena tan lindo. No es el arbol que lo hace, es la vida…
+        Habrán lugares mas lindos y mejores paginas, claro. Pero en verdad nosotros no estamos compitiendo, ni tampoco queremos ganar. Esto es simplemente una expresión de lo que sentimos en el corazón. Como un árbol cuando pasa el viento y suena tan lindo. No es el arbol que lo hace, es la vida…
       
         Mas alla del resultado, es tan rico vivir así, no cambiaría ni las lamparas por unas de oro puro. Porque la esencia de toda esta historia esta en ellas, yo se que sí. `}
         images={[
@@ -243,7 +243,7 @@ export default function Example() {
         No hay una técnica ni una disciplina que pueda llevarnos hasta alla, no hay nada que conquistar. Pues si no somos ya, entonces quien es el que existe en cada cuerpo?\n
         Confiamos que este lugar tiene un proposito que traciende lo material, que aquí llega quien tiene que llegar y que cuando llegue el momento este lugar y lo que somos adentro - que es lo mismo - sabran que hacer. De nada sirve ponernos a pensar y a planear cuando al final si llueve, lloverá.\n
         Se trata de practicar, dejar que pase lo que tenga que pasar, y cuando estemos frente al mar dejar que sea mar y así llegar a dejar que nuestra nota suene como tiene que sonar.\n
-        Es - o no es así - como suena la Paz?
+        Así es como suena la Paz...
         `}
         images={[
           {
