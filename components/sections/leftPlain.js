@@ -30,9 +30,12 @@ export default function HomeApp({
             >
               {title}
             </h1>
-            <p className="mb-6 text-lg md:text-xl text-gray-500 font-medium">
-              {subtitle}
-            </p>
+            {subtitle.split("\n").map((item) => (
+              <p className="mb-6 text-lg md:text-xl text-gray-500 font-medium">
+                {item}
+              </p>
+            ))}
+
             {button && (
               <Link href={button.href}>
                 <a className="inline-block py-4 px-5 w-full md:w-auto text-base leading-4 text-indigo-50 bg-indigo-500 hover:bg-indigo-600 font-medium text-center focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50 rounded-md shadow-sm">

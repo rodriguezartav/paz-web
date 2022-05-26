@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import Image from "../Image";
 
 export default function HomeApp({

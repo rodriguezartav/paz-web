@@ -9,10 +9,5 @@ import Header from "../components/Header";
 export default function HomeApp({ posts }) {
   const router = useRouter();
 
-  return (
-    <div className="antialiased bg-body text-body font-body">
-      <Header />
-      {router.locale == "en" ? <EN /> : <ES />}
-    </div>
-  );
+  return <div className="antialiased bg-body text-body font-body"></div>;
 }

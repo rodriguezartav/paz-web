@@ -61,9 +61,12 @@ export default function HomeApp({
               >
                 {title}
               </h1>
-              <p className="mb-8 text-lg md:text-xl text-coolGray-500 font-medium">
-                {subtitle}
-              </p>
+
+              {subtitle.split("\n").map((item) => (
+                <p className="mb-8 text-lg md:text-xl text-coolGray-500 font-medium">
+                  {item}
+                </p>
+              ))}
               <div className="flex flex-wrap" data-removed="true">
                 {button && (
                   <div className="w-full md:w-auto py-1 md:py-0 md:mr-4">

@@ -1,8 +1,8 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-import ES from "../views/es/history";
-import EN from "../views/en/history";
+import ES from "../views/es/pricing";
+import EN from "../views/en/pricing";
 
 import Header from "../components/Header";
 

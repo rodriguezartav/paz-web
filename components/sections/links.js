@@ -29,7 +29,7 @@ export default function HomeApp({
                 {legend}
               </span>
               <h3
-                className={` text-4xl md:text-5xl text-coolGray-900 font-bold tracking-tighter text-${color}`}
+                className={` text-4xl md:text-5xl font-bold tracking-tighter text-${color}`}
               >
                 {title}
               </h3>

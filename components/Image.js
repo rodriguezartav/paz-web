@@ -11,7 +11,8 @@ export default function MyImage(props) {
   useInterval(() => {
     let nextIndex = index + 1;
     if (index != images.length - 1) setIndex(nextIndex);
-  }, 2500);
+    if (index == images.length - 1) setIndex(0);
+  }, 4100);
 
   let { src, width, transformations } = images[index];
 

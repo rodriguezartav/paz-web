@@ -1,22 +1,14 @@
-import Header from "../../components/Header";
 import Footer from "../../components/marketing/footer";
-import Hero from "../../components/sections/hero";
-import Left from "../../components/sections/left";
 import LeftPlain from "../../components/sections/leftPlain";
 import RightPlain from "../../components/sections/rightPlain";
-import How from "../../components/sections/how";
-import Cta from "../../components/sections/cta";
-import Application from "../../components/sections/application";
-import Links from "../../components/sections/links";
 
-import FeaturesCenter from "../../components/sections/featuresCenter";
+import Cta from "../../components/sections/cta";
+
+import Links from "../../components/sections/links";
 
 import HeaderTop from "../../components/sections/headerTop";
 import HeaderBottom from "../../components/sections/headerBottom";
 import HeaderLeft from "../../components/sections/headerLeft";
-
-import RightWithBullets from "../../components/sections/rightWithBullets";
-import LeftWithBullets from "../../components/sections/leftWithBullets";
 
 import { Fragment, useState } from "react";
 import Link from "next/link";
@@ -121,7 +113,7 @@ export default function Example() {
       />
 
       <RightPlain
-        title="Un templo natural sagrado en la Peninsula del Cacique Osa de los Terrabas"
+        title="pero que en realidad es un templo natural muy especial"
         subtitle="El espiritú de la madre naturaleza esta presente aquī. La escuchamos y la queremos. Es la guia en esta aventura por realmente encontrarla en nosotros mismos."
         images={[
           {

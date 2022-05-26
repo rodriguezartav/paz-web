@@ -1,27 +1,13 @@
-import Header from "../../components/Header";
 import Footer from "../../components/marketing/footer";
-import Hero from "../../components/sections/hero";
-import Left from "../../components/sections/left";
-import LeftPlain from "../../components/sections/leftPlain";
-import RightPlain from "../../components/sections/rightPlain";
-import How from "../../components/sections/how";
-import Cta from "../../components/sections/cta";
-import Application from "../../components/sections/application";
-import Links from "../../components/sections/links";
-
-import FeaturesCenter from "../../components/sections/featuresCenter";
 
 import HeaderTop from "../../components/sections/headerTop";
-import HeaderBottom from "../../components/sections/headerBottom";
-import HeaderLeft from "../../components/sections/headerLeft";
-import Pricing from "../../components/sections/pricing";
+
 import Signup from "../../components/sections/signupForm";
 
 import RightWithBullets from "../../components/sections/rightWithBullets";
 import LeftWithBullets from "../../components/sections/leftWithBullets";
 
-import Calendar from "../../components/sections/calendar";
-
+import ThreeFeatures from "../../components/sections/threeFeatures";
 import { Fragment, useState } from "react";
 import Link from "next/link";
 
@@ -41,10 +27,20 @@ export default function Example() {
           alt=""
         />
       </Link>
+      {""}
       <HeaderTop
         logoBefore={true}
-        title="Paz Retreats are vacations aimed at realizing the huge potential within"
-        subtitle={`Our easy going culture turns the retreat into a fun adventure. While Paz unique approach to releasing stress is guided by nature. Once you are happy and free, if you wan't - we'll point you within.`}
+        title="Our retreats are fun vacations aimed at reconnecting with nature and our selfs"
+        subtitle={`Paz sponatenous and easy going approach is an expresion of it's founder's understanding of how to use this place to improve his own life.`}
+      />
+
+      <ThreeFeatures
+        t1_title="Fun Local Adventures"
+        t1_description="Owned and operated by local costarricans, our easy going culture and youthful spirit turns the retreat into a fun adventure in paradise"
+        t2_title="Autentic connection with nature"
+        t2_description="Paz unique approach to healing and release of stress is guided by nature. For that to work, we want to take you beyond seeing, and into feeling."
+        t3_title="Reunite with your(true)self"
+        t3_description="If we ask the forest, the ocean - the spirit within all living things - to teach us how to trust our heart. In this pristine and beautifull place we can put down the pride of the mind and listen within."
       />
 
       <LeftWithBullets
@@ -65,7 +61,7 @@ export default function Example() {
         ]}
       />
       <RightWithBullets
-        title="To feel a conection with nature, our approach must be for real."
+        title="To feel a conection with nature, we must approach with a genuine heart"
         subtitle="Trees, animals and birds are not objects to be photographed. Using their brave lifes as an example, they become guides in the path of life that takes us home to our hearts."
         t1_title="While hiking we'll go beyond the physical and understandable, into realizing an spiritual connection with nature"
         t1_description="To form an actual healty relationship, as we are supposed to do with our loved ones, we must enter the forest as sons and daughters enter their mother's home. That's how we'll enter waterfalls, creeks, ponds and primary forests."
@@ -77,12 +73,12 @@ export default function Example() {
       />
 
       <LeftWithBullets
-        title="What most of us really want is to transform our discontent, worry and anger. Into creativity, freedom, joy, acceptance and gratitud - peace."
+        title="What most of us really want is to transform our discontent, worry and anger. Into creativity, freedom, and joy - or - peace."
         subtitle="The balance of modern life is titled towards thought and it's momentum controls our decisions. We try to counter with beliefs, ideas and technics. But those are also thoughts... We must learn how to transced toughts, concepts and believes."
-        t1_title="This retreat is a reminder of how to live from the heart."
+        t1_title="Remembering how to live from the heart."
         t1_description="La coherencia entre la mente y el corazón es nuestro estado natural, ya todos lo vivimos y no se olvida - como andar en bicicleta."
-        t2_title="A non-dogmatic sponataneous course, created from personal first hand experience aimed at having personal first hand experience."
-        t2_description="  Where the magical ingredient is each one of us Estamos juntos en esta vida porque la dirección para recordar y descubrir las dimensiones más puras de nuestro existir - es un trabajo en equipo."
+        t2_title="An sponataneous approach created from personal first hand experience aimed at having personal first hand experience."
+        t2_description="Where the magical ingredient is each one of us Estamos juntos en esta vida porque la dirección para recordar y descubrir las dimensiones más puras de nuestro existir - es un trabajo en equipo."
         t3_title="Transforming into our true selfs is simply recognizing we are not a tought."
         t3_description="El retiro es un espacio para reconocer que la resistencia a profundizar más allá de donde el pensamiento puede llegar - es sólo un pensamiento."
         images={[
@@ -95,62 +91,6 @@ export default function Example() {
             height: 700,
           },
         ]}
-      />
-
-      <Pricing
-        legend={"Pricing"}
-        title={"Retreats start the second thursday of each month"}
-        subtitle="Duración opcional de 5 a 7 días"
-        period="night"
-        prices={[
-          {
-            title: "Nature & Adventure",
-            price: 200,
-            subtitle: "Rate for Shared Double Room",
-            button: "Book today with $100",
-            list: [
-              "3 health meals",
-              "Te, Coffe nd Fruit station",
-              "1 surf/paddle class each día",
-              "Hikes and workgroups in nature",
-              "All group activities (bonefire, bbq, etc)",
-              "1 Private session per day",
-            ],
-          },
-          {
-            title: "Nature",
-            price: 159,
-            subtitle: "Rate for Shared Double Room",
-            button: "Book today with $100",
-            list: [
-              "3 health meals",
-              "Te, Coffe nd Fruit station",
-
-              "Hikes and workgroups in nature",
-              "All group activities (bonefire, bbq, etc)",
-              "1 Private session per day",
-            ],
-          },
-          {
-            title: "Silence and Meditation",
-            price: 99,
-            subtitle: "Rate for Shared Double Room",
-            button: "Book today with $100",
-            list: [
-              "3 health meals",
-              "Te, Coffe nd Fruit station",
-
-              "All group activities (bonefire, bbq, etc)",
-              "1 Private session per day",
-            ],
-          },
-        ]}
-      />
-
-      <Calendar
-        legend={"Retreat Schedule"}
-        title={"Check out our calendar of events"}
-        subtitle="Select the month you are interested in"
       />
 
       <Signup

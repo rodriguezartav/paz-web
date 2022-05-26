@@ -17,6 +17,7 @@
     "@tailwindcss/forms": "^0.4.0",
     "@u-wave/react-vimeo": "^0.9.5",
     "data-api-client": "^1.2.0",
+    "dayjs": "^1.11.2",
     "dotenv": "^10.0.0",
     "gray-matter": "^4.0.3",
     "imagekitio-react": "^1.1.0",

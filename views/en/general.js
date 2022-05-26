@@ -1,33 +1,18 @@
-import Header from "../../components/Header";
 import Footer from "../../components/marketing/footer";
-import Hero from "../../components/sections/hero";
-import Left from "../../components/sections/left";
+
 import LeftPlain from "../../components/sections/leftPlain";
 import RightPlain from "../../components/sections/rightPlain";
-import How from "../../components/sections/how";
-import Cta from "../../components/sections/cta";
-import Application from "../../components/sections/application";
-import Links from "../../components/sections/links";
 
-import FeaturesCenter from "../../components/sections/featuresCenter";
+import Links from "../../components/sections/links";
 
 import HeaderTop from "../../components/sections/headerTop";
 import HeaderBottom from "../../components/sections/headerBottom";
 import HeaderLeft from "../../components/sections/headerLeft";
 
-import RightWithBullets from "../../components/sections/rightWithBullets";
-import LeftWithBullets from "../../components/sections/leftWithBullets";
-
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-
 export default function Example() {
-  const [open, setOpen] = useState(false);
-
   return (
     <div className=" antialiased bg-body text-body font-body">
       <Link href="/">
@@ -102,7 +87,7 @@ export default function Example() {
         legend="Peninsula de Osa, Costa Rica"
         title="Feels like being in a National Park"
         color="lime-700"
-        subtitle="We crafted an unique experience that feels like camping on the forest by the beach, with the comfort of a villa. By designing and building everything ourselfs we poured our intention into every corner of the house."
+        subtitle="We crafted an unique experience that feels like camping on the forest by the beach, with the comfort of a beachfront villa. By designing and building everything ourselfs we poured our intention into every corner of the house."
         images={[
           {
             src: "/optimized/house/living/master.jpeg",
@@ -113,7 +98,7 @@ export default function Example() {
       />
 
       <RightPlain
-        title="A sacred natural temple in chief Osa's peninsula of the Térraba tribe"
+        title="but in actuality it's a very special natural temple"
         subtitle="The spirit of mother nature is present here, we listen and love her. She's the guide in this adventure of finding her in ourselves."
         images={[
           {
