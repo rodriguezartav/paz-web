@@ -63,9 +63,12 @@ export default function HomeApp({
                     {price.subtitle}
                   </p>
                   <ul className="self-start mb-8">
-                    {price.list.map((item) => {
+                    {price.list.map((item, index) => {
                       return (
-                        <li className="flex items-center mb-3 text-coolGray-500 font-medium">
+                        <li
+                          key={index}
+                          className="flex items-center mb-3 text-coolGray-500 font-medium"
+                        >
                           <img
                             className="mr-3"
                             src="/flex-ui-assets/elements/pricing/checkbox-green.svg"
