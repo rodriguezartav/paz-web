@@ -88,13 +88,6 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
               alt: "Beach Lodge",
               type: "image/jpeg",
             },
-            {
-              url: "https://paz.co.cr/images/hero/8.jpg",
-              width: 1800,
-              height: 1000,
-              alt: "Beach View",
-              type: "image/jpeg",
-            },
           ],
           site_name: "Paz Corcovado",
         }}
