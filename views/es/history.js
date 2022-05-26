@@ -228,8 +228,20 @@ export default function Example() {
         Mas alla del resultado, es tan rico vivir así, no cambiaría ni las lamparas por unas de oro puro. Porque la esencia de toda esta historia esta en ellas, yo se que sí. `}
         images={[
           {
-            src: "/raw/beach/beach_side.jpeg",
-            width: 730,
+            src: "/raw/house/dinning/dinning_full.JPG",
+            transformations: [{ cropMode: "cm-extract", height: 700 }],
+          },
+          {
+            src: "/raw/house/living/master.jpeg",
+            transformations: [
+              { cropMode: "cm-extract", height: 660, width: 750 },
+            ],
+          },
+          {
+            src: "/raw/house/outside/outside_front.jpeg",
+            transformations: [
+              { cropMode: "cm-extract", height: 660, width: 750 },
+            ],
           },
         ]}
       />
