@@ -34,19 +34,33 @@ export default function Example() {
 
       <HeaderTop
         logoBefore={true}
-        title={`Mar adentro y viendo los colores del cielo le pregunté al atardecer: "como le pongo a este lugar?`}
+        title={`Mar adentro y viendo los colores del cielo le pregunté al atardecer: "¿que nombre le pongo a este lugar?`}
         subtitle={``}
+        images={[
+          {
+            src: "/raw/beach/ocean_view_sunset.jpg",
+            width: 960,
+            height: 1000,
+          },
+        ]}
       />
 
       <RightPlain
         legend={"Ubicación"}
         title="Paz esta ubicado en el místico cabo Mata Palo en la Peninsula de Osa de Costa Rica"
-        subtitle={`Una comunidad de amantes del medio ambiente entre Puerto Jimenez y el Parque Nacional Corcovado. La región mas alejada de Costa Rica que ni siquiera tiene luz electrica ni servicio de agua. `}
+        subtitle={`Una comunidad de amantes del medio ambiente entre Puerto Jimenez y el Parque Nacional Corcovado. La región mas alejada de Costa Rica que para protegerla sus habitantes decidieron no tener servicio de luz electrica ni de agua munipal. `}
         images={[
           {
             src: "/raw/maps/cr.png",
-            width: 750,
-            height: 1000,
+            transformations: [
+              { cropMode: "cm-extract", height: 500, width: 750 },
+            ],
+          },
+          {
+            src: "/raw/guide/matapalo/matapalo.webp",
+            transformations: [
+              { cropMode: "cm-extract", height: 500, width: 750 },
+            ],
           },
         ]}
       />
@@ -66,8 +80,8 @@ export default function Example() {
 
       <LeftPlain
         legend={"Llegada a Osa"}
-        title="Un día de regreso a casa notó lo triste que iba y se dió cuenta que para siempre se podia quedar..."
-        subtitle={`Muy a su estilo, renunció a su trabajo, cancelo el alquier, vendió su carro y cambio todas su pertencncias por un moto sin saberla manejar y una tienda de campaña sin saber acampar. Asi empezó esta aventura.`}
+        title="Hasta que un día de regreso a casa notó lo triste que iba y se dió cuenta que para siempre se podia quedar..."
+        subtitle={`Muy a su estilo, renunció a su trabajo, cancelo el alquier, vendió su carro y cambio todas su pertenencias por un moto sin saberla manejar y una tienda de campaña sin saber acampar. Asi empezó esta aventura.`}
         images={[
           {
             src: "/raw/history/camping.jpeg",
@@ -101,20 +115,15 @@ export default function Example() {
               { cropMode: "cm-extract", height: 500, width: 750 },
             ],
           },
-          {
-            src: "/raw/history/lamps.jpeg",
-            transformations: [
-              { cropMode: "cm-extract", height: 500, width: 750 },
-            ],
-          },
         ]}
       />
 
       <LeftPlain
         legend={"Ubicación"}
         title="Pero aun no estaba preparado..."
-        subtitle={` Desde niño Roberto tuvo mucho interés por su dimensión espiritual, pero creció muy aislado de la sabiduria de la vida en un cultura dedicada a la fiesta. Estaba a un paso ya dentro del alcholismo, fumaba mucha marihuana y no estaba satisfecho con sus relaciones, su trabajo ni con nada. No sabía vivir.  \n 
-        Cuando la misma vida le presentó esas pruebas que a todos nos despiertan el mas profundo temor y para las que nadie esta preparado - todo obviamente emperó.\nPero todo eso cambio cuando conoció al Taita Lucho Flores, su primer maestro, quien le presentó a la sagrada planta del Ayahuasca y junto a el conoció el shamanismo. Sobre todo el uso de la melodía como elemento de sanación.\nDespues de reconocer los multiples traumas que su forma de vivir hasta ese momento habian generado, inicio su viaje de regreso.`}
+        subtitle={` Desde niño Roberto tuvo mucho interés en su dimensión espiritual, pero creció muy aislado de la sabiduria de la vida en un cultura dedicada a la fiesta. Estaba un paso dentro del alcholismo, fumaba mucha marihuana y no estaba satisfecho con sus relaciones, su trabajo ni con nada. No sabía vivir.  \n 
+        Cuando la misma vida le presentó esas pruebas que a todos nos despiertan el mas profundo temor y para las que nadie esta preparado - todo obviamente emperó.\n
+        Pero todo eso cambio cuando conoció al Taita Lucho Flores, su primer maestro, quien le presentó a la sagrada planta del Ayahuasca y junto a el conoció el chamanismo. Sobre todo el uso de la melodía como elemento de sanación.\nDespues de reconocer los multiples traumas que su forma de vivir habian generado, inicio su viaje de regreso.`}
         images={[
           {
             src: "/raw/history/taita.jpeg",
@@ -127,8 +136,9 @@ export default function Example() {
       <RightPlain
         legend={"Ubicación"}
         title="El principio del camino"
-        subtitle={`Con la ayuda de los maestros y guias que aparecieron para ayudarlo dejo todo licor y toda droga y todo compartimiento auto-destructivo. Busco disciplinamente su paz interior especializandose en Yoga, Vipassana, Qi Gong, caminatas en naturaleza y hasta el surf. Se despertó en el una melodía de sanación muy linda y espontanea que hasta el día de hoy comparte con todo el que pueda.\n Recordo que desde niño hablo con el cielo, o con su interior y este siempre le respondió. En sus oraciones al cielo siempre pidio conocer la verdad de la vida y que se le consediera la posibilidad de ayudar a otras personas que como el sufrian. \n
-        Realmente creyo que si rezaba y meditaba al amanercer iba ser feliz y nada malo le volvería a pasar - lo que revelaba que aun habia miedo en su corazón.`}
+        subtitle={`Con la ayuda de los maestros y guias que aparecieron para ayudarlo dejó todo licor y toda droga y todo compartimiento auto-destructivo. Busco disciplinamente su paz interior especializandose en Yoga, Vipassana, Qi Gong, caminatas en naturaleza y hasta el surf. Se despertó en el una melodía de sanación muy linda y espontanea que hasta el día de hoy comparte con todo el que pueda.\n 
+        Recordo que desde niño hablo con el cielo, o con su interior y este siempre le respondió. En sus oraciones al cielo siempre pidio conocer la verdad de la vida y que se le concediera la posibilidad de ayudar a otras personas que como el sufrian. \n
+        Realmente creyo que si rezaba y meditaba al amanercer nada malo le volvería a pasar - lo que revelaba que aun habia miedo en su corazón.`}
         images={[
           {
             src: "/raw/history/lake.jpeg",
@@ -160,7 +170,7 @@ export default function Example() {
       <LeftPlain
         legend={"Ubicación"}
         title="El principio del fin"
-        subtitle={`Nunca imaginó la forma en que sus peticiones llegarian. Con los buenos resultados de sus mas de 30 ceremonias de Ayahuasca y creyendo que su camino podria encontrarse en el chamanismo atendió una invitación a una ceremonia de Hongos Alucinojenos. \nLa agresividad con que esta experiencia le reveló sus verdades lo destruyó y lo dejo incapacitado con estres post traumatico por dos años. Recurrio a la psiquiatria y tuvo que tomar medicamentos ansioliticos y antidepresivos; era tal el sufrimiento fisico y emocional que se encontró frente a la puerta que parece no tener salida por donde uno se despide de la vida.  \nSobre todo en los primeros 8 meses estuvo en un estado muy afectado por la philosibina y útilizo todas las tecnicas que conocía, pero sobre todo las de exploración interna que le enseño el Ayahuasca para salvar su vida.\n Fue ahí en el momento mas oscuros de su vida donde conoció una luz tan brillante que nunca nadie ni nada podría apagar. Se encontró a si mismo, luz de la vida y con eso regresó.`}
+        subtitle={`Nunca imaginó la forma en que sus peticiones llegarian. Con los buenos resultados de sus mas de 30 ceremonias de Ayahuasca y creyendo que su camino podria encontrarse en el chamanismo atendió una invitación a una ceremonia de Hongos Alucinojenos. \nLa agresividad con que esta experiencia le reveló sus verdades lo destruyó y lo dejo incapacitado con estres post traumatico por dos años. Era tal el sufrimiento fisico y emocional que se encontró frente a la puerta que parece no tener salida por donde uno se despide de la vida.  Recurrio a la psiquiatria y tuvo que tomar medicamentos ansioliticos y antidepresivos;   \nSobre todo en los primeros 8 meses estuvo en un estado muy afectado por la psilocibina y útilizo todas las tecnicas que conocía, pero sobre todo las de exploración interna que le enseño el Ayahuasca para salvar su vida.\n Fue ahí en el momento mas oscuros de su vida donde conoció una luz tan brillante que nunca nadie ni nada podría apagar. Se encontró a si mismo, su luz de la vida y con eso regresó.`}
         images={[
           {
             src: "/raw/history/bosque.jpeg",
@@ -172,7 +182,7 @@ export default function Example() {
       <RightPlain
         legend={"Ubicación"}
         title="El final del conocimiento"
-        subtitle={`Al regresar encontró las migajas de pan que desde el principio esa luz había dejado en el camino, como si supiera que su mundo se apagaría, y que las necesitaria para atravez esos años a oscuras. \nReconoció que recibió lo que pidió, pues la única forma de realmente saber lo que vive tanta gente - incluso uno mismo, es haciendo ese recorrido y llegar hasta el final de la batalla que en verdad es de nuestro interior contra la atrevida addicción que tiene la mente de llamarse Yo. \n Se encontró con su maestro de Qi Gong, Sifu Rama, quien habia aprendido las técnicas de indagación en el ser con una linea de transmisión directa hasta Ramana Maharishi, y al escucharlas reconoció instantenemente las lecciones que habia aprendido.\n Se encontró con lo que hoy en día es Paz y que llevaba varios años esperandolo.`}
+        subtitle={`Al regresar encontró las migajas de pan que desde el principio esa luz había dejado en el camino, como si supiera que su mundo se apagaría, y que las necesitaria para superar esos años a oscuros. \nReconoció que recibió lo que pidió, pues la única forma de realmente saber lo que vive tanta gente - incluso uno mismo, es haciendo ese recorrido y llegar hasta el final de la batalla que en verdad es de nuestro interior contra la atrevida addicción que tiene la mente de llamarse Yo. \n Se encontró con su maestro de Qi Gong, Sifu Rama, quien habia aprendido las técnicas de indagación del ser con una linea de transmisión directa desde Ramana Maharshi, y al escucharlas reconoció instantaneamente las lecciones que habia aprendido.\n Se encontró con el lugar que hoy elen día es Paz y que llevaba varios años esperandolo.`}
         images={[
           {
             src: "/raw/forest/bosque_brillante.jpeg",
@@ -229,9 +239,9 @@ export default function Example() {
 
         Hemos intentado que todo aquí sea intuitivo y espontaneo, dejando que las cosas se hagan a travez de uno, sin tener que estar pensando y resolviendo uno solo; culpando a otros si salio mal o sacando pecho si se hizo bien.\n
   
-        Habrán lugares mas lindos y mejores paginas, claro. Pero en verdad nosotros no estamos compitiendo, ni tampoco queremos ganar. Esto es simplemente una expresión de lo que sentimos en el corazón. Como un árbol cuando pasa el viento y suena tan lindo. No es el arbol que lo hace, es la vida…
+        Habrán lugares mas lindos y mejores paginas, claro. Pero en verdad nosotros no estamos compitiendo. Esto es simplemente una expresión de lo que sentimos en el corazón. Como un árbol cuando pasa el viento y suena tan lindo. No es el arbol que lo hace, es la vida…
       
-        Mas alla del resultado, es tan rico vivir así, no cambiaría ni las lamparas por unas de oro puro. Porque la esencia de toda esta historia esta en ellas, yo se que sí. `}
+        `}
         images={[
           {
             src: "/raw/house/dinning/dinning_full.JPG",
@@ -245,6 +255,12 @@ export default function Example() {
           },
           {
             src: "/raw/house/outside/outside_front.jpeg",
+            transformations: [
+              { cropMode: "cm-extract", height: 660, width: 750 },
+            ],
+          },
+          {
+            src: "/raw/house/living/lamps.jpeg",
             transformations: [
               { cropMode: "cm-extract", height: 660, width: 750 },
             ],
