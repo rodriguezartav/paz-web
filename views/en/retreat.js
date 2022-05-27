@@ -47,7 +47,7 @@ export default function Example() {
         title="If we are searching for happiness, let's start by having a good time now!"
         subtitle="Aprovechamos nuestra ubicación en el bosque más biodiverso del mundo y frente al mar del Golfo Dulce en un lugar muy remoto para tener una experiencia muy divertida"
         t1_title="Surf and Paddle board lessons for all ages"
-        t1_description="Le eseñamos a surfear o usar un Paddleboard justo al frente de nuestra propiedad, con un enfoque espiritual conocido como Soul Surfing "
+        t1_description="Le enseñamos a surfear o usar un Paddleboard justo al frente de nuestra propiedad, con un enfoque espiritual conocido como Soul Surfing "
         t2_title="Bonefires, BBQ's and hammocks on the beach"
         t2_description="No hay nada más sanador que sentarse en la playa, en la arena, bajo las estrellas y frente a una fogata con amigos a reirnos, comer rico y conversar sobre la vida."
         t3_title="Dance and music as the expression of the soul"
@@ -61,12 +61,12 @@ export default function Example() {
         ]}
       />
       <RightWithBullets
-        title="To feel a conection with nature, we must approach with a genuine heart"
-        subtitle="Trees, animals and birds are not objects to be photographed. Using their brave lifes as an example, they become guides in the path of life that takes us home to our hearts."
+        title="To feel a connection with nature, we must approach with a genuine heart"
+        subtitle="Trees, animals and birds are not objects to be photographed. Using their brave lives as an example, they become guides in the path of life that takes us home to our hearts."
         t1_title="While hiking we'll go beyond the physical and understandable, into realizing an spiritual connection with nature"
-        t1_description="To form an actual healty relationship, as we are supposed to do with our loved ones, we must enter the forest as sons and daughters enter their mother's home. That's how we'll enter waterfalls, creeks, ponds and primary forests."
+        t1_description="To form an actual healthy relationship, as we are supposed to do with our loved ones, we must enter the forest as sons and daughters enter their mother's home. That's how we'll enter waterfalls, creeks, ponds and primary forests."
         t2_title="The retreat is filled with opportunities to be fully present in nature"
-        t2_description="To feel the effects of connecting with nature - within and without - we must endure the presure of thoughts. Keep our attention with what is here, now. Since we are in one of the most pristine places in the world, it's very easy to do."
+        t2_description="To feel the effects of connecting with nature - within and without - we must endure the pressure of thoughts. Keep our attention with what is here, now. Since we are in one of the most pristine places in the world, it's very easy to do."
         images={[
           { src: "/raw/wildlife/maccaw.webp", width: 1000, height: 700 },
         ]}

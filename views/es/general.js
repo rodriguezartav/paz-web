@@ -35,12 +35,37 @@ export default function Example() {
         title="...días en el bosque a la orilla del mar para recordar como vivir en paz"
         images={[
           {
-            src: "optimized/beach/drone_e_300.PNG",
-            width: 960,
+            src: "raw/lounge/drone_300.jpg",
+            transformations: [
+              { cropMode: "cm_extract", height: 650, width: 1100 },
+            ],
           },
           {
-            src: "optimized/lounge/hammocks.jpg",
-            width: 960,
+            src: "raw/lounge/empty_beach.jpg",
+            transformations: [
+              { cropMode: "cm_extract", height: 650, width: 1100 },
+            ],
+          },
+
+          {
+            src: "raw/beach/drone_s_400_300.PNG",
+            transformations: [
+              { cropMode: "cm_extract", height: 650, width: 1100 },
+            ],
+          },
+
+          {
+            src: "raw/beach/sun_palm2.jpeg",
+            transformations: [
+              { cropMode: "cm_extract", height: 650, width: 1100 },
+            ],
+          },
+
+          {
+            src: "raw/forest/higo_brillante.jpeg",
+            transformations: [
+              { cropMode: "cm_extract", height: 650, width: 1100 },
+            ],
           },
         ]}
       />

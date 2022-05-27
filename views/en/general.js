@@ -28,12 +28,37 @@ export default function Example() {
         title="...days in the beach by the forest to remember how to live in peace..."
         images={[
           {
-            src: "optimized/beach/drone_e_300.PNG",
-            width: 960,
+            src: "raw/lounge/drone_300.jpg",
+            transformations: [
+              { cropMode: "cm_extract", height: 650, width: 1100 },
+            ],
           },
           {
-            src: "optimized/lounge/hammocks.jpg",
-            width: 960,
+            src: "raw/lounge/empty_beach.jpg",
+            transformations: [
+              { cropMode: "cm_extract", height: 650, width: 1100 },
+            ],
+          },
+
+          {
+            src: "raw/beach/drone_s_400_300.PNG",
+            transformations: [
+              { cropMode: "cm_extract", height: 650, width: 1100 },
+            ],
+          },
+
+          {
+            src: "raw/beach/sun_palm2.jpeg",
+            transformations: [
+              { cropMode: "cm_extract", height: 650, width: 1100 },
+            ],
+          },
+
+          {
+            src: "raw/forest/higo_brillante.jpeg",
+            transformations: [
+              { cropMode: "cm_extract", height: 650, width: 1100 },
+            ],
           },
         ]}
       />
@@ -65,32 +90,44 @@ export default function Example() {
         images={[
           {
             src: "/optimized/forest/big_trees.jpg",
-            width: 750,
-            height: 1000,
+            transformations: [
+              { cropMode: "cm_extract", height: 600, width: 750 },
+            ],
           },
 
           {
             src: "/raw/wildlife/oruga.jpeg",
-            width: 750,
-            height: 1000,
+            transformations: [
+              { cropMode: "cm_extract", height: 600, width: 750 },
+            ],
           },
 
           {
             src: "/raw/wildlife/cariblanco_frente.jpeg",
-            width: 750,
-            height: 1000,
+            transformations: [
+              { cropMode: "cm_extract", height: 600, width: 750 },
+            ],
           },
 
           {
-            src: "/raw/forest/higo_brillante.jpeg",
-            width: 750,
-            height: 1000,
+            src: "/raw/forest/barrigon_alto.jpeg",
+            transformations: [
+              { cropMode: "cm_extract", focus: "top", height: 600, width: 750 },
+            ],
           },
 
           {
             src: "/raw/wildlife/tucan_atras.jpeg",
-            width: 750,
-            height: 1000,
+            transformations: [
+              { cropMode: "cm_extract", height: 600, width: 750 },
+            ],
+          },
+
+          {
+            src: "raw/wildlife/perezozo.jpeg",
+            transformations: [
+              { cropMode: "cm_extract", focus: "top", height: 600, width: 750 },
+            ],
           },
         ]}
       />
