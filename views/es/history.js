@@ -34,7 +34,7 @@ export default function Example() {
 
       <HeaderTop
         logoBefore={true}
-        title={`Mar adentro y viendo los colores del cielo le pregunté al atardecer: "que nombre le pongo a este lugar?`}
+        title={`Mar adentro y viendo los colores del cielo le pregunté al atardecer: "¿que nombre le pongo a este lugar?`}
         subtitle={``}
       />
 
