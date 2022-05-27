@@ -66,7 +66,7 @@ export default function Example() {
 
       <LeftPlain
         legend={"Llegada a Osa"}
-        title="Hasta que un día de regreso a casa notó que lo triste iba y se dió cuenta que para siempre se podia quedar..."
+        title="Hasta que un día de regreso a casa notó lo triste que iba y se dió cuenta que para siempre se podia quedar..."
         subtitle={`Muy a su estilo, renunció a su trabajo, cancelo el alquier, vendió su carro y cambio todas su pertencncias por un moto sin saberla manejar y una tienda de campaña sin saber acampar. Asi empezó esta aventura.`}
         images={[
           {
