@@ -18,7 +18,6 @@ function createDaysForCurrentMonth(year, month) {
       let date = dayjs(`${year}-${month}-${index + 1}`).format("YYYY-MM-DD");
       let weekdayInLoop = getWeekday(date);
       if (weekdayInLoop == 4 && !isFirstThursday) {
-        debugger;
         isFirstThursday = true;
         secondThursdayIndex = index + 7;
       }

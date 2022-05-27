@@ -1,32 +1,17 @@
 import Header from "../../components/Header";
 import Footer from "../../components/marketing/footer";
-import Hero from "../../components/sections/hero";
-import Left from "../../components/sections/left";
-import LeftPlain from "../../components/sections/leftPlain";
-import RightPlain from "../../components/sections/rightPlain";
-import How from "../../components/sections/how";
-import Cta from "../../components/sections/cta";
-import Application from "../../components/sections/application";
-import Links from "../../components/sections/links";
 
-import FeaturesCenter from "../../components/sections/featuresCenter";
+import ThreeFeatures from "../../components/sections/threeFeatures";
 
 import HeaderTop from "../../components/sections/headerTop";
-import HeaderBottom from "../../components/sections/headerBottom";
-import HeaderLeft from "../../components/sections/headerLeft";
 
-import Pricing from "../../components/sections/pricing";
 import Signup from "../../components/sections/signupForm";
 
 import RightWithBullets from "../../components/sections/rightWithBullets";
 import LeftWithBullets from "../../components/sections/leftWithBullets";
 
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
 
 export default function Example() {
   const [open, setOpen] = useState(false);
@@ -42,22 +27,19 @@ export default function Example() {
       </Link>
       <HeaderTop
         logoBefore={true}
-        title="Los retiros de Paz son vacaciones con propósito de transformación"
-        subtitle={`Nuestra receta es única. Tiene un espíritu aventurero, una relación cercana con la naturaleza viva y facilita la dimensión espiritual de la vida`}
+        title="Los retiros de Paz son vacaciones para reconectarnos con la naturaleza de nosotros mismos."
+        subtitle={`La esencia espontanea y tranquila de paz es una expresión de la experiencia de su fundador usando este lugar para mejorar su vida`}
       />
-      <LeftWithBullets
-        title="Para sentir la conexión con la naturaleza - percibirla - tenemos que exponernos a ella de manera auténtica y humilde."
-        subtitle="Los árboles, los animales y las plantas no son objetos solo para ser fotografiados, son los guías y el ejemplo de cómo debemos vivir - si realmente queremos paz"
-        t1_title="Caminatas orientadas a la conexión espiritual con la naturaleza"
-        t1_description="En el bosque, en cascadas y en la playa"
-        t2_title="Momentos de presencia en la naturaleza"
-        t2_description="Usamos el fuego, el agua, el barro y actividades para practicar el estar presente y meditar espontáneamente, sin esfuerzo."
-        t3_title="Espacios de silencio y reflexión para la auto-sanación"
-        t3_description="Una vez descubiertas y disueltas las ideas que generan las tensiones, nos podemos concentrar en nosotros mismos y escucharnos. Las soluciones llegan solas desde adentro."
-        images={[
-          { src: "/raw/wildlife/maccaw.webp", width: 1000, height: 700 },
-        ]}
+
+      <ThreeFeatures
+        t1_title="Aventuras locales y divertidas"
+        t1_description="Owned and operated by local costarricans, our easy going culture and youthful spirit turns the retreat into a fun adventure in paradise"
+        t2_title="Conexión autentica con la naturaleza"
+        t2_description="Paz unique approach to healing and release of stress is guided by nature. For that to work, we want to take you beyond seeing, and into feeling."
+        t3_title="Reconecte con sígo mismo"
+        t3_description="If we ask the forest, the ocean - the spirit within all living things - to teach us how to trust our heart. In this pristine and beautifull place we can put down the pride of the mind and listen within."
       />
+
       <RightWithBullets
         title="Si lo que buscamos es la felicidad, empecemos por disfrutar y pasarla muy bien."
         subtitle="Aprovechamos nuestra ubicación en el bosque más biodiverso del mundo y frente al mar del Golfo Dulce en un lugar muy remoto para tener una experiencia muy divertida"
@@ -73,6 +55,20 @@ export default function Example() {
             width: 745,
             height: 700,
           },
+        ]}
+      />
+
+      <LeftWithBullets
+        title="Para sentir la conexión con la naturaleza - percibirla - tenemos que exponernos a ella de manera auténtica y humilde."
+        subtitle="Los árboles, los animales y las plantas no son objetos solo para ser fotografiados, son los guías y el ejemplo de cómo debemos vivir - si realmente queremos paz"
+        t1_title="Caminatas orientadas a la conexión espiritual con la naturaleza"
+        t1_description="En el bosque, en cascadas y en la playa"
+        t2_title="Momentos de presencia en la naturaleza"
+        t2_description="Usamos el fuego, el agua, el barro y actividades para practicar el estar presente y meditar espontáneamente, sin esfuerzo."
+        t3_title="Espacios de silencio y reflexión para la auto-sanación"
+        t3_description="Una vez descubiertas y disueltas las ideas que generan las tensiones, nos podemos concentrar en nosotros mismos y escucharnos. Las soluciones llegan solas desde adentro."
+        images={[
+          { src: "/raw/wildlife/maccaw.webp", width: 1000, height: 700 },
         ]}
       />
 
