@@ -13,8 +13,8 @@ export default function HomeApp({ posts }) {
   return (
     <>
       <NextSeo
-        title="Paz Corcovado | History | Osa Peninsula | Costa Rica"
-        description="Mar adentro y viendo los colores del cielo le pregunté al atardecer: como le pongo a este lugar?"
+        title="The history of Paz de Mono | Osa Peninsula | Costa Rica"
+        description="Mar adentro y viendo los colores del cielo le pregunté al atardecer: como le pongo a este lugar?. Conozca mas sobre la historia de Paz"
         canonical="https://paz.co.cr/history"
         facebook-domain-verification="46be10golmw8ehrdc2rcx6qn1v92e8"
         openGraph={{
