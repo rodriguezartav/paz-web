@@ -68,6 +68,42 @@ export default function Example() {
             width: 750,
             height: 1000,
           },
+
+          {
+            src: "/optimized/forest/big_trees.jpg",
+            width: 750,
+            height: 1000,
+          },
+
+          {
+            src: "/raw/wildlife/oruga.jpeg.jpg",
+            width: 750,
+            height: 1000,
+          },
+
+          {
+            src: "/raw/wildlife/wildlife/cariblanco_frente.jpeg",
+            width: 750,
+            height: 1000,
+          },
+
+          {
+            src: "/raw/wildlife/cariblanco_frente.jpeg.jpg",
+            width: 750,
+            height: 1000,
+          },
+
+          {
+            src: "/raw/forest/higo_brillante.jpeg",
+            width: 750,
+            height: 1000,
+          },
+
+          {
+            src: "/raw/wildlife/tucan_atras.jpeg.jpeg",
+            width: 750,
+            height: 1000,
+          },
         ]}
       />
 
