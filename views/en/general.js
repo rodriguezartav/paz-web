@@ -70,25 +70,13 @@ export default function Example() {
           },
 
           {
-            src: "/optimized/forest/big_trees.jpg",
+            src: "/raw/wildlife/oruga.jpeg",
             width: 750,
             height: 1000,
           },
 
           {
-            src: "/raw/wildlife/oruga.jpeg.jpg",
-            width: 750,
-            height: 1000,
-          },
-
-          {
-            src: "/raw/wildlife/wildlife/cariblanco_frente.jpeg",
-            width: 750,
-            height: 1000,
-          },
-
-          {
-            src: "/raw/wildlife/cariblanco_frente.jpeg.jpg",
+            src: "/raw/wildlife/cariblanco_frente.jpeg",
             width: 750,
             height: 1000,
           },
@@ -100,7 +88,7 @@ export default function Example() {
           },
 
           {
-            src: "/raw/wildlife/tucan_atras.jpeg.jpeg",
+            src: "/raw/wildlife/tucan_atras.jpeg",
             width: 750,
             height: 1000,
           },
