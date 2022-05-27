@@ -3,8 +3,6 @@ export const meetingsPerDay = {
     {
       id: 4,
       name: "Welcome ",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       start: "1:00 PM",
       startDatetime: "2022-01-21T13:00",
       end: "3:00 PM",
@@ -13,8 +11,6 @@ export const meetingsPerDay = {
     {
       id: 5,
       name: "Surf Lesson",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       start: "3:30 PM",
       startDatetime: "2022-01-21T13:00",
       end: "6:00 PM",
@@ -23,8 +19,6 @@ export const meetingsPerDay = {
     {
       id: 6,
       name: "Satsang at Temple",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       start: "6:30 PM",
       startDatetime: "2022-01-21T13:00",
       end: "7:30 PM",
@@ -33,8 +27,6 @@ export const meetingsPerDay = {
     {
       id: 7,
       name: "Dinner",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       start: "7:30 PM",
       startDatetime: "2022-01-21T13:00",
       end: "9:30 PM",
@@ -45,8 +37,6 @@ export const meetingsPerDay = {
     {
       id: 1,
       name: "Breakfast",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       start: "7:00 AM",
       startDatetime: "2022-01-21T13:00",
       end: "8:00 AM",
@@ -56,8 +46,6 @@ export const meetingsPerDay = {
     {
       id: 2,
       name: "Hike or Nature Activity",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       start: "9:00 AM",
       startDatetime: "2022-01-21T13:00",
       end: "12:00 PM",
@@ -67,8 +55,6 @@ export const meetingsPerDay = {
     {
       id: 3,
       name: "Lunch",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       start: "12:30 PM",
       startDatetime: "2022-01-21T13:00",
       end: "1:30 PM",
@@ -77,8 +63,6 @@ export const meetingsPerDay = {
     {
       id: 4,
       name: "Private Meetings",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       start: "1:00 PM",
       startDatetime: "2022-01-21T13:00",
       end: "3:00 PM",
@@ -87,8 +71,6 @@ export const meetingsPerDay = {
     {
       id: 5,
       name: "Surf Lesson",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       start: "3:30 PM",
       startDatetime: "2022-01-21T13:00",
       end: "6:00 PM",
@@ -97,20 +79,33 @@ export const meetingsPerDay = {
     {
       id: 6,
       name: "Satsang at Temple",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       start: "6:30 PM",
       startDatetime: "2022-01-21T13:00",
       end: "7:30 PM",
       endDatetime: "2022-01-21T14:30",
     },
+    {
+      id: 7,
+      name: "Dinner",
+      start: "7:30 PM",
+      startDatetime: "2022-01-21T13:00",
+      end: "9:30 PM",
+      endDatetime: "2022-01-21T14:30",
+    },
   ],
   3: [
     {
+      id: 2,
+      name: "Surf Lesson or Morning Walk",
+      start: "5:00 AM",
+      startDatetime: "2022-01-21T13:00",
+      end: "7:00 PM",
+      endDatetime: "2022-01-21T14:30",
+    },
+
+    {
       id: 1,
       name: "Breakfast",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       start: "7:00 AM",
       startDatetime: "2022-01-21T13:00",
       end: "8:00 AM",
@@ -120,8 +115,6 @@ export const meetingsPerDay = {
     {
       id: 2,
       name: "Hike or Nature Activity",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       start: "9:00 AM",
       startDatetime: "2022-01-21T13:00",
       end: "12:00 PM",
@@ -131,8 +124,6 @@ export const meetingsPerDay = {
     {
       id: 3,
       name: "Lunch",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       start: "12:30 PM",
       startDatetime: "2022-01-21T13:00",
       end: "1:30 PM",
@@ -141,28 +132,22 @@ export const meetingsPerDay = {
     {
       id: 4,
       name: "Private Meetings",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       start: "1:00 PM",
       startDatetime: "2022-01-21T13:00",
       end: "3:00 PM",
       endDatetime: "2022-01-21T14:30",
     },
     {
-      id: 5,
-      name: "Surf Lesson",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-      start: "3:30 PM",
+      id: 2,
+      name: "Sunset Activity",
+      start: "4:00 AM",
       startDatetime: "2022-01-21T13:00",
-      end: "6:00 PM",
+      end: "5:00 PM",
       endDatetime: "2022-01-21T14:30",
     },
     {
       id: 6,
       name: "Bonefire & BBQ",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       start: "6:30 PM",
       startDatetime: "2022-01-21T13:00",
       end: "7:30 PM",
@@ -171,32 +156,26 @@ export const meetingsPerDay = {
   ],
   4: [
     {
-      id: 1,
-      name: "Breakfast",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-      start: "7:00 AM",
+      id: 2,
+      name: "Sunrise Nature Activity",
+      start: "5:00 AM",
       startDatetime: "2022-01-21T13:00",
-      end: "8:00 AM",
+      end: "8:00 PM",
       endDatetime: "2022-01-21T14:30",
     },
 
     {
-      id: 2,
-      name: "Hike or Nature Activity",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-      start: "9:00 AM",
+      id: 1,
+      name: "Breakfast",
+      start: "8:00 AM",
       startDatetime: "2022-01-21T13:00",
-      end: "12:00 PM",
+      end: "9:00 AM",
       endDatetime: "2022-01-21T14:30",
     },
 
     {
       id: 3,
       name: "Lunch",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       start: "12:30 PM",
       startDatetime: "2022-01-21T13:00",
       end: "1:30 PM",
@@ -205,8 +184,6 @@ export const meetingsPerDay = {
     {
       id: 4,
       name: "Private Meetings",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       start: "1:00 PM",
       startDatetime: "2022-01-21T13:00",
       end: "3:00 PM",
@@ -215,8 +192,6 @@ export const meetingsPerDay = {
     {
       id: 5,
       name: "Surf Lesson",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       start: "3:30 PM",
       startDatetime: "2022-01-21T13:00",
       end: "6:00 PM",
@@ -225,20 +200,25 @@ export const meetingsPerDay = {
     {
       id: 6,
       name: "Satsang at Temple",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       start: "6:30 PM",
       startDatetime: "2022-01-21T13:00",
       end: "7:30 PM",
       endDatetime: "2022-01-21T14:30",
     },
+    {
+      id: 7,
+      name: "Dinner & Beach Party with Bonefire & BBQ",
+      start: "7:30 PM",
+      startDatetime: "2022-01-21T13:00",
+      end: "11:30 PM",
+      endDatetime: "2022-01-21T14:30",
+    },
   ],
+
   5: [
     {
       id: 1,
       name: "Breakfast",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       start: "7:00 AM",
       startDatetime: "2022-01-21T13:00",
       end: "8:00 AM",
@@ -247,62 +227,58 @@ export const meetingsPerDay = {
 
     {
       id: 2,
-      name: "Hike or Nature Activity",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-      start: "9:00 AM",
+      name: "Tour to Corcovado National Park",
+      start: "7:00 AM",
       startDatetime: "2022-01-21T13:00",
-      end: "12:00 PM",
+      end: "5:00 PM",
       endDatetime: "2022-01-21T14:30",
     },
 
     {
+      id: 2,
+      name: "Free Day Hike with transportation",
+      start: "9:00 AM",
+      startDatetime: "2022-01-21T13:00",
+      end: "4:00 PM",
+      endDatetime: "2022-01-21T14:30",
+    },
+    {
       id: 3,
-      name: "Lunch",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-      start: "12:30 PM",
+      name: "Free Surf Day with transportation  ",
+      start: "9:00 AM",
       startDatetime: "2022-01-21T13:00",
-      end: "1:30 PM",
-      endDatetime: "2022-01-21T14:30",
-    },
-    {
-      id: 4,
-      name: "Private Meetings",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-      start: "1:00 PM",
-      startDatetime: "2022-01-21T13:00",
-      end: "3:00 PM",
-      endDatetime: "2022-01-21T14:30",
-    },
-    {
-      id: 5,
-      name: "Surf Lesson",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-      start: "3:30 PM",
-      startDatetime: "2022-01-21T13:00",
-      end: "6:00 PM",
+      end: "4:00 PM",
       endDatetime: "2022-01-21T14:30",
     },
     {
       id: 6,
       name: "Satsang at Temple",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       start: "6:30 PM",
       startDatetime: "2022-01-21T13:00",
       end: "7:30 PM",
+      endDatetime: "2022-01-21T14:30",
+    },
+    {
+      id: 6,
+      name: "Dinner & Bonfire",
+      start: "7:30 PM",
+      startDatetime: "2022-01-21T13:00",
+      end: "10:30 PM",
       endDatetime: "2022-01-21T14:30",
     },
   ],
   6: [
     {
       id: 1,
+      name: "Sunrise Activity",
+      start: "5:00 AM",
+      startDatetime: "2022-01-21T13:00",
+      end: "7:00 AM",
+      endDatetime: "2022-01-21T14:30",
+    },
+    {
+      id: 1,
       name: "Breakfast",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
       start: "7:00 AM",
       startDatetime: "2022-01-21T13:00",
       end: "8:00 AM",
@@ -311,53 +287,10 @@ export const meetingsPerDay = {
 
     {
       id: 2,
-      name: "Hike or Nature Activity",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-      start: "9:00 AM",
+      name: "Transportation Pickup",
+      start: "8:00 AM",
       startDatetime: "2022-01-21T13:00",
-      end: "12:00 PM",
-      endDatetime: "2022-01-21T14:30",
-    },
-
-    {
-      id: 3,
-      name: "Lunch",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-      start: "12:30 PM",
-      startDatetime: "2022-01-21T13:00",
-      end: "1:30 PM",
-      endDatetime: "2022-01-21T14:30",
-    },
-    {
-      id: 4,
-      name: "Private Meetings",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-      start: "1:00 PM",
-      startDatetime: "2022-01-21T13:00",
-      end: "3:00 PM",
-      endDatetime: "2022-01-21T14:30",
-    },
-    {
-      id: 5,
-      name: "Surf Lesson",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-      start: "3:30 PM",
-      startDatetime: "2022-01-21T13:00",
-      end: "6:00 PM",
-      endDatetime: "2022-01-21T14:30",
-    },
-    {
-      id: 6,
-      name: "Satsang at Temple",
-      imageUrl:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-      start: "6:30 PM",
-      startDatetime: "2022-01-21T13:00",
-      end: "7:30 PM",
+      end: "1:00 PM",
       endDatetime: "2022-01-21T14:30",
     },
   ],

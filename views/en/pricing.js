@@ -37,11 +37,11 @@ export default function Example() {
 
       <ThreeFeatures
         t1_title="Healthy Meals"
-        t1_description="Owned and operated by local costarricans, our easy going culture and youthful spirit turns the retreat into a fun adventure in paradise"
+        t1_description=""
         t2_title="Activities included"
-        t2_description="Paz unique approach to healing and release of stress is guided by nature. For that to work, we want to take you beyond seeing, and into feeling."
+        t2_description=""
         t3_title="Coaching & Private Session"
-        t3_description="If we ask the forest, the ocean - the spirit within all living things - to teach us how to trust our heart. In this pristine and beautifull place we can put down the pride of the mind and listen within."
+        t3_description=""
       />
 
       <Pricing

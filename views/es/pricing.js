@@ -1,8 +1,5 @@
 import Footer from "../../components/marketing/footer";
 
-import LeftPlain from "../../components/sections/leftPlain";
-import RightPlain from "../../components/sections/rightPlain";
-
 import HeaderTop from "../../components/sections/headerTop";
 
 import Pricing from "../../components/sections/pricing";
@@ -10,7 +7,7 @@ import Signup from "../../components/sections/signupForm";
 
 import Calendar from "../../components/sections/calendar";
 import ThreeFeatures from "../../components/sections/threeFeatures";
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 
 function classNames(...classes) {
@@ -31,73 +28,73 @@ export default function Example() {
       </Link>
       <HeaderTop
         logoBefore={true}
-        title="All retreats start the second thursday of each month"
-        subtitle={`Price, Schedule and Details`}
+        title="Todos los retiros empiezan el segundo jueves de cada mes"
+        subtitle={`Precios, Horarios y Detalles`}
       />
 
       <ThreeFeatures
-        t1_title="Healthy Meals"
-        t1_description="Owned and operated by local costarricans, our easy going culture and youthful spirit turns the retreat into a fun adventure in paradise"
-        t2_title="Activities included"
-        t2_description="Paz unique approach to healing and release of stress is guided by nature. For that to work, we want to take you beyond seeing, and into feeling."
-        t3_title="Coaching & Private Session"
-        t3_description="If we ask the forest, the ocean - the spirit within all living things - to teach us how to trust our heart. In this pristine and beautifull place we can put down the pride of the mind and listen within."
+        t1_title="Comida Saludable"
+        t1_description=""
+        t2_title="Todas las actividades incluidas"
+        t2_description=""
+        t3_title="Coaching & Sessiones Privadas"
+        t3_description=""
       />
 
       <Pricing
         legend={"Pricing"}
-        title={"2022/2023 Prices for Paz Retreats"}
-        subtitle="Stay as much as you like from 4 to 7 days"
-        period="night"
+        title={"Precios para los retiros del 2022/2023"}
+        subtitle="Quédese lo que quiere entre 4 y 7 días."
+        period="noche"
         prices={[
           {
-            title: "Nature & Adventure",
+            title: "Naturaleza y Aventura",
             price: 200,
-            subtitle: "Rate for Shared Double Room",
-            button: "Book today with $100",
+            subtitle: "Tarifa cuarto doble compartido",
+            button: "Reserve hoy con $100",
             list: [
-              "3 health meals",
-              "Te, Coffe nd Fruit station",
-              "1 surf/paddle class each día",
-              "Hikes and workgroups in nature",
-              "All group activities (bonefire, bbq, etc)",
-              "1 Private session per day",
+              "3 comidas saludables",
+              "Te, Cafe y Estación de Frutas",
+              "1 clase de Surf/Paddle por día",
+              "Caminatas y Actividades en la Naturaleza",
+              "Actividades grupales como fogatas, bbq, etc",
+              "1 session privada por día",
             ],
           },
           {
-            title: "Nature",
+            title: "Naturaleza",
             price: 159,
-            subtitle: "Rate for Shared Double Room",
-            button: "Book today with $100",
+            subtitle: "Tarifa cuarto doble compartido",
+            button: "Reserve hoy con $100",
             list: [
-              "3 health meals",
-              "Te, Coffe nd Fruit station",
+              "3 comidas saludables",
+              "Te, Cafe y Estación de Frutas",
 
-              "Hikes and workgroups in nature",
-              "All group activities (bonefire, bbq, etc)",
-              "1 Private session per day",
+              "Caminatas y Actividades en la Naturaleza",
+              "Actividades grupales como fogatas, bbq, etc",
+              "1 session privada por día",
             ],
           },
           {
-            title: "Silence and Meditation",
+            title: "Silencio y Meditación",
             price: 99,
-            subtitle: "Rate for Shared Double Room",
-            button: "Book today with $100",
+            subtitle: "Tarifa cuarto doble compartido",
+            button: "Reserve hoy con $100",
             list: [
-              "3 health meals",
-              "Te, Coffe nd Fruit station",
+              "3 comidas saludables",
+              "Te, Cafe y Estación de Frutas",
 
-              "All group activities (bonefire, bbq, etc)",
-              "1 Private session per day",
+              "Actividades grupales como fogatas, bbq, etc",
+              "1 session privada por día",
             ],
           },
         ]}
       />
 
       <Calendar
-        legend={"Retreat Schedule"}
-        title={"Check out sample calendar of events"}
-        subtitle="Select the month you are interested in"
+        legend={"Horario del Retiro"}
+        title={"Conozca nuestro calendario de ejemplo"}
+        subtitle="Escoja el mes que le interesa"
       />
 
       <Signup

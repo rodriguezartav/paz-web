@@ -47,7 +47,27 @@ export default function Example() {
 
       <RightPlain
         legend={"Ubicación"}
-        title="conectandonos con la vida"
+        title="Paz esta ubicado en el místico cabo Mata Palo en la Peninsula de Osa de Costa Rica"
+        subtitle={`Una comunidad de amantes del medio ambiente entre Puerto Jimenez y el Parque Nacional Corcovado. La región mas alejada de Costa Rica que para protegerla sus habitantes decidieron no tener servicio de luz electrica ni de agua munipal. `}
+        images={[
+          {
+            src: "/raw/maps/cr.png",
+            transformations: [
+              { cropMode: "cm-extract", height: 500, width: 750 },
+            ],
+          },
+          {
+            src: "/raw/guide/matapalo/matapalo.webp",
+            transformations: [
+              { cropMode: "cm-extract", height: 500, width: 750 },
+            ],
+          },
+        ]}
+      />
+
+      <RightPlain
+        legend={"Ubicación"}
+        title="Un lugar para conectarnos con la naturaleza como en ningún otro lugar"
         subtitle={`Aprovechamos el lugar mas biodiverso del mundo para superar la superficialidad humana y encontrar el lugar donde todos somos naturaleza.`}
         images={[
           {

@@ -40,7 +40,27 @@ export default function Example() {
 
       <RightPlain
         legend={"Ubicación"}
-        title="Connecting with life"
+        title="Paz is located in the mystical cabo Mata Palo, in the Osa Peninsula of Costa Rica"
+        subtitle={`A off-grid comunity that loves nature located between Corcovado National Park and Puerto Jimenez, the most remote town in Costa Rica.  `}
+        images={[
+          {
+            src: "/raw/maps/cr.png",
+            transformations: [
+              { cropMode: "cm-extract", height: 500, width: 750 },
+            ],
+          },
+          {
+            src: "/raw/guide/matapalo/matapalo.webp",
+            transformations: [
+              { cropMode: "cm-extract", height: 500, width: 750 },
+            ],
+          },
+        ]}
+      />
+
+      <RightPlain
+        legend={"Ubicación"}
+        title="A place to connect with nature like nowhere else in the world"
         subtitle={`We take advtange of the most biodiverse place on earth in a unique way, so that we can find the space where we are also nature. `}
         images={[
           {
@@ -52,7 +72,7 @@ export default function Example() {
       />
 
       <LeftPlain
-        title="Letting all your worries behind"
+        title="To let go of all your worries"
         subtitle="The beach, the sun, the wind and the ocean. The song of the forest and it's invisible magic works like a stream cleansing us of time which is stress "
         images={[
           {
@@ -64,7 +84,7 @@ export default function Example() {
       />
 
       <RightPlain
-        title="Enjoying it as if you grew up here - pura vida style"
+        title="Enjoy it as if you grew up here - pura vida style"
         subtitle="As one of the very few retreats owned and staffed by costarricans, we find that our fun and easy going way that made us famous worldwide is the best experience we can share with you."
         t1_title="Caminatas a Cataratas"
         t1_description="Incluye 3 comidas, estacion de cafe y te, todas las actividades y transporte si viene en flysansa.com"

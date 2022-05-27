@@ -1,14 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment, useState } from "react";
-import {
-  CalendarIcon,
-  ChevronLeftIcon,
-  ChevronRightIcon,
-  DotsHorizontalIcon,
-  LocationMarkerIcon,
-} from "@heroicons/react/solid";
-import { Menu, Transition } from "@headlessui/react";
-import { DotsVerticalIcon } from "@heroicons/react/outline";
+import { useState } from "react";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
 
 import dayjs from "dayjs";
 
@@ -171,8 +163,8 @@ export default function Example(props) {
                 <ol className="mt-2 divide-y divide-gray-200 text-sm leading-6 text-gray-500">
                   {meetingsPerDay[activityDateIndex].map((meeting) => (
                     <li className="py-4 sm:flex">
-                      <time dateTime="2022-01-17" className="w-28 flex-none">
-                        {meeting.start}
+                      <time dateTime="2022-01-17" className=" w-40 flex-none">
+                        {meeting.start} - {meeting.end}
                       </time>
 
                       <p className="mt-2 flex-auto sm:mt-0">{meeting.name}</p>

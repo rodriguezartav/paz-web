@@ -93,8 +93,8 @@ export default function Example() {
 
       <RightPlain
         legend="Muchos años despues..."
-        title={`La historia dice que Roberto termino de leer el "Diario de un Yogi" de P. Yogananda`}
-        subtitle=" y esa misma noche... se le apareció en un sueño y le dio instrucciones especificas de que hacer en este lugar. El día siguiente empezó..."
+        title={`La historia dice que Roberto termino de leer el "Autobiografia de un Yogi" de P. Yogananda`}
+        subtitle=" y esa misma noche... se le apareció en un sueño y le dijo que comprar este lugar e hiciera - como el - un retiro. El día siguiente empezó..."
         t4_description="Viaje al parque en bote el pen-último día"
         images={[
           {

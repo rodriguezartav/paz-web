@@ -30,7 +30,7 @@ export default function HomeApp({
           {legend}
         </span>
         <h3
-          className={`mb-4 text-3xl md:text-5xl text-coolGray-900 font-bold tracking-tighter  text-${color}`}
+          className={`mb-4 text-3xl md:text-5xl  font-bold tracking-tighter  text-${color}`}
         >
           {title}
         </h3>
