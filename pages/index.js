@@ -11,7 +11,7 @@ export default function HomeApp({ posts }) {
 
   return (
     <div className="antialiased bg-body text-body font-body">
-      <Header />
+      <Header locale={router.locale} />
       {router.locale == "en" ? <EN /> : <ES />}
     </div>
   );
