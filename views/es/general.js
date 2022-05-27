@@ -97,8 +97,44 @@ export default function Example() {
         images={[
           {
             src: "/optimized/forest/big_trees.jpg",
-            width: 750,
-            height: 1000,
+            transformations: [
+              { cropMode: "cm_extract", height: 600, width: 750 },
+            ],
+          },
+
+          {
+            src: "/raw/wildlife/oruga.jpeg",
+            transformations: [
+              { cropMode: "cm_extract", height: 600, width: 750 },
+            ],
+          },
+
+          {
+            src: "/raw/wildlife/cariblanco_frente.jpeg",
+            transformations: [
+              { cropMode: "cm_extract", height: 600, width: 750 },
+            ],
+          },
+
+          {
+            src: "/raw/forest/barrigon_alto.jpeg",
+            transformations: [
+              { cropMode: "cm_extract", focus: "top", height: 600, width: 750 },
+            ],
+          },
+
+          {
+            src: "/raw/wildlife/tucan_atras.jpeg",
+            transformations: [
+              { cropMode: "cm_extract", height: 600, width: 750 },
+            ],
+          },
+
+          {
+            src: "raw/wildlife/perezozo.jpeg",
+            transformations: [
+              { cropMode: "cm_extract", focus: "top", height: 600, width: 750 },
+            ],
           },
         ]}
       />
