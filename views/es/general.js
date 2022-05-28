@@ -33,41 +33,6 @@ export default function Example() {
       <HeaderTop
         logoBefore={true}
         title="...días en el bosque a la orilla del mar para recordar como vivir en paz"
-        images={[
-          {
-            src: "raw/lounge/drone_300.jpg",
-            transformations: [
-              { cropMode: "cm_extract", height: 650, width: 1100 },
-            ],
-          },
-          {
-            src: "raw/lounge/empty_beach.jpg",
-            transformations: [
-              { cropMode: "cm_extract", height: 650, width: 1100 },
-            ],
-          },
-
-          {
-            src: "raw/beach/drone_s_400_300.PNG",
-            transformations: [
-              { cropMode: "cm_extract", height: 650, width: 1100 },
-            ],
-          },
-
-          {
-            src: "raw/beach/sun_palm2.jpeg",
-            transformations: [
-              { cropMode: "cm_extract", height: 650, width: 1100 },
-            ],
-          },
-
-          {
-            src: "raw/forest/higo_brillante.jpeg",
-            transformations: [
-              { cropMode: "cm_extract", height: 650, width: 1100 },
-            ],
-          },
-        ]}
       />
 
       <RightPlain
@@ -90,10 +55,24 @@ export default function Example() {
         ]}
       />
 
+      <LeftPlain
+        legend={"Primer Paso"}
+        title="Todo empezó con una visita al parque nacional Corcovado"
+        button={{ text: "Conozca la historia de Paz", href: "/history" }}
+        subtitle={`En el 2001 Roberto, nuestro fundador, hizo su primer viaje al Parque Nacional Corcovado y sintió por primera vez a la madre naturaleza. \nEn ese momento llego a el la idea que la Peninsula de Osa era como una universidad para que el corazón del ser humano regresara a la naturaleza. \nEsa experiencia lo llevó a transformar su vida, y ese sentir es justamente lo que quiere compartir.`}
+        images={[
+          {
+            src: "/raw/history/corcovado.png",
+            width: 750,
+            height: 1000,
+          },
+        ]}
+      />
+
       <RightPlain
         legend={"Ubicación"}
-        title="Un lugar para conectarnos con la naturaleza como en ningún otro lugar"
-        subtitle={`Aprovechamos el lugar mas biodiverso del mundo para superar la superficialidad humana y encontrar el lugar donde todos somos naturaleza.`}
+        title="Un lugar destinado para conectarnos con la naturaleza"
+        subtitle={`Aprovechamos el lugar mas biodiverso del mundo para buscar el momento en que nos sentimos parte de la naturaleza.`}
         images={[
           {
             src: "/optimized/forest/big_trees.jpg",
@@ -140,16 +119,8 @@ export default function Example() {
       />
 
       <LeftPlain
-        title="liberandonos de las preocupaciones"
-        subtitle="Perciba el espacio en todas sus direcciones, descubra la verdadera belleza del momento y disfrute del silencio adentro y afuera. Aproveche nuestros consejos sobre la presencia en cada momento para aprender a disfrutar de este lugar."
-        t1_title="Caminatas a Cataratas"
-        t1_description="Incluye 3 comidas, estacion de cafe y te, todas las actividades y transporte si viene en flysansa.com"
-        t2_title="Fogatas y BBQ's en la playa"
-        t2_description="Quisimos que estar en la casa se sintiera como acampar, pero con la comidad de una casa de playa. Ventanas gigantes con cedazos americanos nos hacen sentir afuera, pero estar adentro protegidos y comodos."
-        t3_title="Lecciones de Surf y Paddleboard"
-        t3_description="Otros retiros son para los que se quieren divertir, y para eso damos clases introductorias de surf y paddle board en el mar. En un pequeño rinconcito de Osa tan maravilloso que no se puede describir, solo vivir."
-        t4_title="Exploración de positas"
-        t4_description="La oportunidad de hacer un viaje de todo el día al parque nacional corcovado. Saliendo desde Paz, con transporte en bote y guia recomendado. No esta incluido en los precios."
+        title="Un lugar para descansar de nuestras preocupaciones"
+        subtitle={`Descansar es esencial para la salud. Un propósito de este lugar es que sea usado para descansar del pensar de una forma relajada y sin esfuerzo.\nCon la belleza y diversidad que hay, es natural que escojamos estar presentes aquí vez de pensando cosas de allá.`}
         images={[
           {
             src: "/optimized/beach/sun_palm2.jpeg",
@@ -160,16 +131,8 @@ export default function Example() {
       />
 
       <RightPlain
-        title="divirtiendonos como si vivieramos aquí"
-        subtitle="En Costa Rica hay una forma particular de disfrutar de la vida. Una profundida espiritual, pero tambien un liviano sentido del humor siempre buscando una sonrisa."
-        t1_title="Caminatas a Cataratas"
-        t1_description="Incluye 3 comidas, estacion de cafe y te, todas las actividades y transporte si viene en flysansa.com"
-        t2_title="Fogatas y BBQ's en la playa"
-        t2_description="Quisimos que estar en la casa se sintiera como acampar, pero con la comidad de una casa de playa. Ventanas gigantes con cedazos americanos nos hacen sentir afuera, pero estar adentro protegidos y comodos."
-        t3_title="Lecciones de Surf y Paddleboard"
-        t3_description="Otros retiros son para los que se quieren divertir, y para eso damos clases introductorias de surf y paddle board en el mar. En un pequeño rinconcito de Osa tan maravilloso que no se puede describir, solo vivir."
-        t4_title="Exploración de positas"
-        t4_description="La oportunidad de hacer un viaje de todo el día al parque nacional corcovado. Saliendo desde Paz, con transporte en bote y guia recomendado. No esta incluido en los precios."
+        title="... y divertirnos como si viviéramos aquí"
+        subtitle="En Costa Rica hay una forma particular de disfrutar de la vida, con humildad y sentido del humor. Este es un espacio que celebra esta forma de vivir compartiendola con nuestros visitantes."
         images={[
           {
             src: "/raw/wildlife/titis.webp",
@@ -195,7 +158,7 @@ export default function Example() {
 
       <RightPlain
         title="pero que en realidad es un templo natural muy especial"
-        subtitle="El espiritú de la madre naturaleza esta presente aquī. La escuchamos y la queremos. Es la guia en esta aventura por realmente encontrarla en nosotros mismos."
+        subtitle="El espíritu de la madre naturaleza esta presente aquí. La escuchamos y la queremos. Es la guía en esta aventura por realmente encontrarla en nosotros mismos."
         images={[
           {
             src: "/optimized/art/meditation.jpg",

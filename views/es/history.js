@@ -68,7 +68,8 @@ export default function Example() {
       <LeftPlain
         legend={"Primer Paso"}
         title="Todo empezó con una visita al parque nacional Corcovado"
-        subtitle={`En el 2001 Roberto, nuestro fundador hizo su primer viaje al Parque Nacional Corcovado y sintió por primera vez a la madre naturaleza. Esa experiencia lo llevó a transformar su vida, y ese sentir es justamente lo que quiere compartir. El creé que la Peninsula de Osa es la mejor universidad espiritual de la madre naturaleza para nosotros sus hijos.`}
+        button={{ text: "Conozca la historia", href: "/history" }}
+        subtitle={`En el 2001 Roberto, nuestro fundador, hizo su primer viaje al Parque Nacional Corcovado y sintió por primera vez a la madre naturaleza. En ese momento llego a el la idea que la Peninsula de Osa era como una universidad para que el ser humano regresara al naturaleza - que es su corazón. Esa experiencia lo llevó a transformar su vida, y ese sentir es justamente lo que quiere compartir.`}
         images={[
           {
             src: "/raw/history/corcovado.png",

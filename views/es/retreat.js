@@ -28,26 +28,26 @@ export default function Example() {
       <HeaderTop
         logoBefore={true}
         title="Los retiros de Paz son vacaciones para reconectarnos con la naturaleza de nosotros mismos."
-        subtitle={`La esencia espontanea y tranquila de paz es una expresión de la experiencia de su fundador usando este lugar para mejorar su vida`}
+        subtitle={`Una de las mas grandes conquistas que un ser humano puede lograr en su vida es estar cómodo y tranquilo consigo mismo. Esto no require de un gran esfuerzo, es simplemente dedicarse un momento todos los días y un retiro es la forma de volver a empezar.`}
       />
 
       <ThreeFeatures
         t1_title="Aventuras locales y divertidas"
-        t1_description="Owned and operated by local costarricans, our easy going culture and youthful spirit turns the retreat into a fun adventure in paradise"
-        t2_title="Conexión autentica con la naturaleza"
-        t2_description="Paz unique approach to healing and release of stress is guided by nature. For that to work, we want to take you beyond seeing, and into feeling."
-        t3_title="Reconecte con sígo mismo"
-        t3_description="If we ask the forest, the ocean - the spirit within all living things - to teach us how to trust our heart. In this pristine and beautifull place we can put down the pride of the mind and listen within."
+        t1_description="Creado y operado por costarricenses que aman la Peninsula de Osa, nuestro espíritu aventurero y cultura tranquila convierten el retiro en una aventura divertida en el paraiso."
+        t2_title="Conexión con la naturaleza"
+        t2_description="La enfoque de Paz esta en dejar que la naturaleza sea la guía. Para que esto funcione tenemos que trascender la intención y transformarla en un espacio de sentir."
+        t3_title="Reconexión con uno mismo"
+        t3_description="La esencia espontanea y tranquila de paz es una expresión de la experiencia de su fundador usando este lugar para mejorar su vida"
       />
 
       <RightWithBullets
-        title="Si lo que buscamos es la felicidad, empecemos por disfrutar y pasarla muy bien."
-        subtitle="Aprovechamos nuestra ubicación en el bosque más biodiverso del mundo y frente al mar del Golfo Dulce en un lugar muy remoto para tener una experiencia muy divertida"
-        t1_title="Lecciones de Surf y Paddleboard"
-        t1_description="Le eseñamos a surfear o usar un Paddleboard justo al frente de nuestra propiedad, con un enfoque espiritual conocido como Soul Surfing "
+        title="Si lo que buscamos es la felicidad, empecemos por disfrutar ya!"
+        subtitle="Todos conocemos los beneficios de estar felices y relajados, de estar sin pensar. Pero los hábitos del hacer son difíciles de superar. Inspirados en los niños, desarrollamos un método para meditar mientras nos divertimos."
+        t1_title="Surf y Paddleboard Meditativo"
+        t1_description="Le enseñamos a surfear en tabla o Paddleboard justo al frente de paz. Nos enfocamos en complementar la parte física con la espiritual. Inspirados en el concepto de Soul Surfing, tomamos elementos de Tai Chi para fluir sin importar lo que que pase."
         t2_title="Fogatas, BBQ's y hamacas en la playa"
         t2_description="No hay nada más sanador que sentarse en la playa, en la arena, bajo las estrellas y frente a una fogata con amigos a reirnos, comer rico y conversar sobre la vida."
-        t3_title="Baile y música como expresion del alma"
+        t3_title="Fiestas Meditativas"
         t3_description="Una fiesta a la antigua, con fuego y danza libre. Una oportunidad para recordar a nuestros ancestros y cómo se divertían sanando su mente, viviendo libres desde el corazón"
         images={[
           {
@@ -61,7 +61,7 @@ export default function Example() {
       <LeftWithBullets
         title="Para sentir la conexión con la naturaleza - percibirla - tenemos que exponernos a ella de manera auténtica y humilde."
         subtitle="Los árboles, los animales y las plantas no son objetos solo para ser fotografiados, son los guías y el ejemplo de cómo debemos vivir - si realmente queremos paz"
-        t1_title="Caminatas orientadas a la conexión espiritual con la naturaleza"
+        t1_title="Caminatas Meditativas"
         t1_description="En el bosque, en cascadas y en la playa"
         t2_title="Momentos de presencia en la naturaleza"
         t2_description="Usamos el fuego, el agua, el barro y actividades para practicar el estar presente y meditar espontáneamente, sin esfuerzo."
