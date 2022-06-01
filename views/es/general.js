@@ -72,7 +72,7 @@ export default function Example() {
       <RightPlain
         legend={"Ubicación"}
         title="Un lugar destinado para conectarnos con la naturaleza"
-        subtitle={`Aprovechamos el lugar mas biodiverso del mundo para buscar el momento en que nos sentimos parte de la naturaleza.`}
+        subtitle={`Buscando estar en el momento justo, en el lugar mas biodiverso del mundo, nos acercamos al ritmo de la madre naturaleza para experimentar su verdad; somos parte de la naturaleza.`}
         images={[
           {
             src: "/optimized/forest/big_trees.jpg",
@@ -120,7 +120,7 @@ export default function Example() {
 
       <LeftPlain
         title="Un lugar para descansar de nuestras preocupaciones"
-        subtitle={`Descansar es esencial para la salud. Un propósito de este lugar es que sea usado para descansar del pensar de una forma relajada y sin esfuerzo.\nCon la belleza y diversidad que hay, es natural que escojamos estar presentes aquí vez de pensando cosas de allá.`}
+        subtitle={`Descansar es esencial para la salud. Un propósito de este lugar es que sea usado para "descansar de pensar" de una forma relajada y sin esfuerzo.\nCon la belleza y diversidad que hay, es natural que escojamos estar presentes aquí en vez de pensando cosas de allá.`}
         images={[
           {
             src: "/optimized/beach/sun_palm2.jpeg",
@@ -198,17 +198,6 @@ export default function Example() {
         logoBefore={true}
         title="Como nos quiere visitar?"
         subtitle="Hay dos formas:"
-      />
-
-      <Cta
-        title="Que le parece?"
-        subtitle="Cuentenos lo que esta buscando"
-        post_title="Gracias por su mensaje"
-        post_subtitle="Le gustaria una respuesta?"
-        button={{
-          post_text: "Sí",
-          text: "Enviar",
-        }}
       />
 
       <Footer />

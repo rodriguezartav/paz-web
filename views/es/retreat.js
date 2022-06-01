@@ -28,7 +28,7 @@ export default function Example() {
       <HeaderTop
         logoBefore={true}
         title="Los retiros de Paz son vacaciones para reconectarnos con la naturaleza de nosotros mismos."
-        subtitle={`Una de las mas grandes conquistas que un ser humano puede lograr en su vida es estar cómodo y tranquilo consigo mismo. Esto no require de un gran esfuerzo, es simplemente dedicarse un momento todos los días y un retiro es la forma de volver a empezar.`}
+        subtitle={`De las mayores conquistas que cualquier ser humano puede alcanzar es estar cómodo y tranquilo consigo mismo. Un retiro es perfecto para retomar esa dirección.`}
       />
 
       <ThreeFeatures
@@ -42,7 +42,7 @@ export default function Example() {
 
       <RightWithBullets
         title="Si lo que buscamos es la felicidad, empecemos por disfrutar ya!"
-        subtitle="Todos conocemos los beneficios de estar felices y relajados, de estar sin pensar. Pero los hábitos del hacer son difíciles de superar. Inspirados en los niños, desarrollamos un método para meditar mientras nos divertimos."
+        subtitle="Todos conocemos los beneficios de estar felices y relajados; sin pensar en todo lo demás. A muchos nos gustaría todos los días poder así funcionar. Los niños son los maestros de la felicidad, y ellos siempre empiezan por disfrutar. "
         t1_title="Surf y Paddleboard Meditativo"
         t1_description="Le enseñamos a surfear en tabla o Paddleboard justo al frente de paz. Nos enfocamos en complementar la parte física con la espiritual. Inspirados en el concepto de Soul Surfing, tomamos elementos de Tai Chi para fluir sin importar lo que que pase."
         t2_title="Fogatas, BBQ's y hamacas en la playa"
@@ -62,7 +62,7 @@ export default function Example() {
         title="Para sentir la conexión con la naturaleza - percibirla - tenemos que exponernos a ella de manera auténtica y humilde."
         subtitle="Los árboles, los animales y las plantas no son objetos solo para ser fotografiados, son los guías y el ejemplo de cómo debemos vivir - si realmente queremos paz"
         t1_title="Caminatas Meditativas"
-        t1_description="En el bosque, en cascadas y en la playa"
+        t1_description="En el bosque, en cascadas y en la playa. Salir a caminar sin pensar, sin expectativas y sin ningún lugar adonde llegar. "
         t2_title="Momentos de presencia en la naturaleza"
         t2_description="Usamos el fuego, el agua, el barro y actividades para practicar el estar presente y meditar espontáneamente, sin esfuerzo."
         t3_title="Espacios de silencio y reflexión para la auto-sanación"
