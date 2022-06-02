@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-import EN from "../../views/en/library/the-actualities-of-life";
+import EN from "../../views/en/library/the-one-in-the-background";
 
 import Header from "../../components/Header";
 

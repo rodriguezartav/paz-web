@@ -7,14 +7,14 @@ const navigationES = [
   { name: "Retiro", href: "/retreat" },
   { name: "Precios", href: "/pricing" },
   { name: "Historia", href: "/history" },
-  { name: "Blog", href: "/library" },
+  { name: "H-Blog", href: "/library" },
 ];
 
 const navigationEN = [
   { name: "Retreat", href: "/retreat" },
   { name: "Pricing", href: "/pricing" },
   { name: "History", href: "history" },
-  { name: "Blog", href: "/library" },
+  { name: "H-Blog", href: "/library" },
 ];
 export default function Example({ locale }) {
   let navigation = locale == "en" ? navigationEN : navigationES;

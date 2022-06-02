@@ -29,17 +29,18 @@ export default function Example() {
         <div className="container absolute top-72 px-4 mx-auto">
           <div className="md:max-w-6xl mx-auto mb-12 text-center">
             <div className="inline-block py-1 px-3 mb-6 text-xs leading-5 text-white font-medium uppercase bg-indigo-800 rounded-full shadow-sm">
-              Satsang Blog
+              The Human Blog
             </div>
 
             <p className="mb-10 bg-indigo-50 p-4 opacity-90 rounded-lg text-lg md:text-xl font-medium text-coolGray-500 shadow-md">
-              While participating in the Vippasanna center of Soi Do Pre in
-              Thailand and during my studies with Ayahuasca in the Amazon
-              Putumayo Highlands, I was amazed at the triggers that shifted my
-              mind. In Satsang I realized how those triggers are the first step
-              in the transformation of humankind. My engineer's mind loves to
-              create exercises, prayers, and meditations to bring creativity to
-              our minds.
+              At some point, I realized that almost all of my beliefs about
+              myself, life, and the world were mistaken. Very clearly, I see the
+              society of humankind as a virtual reality full of concepts like
+              countries, businesses, and so on. But I can't find them on the
+              ground. Yes, there are gates and signs, but the games they play
+              have nothing to do with nature, science and the universe.
+              <br /> Here you'll find notes, essays, and meditations about such
+              topics.
             </p>
             <div className="flex items-center justify-center text-left -mx-2">
               <div className="w-auto px-2">
@@ -51,6 +52,42 @@ export default function Example() {
 
         <div className="container mt-32 px-4 mx-auto">
           <div className="flex flex-wrap -mx-4 mb-12 md:mb-20">
+            <div className="w-full md:w-1/2 px-4 mb-8 cursor-pointer">
+              <Link locale={locale} href="/library/the-one-in-the-background">
+                <div>
+                  <a className="block mb-6 overflow-hidden rounded-md">
+                    <SimpleImage
+                      width={300}
+                      className="w-full"
+                      transformations={[
+                        { cropMode: "cm_extract", height: 300, width: 600 },
+                      ]}
+                      src="/raw/art/human-background.jpg"
+                    />
+                  </a>
+                  <div className="mb-4">
+                    <a className="inline-block py-1 px-3 text-xs leading-5 text-indigo-500 hover:text-indigo-600 font-medium uppercase bg-indigo-100 hover:bg-indigo-200 rounded-full shadow-sm">
+                      Satsang
+                    </a>
+                  </div>
+                  <p className="mb-2 text-coolGray-500 font-medium">
+                    Roberto Rodriguez • 2 Jun 2022
+                  </p>
+                  <a className="inline-block mb-4 text-2xl leading-tight text-coolGray-800 hover:text-coolGray-900 font-bold hover:underline">
+                    {" "}
+                    1. The one in the background
+                  </a>
+                  <p className="mb-4 text-base md:text-lg text-coolGray-400 font-medium">
+                    {" "}
+                    Some call this background the unconscious, the ego, the
+                    self, and no matter its name - it's out of reach to any
+                    external element because it exists before the devices that
+                    are mindful of the exterior.
+                  </p>
+                </div>
+              </Link>
+            </div>
+
             <div className="w-full md:w-1/2 px-4 mb-8 cursor-pointer">
               <Link locale={locale} href="/library/the-actualities-of-life">
                 <div>
@@ -66,7 +103,7 @@ export default function Example() {
                   </a>
                   <div className="mb-4">
                     <a className="inline-block py-1 px-3 text-xs leading-5 text-indigo-500 hover:text-indigo-600 font-medium uppercase bg-indigo-100 hover:bg-indigo-200 rounded-full shadow-sm">
-                      Technology
+                      Satsang
                     </a>
                   </div>
                   <p className="mb-2 text-coolGray-500 font-medium">
@@ -74,7 +111,7 @@ export default function Example() {
                   </p>
                   <a className="inline-block mb-4 text-2xl leading-tight text-coolGray-800 hover:text-coolGray-900 font-bold hover:underline">
                     {" "}
-                    The actualities of life
+                    2. The contract of life
                   </a>
                   <p className="mb-4 text-base md:text-lg text-coolGray-400 font-medium">
                     {" "}
