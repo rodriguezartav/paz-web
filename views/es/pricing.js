@@ -49,7 +49,7 @@ export default function Example() {
         prices={[
           {
             title: "Naturaleza y Aventura",
-            price: 200,
+            price: 179,
             subtitle: "Tarifa cuarto doble compartido",
             button: "Reserve hoy con $100",
             list: [
@@ -63,7 +63,7 @@ export default function Example() {
           },
           {
             title: "Naturaleza",
-            price: 159,
+            price: 129,
             subtitle: "Tarifa cuarto doble compartido",
             button: "Reserve hoy con $100",
             list: [
@@ -77,7 +77,7 @@ export default function Example() {
           },
           {
             title: "Silencio y Meditación",
-            price: 99,
+            price: 89,
             subtitle: "Tarifa cuarto doble compartido",
             button: "Reserve hoy con $100",
             list: [

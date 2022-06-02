@@ -52,7 +52,7 @@ export default function Example() {
         prices={[
           {
             title: "Nature & Adventure",
-            price: 200,
+            price: 179,
             subtitle: "Rate for Shared Double Room",
             button: "Book today with $100",
             list: [
@@ -66,7 +66,7 @@ export default function Example() {
           },
           {
             title: "Nature",
-            price: 159,
+            price: 129,
             subtitle: "Rate for Shared Double Room",
             button: "Book today with $100",
             list: [
@@ -80,7 +80,7 @@ export default function Example() {
           },
           {
             title: "Silence and Meditation",
-            price: 99,
+            price: 89,
             subtitle: "Rate for Shared Double Room",
             button: "Book today with $100",
             list: [
