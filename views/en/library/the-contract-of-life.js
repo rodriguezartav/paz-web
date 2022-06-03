@@ -67,75 +67,265 @@ export default function Example() {
         <div className="container px-4 mx-auto">
           <div className="md:max-w-3xl mx-auto">
             <p className="mb-8 pb-10 text-lg md:text-xl font-medium text-coolGray-500 border-b border-coolGray-100">
+              Following on my realization that even with my best intentions and
+              discipline, parts of my humanity override that path I want to take
+              in life. But, more importantly, the entanglement between the I's
+              must be understood with something that's not the mind before
+              anything "spirit" does not become an illusion, another a fantasy
+              of the mind.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              These are, in essence, the teaching of Jeshua, Gautama, Maharishi,
+              Yogananda, and Krishnamurti, among many others I consider
+              teachers.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              I don't consider myself a teacher or anything like that. My
+              passion is to explore the inside of life on my own and compare my
+              experience to their advice. But to begin to see and then
+              understand these entanglements between the I's - to find peace and
+              not frustration in the question "Who Am I" - we must really listen
+              to their advice and let go for a moment of our minds.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              The fears mentioned in "The one in the background" are key to
+              uncovering and bringing to the surface the mechanisms behind the
+              mind. These mechanisms are also known as ego or self, although
+              most people simply call them I. When we bring them to the surface,
+              we can see them for what they are.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              We don't bring to the surface anything by using the mind directly.
+              That would be called imagination. We want to see the real thing,
+              the one that's alive. That's like thinking of our friends compared
+              to being in front of them. Like thinking of our hand moving and
+              actually moving the hand. Can you see how they seem the same, but
+              they are not? The whole experience of life is like that.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              What exists in the mind is always an illusion, a picture, a movie,
+              of the real living thing. However, it also serves a purpose for
+              our survival, and there is nothing more effective in preserving
+              life than fear. So, fear is perhaps the most significant driver of
+              reality.
+            </p>
+
+            <div className="mb-6 p-6 border-l-2 border-indigo-500">
+              <p className="mb-4 text-xl md:text-2xl leading-tight font-medium text-coolGray-800">
+                The old teachings talk about the 5 reasons for the suffering of
+                humanity. However, this kind of suffering seems to apply only to
+                humans because it can't be found anywhere else in the universe.
+              </p>
+              <span className="text-base md:text-lg text-coolGray-400 font-medium">
+                The contract of life
+              </span>
+            </div>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              Two of those reasons are related to our attachments. The first is
+              grasping or holding on to that which is temporary. - fear of
+              losing it. The second is the aversion to that which is temporary
+              and transitory - fear of it happening.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              For millennia, religions have proposed paths of "purifications"
+              from sin and desire. Yet, the temples are empty, and the parties
+              are packed. Since those ideas were presented, the world has
+              changed so much that it no longer makes sense to go at them
+              head-on.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              It's the same as when an alcoholic tries to fight head one with
+              his addiction. It's like fighting a ghost that appears and
+              disappears every day and night.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              In the end, we don't want to vanish sin or desire. We don't want
+              to vanish alcohol from the land. We have already tried all that
+              and it just ends in wars. We just want to live in peace or to
+              live, that is.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              Instead of fighting with attachment, I can use it to explore
+              myself. For example, I can feel the attachment with my son go as
+              deep as it goes, so it can work as a guide. As an emotional road
+              inside where we can feel where it ends and if we follow it, we
+              should be able to learn where it starts.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              Understanding attachment and realizing where it starts is far more
+              significant in improving our lives than becoming purified. Same
+              with sin, same past trauma.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
               If we are serious about finding out the truth of who we are and
-              what life is. Then we must begin by considering our most cherished
+              what life is. We can begin by considering our most cherished
               attachments with other things and beings. Our loved ones,
               livelihoods, careers, everything we own, health, businesses,
               projects, and dreams.
             </p>
 
             <p className="mb-4 text-base md:text-lg text-coolGray-500">
-              So one of the things I tried to overcome the feelings inside was
-              Ayahuasca, which did wonders for me on many levels. "The plant"
-              was extra generous by helping me see many facts about my life and
-              myself that I could not see. But my mind is so stubborn and
-              ego-centric that it swapped some it's my beliefs, moving from a
-              science-mind-centric approach into a magic-spirit-centric one.
+              The contract of life is a meditation I invented while dealing with
+              loss in my life, or rather by not knowing how to deal with it. In
+              it, I conceptually believe we all signed an agreement before we
+              were born.
             </p>
-
-            <p className="mb-4 text-base md:text-lg text-coolGray-500">
-              What did not change and became a severe condition that made me
-              suffer tremendously was a background reality where I was petrified
-              of something else happening to me or my loved ones. Unfortunately,
-              I overlooked this reality since it was not on the surface of my
-              day to day, but it did show up in significant moments of my life.
-            </p>
-
-            <p className="mb-4 text-base md:text-lg text-coolGray-500">
-              As a response, my mind was trying to reach an agreement with any
-              form of God that would "sign it" where nothing terrible was going
-              to happen again, and I would not feel so bad inside. So it swapped
-              the old beliefs of getting security from society and medicine,
-              that is, working hard, following the law, insurance, and so on.
-              But in the background, everything remained the same.
-            </p>
-
-            <p className="mb-4 text-base md:text-lg text-coolGray-500">
-              The back and forth between trying to get security from spirit in
-              the form of energy and light against the dark and getting it from
-              society in the form of money, power, and recognition must be
-              expected until the need for security is gone. Finding that within
-              ourselves is such an accomplishment for any human!
-            </p>
-
-            <p className="mb-4 text-base md:text-lg text-coolGray-500">
-              Some call this background the unconscious, the ego, the self, and
-              no matter its name - it's out of reach to any external element
-              because it exists before the devices that are mindful of the
-              exterior.
-            </p>
-
-            <p className="mb-4 text-base md:text-lg text-coolGray-500">
-              It's actually out of reach from our own minds. So if we want to
-              tap into that, motivated by a desire to heal, we must find our
-              true self beyond the mind, which is the only one that can be aware
-              of that.
-            </p>
-
-            <p className="mb-4 text-base md:text-lg text-coolGray-500"></p>
 
             <div className="mb-6 p-6 border-l-2 border-indigo-500">
               <p className="mb-4 text-xl md:text-2xl leading-tight font-medium text-coolGray-800">
-                If I don't understand myself, the self, the ego, the person.{" "}
-                <br />
-                <br />I may meditate for the rest of my life, and I may be
-                deceiving myself. I may be living in a vast series of illusions,
-                thinking those are real. So I must understand myself.
+                The contract of life says: After being born, anything can and
+                will happen to you and everyone around you. There are no
+                guarantees, no exceptions, no protections, and the only way out
+                of the contract is to die.
               </p>
               <span className="text-base md:text-lg text-coolGray-400 font-medium">
-                Jido Krishnamirti
+                The contract of life
               </span>
             </div>
+
+            <h3 className="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800">
+              {" "}
+              Following the contract of life to discover the truth of life
+            </h3>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              From what we have experienced in life, we can't expect its
+              actuality to be like our childish stories of enlightenment and
+              heaven, where we only feel pleasure and joy while seeing rainbows
+              in the sky. That's called getting high.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              So first, we must shake our childish beliefs out of their
+              foundations, our comfort zone, which is the story our minds weave
+              around us, so we feel safe and survive. Otherwise, we'll just be
+              telling "truth" what to be so that we don't feel its weight;
+              instead of finding out what it actually is.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              The feeling we are looking for shows up when we genuinely say:
+              "Let anything that will happen, happen."
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              When meant from the heart, while thinking about what we love the
+              most, this thought should send us falling into a void. Don't
+              escape by grabbing on to a belief, like "God protects me," or I've
+              been good, I have good karma, or anything like that. Instead, stay
+              with the feeling and let all its power into your awareness.
+            </p>
+
+            <h3 className="mb-4 text-2xl md:text-3xl font-semibold text-coolGray-800">
+              {" "}
+              Enduring the Journey within
+            </h3>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              Allowing the consequence of the hard truths to touch our reality
+              creates an uncomfortable feeling in the body and the mind.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              However, we must learn to be present with such feelings and
+              thoughts and not run away from them, understanding they are
+              gatekeepers for those who are not ready to explore the depths of
+              life.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              At first, exposing ourselves to the full spectrum of the
+              consequences of life makes our minds and bodies feel vulnerable.
+              But this exposure is what connects us with nature. Look at the
+              wild animals in the forest and feel what we are searching for in
+              their presence. Look into their eyes.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              We were wild animals in the forest. But at some point, our species
+              became conscious that one day we would cease to exist. This idea
+              pushed us into an abyss with no protection, grabbing on to any
+              belief that kept us from feeling that challenging reality, and it
+              has been happening for more than 5000 years.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              These circumstances turned us against the universe, as in trying
+              to renegotiate the contract of life. Since that day, almost
+              everything we have done has been because of that.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              The fear of death and loss does not feel in a particular way.
+              That's why everybody says they are not afraid of dying. But, as
+              you have experienced here, it feels like a combination of powerful
+              emotions that run in the background that can take any shape and
+              form - even what doctors call chronic disease.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              Don't believe it; instead, try to find out for yourself. Then, use
+              the same technique to uncover something in your reality, a
+              resistance, somewhere emotional you don't want to go. Then, when
+              facing the actual thing and feeling all its intensity, ask
+              yourself if there is anything you can do other than facing the
+              truth that will help you become free of that.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              Can you see that no practice, no meditation, no yoga, no diet, no
+              technique, no belief, or guru can do this for us? Not because they
+              are fake or flawed, I love all of that, but simply because they
+              are outmatched - by our very own self.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              Now breath deep three times and open your eyes, the eyes of
+              awareness. Look around and notice that everything is all right.
+              Look inside and see that everything is all right. You are safe,
+              and there is nothing important around. Sit down in the most
+              comfortable position you can find, don't move, don't move your
+              mind. Let the dust settle from walking the path and stay there all
+              you like.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              In the same way, we must learn how to explore the path; we must
+              learn how to get back.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              If we can accept the contract of life for just a moment. If we
+              don't judge, label, and reshape reality to try and make it fit our
+              ideal, but rather let it be as it is. Then for that moment, an
+              aliveness fills our bodies and minds, and we become one with life.
+              It's that simple.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              Children and young people can simply enter the bliss of being one
+              with life; they don't make any effort and need no training to dive
+              into it. But, for adults who have lived much more, it's harder to
+              understand that it requires no effort, no degree, and it's
+              actually our natural state of mind.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              "Accepting everything" is the price we pay to be truly alive, and
+              as we have more experiences - the higher is the price.
+            </p>
           </div>
         </div>
       </section>

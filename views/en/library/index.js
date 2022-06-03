@@ -89,7 +89,7 @@ export default function Example() {
             </div>
 
             <div className="w-full md:w-1/2 px-4 mb-8 cursor-pointer">
-              <Link locale={locale} href="/library/the-actualities-of-life">
+              <Link locale={locale} href="/library/the-contract-of-life">
                 <div>
                   <a className="block mb-6 overflow-hidden rounded-md">
                     <SimpleImage
