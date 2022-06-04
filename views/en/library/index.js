@@ -45,11 +45,6 @@ export default function Example() {
               <br /> Here you'll find notes, essays, and meditations about such
               topics.
             </p>
-            <div className="flex items-center justify-center text-left -mx-2">
-              <div className="w-auto px-2">
-                <img src="flex-ui-assets/images/blog/avatar.png" alt="" />
-              </div>
-            </div>
           </div>
         </div>
 
