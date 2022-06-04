@@ -20,15 +20,14 @@ export default function Example() {
           backgroundPosition: "left top",
         }}
       >
-        <div className=" min-h-screen ">
-          <SimpleImage
-            width={2000}
-            height={1000}
-            className="w-full mb-10 mx-auto"
-            src="/raw/art/human-colors.jpg"
-            alt=""
-          />
-        </div>
+        <SimpleImage
+          width={2000}
+          height={1000}
+          className="w-full mb-10 mx-auto"
+          src="/raw/art/human-colors.jpg"
+          alt=""
+        />
+
         <div className="container top-0 relative md:absolute md:top-72 px-4 mx-auto">
           <div className="md:max-w-6xl mx-auto mb-12 text-center">
             <div className="inline-block py-1 px-3 mb-6 text-xs leading-5 text-white font-medium uppercase bg-indigo-800 rounded-full shadow-sm">
