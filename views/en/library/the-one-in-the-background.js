@@ -77,7 +77,7 @@ export default function Example() {
               Ayahuasca, which did wonders for me on many levels. "The plant"
               was extra generous by helping me see many facts about my life and
               myself that I could not see. But my mind is so stubborn and
-              ego-centric that it swapped some it's my beliefs, moving from a
+              ego-centric that it swapped some of it's my beliefs, moving from a
               science-mind-centric approach into a magic-spirit-centric one.
             </p>
 
@@ -134,6 +134,30 @@ export default function Example() {
                 Jido Krishnamirti
               </span>
             </div>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              Following on my realization that even with my best intentions and
+              discipline, parts of my humanity override that path I want to take
+              in life. But, more importantly, the entanglement between the I's
+              must be understood with something that's not the mind before
+              anything "spirit" does not become an illusion, another a fantasy
+              of the mind.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              These are, in essence, the teaching of Jeshua, Gautama, Maharishi,
+              Yogananda, and Krishnamurti, among many others I consider
+              teachers.
+            </p>
+
+            <p className="mb-4 text-base md:text-lg text-coolGray-500">
+              I don't consider myself a teacher or anything like that. My
+              passion is to explore the inside of life on my own and compare my
+              experience to their advice. But to begin to see and then
+              understand these entanglements between the I's - to find peace and
+              not frustration in the question "Who Am I" - we must really listen
+              to their advice and let go for a moment of our minds.
+            </p>
           </div>
         </div>
       </section>

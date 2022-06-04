@@ -35,7 +35,7 @@ export default function Example() {
               </p>
               <span className="mx-1 text-indigo-500">•</span>
               <p className="inline-block text-indigo-500 font-medium">
-                2 Jun 2022
+                23 May 2022
               </p>
             </div>
             <h2 className="mb-4 text-3xl md:text-5xl leading-tight text-darkCoolGray-900 font-bold tracking-tighter">
@@ -49,11 +49,6 @@ export default function Example() {
               collective problems because those problems are produced by our
               attempt to be less vulnerable.
             </p>
-            <div className="flex items-center justify-center text-left -mx-2">
-              <div className="w-auto px-2">
-                <img src="flex-ui-assets/images/blog/avatar.png" alt="" />
-              </div>
-            </div>
           </div>
         </div>
 
@@ -67,30 +62,6 @@ export default function Example() {
         <div className="container px-4 mx-auto">
           <div className="md:max-w-3xl mx-auto">
             <p className="mb-8 pb-10 text-lg md:text-xl font-medium text-coolGray-500 border-b border-coolGray-100">
-              Following on my realization that even with my best intentions and
-              discipline, parts of my humanity override that path I want to take
-              in life. But, more importantly, the entanglement between the I's
-              must be understood with something that's not the mind before
-              anything "spirit" does not become an illusion, another a fantasy
-              of the mind.
-            </p>
-
-            <p className="mb-4 text-base md:text-lg text-coolGray-500">
-              These are, in essence, the teaching of Jeshua, Gautama, Maharishi,
-              Yogananda, and Krishnamurti, among many others I consider
-              teachers.
-            </p>
-
-            <p className="mb-4 text-base md:text-lg text-coolGray-500">
-              I don't consider myself a teacher or anything like that. My
-              passion is to explore the inside of life on my own and compare my
-              experience to their advice. But to begin to see and then
-              understand these entanglements between the I's - to find peace and
-              not frustration in the question "Who Am I" - we must really listen
-              to their advice and let go for a moment of our minds.
-            </p>
-
-            <p className="mb-4 text-base md:text-lg text-coolGray-500">
               The fears mentioned in "The one in the background" are key to
               uncovering and bringing to the surface the mechanisms behind the
               mind. These mechanisms are also known as ego or self, although
@@ -122,7 +93,7 @@ export default function Example() {
                 humans because it can't be found anywhere else in the universe.
               </p>
               <span className="text-base md:text-lg text-coolGray-400 font-medium">
-                The contract of life
+                Vedanta
               </span>
             </div>
 
@@ -142,9 +113,10 @@ export default function Example() {
             </p>
 
             <p className="mb-4 text-base md:text-lg text-coolGray-500">
-              It's the same as when an alcoholic tries to fight head one with
-              his addiction. It's like fighting a ghost that appears and
-              disappears every day and night.
+              It's the same as when an alcoholic tries to fight head on with his
+              addiction. It's like fighting a ghost that appears and disappears
+              every day and night. Overcoming addiction is about finding its
+              source.
             </p>
 
             <p className="mb-4 text-base md:text-lg text-coolGray-500">
@@ -165,7 +137,7 @@ export default function Example() {
             <p className="mb-4 text-base md:text-lg text-coolGray-500">
               Understanding attachment and realizing where it starts is far more
               significant in improving our lives than becoming purified. Same
-              with sin, same past trauma.
+              with sin, desire, mind and trauma.
             </p>
 
             <p className="mb-4 text-base md:text-lg text-coolGray-500">
