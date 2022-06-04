@@ -26,7 +26,7 @@ export default function Example() {
           src="/raw/art/human-colors.jpg"
           alt=""
         />
-        <div className="container absolute top-72 px-4 mx-auto">
+        <div className="container top-0 relative md:absolute md:top-72 px-4 mx-auto">
           <div className="md:max-w-6xl mx-auto mb-12 text-center">
             <div className="inline-block py-1 px-3 mb-6 text-xs leading-5 text-white font-medium uppercase bg-indigo-800 rounded-full shadow-sm">
               The Human Blog
@@ -74,11 +74,9 @@ export default function Example() {
                     Roberto Rodriguez • 2 Jun 2022
                   </p>
                   <a className="inline-block mb-4 text-2xl leading-tight text-coolGray-800 hover:text-coolGray-900 font-bold hover:underline">
-                    {" "}
                     1. The one in the background
                   </a>
                   <p className="mb-4 text-base md:text-lg text-coolGray-400 font-medium">
-                    {" "}
                     Some call this background the unconscious, the ego, the
                     self, and no matter its name - it's out of reach to any
                     external element because it exists before the devices that
