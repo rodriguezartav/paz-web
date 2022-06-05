@@ -30,28 +30,27 @@ export default function Example() {
       {""}
       <HeaderTop
         logoBefore={true}
-        title="Our retreats are fun vacations aimed at reconnecting with nature and our selfs"
-        subtitle={`Paz sponatenous and easy going approach is an expresion of it's founder's understanding of how to use this place to improve his own life.`}
+        title="Our retreats are fun vacations aimed at reconnecting the true nature of ourselves"
+        subtitle={`One of the greatest achievments of any human being is to be comfortable and calm with herself. A retreat is the perfect place to align with that.`}
       />
-
       <ThreeFeatures
-        t1_title="Fun Local Adventures"
-        t1_description="Owned and operated by local costarricans, our easy going culture and youthful spirit turns the retreat into a fun adventure in paradise"
-        t2_title="Autentic connection with nature"
-        t2_description="Paz unique approach to healing and release of stress is guided by nature. For that to work, we want to take you beyond seeing, and into feeling."
-        t3_title="Reunite with your(true)self"
-        t3_description="If we ask the forest, the ocean - the spirit within all living things - to teach us how to trust our heart. In this pristine and beautifull place we can put down the pride of the mind and listen within."
+        t3_title="Fun Local Adventures"
+        t3_description="Our easy going culture and youthful spirit turns the retreat into a fun adventure in paradise"
+        t1_title="Autentic connection with nature"
+        t1_description="Paz unique approach to healing and release of stress is about learning to let go and allowing the nature of the universe to be our guide."
+        t2_title="Reunite with your(true)self"
+        t2_description="It's about feeling about inner voice, which we sometimes can't hear because we are thinking too much"
       />
 
       <LeftWithBullets
         title="If we are searching for happiness, let's start by having a good time now!"
-        subtitle="Aprovechamos nuestra ubicación en el bosque más biodiverso del mundo y frente al mar del Golfo Dulce en un lugar muy remoto para tener una experiencia muy divertida"
-        t1_title="Surf and Paddle board lessons for all ages"
-        t1_description="Le enseñamos a surfear o usar un Paddleboard justo al frente de nuestra propiedad, con un enfoque espiritual conocido como Soul Surfing "
+        subtitle="Kids are the gurus of hapiness and they always start with having a good time."
+        t1_title="Surf and Paddle board Meditations"
+        t1_description="Surf and Paddleboard lessons with an espiritual approach of meditation. A mix of soul surfing with Qi Gong and Tai Chi to flow in the sea"
         t2_title="Bonefires, BBQ's and hammocks on the beach"
-        t2_description="No hay nada más sanador que sentarse en la playa, en la arena, bajo las estrellas y frente a una fogata con amigos a reirnos, comer rico y conversar sobre la vida."
+        t2_description="There is nothing better than sitting in a bonefire in the sand under the starts eating smoked delicious food and having a great talk."
         t3_title="Dance and music as the expression of the soul"
-        t3_description="Party like out ancestors, letting fire and dance set you free. An opportunuty to remember how our ancestors had fun while healing their mind and living free from their heart."
+        t3_description="Party like our ancestors, letting fire and dance set you free. An opportunuty to remember how to have fun while healing owe mind and dancing with out hearts."
         images={[
           {
             src: "/optimized/beach/paddle_from_sea.jpeg",
@@ -67,20 +66,21 @@ export default function Example() {
         t1_description="To form an actual healthy relationship, as we are supposed to do with our loved ones, we must enter the forest as sons and daughters enter their mother's home. That's how we'll enter waterfalls, creeks, ponds and primary forests."
         t2_title="The retreat is filled with opportunities to be fully present in nature"
         t2_description="To feel the effects of connecting with nature - within and without - we must endure the pressure of thoughts. Keep our attention with what is here, now. Since we are in one of the most pristine places in the world, it's very easy to do."
+        t3_title="Healing music therapy"
+        t3_description="We join the sympony of the forest and the beach with drums, flutes and other native instruments to reconfort out hearts."
         images={[
           { src: "/raw/wildlife/maccaw.webp", width: 1000, height: 700 },
         ]}
       />
-
       <LeftWithBullets
-        title="What most of us really want is to transform our discontent, worry and anger. Into creativity, freedom, and joy - or - peace."
-        subtitle="The balance of modern life is titled towards thought and it's momentum controls our decisions. We try to counter with beliefs, ideas and technics. But those are also thoughts... We must learn how to transced toughts, concepts and believes."
-        t1_title="Remembering how to live from the heart."
-        t1_description="La coherencia entre la mente y el corazón es nuestro estado natural, ya todos lo vivimos y no se olvida - como andar en bicicleta."
-        t2_title="An sponataneous approach created from personal first hand experience aimed at having personal first hand experience."
-        t2_description="Where the magical ingredient is each one of us Estamos juntos en esta vida porque la dirección para recordar y descubrir las dimensiones más puras de nuestro existir - es un trabajo en equipo."
-        t3_title="Transforming into our true selfs is simply recognizing we are not a tought."
-        t3_description="El retiro es un espacio para reconocer que la resistencia a profundizar más allá de donde el pensamiento puede llegar - es sólo un pensamiento."
+        title="To reconnect with ourselves we need have to disconect with what we are not."
+        subtitle="Since we are young we had to follow a path to serve the collective of man. But we all reach a point were we must follow our path. That's what life is about, as well as this retreat at Paz."
+        t1_title="A course to remember how to live from the heart."
+        t1_description="Who are we? What do we really want, and how to find the strenght to live our true reality"
+        t2_title="Transforming ourselves is to recognize that we are not our minds"
+        t2_description="This retreat is a space to recognize that resistance to go within beyond the mind, only exists in as a though in the mind."
+        t3_title="A course to discover the magic key that opens our soul"
+        t3_description="In the same way our bodies have genetics, our soul it's own signature. That's why we all have our own path and in every step that key is made. God, please let it be so, that Paz is the place where it opens wide."
         images={[
           {
             src: "/optimized/lounge/templo_from_back.jpg",
@@ -92,7 +92,6 @@ export default function Example() {
           },
         ]}
       />
-
       <Signup
         onComplete={(e) => console.log(e)}
         title="Reciba precios, ofertas y detalles sobre nuestros retiros"

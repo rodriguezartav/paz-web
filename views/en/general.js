@@ -22,7 +22,6 @@ export default function Example() {
           alt=""
         />
       </Link>
-
       <HeaderTop
         logoBefore={true}
         title="...days in the beach by the forest to remember how to live in peace..."
@@ -62,18 +61,11 @@ export default function Example() {
           },
         ]}
       />
-
       <RightPlain
         legend={"Ubicación"}
         title="Paz is located in the mystical cabo Mata Palo, in the Osa Peninsula of Costa Rica"
         subtitle={`A off-grid comunity that loves nature located between Corcovado National Park and Puerto Jimenez, the most remote town in Costa Rica.  `}
         images={[
-          {
-            src: "/raw/maps/cr.png",
-            transformations: [
-              { cropMode: "cm-extract", height: 500, width: 750 },
-            ],
-          },
           {
             src: "/raw/guide/matapalo/matapalo.webp",
             transformations: [
@@ -82,11 +74,28 @@ export default function Example() {
           },
         ]}
       />
+      <LeftPlain
+        legend={"Primer Paso"}
+        title="Everything started with a visit to Corcovado National Park"
+        subtitle={`In 2001 Roberto, our founder made his first trip to Corcovado National Park and felt mother nature for the first time.\n
+        
+        In that moment he understood that nature is like a guide for human to find their own heart and the Osa Peninsula is the perfect place for that.
 
+      
+        
+        That experience led him to transform his life, and that feeling is exactly what he wants to share.`}
+        images={[
+          {
+            src: "/raw/history/corcovado.png",
+            width: 750,
+            height: 1000,
+          },
+        ]}
+      />
       <RightPlain
         legend={"Ubicación"}
-        title="A place to connect with nature like nowhere else in the world"
-        subtitle={`We take advtange of the most biodiverse place on earth in a unique way, so that we can find the space where we are also nature. `}
+        title="Meditations to re-connect with the true nature of ourselves"
+        subtitle={`We are part of nature, but most of the time we don't feel like that.\n We came up with execises and technics specific to Paz so that we can return to our natural state by relaxing into meditation in the forest and the sea.  `}
         images={[
           {
             src: "/optimized/forest/big_trees.jpg",
@@ -132,29 +141,9 @@ export default function Example() {
         ]}
       />
 
-      <LeftPlain
-        title="To let go of all your worries"
-        subtitle="The beach, the sun, the wind and the ocean. The song of the forest and it's invisible magic works like a stream cleansing us of time which is stress "
-        images={[
-          {
-            src: "/optimized/beach/sun_palm2.jpeg",
-            width: 750,
-            height: 700,
-          },
-        ]}
-      />
-
       <RightPlain
         title="Enjoy it as if you grew up here - pura vida style"
-        subtitle="As one of the very few retreats owned and staffed by costarricans, we find that our fun and easy going way that made us famous worldwide is the best experience we can share with you."
-        t1_title="Caminatas a Cataratas"
-        t1_description="Incluye 3 comidas, estacion de cafe y te, todas las actividades y transporte si viene en flysansa.com"
-        t2_title="Fogatas y BBQ's en la playa"
-        t2_description="Quisimos que estar en la casa se sintiera como acampar, pero con la comidad de una casa de playa. Ventanas gigantes con cedazos americanos nos hacen sentir afuera, pero estar adentro protegidos y comodos."
-        t3_title="Lecciones de Surf y Paddleboard"
-        t3_description="Otros retiros son para los que se quieren divertir, y para eso damos clases introductorias de surf y paddle board en el mar. En un pequeño rinconcito de Osa tan maravilloso que no se puede describir, solo vivir."
-        t4_title="Exploración de positas"
-        t4_description="La oportunidad de hacer un viaje de todo el día al parque nacional corcovado. Saliendo desde Paz, con transporte en bote y guia recomendado. No esta incluido en los precios."
+        subtitle="Bonefires and BBQ's on the beach under the stars, hikes in magical trails to waterfalls and pristine beaches with the forest on our side."
         images={[
           {
             src: "/raw/wildlife/titis.webp",
@@ -163,7 +152,6 @@ export default function Example() {
           },
         ]}
       />
-
       <HeaderLeft
         legend="Peninsula de Osa, Costa Rica"
         title="Feels like being in a National Park"
@@ -177,7 +165,6 @@ export default function Example() {
           },
         ]}
       />
-
       <RightPlain
         title="but in actuality it's a very special natural temple"
         subtitle="The spirit of mother nature is present here, we listen and love her. She's the guide in this adventure of finding her in ourselves."
@@ -189,7 +176,6 @@ export default function Example() {
           },
         ]}
       />
-
       <Links
         title="Paz in the world"
         subtitle="We have published books, music and inspirational content in social networks to contribute in a positive way to the expansion of consiousness"
@@ -210,7 +196,6 @@ export default function Example() {
           { src: "/optimized/me/me_flauta.jpg", width: 450, height: 700 },
         ]}
       />
-
       <HeaderBottom
         button_1={{
           text: "Rent the whole property in AirBnB",
@@ -221,7 +206,6 @@ export default function Example() {
         title="How do you want to visit us?"
         subtitle="there are two options:"
       />
-
       <Footer />
     </div>
   );

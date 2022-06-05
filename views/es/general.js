@@ -38,7 +38,7 @@ export default function Example() {
       <RightPlain
         legend={"Ubicación"}
         title="Paz esta ubicado en el místico cabo Mata Palo en la Peninsula de Osa de Costa Rica"
-        subtitle={`Una comunidad de amantes del medio ambiente entre Puerto Jimenez y el Parque Nacional Corcovado. La región mas alejada de Costa Rica que para protegerla sus habitantes decidieron no tener servicio de luz electrica ni de agua munipal. `}
+        subtitle={`Una comunidad de amantes del medio ambiente entre Puerto Jimenez y el Parque Nacional Corcovado. La región mas alejada de Costa Rica que para protegerla sus habitantes decidieron no tener servicio de luz electrica ni de agua municipal. `}
         images={[
           {
             src: "/raw/maps/cr.png",
@@ -59,7 +59,7 @@ export default function Example() {
         legend={"Primer Paso"}
         title="Todo empezó con una visita al parque nacional Corcovado"
         button={{ text: "Conozca la historia de Paz", href: "/history" }}
-        subtitle={`En el 2001 Roberto, nuestro fundador, hizo su primer viaje al Parque Nacional Corcovado y sintió por primera vez a la madre naturaleza. \nEn ese momento llego a el la idea que la Peninsula de Osa era como una universidad para que el corazón del ser humano regresara a la naturaleza. \nEsa experiencia lo llevó a transformar su vida, y ese sentir es justamente lo que quiere compartir.`}
+        subtitle={`En el 2001 Roberto, nuestro fundador, hizo su primer viaje al Parque Nacional Corcovado y sintió por primera vez a la madre naturaleza. \nEn ese momento entendió que la naturaleza es la guia del ser humano para regresar a su corazón y la Peninsula de Osa es el lugar ideal. \nEsa experiencia lo llevó a transformar su vida, y ese sentir es justamente lo que quiere compartir en Paz.`}
         images={[
           {
             src: "/raw/history/corcovado.png",
@@ -71,8 +71,8 @@ export default function Example() {
 
       <RightPlain
         legend={"Ubicación"}
-        title="Un lugar destinado para conectarnos con la naturaleza"
-        subtitle={`Buscando estar en el momento justo, en el lugar mas biodiverso del mundo, nos acercamos al ritmo de la madre naturaleza para experimentar su verdad; somos parte de la naturaleza.`}
+        title="Meditaciones para conectarnos con la naturaleza de nosotros mismos"
+        subtitle={`Nuestro cuerpo es naturaleza, sin embargo no siempre nos sentimos así. \nEn Paz inventamos técnicas y ejercicios para meditar relajadamente en el bosque y el mar para regresar a nuestro estado natural. `}
         images={[
           {
             src: "/optimized/forest/big_trees.jpg",
@@ -119,20 +119,10 @@ export default function Example() {
       />
 
       <LeftPlain
-        title="Un lugar para descansar de nuestras preocupaciones"
-        subtitle={`Descansar es esencial para la salud. Un propósito de este lugar es que sea usado para "descansar de pensar" de una forma relajada y sin esfuerzo.\nCon la belleza y diversidad que hay, es natural que escojamos estar presentes aquí en vez de pensando cosas de allá.`}
-        images={[
-          {
-            src: "/optimized/beach/sun_palm2.jpeg",
-            width: 750,
-            height: 700,
-          },
-        ]}
-      />
-
-      <RightPlain
         title="... y divertirnos como si viviéramos aquí"
-        subtitle="En Costa Rica hay una forma particular de disfrutar de la vida, con humildad y sentido del humor. Este es un espacio que celebra esta forma de vivir compartiendola con nuestros visitantes."
+        subtitle={
+          "Fogatas y parrilladas en la playa bajo las estrellas, caminatas a cataratas en senderos mágicos y playas calladitas con el bosque a la par.\n Tal como nos gusta a los costarricense pasear."
+        }
         images={[
           {
             src: "/raw/wildlife/titis.webp",
@@ -146,7 +136,7 @@ export default function Example() {
         legend="Peninsula de Osa, Costa Rica"
         title="un lugar que se siente como estar en un parque nacional"
         color="lime-700"
-        subtitle="Creamos una experiencia que se siente como acampar en la playa y el bosque pero con la protección de una casa comoda"
+        subtitle="Creamos una experiencia que se siente como acampar en la playa y el bosque pero con la protección de una casa cómoda"
         images={[
           {
             src: "/optimized/house/living/master.jpeg",

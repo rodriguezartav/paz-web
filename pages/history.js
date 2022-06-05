@@ -2,7 +2,6 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { NextSeo } from "next-seo";
 
-import ES from "../views/es/history";
 import EN from "../views/en/history";
 
 import Header from "../components/Header";
@@ -35,7 +34,7 @@ export default function HomeApp({ posts }) {
       />
       <div className="antialiased bg-body text-body font-body">
         <Header locale={router.locale} />
-        {router.locale == "en" ? <EN /> : <ES />}
+        <EN />
       </div>
     </>
   );
