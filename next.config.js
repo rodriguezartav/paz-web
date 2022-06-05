@@ -5,10 +5,10 @@ module.exports = withMDX({
   i18n: {
     // These are all the locales you want to support in
     // your application
-    locales: ["es", "en"],
+    locales: ["es_CR", "en_US"],
     // This is the default locale you want to be used when visiting
     // a non-locale prefixed path e.g. `/hello`
-    defaultLocale: "es",
+    defaultLocale: "es_CR",
   },
   async redirects() {
     return [
