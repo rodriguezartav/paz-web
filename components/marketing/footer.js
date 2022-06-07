@@ -67,22 +67,48 @@ const footerNavigation = {
 
 export default function Footer() {
   return (
-    <footer className="mt-24 bg-gray-900 sm:mt-12">
-      <div className="mx-auto max-w-md py-12 px-4 overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+    <footer className="mt-24 bg-indigo-300 sm:mt-12">
+      <div className="mx-auto max-w-md py-6 px-4 overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
         <nav
           className="-mx-5 -my-2 flex flex-wrap justify-center"
           aria-label="Footer"
         >
-          {footerNavigation.main.map((item) => (
-            <div key={item.name} className="px-5 py-2">
-              <a
-                href={item.href}
-                className="text-md text-gray-400 hover:text-gray-300"
-              >
-                {item.name}
-              </a>
-            </div>
-          ))}
+          <div className="px-5 py-2">
+            <a
+              target={"_blank"}
+              href={"mailto: roberto@paz.co.cr"}
+              className="text-md text-gray-800 hover:text-gray-300"
+            >
+              Email: roberto@paz.co.cr
+            </a>
+          </div>
+
+          <div className="px-5 py-2">
+            <a
+              target={"_blank"}
+              href="http://instagram.com/pazdemono"
+              className="text-md text-gray-800 hover:text-gray-300"
+            >
+              <div className="px-5">
+                <a className="inline-block text-coolGray-800 hover:text-coolGray-400">
+                  <svg
+                    width={20}
+                    height={20}
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M5.6007 0.181818H14.3992C17.3874 0.181818 19.8184 2.61281 19.8182 5.60074V14.3993C19.8182 17.3872 17.3874 19.8182 14.3992 19.8182H5.6007C2.61276 19.8182 0.181885 17.3873 0.181885 14.3993V5.60074C0.181885 2.61281 2.61276 0.181818 5.6007 0.181818ZM14.3993 18.0759C16.4267 18.0759 18.0761 16.4266 18.0761 14.3993H18.076V5.60074C18.076 3.57348 16.4266 1.92405 14.3992 1.92405H5.6007C3.57343 1.92405 1.92412 3.57348 1.92412 5.60074V14.3993C1.92412 16.4266 3.57343 18.0761 5.6007 18.0759H14.3993ZM4.85721 10.0001C4.85721 7.16424 7.16425 4.85714 10.0001 4.85714C12.8359 4.85714 15.1429 7.16424 15.1429 10.0001C15.1429 12.8359 12.8359 15.1429 10.0001 15.1429C7.16425 15.1429 4.85721 12.8359 4.85721 10.0001ZM6.62805 10C6.62805 11.8593 8.14081 13.3719 10.0001 13.3719C11.8593 13.3719 13.3721 11.8593 13.3721 10C13.3721 8.14058 11.8594 6.6279 10.0001 6.6279C8.14069 6.6279 6.62805 8.14058 6.62805 10Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </a>
+          </div>
         </nav>
       </div>
     </footer>

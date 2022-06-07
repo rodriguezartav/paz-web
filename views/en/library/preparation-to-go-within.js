@@ -1,5 +1,6 @@
 import Footer from "../../../components/marketing/footer";
 import SimpleImage from "../../../components/SimpleImage";
+import BlogLink from "../../../components/sections/BlogLink";
 
 import { Fragment, useState } from "react";
 import Link from "next/link";
@@ -111,6 +112,8 @@ export default function Example() {
           </div>
         </div>
       </section>
+
+      <BlogLink title="They key to unlock the mind" link="the-key-the-mind" />
 
       <section
         className="py-24 md:py-32"

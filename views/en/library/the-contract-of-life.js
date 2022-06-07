@@ -1,5 +1,6 @@
 import Footer from "../../../components/marketing/footer";
 import SimpleImage from "../../../components/SimpleImage";
+import BlogLink from "../../../components/sections/BlogLink";
 
 import { Fragment, useState } from "react";
 import Link from "next/link";

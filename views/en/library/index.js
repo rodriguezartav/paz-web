@@ -3,6 +3,7 @@ import Link from "next/link";
 import HeaderTop from "../../../components/sections/headerTop";
 import SimpleImage from "../../../components/SimpleImage";
 import { useRouter } from "next/router";
+import Footer from "../../../components/marketing/footer";
 
 export default function Example() {
   const [open, setOpen] = useState(false);
@@ -23,13 +24,13 @@ export default function Example() {
     },
     {
       id: 2,
-      title: "The one in the background",
+      title: "How to know if it's the mind",
       date: "2 Jun 2022",
       author: "Roberto Rodriguez",
       description:
         "Some call this background the unconscious, the ego, the self, and no matter its name - it's out of reach to any external element because it exists before the devices that are mindful of the exterior.",
       image: "/raw/art/human-background.jpg",
-      link: "the-one-in-the-background",
+      link: "how-to-know-it-is-the-mind",
     },
     {
       id: 3,
@@ -49,15 +50,38 @@ export default function Example() {
       author: "Roberto Rodriguez",
       description:
         "The heart plays a central role in the transformation or evolution of humankind. Internal arts, devotions, and religions direct us to discover the heart's energy field. I write this article right after a transformational retreat at Montaña Azul, and it's my humble attempt at writing a painting of the mechanism of life by pointing to it rather than describing it.",
-      image: "/raw/art/human-heart.jpg",
+      image: "/raw/art/real-human-heart.jpg",
       link: "listen-to-the-heart",
+      next: "under-the-hood",
+    },
+
+    {
+      id: 5,
+      title: "How to look under the hood of consciousness",
+      date: "7 Jun 2022",
+      author: "Roberto Rodriguez",
+      description:
+        "Awareness is the key to the mind, but it's just a word here. We need to find the key, not the word or its meaning. To open the mind's door, we need the actual thing, the actual key. Let's find that out.",
+      image: "/raw/art/particle.jpg",
+      link: "under-the-hood",
+    },
+
+    {
+      id: 6,
+      title: "They key to unlock the mind",
+      date: "7 Jun 2022",
+      author: "Roberto Rodriguez",
+      description:
+        "Unfortunately, as adults, our attention becomes stuck in the one dimension of the mind - let's overcome that.",
+      image: "/raw/art/human-heart.jpg",
+      link: "the-key-the-mind",
     },
   ];
 
   return (
     <div className=" antialiased bg-body text-body font-body">
       <section
-        className="py-24 pt-0 bg-white relative"
+        className="py-24 pt-0 bg-white relative min-h-0 md:min-h-screen"
         style={{
           backgroundImage: 'url("flex-ui-assets/elements/pattern-white.svg")',
           backgroundRepeat: "no-repeat",
@@ -73,20 +97,19 @@ export default function Example() {
         />
 
         <div className="container top-0 relative md:absolute md:top-72 px-4 mx-auto">
-          <div className="md:max-w-6xl mx-auto mb-12 text-center">
+          <div className="md:max-w-5xl mx-auto mb-12 text-center">
             <div className="inline-block py-1 px-3 mb-6 text-xs leading-5 text-white font-medium uppercase bg-indigo-800 rounded-full shadow-sm">
               The Human Blog
             </div>
 
-            <p className="mb-10 bg-indigo-50 p-4 opacity-90 rounded-lg text-lg md:text-xl font-medium text-coolGray-500 shadow-md">
+            <p className="mb-10 bg-indigo-50 p-4 opacity-90 rounded-lg text-lg md:text-xl text-left font-medium text-coolGray-500 shadow-md">
               At some point, I realized that almost all of my beliefs about
-              myself, life, and the world were mistaken. Very clearly, I see the
-              society of humankind as a virtual reality full of concepts like
-              countries, businesses, and so on. But I can't find them on the
-              ground. Yes, there are gates and signs, but the games they play
-              have nothing to do with nature, science and the universe.
-              <br /> Here you'll find notes, essays, and meditations about such
-              topics.
+              myself, life, and the world were mistaken. I realized my identity
+              as a thought based entity full of conditionings from the past and
+              it's path the only straight line I see in life.
+              <br /> <br /> Very clearly, I see the society of humankind as a
+              virtual reality full of concepts like countries, businesses, and
+              so on. But I can't find them on the ground.
             </p>
           </div>
         </div>
@@ -130,6 +153,7 @@ export default function Example() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
