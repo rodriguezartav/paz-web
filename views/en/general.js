@@ -74,28 +74,25 @@ export default function Example() {
           },
         ]}
       />
-      <LeftPlain
-        legend={"Primer Paso"}
-        title="Everything started with a visit to Corcovado National Park"
-        subtitle={`In 2001 Roberto, our founder made his first trip to Corcovado National Park and felt mother nature for the first time.\n
-        
-        In that moment he understood that nature is like a guide for human to find their own heart and the Osa Peninsula is the perfect place for that.
 
-      
-        
-        That experience led him to transform his life, and that feeling is exactly what he wants to share.`}
+      <HeaderLeft
+        legend="Peninsula de Osa, Costa Rica"
+        title="It feels like being in a National Park"
+        color="lime-700"
+        subtitle="We crafted an unique experience that feels like camping on the forest by the beach, with the comfort of a beachfront villa. By designing and building everything ourselfs we poured our intention into every corner of the house."
         images={[
           {
-            src: "/raw/history/corcovado.png",
-            width: 750,
-            height: 1000,
+            src: "/optimized/house/living/master.jpeg",
+            width: 730,
+            height: 700,
           },
         ]}
       />
+
       <RightPlain
         legend={"Ubicación"}
-        title="Meditations to re-connect with the true nature of ourselves"
-        subtitle={`We are part of nature, but most of the time we don't feel like that.\n We came up with execises and technics specific to Paz so that we can return to our natural state by relaxing into meditation in the forest and the sea.  `}
+        title="A place to reconnect with the true nature of ourselves"
+        subtitle={`Activities at Paz are embeded with execises and technics so that we can return to our natural state by relaxing into meditation in the forest and the sea. `}
         images={[
           {
             src: "/optimized/forest/big_trees.jpg",
@@ -141,8 +138,8 @@ export default function Example() {
         ]}
       />
 
-      <RightPlain
-        title="Enjoy it as if you grew up here - pura vida style"
+      <LeftPlain
+        title="While having fun - pura vida style"
         subtitle="Bonefires and BBQ's on the beach under the stars, hikes in magical trails to waterfalls and pristine beaches with the forest on our side."
         images={[
           {
@@ -152,30 +149,7 @@ export default function Example() {
           },
         ]}
       />
-      <HeaderLeft
-        legend="Peninsula de Osa, Costa Rica"
-        title="Feels like being in a National Park"
-        color="lime-700"
-        subtitle="We crafted an unique experience that feels like camping on the forest by the beach, with the comfort of a beachfront villa. By designing and building everything ourselfs we poured our intention into every corner of the house."
-        images={[
-          {
-            src: "/optimized/house/living/master.jpeg",
-            width: 730,
-            height: 700,
-          },
-        ]}
-      />
-      <RightPlain
-        title="but in actuality it's a very special natural temple"
-        subtitle="The spirit of mother nature is present here, we listen and love her. She's the guide in this adventure of finding her in ourselves."
-        images={[
-          {
-            src: "/optimized/art/meditation.jpg",
-            width: 800,
-            height: 600,
-          },
-        ]}
-      />
+
       <Links
         title="Paz in the world"
         subtitle="We have published books, music and inspirational content in social networks to contribute in a positive way to the expansion of consiousness"

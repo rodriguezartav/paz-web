@@ -10,6 +10,50 @@ export default function Example() {
   const router = useRouter();
   const { pathname, asPath, query, locale } = router;
 
+  const posts = [
+    {
+      id: 1,
+      title: "0. Preparation to go within",
+      date: "5 Jun 2022",
+      author: "Roberto Rodriguez",
+      description:
+        "A motivational text that gives advice on how to reach an open state of mind compatible with learning.",
+      image: "/raw/art/mind-learn.jpg",
+      link: "preparation-to-go-within",
+    },
+    {
+      id: 2,
+      title: "The one in the background",
+      date: "2 Jun 2022",
+      author: "Roberto Rodriguez",
+      description:
+        "Some call this background the unconscious, the ego, the self, and no matter its name - it's out of reach to any external element because it exists before the devices that are mindful of the exterior.",
+      image: "/raw/art/human-background.jpg",
+      link: "the-one-in-the-background",
+    },
+    {
+      id: 3,
+      title: "The contract of life",
+      date: "22 May 2022",
+      author: "Roberto Rodriguez",
+      description:
+        " A strong text with an exercise that helped me reconcile with the vulnerability of life. An invitation to shift how we see life and engage with society in a way that can transform our lives",
+      image: "/raw/art/human-space.jpg",
+      link: "the-contract-of-life",
+    },
+
+    {
+      id: 5,
+      title: "Listen to the heart, and then do that",
+      date: "6 Jun 2022",
+      author: "Roberto Rodriguez",
+      description:
+        "The heart plays a central role in the transformation or evolution of humankind. Internal arts, devotions, and religions direct us to discover the heart's energy field. I write this article right after a transformational retreat at Montaña Azul, and it's my humble attempt at writing a painting of the mechanism of life by pointing to it rather than describing it.",
+      image: "/raw/art/human-heart.jpg",
+      link: "listen-to-the-heart",
+    },
+  ];
+
   return (
     <div className=" antialiased bg-body text-body font-body">
       <section
@@ -49,107 +93,40 @@ export default function Example() {
 
         <div className="container mt-32 px-4 mx-auto">
           <div className="flex flex-wrap -mx-4 mb-12 md:mb-20">
-            <div className="w-full md:w-1/2 px-4 mb-8 cursor-pointer">
-              <Link locale={locale} href="/library/preparation-to-go-within">
-                <div>
-                  <a className="block mb-6 overflow-hidden rounded-md">
-                    <SimpleImage
-                      width={300}
-                      className="w-full"
-                      transformations={[
-                        { cropMode: "cm_extract", height: 300, width: 600 },
-                      ]}
-                      src="/raw/art/mind-learn.jpg"
-                    />
-                  </a>
-                  <div className="mb-4">
-                    <a className="inline-block py-1 px-3 text-xs leading-5 text-indigo-500 hover:text-indigo-600 font-medium uppercase bg-indigo-100 hover:bg-indigo-200 rounded-full shadow-sm">
-                      Satsang
-                    </a>
-                  </div>
-                  <p className="mb-2 text-coolGray-500 font-medium">
-                    Roberto Rodriguez • 4 Jun 2022
-                  </p>
-                  <a className="inline-block mb-4 text-2xl leading-tight text-coolGray-800 hover:text-coolGray-900 font-bold hover:underline">
-                    0. Preparation to go within
-                  </a>
-                  <p className="mb-4 text-base md:text-lg text-coolGray-400 font-medium">
-                    A motivational text that gives advice on how to reach an
-                    open state of mind compatible with learning.
-                  </p>
+            {posts.map((item) => {
+              return (
+                <div className="w-full md:w-1/2 px-4 mb-8 cursor-pointer">
+                  <Link locale={locale} href={"/library/" + item.link}>
+                    <div>
+                      <a className="block mb-6 overflow-hidden rounded-md">
+                        <SimpleImage
+                          width={300}
+                          className="w-full"
+                          transformations={[
+                            { cropMode: "cm_extract", height: 300, width: 600 },
+                          ]}
+                          src={item.image}
+                        />
+                      </a>
+                      <div className="mb-4">
+                        <a className="inline-block py-1 px-3 text-xs leading-5 text-indigo-500 hover:text-indigo-600 font-medium uppercase bg-indigo-100 hover:bg-indigo-200 rounded-full shadow-sm">
+                          Satsang
+                        </a>
+                      </div>
+                      <p className="mb-2 text-coolGray-500 font-medium">
+                        {item.author} • {item.date}
+                      </p>
+                      <a className="inline-block mb-4 text-2xl leading-tight text-coolGray-800 hover:text-coolGray-900 font-bold hover:underline">
+                        {item.title}
+                      </a>
+                      <p className="mb-4 text-base md:text-lg text-coolGray-400 font-medium">
+                        {item.description}
+                      </p>
+                    </div>
+                  </Link>
                 </div>
-              </Link>
-            </div>
-
-            <div className="w-full md:w-1/2 px-4 mb-8 cursor-pointer">
-              <Link locale={locale} href="/library/the-one-in-the-background">
-                <div>
-                  <a className="block mb-6 overflow-hidden rounded-md">
-                    <SimpleImage
-                      width={300}
-                      className="w-full"
-                      transformations={[
-                        { cropMode: "cm_extract", height: 300, width: 600 },
-                      ]}
-                      src="/raw/art/human-background.jpg"
-                    />
-                  </a>
-                  <div className="mb-4">
-                    <a className="inline-block py-1 px-3 text-xs leading-5 text-indigo-500 hover:text-indigo-600 font-medium uppercase bg-indigo-100 hover:bg-indigo-200 rounded-full shadow-sm">
-                      Satsang
-                    </a>
-                  </div>
-                  <p className="mb-2 text-coolGray-500 font-medium">
-                    Roberto Rodriguez • 2 Jun 2022
-                  </p>
-                  <a className="inline-block mb-4 text-2xl leading-tight text-coolGray-800 hover:text-coolGray-900 font-bold hover:underline">
-                    1. The one in the background
-                  </a>
-                  <p className="mb-4 text-base md:text-lg text-coolGray-400 font-medium">
-                    Some call this background the unconscious, the ego, the
-                    self, and no matter its name - it's out of reach to any
-                    external element because it exists before the devices that
-                    are mindful of the exterior.
-                  </p>
-                </div>
-              </Link>
-            </div>
-
-            <div className="w-full md:w-1/2 px-4 mb-8 cursor-pointer">
-              <Link locale={locale} href="/library/the-contract-of-life">
-                <div>
-                  <a className="block mb-6 overflow-hidden rounded-md">
-                    <SimpleImage
-                      width={300}
-                      className="w-full"
-                      transformations={[
-                        { cropMode: "cm_extract", height: 300, width: 600 },
-                      ]}
-                      src="/raw/art/human-space.jpg"
-                    />
-                  </a>
-                  <div className="mb-4">
-                    <a className="inline-block py-1 px-3 text-xs leading-5 text-indigo-500 hover:text-indigo-600 font-medium uppercase bg-indigo-100 hover:bg-indigo-200 rounded-full shadow-sm">
-                      Satsang
-                    </a>
-                  </div>
-                  <p className="mb-2 text-coolGray-500 font-medium">
-                    Roberto Rodriguez • 27 May 2022
-                  </p>
-                  <a className="inline-block mb-4 text-2xl leading-tight text-coolGray-800 hover:text-coolGray-900 font-bold hover:underline">
-                    {" "}
-                    2. The contract of life
-                  </a>
-                  <p className="mb-4 text-base md:text-lg text-coolGray-400 font-medium">
-                    {" "}
-                    A strong text with an exercise that helped me reconcile with
-                    the vulnerability of life. An invitation to shift how we see
-                    life and engage with society in a way that can transform our
-                    lives
-                  </p>
-                </div>
-              </Link>
-            </div>
+              );
+            })}
           </div>
         </div>
       </section>

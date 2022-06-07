@@ -36,10 +36,10 @@ export default function Example() {
       <ThreeFeatures
         t3_title="Fun Local Adventures"
         t3_description="Our easy going culture and youthful spirit turns the retreat into a fun adventure in paradise"
-        t1_title="Autentic connection with nature"
+        t1_title="Authentic connection with nature"
         t1_description="Paz unique approach to healing and release of stress is about learning to let go and allowing the nature of the universe to be our guide."
         t2_title="Reunite with your(true)self"
-        t2_description="It's about feeling about inner voice, which we sometimes can't hear because we are thinking too much"
+        t2_description="It's about feeling our inner voice, which we sometimes can't hear because we are thinking too much"
       />
 
       <LeftWithBullets
@@ -50,7 +50,7 @@ export default function Example() {
         t2_title="Bonefires, BBQ's and hammocks on the beach"
         t2_description="There is nothing better than sitting in a bonefire in the sand under the starts eating smoked delicious food and having a great talk."
         t3_title="Dance and music as the expression of the soul"
-        t3_description="Party like our ancestors, letting fire and dance set you free. An opportunuty to remember how to have fun while healing owe mind and dancing with out hearts."
+        t3_description="Party like our ancestors, letting fire and dance set you free. An opportunity to remember how to have fun while healing owe mind and dancing with out hearts."
         images={[
           {
             src: "/optimized/beach/paddle_from_sea.jpeg",
@@ -67,7 +67,7 @@ export default function Example() {
         t2_title="The retreat is filled with opportunities to be fully present in nature"
         t2_description="To feel the effects of connecting with nature - within and without - we must endure the pressure of thoughts. Keep our attention with what is here, now. Since we are in one of the most pristine places in the world, it's very easy to do."
         t3_title="Healing music therapy"
-        t3_description="We join the sympony of the forest and the beach with drums, flutes and other native instruments to reconfort out hearts."
+        t3_description="We join the symphony of the forest and the beach with drums, flutes and other native instruments to reconfort out hearts."
         images={[
           { src: "/raw/wildlife/maccaw.webp", width: 1000, height: 700 },
         ]}
