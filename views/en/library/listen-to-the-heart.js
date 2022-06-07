@@ -340,11 +340,10 @@ export default function Example() {
             </video>
 
             <p className="mb-4 text-base md:text-lg text-coolGray-500">
-              The key to unlocking the mind is real. But like a mountain:
-              believing in the key, thinking about the key, talking, reading,
-              understanding, praying, or any other mental action has the same
-              result in the key as in the mountain: Nothing. You must explore,
-              play and realize the awareness that you are.
+              The key to unlocking the mind is real. But believing in the key,
+              thinking about the key, talking, reading, understanding, praying,
+              or any other mental action has no result. You must explore, play
+              and realize the awareness that you are.
             </p>
           </div>
 

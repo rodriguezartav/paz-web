@@ -185,14 +185,6 @@ export default function Example() {
 
               <div className="mt-4 flex sm:flex-col1">
                 <a
-                  onClick={() => {
-                    try {
-                      woopra.track("download", {
-                        asset: "EnPaz PDF",
-                      });
-                    } catch (e) {}
-                    return true;
-                  }}
                   target="_blank"
                   href="/files/enpaz.pdf"
                   className="max-w-xs flex-1 bg-purple-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500 sm:w-full"
