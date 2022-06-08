@@ -37,7 +37,7 @@ let posts = [
     author: "Roberto Rodriguez",
     description:
       "The heart plays a central role in the transformation or evolution of humankind. Internal arts, devotions, and religions direct us to discover the heart's energy field. I write this article right after a transformational retreat at Montaña Azul, and it's my humble attempt at writing a painting of the mechanism of life by pointing to it rather than describing it.",
-    image: "/raw/art/real-human-heart.jpg",
+    image: "/raw/art/human-heart.jpg",
     link: "listen-to-the-heart",
     next: "under-the-hood",
   },
@@ -60,7 +60,7 @@ let posts = [
     author: "Roberto Rodriguez",
     description:
       "Unfortunately, as adults, our attention becomes stuck in the one dimension of the mind - let's overcome that.",
-    image: "/raw/art/human-heart.jpg",
+    image: "/raw/art/key-mind.jpg",
     link: "the-key-the-mind",
   },
 ];

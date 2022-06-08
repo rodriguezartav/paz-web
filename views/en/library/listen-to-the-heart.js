@@ -66,7 +66,7 @@ export default function Example() {
         <SimpleImage
           width={2000}
           className="w-full mb-10 mx-auto"
-          src="/raw/art/real-human-heart.jpg"
+          src="/raw/art/human-heart.jpg"
           alt=""
         />
 
@@ -239,29 +239,6 @@ export default function Example() {
               </p>
               <span className="text-base md:text-lg text-coolGray-400 font-medium">
                 The Rolling Stones
-              </span>
-            </div>
-            <p className="mb-4 text-base md:text-lg text-coolGray-500">
-              There is also a biological tendency to make it seem like we are
-              the mind , or even worse, a mere thought in the mind. It's called
-              the ego or the self, our human identity. It's what we think we
-              are; it's what we are defending when we fight!
-            </p>
-          </div>
-
-          <div className="md:max-w-3xl mx-auto">
-            <p className="mb-4 text-base md:text-lg text-coolGray-500">
-              If we remove the noise in the mind, the drama, the past, and all
-              the confusion in life, we'll be left with what we really want.
-            </p>
-
-            <div className="mt-10 p-6 border-l-2 border-indigo-500">
-              <p className="mb-4 text-xl md:text-2xl leading-tight font-medium text-coolGray-800">
-                "I wonder if you can go in and examine on your own if it's true
-                that identity is just a thought?"
-              </p>
-              <span className="text-base md:text-lg text-coolGray-400 font-medium">
-                Jiddu Krishnamurti
               </span>
             </div>
 

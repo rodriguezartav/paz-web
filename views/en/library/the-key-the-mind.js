@@ -55,7 +55,7 @@ export default function Example() {
         <SimpleImage
           width={2000}
           className="w-full mb-10 mx-auto"
-          src="/raw/art/human-heart.jpg"
+          src="/raw/art/key-mind.jpg"
           alt=""
         />
 
