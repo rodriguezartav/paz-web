@@ -61,7 +61,7 @@ export default function Example() {
       <LeftWithBullets
         title="Para sentir la conexión con la naturaleza - percibirla - tenemos que exponernos a ella de manera auténtica y humilde."
         subtitle="Los árboles, los animales y las plantas no son objetos solo para ser fotografiados, son los guías y el ejemplo de cómo debemos vivir - si realmente queremos paz"
-        t1_title="Caminatas Meditativas"
+        t1_title="Caminatas Chi Meditativas"
         t1_description="En el bosque, en cascadas y en la playa. Salir a caminar sin pensar, sin expectativas y sin ningún lugar adonde llegar. "
         t2_title="Momentos de presencia en la naturaleza"
         t2_description="Usamos el fuego, el agua, el barro y actividades para practicar el estar presente y meditar espontáneamente, sin esfuerzo."

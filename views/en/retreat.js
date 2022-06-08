@@ -30,7 +30,7 @@ export default function Example() {
       {""}
       <HeaderTop
         logoBefore={true}
-        title="Our retreats are fun vacations aimed at reconnecting the true nature of ourselves"
+        title="Our retreats are fun vacations aimed at reconnecting with the true nature of ourselves"
         subtitle={`One of the greatest achievments of any human being is to be comfortable and calm with herself. A retreat is the perfect place to align with that.`}
       />
       <ThreeFeatures
@@ -44,7 +44,7 @@ export default function Example() {
 
       <LeftWithBullets
         title="If we are searching for happiness, let's start by having a good time now!"
-        subtitle="Kids are the gurus of hapiness and they always start with having a good time."
+        subtitle="Kids are the gurus and they always start with having a good time."
         t1_title="Surf and Paddle board Meditations"
         t1_description="Surf and Paddleboard lessons with an espiritual approach of meditation. A mix of soul surfing with Qi Gong and Tai Chi to flow in the sea"
         t2_title="Bonefires, BBQ's and hammocks on the beach"
@@ -62,9 +62,9 @@ export default function Example() {
       <RightWithBullets
         title="To feel a connection with nature, we must approach with a genuine heart"
         subtitle="Trees, animals and birds are not objects to be photographed. Using their brave lives as an example, they become guides in the path of life that takes us home to our hearts."
-        t1_title="While hiking we'll go beyond the physical and understandable, into realizing an spiritual connection with nature"
-        t1_description="To form an actual healthy relationship, as we are supposed to do with our loved ones, we must enter the forest as sons and daughters enter their mother's home. That's how we'll enter waterfalls, creeks, ponds and primary forests."
-        t2_title="The retreat is filled with opportunities to be fully present in nature"
+        t1_title="Meditative Chi Hiking"
+        t1_description="While hiking we'll go beyond the physical and understandable, into realizing an spiritual connection with nature"
+        t2_title="Moments to be fully present in nature"
         t2_description="To feel the effects of connecting with nature - within and without - we must endure the pressure of thoughts. Keep our attention with what is here, now. Since we are in one of the most pristine places in the world, it's very easy to do."
         t3_title="Healing music therapy"
         t3_description="We join the symphony of the forest and the beach with drums, flutes and other native instruments to reconfort out hearts."
