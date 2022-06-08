@@ -10,6 +10,8 @@ import LeftWithBullets from "../../components/sections/leftWithBullets";
 import ThreeFeatures from "../../components/sections/threeFeatures";
 import { Fragment, useState } from "react";
 import Link from "next/link";
+import posts from "./library/posts";
+import SimpleImage from "../../components/SimpleImage";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -34,17 +36,17 @@ export default function Example() {
         subtitle={`One of the greatest achievments of any human being is to be comfortable and calm with herself. A retreat is the perfect place to align with that.`}
       />
       <ThreeFeatures
-        t3_title="Fun Local Adventures"
+        t3_title="Have Fun"
         t3_description="Our easy going culture and youthful spirit turns the retreat into a fun adventure in paradise"
-        t1_title="Authentic connection with nature"
+        t1_title="Connect with nature"
         t1_description="Paz unique approach to healing and release of stress is about learning to let go and allowing the nature of the universe to be our guide."
-        t2_title="Reunite with your(true)self"
+        t2_title="Be with you"
         t2_description="It's about feeling our inner voice, which we sometimes can't hear because we are thinking too much"
       />
 
       <LeftWithBullets
-        title="If we are searching for happiness, let's start by having a good time now!"
-        subtitle="Kids are the gurus and they always start with having a good time."
+        title="Start by having a good time!"
+        subtitle="Kids are the real gurus and they always want to have fun."
         t1_title="Surf and Paddle board Meditations"
         t1_description="Surf and Paddleboard lessons with an espiritual approach of meditation. A mix of soul surfing with Qi Gong and Tai Chi to flow in the sea"
         t2_title="Bonefires, BBQ's and hammocks on the beach"
@@ -65,7 +67,7 @@ export default function Example() {
         t1_title="Meditative Chi Hiking"
         t1_description="While hiking we'll go beyond the physical and understandable, into realizing an spiritual connection with nature"
         t2_title="Moments to be fully present in nature"
-        t2_description="To feel the effects of connecting with nature - within and without - we must endure the pressure of thoughts. Keep our attention with what is here, now. Since we are in one of the most pristine places in the world, it's very easy to do."
+        t2_description="Simply keep your attention in the here and now. Since we are in one of the most pristine places in the world, it's very easy to do."
         t3_title="Healing music therapy"
         t3_description="We join the symphony of the forest and the beach with drums, flutes and other native instruments to reconfort out hearts."
         images={[
@@ -73,14 +75,14 @@ export default function Example() {
         ]}
       />
       <LeftWithBullets
-        title="To reconnect with ourselves we need have to disconect with what we are not."
-        subtitle="Since we are young we had to follow a path to serve the collective of man. But we all reach a point were we must follow our path. That's what life is about, as well as this retreat at Paz."
+        title="To reconnect with ourselves we need to disconnect with what we are not."
+        subtitle="Since we are young we had to follow a path to serve the collective of man. But we all reach a point were we must follow our path. That's what this retreat is about"
         t1_title="A course to remember how to live from the heart."
-        t1_description="Who are we? What do we really want, and how to find the strenght to live our true reality"
+        t1_description="Who are we? What do we really want, and where to find the strength to live our true reality"
         t2_title="Transforming ourselves is to recognize that we are not our minds"
-        t2_description="This retreat is a space to recognize that resistance to go within beyond the mind, only exists in as a though in the mind."
+        t2_description="This retreat is a space to recognize that the resistance to go within beyond our minds: is also a though in the mind."
         t3_title="A course to discover the magic key that opens our soul"
-        t3_description="In the same way our bodies have genetics, our soul it's own signature. That's why we all have our own path and in every step that key is made. God, please let it be so, that Paz is the place where it opens wide."
+        t3_description="In the same way our bodies have genetics, 'our soul' has them too. Experiences in life are meant to shape our unique key. Religion, Devotion and Inner Arts are the movements that open us up. But in the end, all that matters is the you, inside."
         images={[
           {
             src: "/optimized/lounge/templo_from_back.jpg",
@@ -92,6 +94,66 @@ export default function Example() {
           },
         ]}
       />
+
+      <section
+        className="py-16 md:py-24 lg:pb-52 bg-white"
+        style={{
+          backgroundImage: 'url("flex-ui-assets/elements/pattern-white.svg")',
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center top",
+        }}
+      >
+        <div className="container px-4 mx-auto">
+          <div className="flex flex-wrap items-center mb-16">
+            <div className="w-full md:w-3/4 mb-8 md:mb-0">
+              <span className="inline-block py-px px-2 mb-4 text-xs leading-5 text-indigo-500 bg-indigo-100 font-medium uppercase rounded-full shadow-sm">
+                Blog
+              </span>
+              <h3 className="mb-4 text-4xl md:text-5xl leading-tight text-indigo-600 font-bold tracking-tighter">
+                Read about it
+              </h3>
+              <p className="text-lg md:text-xl text-coolGray-500 font-medium">
+                The best way to decide if this retreat is for you, is to read
+                the following posts
+              </p>
+            </div>
+            <div className="w-full md:w-1/4"></div>
+          </div>
+          <div className="flex flex-wrap -mx-4">
+            {posts
+              .filter((item) => [4, 5, 6].indexOf(item.id) > -1)
+              .map((item) => (
+                <Link href={"/library/" + item.link}>
+                  <div className="w-full cursor-pointer md:w-1/2 lg:w-1/3 px-4 mb-8">
+                    <a className="block mb-6 overflow-hidden rounded-md">
+                      <SimpleImage
+                        width={300}
+                        className="w-full"
+                        transformations={[
+                          { cropMode: "cm_extract", height: 300, width: 600 },
+                        ]}
+                        src={item.image}
+                      />
+                    </a>
+                    <p className="mb-2 text-coolGray-500 font-medium">
+                      {item.author} • {item.date}
+                    </p>
+                    <a className="inline-block mb-4 text-2xl leading-tight text-indigo-600 hover:text-coolGray-900 font-bold hover:underline">
+                      {item.title}
+                    </a>
+                    <p className="mb-4 text-base md:text-lg text-coolGray-400 font-medium">
+                      {item.description}
+                    </p>
+                    <a className="inline-block py-1 px-3 text-xs leading-5 text-indigo-500 hover:text-indigo-600 font-medium uppercase bg-indigo-100 hover:bg-indigo-200 rounded-full shadow-sm">
+                      Satsang
+                    </a>
+                  </div>
+                </Link>
+              ))}
+          </div>
+        </div>
+      </section>
+
       <Signup
         onComplete={(e) => console.log(e)}
         title="Reciba precios, ofertas y detalles sobre nuestros retiros"
@@ -99,6 +161,7 @@ export default function Example() {
         image={{ src: "/images/jungle.jpg", width: 1000, height: 700 }}
         button={{ text: "Si, quiero ir", onClick: () => {} }}
       />
+
       <Footer />
     </div>
   );
