@@ -174,7 +174,7 @@ export default function Example() {
               </span>
             </p>
             <p className="mb-4 text-base md:text-lg text-coolGray-500">
-              Many people I talk to share that they feel like their lives are
+              People often share with me, that they feel like their lives are
               not theirs. They have realized that{" "}
               <span className="text-indigo-600  text-2xl">
                 they are just living to follow a path that never was their own
