@@ -12,7 +12,7 @@ export default function HomeApp({ posts }) {
   return (
     <div className="antialiased bg-body text-body font-body">
       <Header locale={router.locale} />
-      {router.locale == "en" ? <EN /> : <ES />}
+      <EN />
     </div>
   );
 }
