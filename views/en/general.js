@@ -69,13 +69,13 @@ export default function Example() {
           {
             src: "/raw/guide/matapalo/matapalo.webp",
             transformations: [
-              { cropMode: "cm-extract", height: 500, width: 750 },
+              { cropMode: "cm-extract", height: 650, width: 750 },
             ],
           },
           {
             src: "/raw/maps/cr.jpg",
             transformations: [
-              { cropMode: "cm-extract", height: 500, width: 750 },
+              { cropMode: "cm-extract", height: 650, width: 750 },
             ],
           },
         ]}

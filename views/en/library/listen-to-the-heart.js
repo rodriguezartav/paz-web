@@ -43,7 +43,7 @@ export default function Example() {
               </p>
             </div>
             <h2 className="mb-4 text-3xl md:text-5xl leading-tight text-darkCoolGray-900 font-bold tracking-tighter">
-              Listen to the heart
+              Listen to the heart and then do that
             </h2>
             <p className="mb-10 text-lg md:text-xl font-medium text-coolGray-500">
               The heart plays a central role in the transformation or evolution
