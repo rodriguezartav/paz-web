@@ -224,8 +224,8 @@ export default function Example() {
             </p>
             <p className="mb-4 mt-10 text-base md:text-lg text-coolGray-500">
               <span className=" text-indigo-600  text-4xl">
-                So we must also learn that listening to thoughts, feelings, and
-                emotions is listening to our mind
+                So, listening to thoughts, feelings, and emotions is listening
+                to our mind
               </span>
               , and it's very different from that which comes from the heart.
               What we really want is very different from what we think we want.
