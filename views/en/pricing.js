@@ -46,7 +46,7 @@ export default function Example() {
 
       <Pricing
         legend={"Pricing"}
-        title={"2022/2023 Prices for Paz Retreats"}
+        title={"2023 Prices for Paz Retreats"}
         subtitle="Stay as much as you like from 4 to 7 days"
         period="night"
         prices={[

@@ -24,7 +24,7 @@ export default function Example() {
       </Link>
       <HeaderTop
         logoBefore={true}
-        title="...days in the beach by the forest to remember how to live in peace..."
+        title="A place to remember how how to life from the heart"
         images={[
           {
             src: "raw/lounge/drone_300.jpg",
@@ -72,6 +72,12 @@ export default function Example() {
               { cropMode: "cm-extract", height: 500, width: 750 },
             ],
           },
+          {
+            src: "/raw/maps/cr.jpg",
+            transformations: [
+              { cropMode: "cm-extract", height: 500, width: 750 },
+            ],
+          },
         ]}
       />
 
@@ -79,7 +85,7 @@ export default function Example() {
         legend="Peninsula de Osa, Costa Rica"
         title="It feels like being in a National Park"
         color="lime-700"
-        subtitle="We crafted an unique experience that feels like camping on the forest by the beach, with the comfort of a beachfront villa. By designing and building everything ourselfs we poured our intention into every corner of the house."
+        subtitle="We crafted an unique experience that feels like camping on the forest by the beach, with the comfort of a beachfront villa."
         images={[
           {
             src: "/optimized/house/living/master.jpeg",
@@ -91,8 +97,8 @@ export default function Example() {
 
       <RightPlain
         legend={"Ubicación"}
-        title="A place to reconnect with the true nature of ourselves"
-        subtitle={`Activities at Paz are embeded with execises and technics so that we can return to our natural state by relaxing into meditation in the forest and the sea. `}
+        title="Paz is a natural meditation temple"
+        subtitle={`Our founder designs a program according to each persons aspirations - starting at relaxing by the beach. \nIn this temple we have so much to work with: Magical wildlife, a pristine beach, emerald sea, cristaline waterfalls and huge trees`}
         images={[
           {
             src: "/optimized/forest/big_trees.jpg",
@@ -139,7 +145,7 @@ export default function Example() {
       />
 
       <LeftPlain
-        title="While having fun - pura vida style"
+        title="Paz is also pura vida & fun "
         subtitle="Bonefires and BBQ's on the beach under the stars, hikes in magical trails to waterfalls and pristine beaches with the forest on our side."
         images={[
           {

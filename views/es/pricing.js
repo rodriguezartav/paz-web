@@ -43,7 +43,7 @@ export default function Example() {
 
       <Pricing
         legend={"Pricing"}
-        title={"Precios para los retiros del 2022/2023"}
+        title={"Precios para los retiros del 2023"}
         subtitle="Quédese lo que quiere entre 4 y 7 días."
         period="noche"
         prices={[

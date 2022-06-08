@@ -32,7 +32,7 @@ export default function Example() {
 
       <HeaderTop
         logoBefore={true}
-        title="...días en el bosque a la orilla del mar para recordar como vivir en paz"
+        title="Un lugar para recordar como vivir desde el corazón"
       />
 
       <RightPlain
@@ -41,51 +41,30 @@ export default function Example() {
         subtitle={`Una comunidad de amantes del medio ambiente entre Puerto Jimenez y el Parque Nacional Corcovado. La región mas alejada de Costa Rica que para protegerla sus habitantes decidieron no tener servicio de luz electrica ni de agua municipal. `}
         images={[
           {
-            src: "/raw/maps/cr.png",
+            src: "/raw/maps/cr.jpg",
             transformations: [
-              { cropMode: "cm-extract", height: 500, width: 750 },
+              { cropMode: "cm-extract", height: 550, width: 700 },
             ],
           },
           {
             src: "/raw/guide/matapalo/matapalo.webp",
             transformations: [
-              { cropMode: "cm-extract", height: 500, width: 750 },
+              { cropMode: "cm-extract", height: 550, width: 750 },
             ],
           },
         ]}
       />
 
-      <LeftPlain
-        legend={"Primer Paso"}
-        title="Todo empezó con una visita al parque nacional Corcovado"
-        button={{ text: "Conozca la historia de Paz", href: "/history" }}
-        subtitle={`En el 2001 Roberto, nuestro fundador, hizo su primer viaje al Parque Nacional Corcovado y sintió por primera vez a la madre naturaleza. \nEn ese momento entendió que la naturaleza es la guia del ser humano para regresar a su corazón y la Peninsula de Osa es el lugar ideal. \nEsa experiencia lo llevó a transformar su vida, y ese sentir es justamente lo que quiere compartir en Paz.`}
+      <HeaderLeft
+        legend="Peninsula de Osa, Costa Rica"
+        title="Se siente como estar en un parque nacional"
+        color="lime-700"
+        subtitle="Creamos una experiencia que se siente como acampar en la playa y el bosque pero con la protección de una casa cómoda"
         images={[
           {
-            src: "/raw/history/corcovado.png",
-            width: 750,
-            height: 1000,
-          },
-        ]}
-      />
-
-      <RightPlain
-        legend={"Ubicación"}
-        title="Meditaciones para conectarnos con la naturaleza de nosotros mismos"
-        subtitle={`Nuestro cuerpo es naturaleza, sin embargo no siempre nos sentimos así. \nEn Paz inventamos técnicas y ejercicios para meditar relajadamente en el bosque y el mar para regresar a nuestro estado natural. `}
-        images={[
-          {
-            src: "/optimized/forest/big_trees.jpg",
-            transformations: [
-              { cropMode: "cm_extract", height: 600, width: 750 },
-            ],
-          },
-
-          {
-            src: "/raw/wildlife/oruga.jpeg",
-            transformations: [
-              { cropMode: "cm_extract", height: 600, width: 750 },
-            ],
+            src: "/optimized/house/living/master.jpeg",
+            width: 730,
+            height: 700,
           },
 
           {
@@ -96,14 +75,7 @@ export default function Example() {
           },
 
           {
-            src: "/raw/forest/barrigon_alto.jpeg",
-            transformations: [
-              { cropMode: "cm_extract", focus: "top", height: 600, width: 750 },
-            ],
-          },
-
-          {
-            src: "/raw/wildlife/tucan_atras.jpeg",
+            src: "/raw/wildlife/oruga.jpeg",
             transformations: [
               { cropMode: "cm_extract", height: 600, width: 750 },
             ],
@@ -118,8 +90,41 @@ export default function Example() {
         ]}
       />
 
+      <RightPlain
+        legend={"Ubicación"}
+        title="Paz es un templo de meditación natural"
+        subtitle={`Nuestro fundador diseña un programa según las aspiraciones de cada persona. Desde relajarse frente al mar hasta donde quiera llegar.\n En este templo tenemos de todo para escoger la playa, el mar, la fauna y flora mas biodiversa del mundo, cataratas y mucho mas.`}
+        images={[
+          {
+            src: "/optimized/forest/big_trees.jpg",
+            transformations: [
+              { cropMode: "cm_extract", height: 600, width: 750 },
+            ],
+          },
+          {
+            src: "/raw/forest/barrigon_alto.jpeg",
+            transformations: [
+              { cropMode: "cm_extract", focus: "top", height: 600, width: 750 },
+            ],
+          },
+
+          {
+            src: "/raw/lounge/hammocks.jpg",
+            transformations: [
+              { cropMode: "cm_extract", focus: "top", height: 600, width: 750 },
+            ],
+          },
+          {
+            src: "/raw/lounge/lounge_4.jpg",
+            transformations: [
+              { cropMode: "cm_extract", focus: "top", height: 600, width: 750 },
+            ],
+          },
+        ]}
+      />
+
       <LeftPlain
-        title="... y divertirnos como si viviéramos aquí"
+        title="Paz también es pura vida y diversión"
         subtitle={
           "Fogatas y parrilladas en la playa bajo las estrellas, caminatas a cataratas en senderos mágicos y playas calladitas con el bosque a la par.\n Tal como nos gusta a los costarricense pasear."
         }
@@ -128,32 +133,6 @@ export default function Example() {
             src: "/raw/wildlife/titis.webp",
             width: 960,
             height: 700,
-          },
-        ]}
-      />
-
-      <HeaderLeft
-        legend="Peninsula de Osa, Costa Rica"
-        title="un lugar que se siente como estar en un parque nacional"
-        color="lime-700"
-        subtitle="Creamos una experiencia que se siente como acampar en la playa y el bosque pero con la protección de una casa cómoda"
-        images={[
-          {
-            src: "/optimized/house/living/master.jpeg",
-            width: 730,
-            height: 700,
-          },
-        ]}
-      />
-
-      <RightPlain
-        title="pero que en realidad es un templo natural muy especial"
-        subtitle="El espíritu de la madre naturaleza esta presente aquí. La escuchamos y la queremos. Es la guía en esta aventura por realmente encontrarla en nosotros mismos."
-        images={[
-          {
-            src: "/optimized/art/meditation.jpg",
-            width: 800,
-            height: 600,
           },
         ]}
       />
