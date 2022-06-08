@@ -167,7 +167,8 @@ export default function Example() {
               You have to move them, but most importantly:{" "}
               <span className="text-indigo-600 text-2xl">
                 dancing is only enjoyed when there is no mind.
-              </span>
+              </span>{" "}
+              Dancing is fun when we become the dance.
             </p>
 
             <p className="mb-4 text-base md:text-lg text-coolGray-500">
