@@ -96,6 +96,13 @@ export default function Example() {
   useEffect(() => {
     let t_tags = [];
     images && setFilteredImages(images);
+    images &&
+      images.forEach((image) => {
+        image.tags_csv.split(",").forEach((item) => {
+          if (t_tags.indexOf(item) == -1) t_tags.push(item);
+        });
+      });
+
     setTags(t_tags);
     return true;
   }, images);
@@ -121,12 +128,15 @@ export default function Example() {
       <div>
         <main className="max-w-2xl mx-auto px-4 lg:max-w-7xl lg:px-8">
           <div className="border-b border-gray-200 pt-14 pb-10">
-            <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">
-              New Arrivals
+            <h1 className="text-4xl font-extrabold tracking-tight text-indigo-500">
+              Images @ Paz
             </h1>
             <p className="mt-4 text-base text-gray-500">
-              Checkout out the latest release of Basic Tees, new and improved
-              with four openings!
+              Click on the images to download and on folders and tags to filter.
+            </p>
+            <p className="mt-1 text-xs text-indigo-700 max-w-xl  ">
+              Some images are licensed for single use, using them outside of Paz
+              may result in legal fees for the unlicensed user.
             </p>
           </div>
 
