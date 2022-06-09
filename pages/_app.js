@@ -55,16 +55,15 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
             content: "46be10golmw8ehrdc2rcx6qn1v92e8",
           },
         ]}
-        title="Paz Corcovado | Beachfront Villa in Osa Peninsula | Costa Rica"
-        description="Paz ✌ is a beach front villa 🏖️ in the Osa Peninsula. Rent our private retreat to relax, be in nature & play in the pristine beach of real & wild Costa Rica."
+        title="Paz Corcovado | Beachfront Retreats | Osa Peninsula | Costa Rica"
+        description="A place to remember how how to life from the heart"
         canonical="https://paz.co.cr/"
         facebook-domain-verification="46be10golmw8ehrdc2rcx6qn1v92e8"
         openGraph={{
           url: "https://paz.co.cr/",
           title:
-            "Paz Corcovado | Beachfront Villa in Osa Peninsula | Costa Rica",
-          description:
-            "Paz ✌ is a beach front villa 🏖️ in the Osa Peninsula. Rent our private retreat to relax, be in nature & play in the pristine beach of real & wild Costa Rica.",
+            "Paz Corcovado | Beachfront Retreats | Osa Peninsula | Costa Rica",
+          description: "A place to remember how how to life from the heart",
           images: [
             {
               url: "https://paz.co.cr/images/hero/house.jpg",

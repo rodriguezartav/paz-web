@@ -8,7 +8,7 @@ export function useFetch(url, options) {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        const res = await fetch(process.env.API_URL + url, {
+        const res = await fetch(url, {
           headers: {
             "Content-Type": "application/json",
 
