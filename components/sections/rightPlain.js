@@ -44,7 +44,7 @@ export default function HomeApp({
               {legend}
             </span>
             <h1
-              className={`mb-8 text-4xl md:text-5xl leading-tight text-indigo-400 font-bold tracking-tighter text-${color}`}
+              className={`mb-8 dm text-4xl md:text-5xl leading-tight text-indigo-400 font-bold tracking-tighter text-${color}`}
             >
               {title}
             </h1>

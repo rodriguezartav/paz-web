@@ -2,3 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.h-128{height:32rem}
+.h-160{height:40rem}
+.h-192{height:48rem}
+
+.w-128{width:32rem}
+.w-160{width:40rem}
+.w-192{width:48rem}
+
+.sm\:h-128{height:32rem}.sm\:h-160{height:40rem}.sm\:h-192{height:48rem}
+
+.dm{font-family:"DM Sans"}

@@ -24,29 +24,30 @@ export default function Example() {
       >
         <SimpleImage
           width={2000}
-          height={1000}
+          transformations={[
+            { cropMode: "cm_extract", height: 350, width: 2000 },
+          ]}
           className="w-full mb-10 mx-auto"
           src="/raw/art/human-colors.jpg"
           alt=""
         />
 
-        <div className="container top-0 relative md:absolute md:top-72 px-4 mx-auto">
+        <div className="container top-0 relative md:absolute md:top-24 px-4 mx-auto">
           <div className="md:max-w-5xl mx-auto mb-12 text-center">
             <div className="inline-block py-1 px-3 mb-6 text-xs leading-5 text-white font-medium uppercase bg-indigo-800 rounded-full shadow-sm">
-              The Human Blog
+              Podcasts
             </div>
-
-            <p className="mb-10 bg-indigo-50 p-4 opacity-90 rounded-lg text-lg md:text-xl text-left font-medium text-coolGray-500 shadow-md">
-              At some point, I realized that almost all of my beliefs about
-              myself, life, and the world were mistaken. I realized my identity
-              as a thought based entity full of conditionings from the past and
-              it's path the only straight line I see in life.
-              <br /> <br /> Very clearly, I see the society of humankind as a
-              virtual reality full of concepts like countries, businesses, and
-              so on. But I can't find them on the ground.
-            </p>
           </div>
         </div>
+        <p className="mb-10 bg-indigo-50 p-4 opacity-90 rounded-lg text-lg md:text-xl text-left font-medium text-coolGray-500 shadow-md">
+          At some point, I realized that almost all of my beliefs about myself,
+          life, and the world were mistaken. I realized my identity as a thought
+          based entity full of conditionings from the past and it's path the
+          only straight line I see in life.
+          <br /> <br /> Very clearly, I see the society of humankind as a
+          virtual reality full of concepts like countries, businesses, and so
+          on. But I can't find them on the ground.
+        </p>
 
         <div className="container mt-32 px-4 mx-auto">
           <div className="flex flex-wrap -mx-4 mb-12 md:mb-20">

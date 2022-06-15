@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { isValidElement, useEffect, useState } from "react";
 
-import { ChevronDownIcon, PlusSmIcon } from "@heroicons/react/solid";
+import { ChevronDownIcon, PlusSmIcon, PlayIcon } from "@heroicons/react/solid";
 import SimpleImage from "../SimpleImage";
 import { useFetch } from "../../helpers/useFetch";
 
@@ -95,12 +95,13 @@ export default function Example() {
 
   useEffect(() => {
     let t_tags = [];
-    images && setFilteredImages(images);
+    images && setFilteredImages(images.slice(0, 10));
     images &&
       images.forEach((image) => {
-        image.tags_csv.split(",").forEach((item) => {
-          if (t_tags.indexOf(item) == -1) t_tags.push(item);
-        });
+        image.tags_csv &&
+          image.tags_csv.split(",").forEach((item) => {
+            if (t_tags.indexOf(item) == -1) t_tags.push(item);
+          });
       });
 
     setTags(t_tags);
@@ -207,44 +208,67 @@ export default function Example() {
 
               <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:gap-x-8 xl:grid-cols-5">
                 {filteredImages &&
-                  filteredImages.map((product) => (
-                    <div
-                      onClick={() => setOpen(product)}
-                      key={product.id}
-                      className="group relative bg-white border border-gray-200 rounded-lg flex flex-col overflow-hidden"
-                    >
-                      <div className="aspect-w-3 aspect-h-3 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-54">
-                        <SimpleImage
-                          width={300}
-                          className="w-full h-full object-center object-cover sm:w-full sm:h-full"
-                          transformations={[
-                            { cropMode: "cm_extract", height: 200, width: 200 },
-                          ]}
-                          src={product.src}
-                        />
-                      </div>
-                      <div className="flex-1 p-4 space-y-2 flex flex-col">
-                        <h3 className="text-sm font-medium text-gray-900">
-                          <a>
-                            <span
+                  filteredImages.map((product) => {
+                    let src = product.src;
+                    if (product.media_type == "VIDEO") {
+                      let type = getLastPathPart(src);
+                      src = src.replace(type.split(".")[1], "png");
+                    }
+                    if (product.media_type == "AUDIO") {
+                      src = "raw/art/audio.jpg";
+                    }
+                    return (
+                      <div
+                        onClick={() => setOpen(product)}
+                        key={product.id}
+                        className="group relative bg-white border border-gray-200 rounded-lg flex flex-col overflow-hidden"
+                      >
+                        {(product.media_type == "AUDIO" ||
+                          product.media_type == "VIDEO") && (
+                          <div className="absolute  top-12 left-12 rounded-lg bg-white opacity-70">
+                            <PlayIcon
+                              className="flex-shrink-0 ml-1 h-14 w-14 text-indigo-500"
                               aria-hidden="true"
-                              className="absolute inset-0"
                             />
-                            {product.title}
-                          </a>
-                        </h3>
+                          </div>
+                        )}
+                        <div className="aspect-w-3 aspect-h-3 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-54">
+                          <SimpleImage
+                            width={300}
+                            className="w-full h-full object-center  object-cover sm:w-full sm:h-full"
+                            transformations={[
+                              {
+                                cropMode: "cm_extract",
+                                height: 200,
+                                width: 200,
+                              },
+                            ]}
+                            src={src}
+                          />
+                        </div>
+                        <div className="flex-1 p-4 space-y-2 flex flex-col">
+                          <h3 className="text-sm font-medium text-gray-900">
+                            <a>
+                              <span
+                                aria-hidden="true"
+                                className="absolute inset-0"
+                              />
+                              {product.title}
+                            </a>
+                          </h3>
 
-                        <div className="flex-1 flex flex-col justify-end">
-                          <p className="text-sm italic text-gray-500">
-                            {product.width} x{product.height} {product.type}
-                          </p>
-                          <p className="text-xs text-gray-900">
-                            {getLastPathPart(product.src)}
-                          </p>
+                          <div className="flex-1 flex flex-col justify-end">
+                            <p className="text-sm italic text-gray-500">
+                              {product.width} x{product.height} {product.type}
+                            </p>
+                            <p className="text-xs text-gray-900">
+                              {getLastPathPart(product.src)}
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
               </div>
             </section>
           </div>

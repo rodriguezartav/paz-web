@@ -3,7 +3,7 @@ import LeftPlain from "../../components/sections/leftPlain";
 import RightPlain from "../../components/sections/rightPlain";
 
 import Cta from "../../components/sections/cta";
-
+import SimpleImage from "../../components/SimpleImage";
 import Links from "../../components/sections/links";
 
 import HeaderTop from "../../components/sections/headerTop";
@@ -34,26 +34,32 @@ export default function Example() {
         logoBefore={true}
         title="Un lugar para recordar como vivir desde el corazón"
       />
+      <div className="relative">
+        <div className=" z-20 ">
+          <RightPlain
+            legend={"Ubicación"}
+            title="Paz esta ubicado en el místico cabo Mata Palo en la Peninsula de Osa de Costa Rica"
+            subtitle={`Una comunidad de amantes del medio ambiente entre Puerto Jimenez y el Parque Nacional Corcovado. La región mas alejada de Costa Rica que para protegerla sus habitantes decidieron no tener servicio de luz electrica ni de agua municipal. `}
+            images={[
+              {
+                src: "/raw/guide/matapalo/matapalo.webp",
+                transformations: [
+                  { cropMode: "cm-extract", height: 550, width: 750 },
+                ],
+              },
+            ]}
+          />
+        </div>
 
-      <RightPlain
-        legend={"Ubicación"}
-        title="Paz esta ubicado en el místico cabo Mata Palo en la Peninsula de Osa de Costa Rica"
-        subtitle={`Una comunidad de amantes del medio ambiente entre Puerto Jimenez y el Parque Nacional Corcovado. La región mas alejada de Costa Rica que para protegerla sus habitantes decidieron no tener servicio de luz electrica ni de agua municipal. `}
-        images={[
-          {
-            src: "/raw/maps/cr.jpg",
-            transformations: [
-              { cropMode: "cm-extract", height: 550, width: 700 },
-            ],
-          },
-          {
-            src: "/raw/guide/matapalo/matapalo.webp",
-            transformations: [
-              { cropMode: "cm-extract", height: 550, width: 750 },
-            ],
-          },
-        ]}
-      />
+        <div className="hidden sm:block sm:absolute sm:-top-10 sm:left-1/3 z-10  ">
+          <SimpleImage
+            width={300}
+            className=" w-full  rounded-11xl border-2 border-indigo-200 shadow-md"
+            src={"/raw/maps/cr.jpg"}
+            transformations={[{ height: 300 }]}
+          />
+        </div>
+      </div>
 
       <HeaderLeft
         legend="Peninsula de Osa, Costa Rica"
@@ -63,36 +69,14 @@ export default function Example() {
         images={[
           {
             src: "/optimized/house/living/master.jpeg",
-            width: 730,
-            height: 700,
-          },
-
-          {
-            src: "/raw/wildlife/cariblanco_frente.jpeg",
-            transformations: [
-              { cropMode: "cm_extract", height: 600, width: 750 },
-            ],
-          },
-
-          {
-            src: "/raw/wildlife/oruga.jpeg",
-            transformations: [
-              { cropMode: "cm_extract", height: 600, width: 750 },
-            ],
-          },
-
-          {
-            src: "raw/wildlife/perezozo.jpeg",
-            transformations: [
-              { cropMode: "cm_extract", focus: "top", height: 600, width: 750 },
-            ],
+            transformations: [{ width: 730, height: 547 }],
           },
         ]}
       />
 
       <RightPlain
         legend={"Ubicación"}
-        title="Paz es un templo de meditación natural"
+        title="en un templo de meditación natural"
         subtitle={`Nuestro fundador diseña un programa según las aspiraciones de cada persona. Desde relajarse frente al mar hasta donde quiera llegar.\n En este templo tenemos de todo para escoger la playa, el mar, la fauna y flora mas biodiversa del mundo, cataratas y mucho mas.`}
         images={[
           {
@@ -124,13 +108,13 @@ export default function Example() {
       />
 
       <LeftPlain
-        title="Paz también es pura vida y diversión"
+        title="en la tierra de la pura vida"
         subtitle={
           "Fogatas y parrilladas en la playa bajo las estrellas, caminatas a cataratas en senderos mágicos y playas calladitas con el bosque a la par.\n Tal como nos gusta a los costarricense pasear."
         }
         images={[
           {
-            src: "/raw/wildlife/titis.webp",
+            src: "/raw/fun/fire1.jpg",
             width: 960,
             height: 700,
           },

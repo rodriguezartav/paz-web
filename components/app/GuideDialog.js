@@ -1,7 +1,8 @@
 import { Fragment, useEffect, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { CheckIcon } from "@heroicons/react/outline";
+import { CheckIcon, PlayIcon } from "@heroicons/react/outline";
 import SimpleImage from "../SimpleImage";
+import SimpleVideo from "../SimpleVideo";
 const urlEndpoint = "https://ik.imagekit.io/paz/";
 
 export default function GuideDialog({ open, setOpen }) {
@@ -67,18 +68,34 @@ export default function GuideDialog({ open, setOpen }) {
                           />
                         )}
 
-                        <SimpleImage
-                          width={300}
-                          className="w-full h-full object-center object-cover sm:w-full sm:h-full"
-                          transformations={[
-                            {
-                              cropMode: "cm_extract",
-                              height: 200,
-                              width: 200,
-                            },
-                          ]}
-                          src={open.src}
-                        />
+                        {open.media_type == "IMAGE" && (
+                          <SimpleImage
+                            width={300}
+                            className="w-full h-full object-center object-cover sm:w-full sm:h-full"
+                            transformations={[
+                              {
+                                cropMode: "cm_extract",
+                                height: 200,
+                                width: 200,
+                              },
+                            ]}
+                            src={open.src}
+                          />
+                        )}
+
+                        {open.media_type == "VIDEO" && (
+                          <SimpleVideo
+                            src={open.src}
+                            className="w-full h-full object-center object-cover sm:w-full sm:h-full"
+                          />
+                        )}
+
+                        {open.media_type == "AUDIO" && (
+                          <SimpleVideo
+                            src={open.src}
+                            className="w-full h-full object-center object-cover sm:w-full sm:h-full"
+                          />
+                        )}
 
                         <p className="text-sm font-medium w-full truncate pt-3 text-left text-indigo-600 ">
                           Link
@@ -91,7 +108,7 @@ export default function GuideDialog({ open, setOpen }) {
                           }}
                         >
                           <p className="text-sm w-full truncate px-3 text-gray-500">
-                            {urlEndpoint + "/" + open.src}
+                            {urlEndpoint + open.src}
                           </p>
                           <p className="text-xs w-full truncate  text-gray-500">
                             click to copy
