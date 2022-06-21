@@ -98,7 +98,7 @@ export default function Example() {
     images && setFilteredImages(images);
     images &&
       images.forEach((image) => {
-        image.tags_csv.split(",").forEach((item) => {
+        (image.tags_csv || "").split(",").forEach((item) => {
           if (t_tags.indexOf(item) == -1) t_tags.push(item);
         });
       });
