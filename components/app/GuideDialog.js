@@ -4,6 +4,8 @@ import { CheckIcon, PlayIcon } from "@heroicons/react/outline";
 import SimpleImage from "../SimpleImage";
 import SimpleVideo from "../SimpleVideo";
 const urlEndpoint = "https://ik.imagekit.io/paz/";
+const s3Endpoint =
+  "http://images.paz.co.cr.s3-website-us-east-1.amazonaws.com/";
 
 export default function GuideDialog({ open, setOpen }) {
   const [showCheck, setShowCheck] = useState(false);
@@ -121,10 +123,11 @@ export default function GuideDialog({ open, setOpen }) {
                 <div className="mt-5 sm:mt-6">
                   <button
                     onClick={() => {
+                      let url = s3Endpoint + open.src;
                       var anchor = document.createElement("a");
-                      anchor.href = open.src;
+                      anchor.href = url;
                       anchor.target = "_blank";
-                      anchor.download = getLastPathPart(open.src);
+                      anchor.download = getLastPathPart(url);
                       anchor.click();
                       setShowCheck(true);
 
