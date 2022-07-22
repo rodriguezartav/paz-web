@@ -15,7 +15,7 @@ import SimpleImage from '@/components/SimpleImage'
 const features = [
   {
     title: 'Spa Shamanic',
-    description: `Entropy and Medicine explain 60% of Temazcal, Sauna and Polar Pool's benefits.
+    description: `Entropy and Medicine explain 60% of Temazcal, Sauna and Polar Pools benefits.
     Call it meditational placebo, by using ancestral visualization around fire, Water, Earth and Air you can turn the remainder 40% and feel 1000% better - temporarily.
     `,
     image: screenshotPayroll,
@@ -24,7 +24,7 @@ const features = [
   {
     title: 'Beach Club',
     description:
-      "Not your typical beach club in that sense that instead of being surround by people; you'll be able to listen the wind and sea. Sharing it only with monkeys, turtles, whales and tropical birds. Hammocks, palms trees, beach chairs, warm turquois water, delicate sunlight...",
+      'Not your typical beach club in that sense that instead of being surround by people; you will be able to listen the wind and sea. Sharing it only with monkeys, turtles, whales and tropical birds. Hammocks, palms trees, beach chairs, warm turquois water, delicate sunlight...',
     image: screenshotExpenses,
   },
   {

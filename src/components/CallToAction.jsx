@@ -26,7 +26,7 @@ export function CallToAction() {
           <p className="mt-4 text-lg tracking-tight text-white">
             Follow our podcast via email or whatsapp and get free access to our
             knowledge base, its the best way to get to know Paz and decide if
-            you'd like to visit.
+            you would like to visit.
           </p>
           <Button href="/register" color="white" className="mt-10">
             Get 6 months free
