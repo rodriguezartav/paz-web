@@ -5,7 +5,7 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-features.jpg'
-import screenshotExpenses from '@/images/screenshots/expenses.png'
+import screenshotExpenses from '@/images/screenshots/beach_sun.jpeg'
 import screenshotPayroll from '@/images/screenshots/payroll.png'
 import screenshotReporting from '@/images/screenshots/master.jpeg'
 import screenshotVatReturns from '@/images/screenshots/vat-returns.png'

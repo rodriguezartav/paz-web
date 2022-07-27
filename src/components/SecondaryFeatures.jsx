@@ -205,7 +205,7 @@ function FeaturesDesktop() {
   )
 }
 
-export function SecondaryFeatures() {
+export function SecondaryFeatures(props) {
   return (
     <section
       id="secondary-features"
@@ -213,16 +213,18 @@ export function SecondaryFeatures() {
       className="pt-20 pb-14 sm:pb-20 sm:pt-32 lg:pb-32"
     >
       <Container>
-        <div className="mx-auto max-w-2xl md:text-center">
-          <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Activities that are inspired by nature
-          </h2>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
-            At Paz we have deep appreciation for all aspects of nature. The
-            universe we are part and the experiences it provides to realize who
-            we are.
-          </p>
-        </div>
+        {props.headline && (
+          <div className="mx-auto max-w-2xl md:text-center">
+            <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
+              Activities that are inspired by nature
+            </h2>
+            <p className="mt-4 text-lg tracking-tight text-slate-700">
+              At Paz we have deep appreciation for all aspects of nature. The
+              universe we are part and the experiences it provides to realize
+              who we are.
+            </p>
+          </div>
+        )}
         <FeaturesMobile />
         <FeaturesDesktop />
       </Container>
