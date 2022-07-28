@@ -21,22 +21,28 @@ export function TextWithImage(props) {
     left = <Text />
   }
 
-  return (
-    <Container className="">
-      <section
-        className="overflow-hidden bg-white py-24 md:py-32"
-        style={{
-          backgroundImage: 'url("flex-ui-assets/elements/pattern-white.svg")',
-          backgroundPosition: 'center',
-        }}
-      >
-        <div className="container mx-auto px-4">
-          <div className="-mx-4 flex flex-wrap lg:items-center">
-            {left}
-            {right}
-          </div>
+  let withNoYMargin = props.withNoYMargin || false
+
+  let contents = (
+    <section
+      className={`overflow-hidden bg-white ${
+        !withNoYMargin && 'py-24 md:py-32'
+      }`}
+      style={{
+        backgroundImage: 'url("flex-ui-assets/elements/pattern-white.svg")',
+        backgroundPosition: 'center',
+      }}
+    >
+      <div className="container mx-auto px-4">
+        <div className="-mx-4 flex flex-wrap lg:items-center">
+          {left}
+          {right}
         </div>
-      </section>
-    </Container>
+      </div>
+    </section>
   )
+
+  if (props.containerLess) return contents
+
+  return <Container className="">{contents}</Container>
 }

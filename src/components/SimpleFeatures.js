@@ -39,7 +39,7 @@ export function SimpleFeatures(props) {
                   </svg>
                 </div>
                 <h3 className="mb-3 text-xl font-bold leading-tight md:text-2xl">
-                  Measure your performance
+                  Wellness
                 </h3>
                 <p className="text-coolGray-500 font-medium">
                   Stay connected with your team and make quick decisions
@@ -64,7 +64,7 @@ export function SimpleFeatures(props) {
                   </svg>
                 </div>
                 <h3 className="mb-3 text-xl font-bold leading-tight md:text-2xl">
-                  Custom analytics
+                  Nature
                 </h3>
                 <p className="text-coolGray-500 font-medium">
                   Get a complete sales dashboard in the cloud. See activity,
@@ -89,7 +89,7 @@ export function SimpleFeatures(props) {
                   </svg>
                 </div>
                 <h3 className="mb-3 text-xl font-bold leading-tight md:text-2xl">
-                  Team Management
+                  Adventure
                 </h3>
                 <p className="text-coolGray-500 font-medium">
                   Our calendar lets you know what is happening with customer and

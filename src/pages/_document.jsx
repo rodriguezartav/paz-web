@@ -56,7 +56,7 @@ export default function Document(props) {
 
   return (
     <Html
-      className="h-full scroll-smooth bg-white antialiased [font-feature-settings:'ss01'] dark:bg-slate-900"
+      className="h-full scroll-smooth bg-white antialiased [font-feature-settings:'ss01'] "
       lang="en"
     >
       <Head>

@@ -25,7 +25,7 @@ const logos = [
 
 export function Hero() {
   return (
-    <Container className="pb-16 text-left ">
+    <Container className=" text-left ">
       <section
         className="relative overflow-hidden bg-white"
         style={{
@@ -33,7 +33,7 @@ export function Hero() {
           backgroundPosition: 'center',
         }}
       >
-        <div className="py-20 pb-28">
+        <div className="py-20">
           <div className="container mx-auto px-4">
             <div className="-mx-4 flex flex-wrap xl:items-center">
               <div className="mb-16 w-full px-4 md:mb-0 md:w-1/2">

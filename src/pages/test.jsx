@@ -27,9 +27,10 @@ export default function Home() {
       <Header />
       <Hero />
 
+      <SimpleFeatures />
+
       <TextWithImage right={true} />
 
-      <SimpleFeatures />
       <SecondaryFeatures />
 
       <div className>
