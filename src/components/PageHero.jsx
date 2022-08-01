@@ -9,6 +9,7 @@ import logoStaticKit from '@/images/logos/statickit.svg'
 import logoTransistor from '@/images/logos/transistor.svg'
 import logoTuple from '@/images/logos/tuple.svg'
 import SimpleImage from '@/components/SimpleImage'
+import { TextWithImage } from './TextWithImage'
 
 const logos = [
   [
@@ -25,67 +26,90 @@ const logos = [
 
 export function PageHero({ title, description, label, image, parent }) {
   return (
-    <Container className="pt-14 pb-16 text-center lg:pt-20">
-      <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-indigo-400 sm:text-7xl">
-        {title}
-        <span className="relative whitespace-nowrap text-indigo-500">
-          <svg
-            aria-hidden="true"
-            viewBox="0 0 418 42"
-            className="absolute top-2/3 left-0 h-[0.58em] w-full fill-blue-300/70"
-            preserveAspectRatio="none"
-          >
-            <path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z" />
-          </svg>
-        </span>{' '}
-      </h1>
+    <Container className="">
+      <div className="px-10 py-14 pb-6  text-left ">
+        <div className="">
+          <div className="container mx-auto px-4">
+            <div className="-mx-4 flex flex-wrap xl:items-center">
+              <div className="mb-16 w-full px-4 md:mb-0 md:w-1/2">
+                <span className="rounded-9xl mb-4 inline-block rounded-md bg-indigo-500 py-px px-2 text-xs uppercase leading-5 text-white">
+                  {parent}
+                </span>
+                <h1 className="mb-6 text-3xl font-bold leading-tight tracking-tight text-indigo-400 md:text-5xl lg:text-6xl">
+                  {title}
+                </h1>
+                <p className="text-coolGray-500 mb-8 pl-3 text-lg font-medium md:text-xl">
+                  {description}
+                </p>
+                <div className="flex justify-start gap-x-6 pt-2">
+                  <Button
+                    color="indigo"
+                    className=" hover:bg-indigo-500"
+                    variant="outline"
+                    href="/register"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6 stroke-indigo-500 hover:fill-white hover:stroke-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                      />
+                    </svg>
+                    <span className="pl-2">10</span>
+                  </Button>
+                  <Button
+                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    variant="outline"
+                    className=" hover:bg-indigo-600"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6 hover:stroke-indigo-50"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                      />
+                    </svg>
+                    <span className="pl-2">10</span>
+                  </Button>
+                </div>
+              </div>
+              <div className="w-full px-4 md:w-1/2">
+                <div className="relative mx-auto max-w-max md:mr-0">
+                  <img
+                    className="absolute -left-14 -top-12 z-10 w-28 md:w-auto"
+                    src="flex-ui-assets/elements/circle3-green.svg"
+                    alt=""
+                  />
+                  <img
+                    className="absolute -right-7 -bottom-8 z-10 w-28 md:w-auto"
+                    src="flex-ui-assets/elements/dots3-yellow.svg"
+                    alt=""
+                  />
 
-      <div className="w-max-lg mx-auto mt-5">
-        <p className="mx-auto mt-6 max-w-2xl text-lg font-medium tracking-tight text-slate-700">
-          {description}
-        </p>
-      </div>
-
-      <section
-        className="overflow-hidden bg-white py-12 "
-        style={{
-          backgroundImage: 'url("flex-ui-assets/elements/pattern-white.svg")',
-          backgroundPosition: 'center',
-        }}
-      >
-        <div className="container mx-auto px-4">
-          <div className="relative mx-auto max-w-max ">
-            <img
-              className="absolute -left-8 -top-8 z-10 w-28 text-yellow-400 md:w-auto"
-              src="flex-ui-assets/elements/circle3-green.svg"
-              alt=""
-            />
-            <img
-              className="absolute -right-7 -bottom-8 z-10 w-28 text-blue-500 md:w-auto"
-              src="flex-ui-assets/elements/dots3-yellow.svg"
-              alt=""
-            />
-            <img src="../flex-ui-assets/images/features/stock3.png" alt="" />
+                  <SimpleImage
+                    className=" relative rounded-4xl"
+                    src={image}
+                    width={800}
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-
-      <div className="flex justify-center gap-x-6">
-        <Button color="indigo" href="/register">
-          Podcast
-        </Button>
-        <Button
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-          variant="outline"
-        >
-          <svg
-            aria-hidden="true"
-            className="h-3 w-3 flex-none fill-blue-600 group-active:fill-current"
-          >
-            <path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z" />
-          </svg>
-          <span className="ml-3">Watch video</span>
-        </Button>
       </div>
     </Container>
   )

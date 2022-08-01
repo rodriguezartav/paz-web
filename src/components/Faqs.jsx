@@ -6,55 +6,34 @@ import backgroundImage from '@/images/background-faqs.jpg'
 const faqs = [
   [
     {
-      question: 'Does TaxPal handle VAT?',
+      question: 'How is Paz an AirBnb?',
       answer:
-        'Well no, but if you move your company offshore you can probably ignore it.',
+        'We started and continue to partner with AirBnb to offer our services because their new concept of renting superb exclusive locations that innovates in design fits very well with our vision.',
     },
     {
-      question: 'Can I pay for my subscription via purchase order?',
-      answer: 'Absolutely, we are happy to take your money in all forms.',
+      question: 'How is Paz a resort?',
+      answer:
+        'Our amenities, activities and healthy meal options can turn your trip into an all inclusive private resort vacation like you have never seen.',
     },
     {
-      question: 'How do I apply for a job at TaxPal?',
+      question: 'How is Paz a wellness retreat center?',
       answer:
-        'We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.',
+        "We, personally, spend our live dedicated to the inner arts of Maharisi's Self Realization, Vipassana and Natural Meditation, Shaoling Qi gong and Bahkti and Jhana Yoga. Working for Paz and it's vision - which is above us personally - comes naturally. We enjoy meeting people, sharing experiences and wisdom.",
     },
   ],
   [
     {
-      question: 'What was that testimonial about tax fraud all about?',
+      question: 'Are the activities and other services optional?',
       answer:
-        'TaxPal is just a software application, ultimately your books are your responsibility.',
+        "Yes, you can choose exactly what you need and in the days you need it. Even if you don't pick any of out services our concierge service will help you book and enjoy activities on your own. ",
     },
     {
-      question:
-        'TaxPal sounds horrible but why do I still feel compelled to purchase?',
+      question: 'Can I organize my retreat at Paz',
       answer:
-        'This is the power of excellent visual design. You just can’t resist it, no matter how poorly it actually functions.',
-    },
-    {
-      question:
-        'I found other companies called TaxPal, are you sure you can use this name?',
-      answer:
-        'Honestly not sure at all. We haven’t actually incorporated or anything, we just thought it sounded cool and made this website.',
+        'Yes, you can use our infrastructure to host your retreat, pricing is straigforward. Simply rent the property. We ask first time teachers and coaches to arrive 2 days in advance for training and alignment with our standards.',
     },
   ],
-  [
-    {
-      question: 'How do you generate reports?',
-      answer:
-        'You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.',
-    },
-    {
-      question: 'Can we expect more inventory features?',
-      answer: 'In life it’s really better to never expect anything at all.',
-    },
-    {
-      question: 'I lost my password, how do I get into my account?',
-      answer:
-        'Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.',
-    },
-  ],
+  [],
 ]
 
 export function Faqs() {

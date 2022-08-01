@@ -10,7 +10,7 @@ import logoTransistor from '@/images/logos/transistor.svg'
 import logoTuple from '@/images/logos/tuple.svg'
 import SimpleImage from '@/components/SimpleImage'
 
-export default function SideImage() {
+export default function SideImage({ image }) {
   return (
     <div className="w-full px-4 md:w-1/2">
       <div className="relative mx-auto max-w-max md:mr-0">
@@ -20,11 +20,11 @@ export default function SideImage() {
           alt=""
         />
         <img
-          className="absolute -right-7 -bottom-8 z-10 w-28 text-blue-500 md:w-auto"
+          className="absolute -right-2 -bottom-8 z-10 w-28 text-blue-500 md:w-auto"
           src="flex-ui-assets/elements/dots3-yellow.svg"
           alt=""
         />
-        <img src="../flex-ui-assets/images/features/stock2.png" alt="" />
+        <SimpleImage className="rounded-2xl" src={image} width={800} />
       </div>
     </div>
   )

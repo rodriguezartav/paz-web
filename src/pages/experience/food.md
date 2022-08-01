@@ -1,8 +1,8 @@
 ---
-title: The Beach House
-description: It feels like being in a National Park.
-image: /house/living/master.jpeg
-parent: Property
+title: Experience Health
+description: Quidem magni aut exercitationem maxime rerum eos.
+parent: Experience
+image: /spa/temazcal/master.jpg
 ---
 
 ## A house worthy of its location

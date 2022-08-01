@@ -21,15 +21,14 @@ export function CallToAction() {
       <Container className="relative">
         <div className="mx-auto max-w-lg text-center">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
-            Start you adventure today
+            We just opened
           </h2>
           <p className="mt-4 text-lg tracking-tight text-white">
-            Follow our podcast via email or whatsapp and get free access to our
-            knowledge base, its the best way to get to know Paz and decide if
-            you would like to visit.
+            The Spa and Temples are operational but taking their final touches.
+            Take advantange of our reduced prices for a very limited time.
           </p>
           <Button href="/register" color="white" className="mt-10">
-            Get 6 months free
+            Prices discounted 30%
           </Button>
         </div>
       </Container>

@@ -1,8 +1,8 @@
 import Head from 'next/head'
 
+import { Footer } from '@/components/Footer'
 import { CallToAction } from '@/components/CallToAction'
 import { Faqs } from '@/components/Faqs'
-import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { Pricing } from '@/components/Pricing'
@@ -21,7 +21,10 @@ import { SimpleFeatures } from '@/components/SimpleFeatures'
 
 import { useCallback, useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
-import { Container } from './Container'
+import { Container } from '@/components/Container'
+import { Property } from '@/components/Header/Property'
+import { Experience } from '@/components/Header/Experience'
+import { Guides } from '@/components/Header/Guides'
 
 const navigation = [
   {
@@ -133,7 +136,7 @@ function useTableOfContents(tableOfContents) {
   return currentSection
 }
 
-export function Layout({
+export function Page({
   children,
   title,
   tableOfContents,
@@ -161,39 +164,35 @@ export function Layout({
     }
     return section.children.findIndex(isActive) > -1
   }
+
   return (
     <>
       <Header />
+      <article>
+        <header>
+          <PageHero
+            parent={parent}
+            image={image}
+            title={title}
+            description={description}
+          />
+        </header>
 
-      <PageHero
-        parent={parent}
-        image={image}
-        title={title}
-        description={description}
-      />
-
-      <Container>
-        <div className="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
-          <article>
-            {(title || section) && (
-              <header className="mb-9 space-y-1">
-                {section && (
-                  <p className="font-display text-sm font-medium text-sky-500">
-                    {section.title}
-                  </p>
-                )}
-                {title && (
-                  <h1 className="font-display text-3xl tracking-tight text-slate-900 dark:text-white">
-                    {title}
-                  </h1>
-                )}
-              </header>
-            )}
+        <Container>
+          <div className="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
             <Prose>{children}</Prose>
-          </article>
-        </div>
+          </div>
+        </Container>
+      </article>
+
+      <Container className="my-20 mb-20 rounded-md border-2 bg-stone-100">
+        {parent && parent == 'Property' && <Property />}
+
+        {parent && parent == 'Experience' && <Experience />}
+
+        {parent && parent == 'Guides' && <Guides />}
       </Container>
-      <Gallery />
+      <Footer />
     </>
   )
 }

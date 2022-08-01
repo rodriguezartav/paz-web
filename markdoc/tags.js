@@ -1,7 +1,8 @@
 import { Callout } from '@/components/Callout'
 import { QuickLink, QuickLinks } from '@/components/QuickLinks'
-
+import { PageHero } from '@/components/PageHero'
 import { ImageForMd } from '@/components/ImagesForMd'
+import { SpecsWithImage } from '@/components/SpecsWithImage'
 
 const tags = {
   callout: {
@@ -42,6 +43,21 @@ const tags = {
       href: { type: String },
     },
   },
+
+  specsWithImage: {
+    selfClosing: true,
+    render: SpecsWithImage,
+    attributes: {
+      title: { type: String },
+      description: { type: String },
+      feature1: { type: String },
+      feature2: { type: String },
+      feature3: { type: String },
+      feature4: { type: String },
+      images: { type: String },
+    },
+  },
+
   'quick-links': {
     render: QuickLinks,
   },

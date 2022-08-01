@@ -1,5 +1,6 @@
 {
   "extends": "next/core-web-vitals",
+  "exclude": ["node_modules", ".next"],
   "rules": {
     // Other rules
     "@next/next/no-img-element": "off"

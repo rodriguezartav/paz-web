@@ -115,10 +115,10 @@ export function Pricing() {
         </div>
         <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
           <Plan
-            name="Personal"
+            name="Community Retreat"
             price="$100 / night"
-            description="Join one of our community monthly retreats"
-            href="/register"
+            description="All inclusive meditation course"
+            href="#"
             features={[
               'Shared accomodations in 2,3 or 4 guests rooms',
               'Choose from 3 to 7 nights',
@@ -129,33 +129,33 @@ export function Pricing() {
           />
           <Plan
             featured
-            name="Family & Friends DIY"
-            price="$3699 / week"
-            description="Rent Paz santuary with all activities included for as little as $66/guest/night"
-            href="/register"
-            features={[
-              'Up to 8 guests',
-              '$66/guest/night with 8 guests',
-              'Bring your own food - fully stocked kitcken',
-              'Optional Catering Service availabe for $300/day',
-              'Mix & Match Catering and DIY Days',
-              'Included 2-3 hour of activities every day',
-              'Surfing, Hiking, Spa, Science & Wellness',
-              'Transportation not included',
-            ]}
-          />
-          <Plan
-            name="Enterprise or All-Inclusive Families"
+            name="Full Week All-Inclusive"
             price="$899 / guest"
             description="Customized aventure & wellness programs"
             href="/register"
             features={[
-              'Up to 8 guests',
+              'Week long Retreat',
+              'Available for 4 to 12 guests',
               'Catering Service with 3 meals',
               'Coffee, Te & Fruit Station',
-              'Included daily activities',
+              'All activities included',
               'Surfing, Hiking, Spa, Science & Wellness',
               'Support with Travel Reservations',
+            ]}
+          />
+          <Plan
+            name="Family & Friends DIY"
+            price="$2100 / week"
+            description="Rent Paz santuary for your group"
+            href="/register"
+            features={[
+              'Up to 6 guests',
+              'Extra guests $25 / person / night',
+              'Bring your own food + fully stocked kitcken',
+              'Optional Catering Service availabe for $300/day',
+              'Mix & Match Catering and DIY Days',
+              'Surfing, Hiking, Spa, Science & Wellness',
+              'All activites for $50 / person',
             ]}
           />
         </div>

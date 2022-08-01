@@ -1,6 +1,8 @@
 ---
-title: Neuralink integration
-description: Quidem magni aut exercitationem maxime rerum eos.
+title: Self Realization for Entrepreneurs
+pageTitle: CacheAdvance - Never miss the cache again.
+description: Cache every single thing your app could ever do ahead of time, so your code never even has to run at all.
+parent: Realization
 ---
 
 Quasi sapiente voluptates aut minima non doloribus similique quisquam. In quo expedita ipsum nostrum corrupti incidunt. Et aut eligendi ea perferendis.

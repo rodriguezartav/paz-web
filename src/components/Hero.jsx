@@ -9,6 +9,8 @@ import logoStaticKit from '@/images/logos/statickit.svg'
 import logoTransistor from '@/images/logos/transistor.svg'
 import logoTuple from '@/images/logos/tuple.svg'
 import SimpleImage from '@/components/SimpleImage'
+import { useState } from 'react'
+import useInterval from '@/utils/useInterval'
 
 const logos = [
   [
@@ -23,7 +25,28 @@ const logos = [
   ],
 ]
 
+const quotes = [
+  "what's important in life",
+  'how to live from the heart',
+  'who we always been',
+  'that feeling of peace',
+  'we are nature',
+]
+
 export function Hero() {
+  const [count, setCount] = useState(0)
+  // Dynamic delay
+  // ON/OFF
+
+  useInterval(
+    () => {
+      // Your custom logic here
+      if (count < quotes.length - 1) setCount(count + 1)
+    },
+    // Delay in milliseconds or null to stop it
+    4000
+  )
+
   return (
     <Container className=" text-left ">
       <section
@@ -33,14 +56,36 @@ export function Hero() {
           backgroundPosition: 'center',
         }}
       >
-        <div className="py-20">
+        <div className="py-4 sm:py-20 ">
           <div className="container mx-auto px-4">
             <div className="-mx-4 flex flex-wrap xl:items-center">
               <div className="mb-16 w-full px-4 md:mb-0 md:w-1/2">
-                <span className="rounded-9xl mb-4 inline-block bg-violet-500 py-px px-2 text-xs uppercase leading-5 text-white">
-                  Header
+                <span className="rounded-9xl mb-4 inline-block bg-indigo-500 py-px px-2 text-xs uppercase leading-5 text-white">
+                  Home
                 </span>
-                <h1 className="mx-auto max-w-4xl font-display text-3xl font-medium tracking-tight text-indigo-400 sm:text-6xl">
+
+                <div className="mt-4 block w-full px-4 sm:hidden md:w-1/2">
+                  <div className="relative mx-auto max-w-max md:mr-0">
+                    <img
+                      className="absolute -right-14 -top-12 z-10 w-28 md:w-auto"
+                      src="flex-ui-assets/elements/circle3-green.svg"
+                      alt=""
+                    />
+                    <img
+                      className="absolute -left-7 -bottom-8 z-10 w-28 md:w-auto"
+                      src="flex-ui-assets/elements/dots3-yellow.svg"
+                      alt=""
+                    />
+
+                    <SimpleImage
+                      className="rounded-4xl"
+                      src={'/house/living/master.jpeg'}
+                      width={1000}
+                    />
+                  </div>
+                </div>
+
+                <h1 className="mx-auto mt-16 max-w-4xl font-display text-3xl font-medium tracking-tight text-indigo-400 sm:mt-0 sm:text-6xl">
                   A place{' '}
                   <span className="relative whitespace-nowrap text-indigo-500">
                     <svg
@@ -53,21 +98,35 @@ export function Hero() {
                     </svg>
                     <span className="relative">to remember</span>
                   </span>{' '}
-                  how to live from the heart
+                  <span className="block text-2xl sm:mt-5 sm:text-3xl">
+                    {quotes[count]}
+                  </span>
                 </h1>
 
-                <p className="text-coolGray-500 mb-8 text-lg font-medium md:text-xl">
-                  We’re different. Flex is the only saas business platform that
-                  lets you run your business on one platform, seamlessly across
-                  all digital channels.
+                <p className="mb-8 py-5 text-lg font-medium text-slate-600 transition-all sm:my-0 md:text-xl">
+                  <span className="font-bold text-indigo-500">Paz</span> sits in
+                  the middle between a{' '}
+                  <span className="font-bold text-red-700"> airbnb</span> and a{' '}
+                  <span className="font-bold text-stone-500">resort</span>. An
+                  exclusive vacation with excelent services in an unbelivable
+                  location.{' '}
+                  <span className="font-bold text-indigo-500">
+                    Meals & Drinks included
+                  </span>
+                  <br />
+                  <span className="mt-3 block">
+                    Flying solo? Attend our{' '}
+                    <span className="font-bold text-indigo-500">Retreat</span>{' '}
+                  </span>
                 </p>
+
                 <div className="flex flex-wrap">
                   <div className="w-full py-1 md:mr-4 md:w-auto md:py-0">
                     <a
-                      className="inline-block w-full rounded-md border border-violet-500 bg-violet-500 py-5 px-7 text-center text-base font-medium leading-4 text-violet-50 shadow-sm hover:bg-violet-600 focus:ring-2 focus:ring-violet-500 focus:ring-opacity-50 md:text-lg"
+                      className="inline-block w-full rounded-md border border-indigo-500 bg-indigo-500 py-5 px-7 text-center text-base font-medium leading-4 text-indigo-50 shadow-sm hover:bg-indigo-600 focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50 md:text-lg"
                       href="#"
                     >
-                      Request a Demo
+                      Request a Call
                     </a>
                   </div>
                   <div className="w-full py-1 md:w-auto md:py-0">
@@ -75,12 +134,12 @@ export function Hero() {
                       className="text-coolGray-800 hover:bg-coolGray-100 focus:ring-coolGray-200 border-coolGray-200 inline-block w-full rounded-md border bg-white py-5 px-7 text-center text-base font-medium leading-4 shadow-sm focus:ring-2 focus:ring-opacity-50 md:text-lg"
                       href="#"
                     >
-                      Sign Up
+                      Chat in Whatsapp
                     </a>
                   </div>
                 </div>
               </div>
-              <div className="w-full px-4 md:w-1/2">
+              <div className="hidden w-full px-4 sm:block md:w-1/2">
                 <div className="relative mx-auto max-w-max md:mr-0">
                   <img
                     className="absolute -left-14 -top-12 z-10 w-28 md:w-auto"
@@ -92,10 +151,11 @@ export function Hero() {
                     src="flex-ui-assets/elements/dots3-yellow.svg"
                     alt=""
                   />
-                  <img
-                    className="rounded-7xl relative"
-                    src="flex-ui-assets/images/headers/header.jpg"
-                    alt=""
+
+                  <SimpleImage
+                    className="rounded-4xl"
+                    src={'/house/living/master.jpeg'}
+                    width={1000}
                   />
                 </div>
               </div>

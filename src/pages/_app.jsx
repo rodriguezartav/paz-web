@@ -68,13 +68,12 @@ export default function App({ Component, pageProps }) {
       <>
         <Head>
           <title>{pageTitle}</title>
-          {description && (
-            <meta name="description" content={description} image={image} />
-          )}
+          {description && <meta name="description" content={description} />}
         </Head>
         <Layout
           parent={parent}
           title={title}
+          image={image}
           description={description}
           tableOfContents={tableOfContents}
         >

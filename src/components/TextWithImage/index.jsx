@@ -14,11 +14,11 @@ import Text from './Text'
 import SideImage from './SideImage'
 
 export function TextWithImage(props) {
-  let right = <Text />
-  let left = <SideImage />
+  let right = <Text {...props} />
+  let left = <SideImage {...props} />
   if (props.right) {
-    right = <SideImage />
-    left = <Text />
+    right = <SideImage {...props} />
+    left = <Text {...props} />
   }
 
   let withNoYMargin = props.withNoYMargin || false
@@ -26,17 +26,28 @@ export function TextWithImage(props) {
   let contents = (
     <section
       className={`overflow-hidden bg-white ${
-        !withNoYMargin && 'py-24 md:py-32'
+        !withNoYMargin && 'py-6 md:py-20'
       }`}
       style={{
         backgroundImage: 'url("flex-ui-assets/elements/pattern-white.svg")',
         backgroundPosition: 'center',
       }}
     >
-      <div className="container mx-auto px-4">
-        <div className="-mx-4 flex flex-wrap lg:items-center">
-          {left}
-          {right}
+      <div className="hidden sm:block">
+        <div className="container mx-auto px-4">
+          <div className="-mx-4 flex flex-wrap lg:items-center">
+            {left}
+            {right}
+          </div>
+        </div>
+      </div>
+
+      <div className="block sm:hidden">
+        <div className="container mx-auto px-4">
+          <div className="-mx-4 flex flex-wrap lg:items-center">
+            <SideImage {...props} />
+            <Text {...props} />
+          </div>
         </div>
       </div>
     </section>
