@@ -19,7 +19,7 @@ export default function Register() {
         </Link>
         <div className="mt-20">
           <h2 className="text-lg font-semibold text-gray-900">
-            We'll be taking reservations very soon
+            We will be taking reservations very soon
           </h2>
           <p className="mt-2 text-sm text-gray-700">
             Please email roberto@paz.co.cr for more information
