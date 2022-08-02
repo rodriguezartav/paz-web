@@ -7,6 +7,7 @@ export function ImageSlider({ images }) {
         {images.map((item) => {
           return (
             <SimpleImage
+              key={item.src}
               text={
                 !item.text
                   ? null

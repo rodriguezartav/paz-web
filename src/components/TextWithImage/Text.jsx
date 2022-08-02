@@ -23,7 +23,11 @@ export default function Text({ title, description, label, button, children }) {
       </h1>
       <p className="mb-6 text-lg font-medium text-stone-500 md:text-xl">
         {textParts.map((item) => {
-          return <span className="block mt-3">{item}</span>
+          return (
+            <span key={item} className="mt-3 block">
+              {item}
+            </span>
+          )
         })}
       </p>
       {button && (
