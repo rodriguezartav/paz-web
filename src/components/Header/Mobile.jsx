@@ -54,7 +54,7 @@ export function Mobile() {
             <div className="mt-6">
               <nav className="grid grid-cols-1 gap-7">
                 {propertyMap.map((property) => (
-                  <Link key={property.name} href={`/property/${property.href}`}>
+                  <Link key={property.name} href={`${property.href}`}>
                     <a className="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
                       <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white">
                         <property.icon className="h-6 w-6" aria-hidden="true" />
