@@ -143,9 +143,11 @@ export function Experience() {
             <h3 className="text-sm font-medium uppercase tracking-wide text-gray-500">
               All inclusive meals
             </h3>
+
             <ul role="list" className="mt-6 space-y-6">
-              {mealMap.map((post) => (
-                <li key={post.id} className="flow-root">
+              {mealMap.map((post) => {
+                return null
+                ;<li key={post.id} className="flow-root">
                   <Link href={post.href}>
                     <div className="-m-3 flex rounded-lg p-3 hover:bg-gray-100">
                       <div className="hidden flex-shrink-0 sm:block">
@@ -166,7 +168,7 @@ export function Experience() {
                     </div>
                   </Link>
                 </li>
-              ))}
+              })}
             </ul>
           </div>
         </div>

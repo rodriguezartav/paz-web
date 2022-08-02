@@ -114,14 +114,16 @@ function Feature({ feature, isActive, className, ...props }) {
       </div>
       <h3
         className={clsx(
-          'mt-6 text-sm font-medium',
+          'mt-6 text-left text-sm font-medium',
           isActive ? 'text-blue-600' : 'text-slate-600'
         )}
       >
         {feature.parent}
       </h3>
-      <p className="mt-2 font-display text-xl text-slate-900">{feature.name}</p>
-      <p className="mt-4  mb-10 text-sm text-slate-600">
+      <p className="mt-2 text-left font-display text-xl text-slate-900">
+        {feature.name}
+      </p>
+      <p className="mt-4  mb-10 text-left text-sm text-slate-600">
         {feature.description}
       </p>
     </div>
@@ -130,7 +132,7 @@ function Feature({ feature, isActive, className, ...props }) {
 
 function FeaturesMobile(props) {
   return (
-    <div className="-mx-4 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6 lg:hidden">
+    <div className=" flex flex-col gap-y-10 overflow-hidden px-6  sm:px-6 lg:hidden">
       {props.features.map((feature) => (
         <div key={feature.name}>
           <Feature feature={feature} className="mx-auto max-w-2xl" isActive />
@@ -177,7 +179,7 @@ export function HorizontalFeatures(props) {
       className="  lg:pb-22   pb-4"
     >
       {props.headline && (
-        <div className="mx-auto max-w-2xl md:text-center">
+        <div className="mx-auto max-w-2xl md:text-left">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
             Activities that are inspired by nature
           </h2>

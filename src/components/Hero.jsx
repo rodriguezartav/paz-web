@@ -120,6 +120,7 @@ export function Hero() {
                   </span>
                 </p>
 
+                {/* 
                 <div className="flex flex-wrap">
                   <div className="w-full py-1 md:mr-4 md:w-auto md:py-0">
                     <a
@@ -138,6 +139,7 @@ export function Hero() {
                     </a>
                   </div>
                 </div>
+*/}
               </div>
               <div className="hidden w-full px-4 sm:block md:w-1/2">
                 <div className="relative mx-auto max-w-max md:mr-0">

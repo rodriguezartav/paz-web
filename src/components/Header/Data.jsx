@@ -26,30 +26,26 @@ export const wellnessMap = [
   {
     name: 'Temazcal & Polar Pool',
     href: '/experience/wellness#temazcal',
-    description:
-      'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
+    description: '',
     icon: InformationCircleIcon,
   },
   {
     name: 'Intuitive Detox Workouts',
     href: '/experience/wellness#yoga',
-    description:
-      'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
+    description: '',
     icon: BriefcaseIcon,
   },
   {
     name: 'Natural Meditations',
     href: '/experience/wellness#meditation',
-    description:
-      'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
+    description: '',
     icon: OfficeBuildingIcon,
   },
 
   {
     name: 'Self Realization & Self-Healing',
     href: '/experience/wellness#realization',
-    description:
-      'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
+    description: '',
     icon: NewspaperIcon,
   },
 ]
@@ -59,35 +55,34 @@ export const adventureMap = [
     name: 'Surf & Paddle School',
     href: '/experience/adventure#surf',
     description:
-      'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
+      'Learn or improve your surfing in front of our house with ISA certified instructors and surfboards with enhanced safety for begginers',
     icon: UserGroupIcon,
   },
   {
     name: 'Wildlife & Hiking Tours',
     href: '/experience/adventure#wildlife',
     description:
-      'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
+      '800 species of tress, 400 specifes birds, 90 species of mammals and the most amazing insects in a very small protected area is a show to be seen.',
     icon: GlobeAltIcon,
   },
   {
     name: 'Pristine Beach Exploration',
     href: '/experience/adventure#beach',
     description:
-      'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
+      'The feeling of walking alone on a pristine beach with huge primary trees, jumping on tide pools and swimming on its warm seas... you have to feel it',
     icon: GlobeAltIcon,
   },
   {
     name: 'Fireside Science Talks',
     href: '/experience/adventure#whales',
     description:
-      'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
+      "There is a tread that connects everything, from the largest clusters of galazies to the subatomic particles. Let's talk about it.",
     icon: BookmarkAltIcon,
   },
   {
     name: 'Whales, Dolfines and Corcovado',
     href: '/experience/adventure#corcovado',
-    description:
-      'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
+    description: '',
     icon: DesktopComputerIcon,
   },
 ]
@@ -98,8 +93,7 @@ export const mealMap = [
     name: 'Traditional Wood Stove, BBQ and Oven ',
     href: '/experience/food/meals#drinks',
     icon: ChartBarIcon,
-    description:
-      'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
+    description: '',
     image:
       'https://images.unsplash.com/photo-1558478551-1a378f63328e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2849&q=80',
   },
@@ -108,8 +102,7 @@ export const mealMap = [
     name: 'Healthy Meals, Drinks and Snaks',
     href: '/experience/food/meals#food',
     icon: ChartBarIcon,
-    description:
-      'Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.',
+    description: '',
     image:
       'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2300&q=80',
   },
@@ -125,7 +118,7 @@ export const propertyMap = [
   {
     name: 'Beach House & Cabinas',
     description:
-      'Get a better understanding of where your traffic is coming from.',
+      'The house is 50 steps from the sand surrounded by primary forest. Designed with huge screened windows to observe and be in nature all day long.',
     href: '/property/beach-house',
     image: '/house/living/master.jpeg',
     icon: ChartBarIcon,
@@ -133,14 +126,15 @@ export const propertyMap = [
 
   {
     name: 'Spa Shamanic',
-    description: "Your customers' data will be safe and secure.",
+    description: `The goal of the ancestral "Spa" is to release tension and stress beyond the physical layers of the body assited by mother earth.`,
     href: '/property/spa-shamanic',
     image: '/spa/temazcal/master.jpg',
     icon: ShieldCheckIcon,
   },
   {
     name: 'Beach Club',
-    description: 'Speak directly to your customers in a more meaningful way.',
+    description:
+      'Imagine the clasical beach club with hammocks, beach chairs and comfy decks with one key difference. It is all for yourself in a pristine beach',
     href: '/property/beach-club',
     image: '/lounge/master.jpg',
     icon: CursorClickIcon,
@@ -148,7 +142,7 @@ export const propertyMap = [
 
   {
     name: 'Practice Temple',
-    description: "Connect with third-party tools that you're already using.",
+    description: "Movement, Breathing, Relaxing - and lot's of science.",
     href: '/property/practice-temple',
     image: '/temple/master.jpg',
     icon: ViewGridIcon,

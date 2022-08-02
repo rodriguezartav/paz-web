@@ -118,7 +118,7 @@ export function Pricing() {
             name="Community Retreat"
             price="$100 / night"
             description="All inclusive meditation course"
-            href="#"
+            href="/reservations"
             features={[
               'Shared accomodations in 2,3 or 4 guests rooms',
               'Choose from 3 to 7 nights',
@@ -132,7 +132,7 @@ export function Pricing() {
             name="Full Week All-Inclusive"
             price="$899 / guest"
             description="Customized aventure & wellness programs"
-            href="/register"
+            href="/reservations"
             features={[
               'Week long Retreat',
               'Available for 4 to 12 guests',
@@ -147,7 +147,7 @@ export function Pricing() {
             name="Family & Friends DIY"
             price="$2100 / week"
             description="Rent Paz santuary for your group"
-            href="/register"
+            href="/reservations"
             features={[
               'Up to 6 guests',
               'Extra guests $25 / person / night',
