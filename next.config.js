@@ -1,36 +1,16 @@
-const withMDX = require("@next/mdx")({
-  extension: /\.mdx?$/,
-});
-module.exports = withMDX({
-  i18n: {
-    // These are all the locales you want to support in
-    // your application
-    locales: ["es", "en"],
-    // This is the default locale you want to be used when visiting
-    // a non-locale prefixed path e.g. `/hello`
-    defaultLocale: "es",
-  },
-  async redirects() {
-    return [
-      {
-        source: "/libro",
-        destination: "/posts/yosoyesto",
-        permanent: true,
-      },
+const withMarkdoc = require('@markdoc/next.js')
 
-      {
-        source: "/play",
-        destination:
-          "https://open.spotify.com/artist/5iR7YvWgvzgv3JIc3b0TvK?si=7YbuSAOBRgGCv-cojyuaBg",
-        permanent: true,
-      },
-    ];
-  },
-  pageExtensions: ["js", "jsx", "mdx"],
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   reactStrictMode: true,
-  eslint: {
-    // Warning: This allows production builds to successfully complete even if
-    // your project has ESLint errors.
-    ignoreDuringBuilds: true,
+  pageExtensions: ['js', 'jsx', 'md'],
+
+  experimental: {
+    newNextLinkBehavior: true,
+    images: {
+      allowFutureImage: true,
+    },
   },
-});
+}
+
+module.exports = withMarkdoc()(nextConfig)
