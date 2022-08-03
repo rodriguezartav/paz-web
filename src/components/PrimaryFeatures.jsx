@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import Image from 'next/future/image'
+
 import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
@@ -12,36 +12,7 @@ import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
 
 import SimpleImage from '@/components/SimpleImage'
 
-const features = [
-  {
-    title: 'Spa Shamanic',
-    description: `Entropy and Medicine explain 60% of Temazcal, Sauna and Polar Pools benefits.
-    Call it meditational placebo, by using ancestral visualization around fire, Water, Earth and Air you can turn the remainder 40% and feel 1000% better - temporarily.
-    `,
-    image: screenshotPayroll,
-  },
-
-  {
-    title: 'Beach Club',
-    description:
-      'Not your typical beach club in that sense that instead of being surround by people; you will be able to listen the wind and sea. Sharing it only with monkeys, turtles, whales and tropical birds. Hammocks, palms trees, beach chairs, warm turquois water, delicate sunlight...',
-    image: screenshotExpenses,
-  },
-  {
-    title: 'Accomodations',
-    description:
-      'Feels like being in a national park. We spend more than 15 years developing our own architecture and everyone loves it. The say it feels like being outside while being inside. Most importantly, fresh, safe and comfy sleep is part of our experience.',
-    image: screenshotReporting,
-  },
-  {
-    title: 'Wellness & Science Temple',
-    description: `Yoga, meditation, laughting with friends and riding waves can only fill 5% of your day. 
-      A real life transformation requires an updatable framework that unifies everyday life, quantum science, psycology, and self knowledge.\n\r Religions and Spiritism try to build a one-size-fits-all. Our proposal is that you spend life building your own and that we remain supporting friends.`,
-    image: screenshotVatReturns,
-  },
-]
-
-export function PrimaryFeatures() {
+export function PrimaryFeatures({ features }) {
   let [tabOrientation, setTabOrientation] = useState('horizontal')
 
   useEffect(() => {
@@ -63,27 +34,15 @@ export function PrimaryFeatures() {
     <section
       id="features"
       aria-label="Features for running your books"
-      className="relative overflow-hidden bg-indigo-600 pt-20 pb-28 sm:py-32"
+      className="relative mb-10 overflow-hidden bg-gradient-to-bl from-indigo-500 to-cyan-500 pt-20 pb-28 sm:mb-0 sm:py-32"
     >
-      <Image
-        className="absolute top-1/2 left-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
-        src={backgroundImage}
-        alt=""
-        width={2245}
-        height={1636}
-        unoptimized
-      />
       <Container className="relative">
-        <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Fun experiences designed to remember {"what's"} important in life
+        <div className=" md:mx-auto md:text-center xl:max-w-none">
+          <h2 className=" mx-auto max-w-4xl  font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
+            An exclusive vacation with excelent services in an unbelivable
+            location.{' '}
           </h2>
-          <p className="mt-6 text-lg tracking-tight text-blue-100">
-            The feeling you experience at Paz comes from the inspiration to
-            listen and follow our hearts every step of the way. That is the core
-            teaching that is shared throught spa rituals, science and espiritual
-            talks, surfing and relaxation.
-          </p>
+          <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-blue-100"></p>
         </div>
 
         <Tab.Group
@@ -97,11 +56,11 @@ export function PrimaryFeatures() {
                 <Tab.List className="relative z-10 flex gap-x-4 whitespace-nowrap px-4 sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal">
                   {features.map((feature, featureIndex) => (
                     <div
-                      key={feature.title}
+                      key={feature.name}
                       className={clsx(
                         'group relative rounded-full py-1 px-4 lg:rounded-r-none lg:rounded-l-xl lg:p-6',
                         selectedIndex === featureIndex
-                          ? 'bg-white lg:bg-white/10 lg:ring-1 lg:ring-inset lg:ring-white/10'
+                          ? 'border-2 bg-white lg:bg-white/10 lg:ring-1 lg:ring-inset lg:ring-white/10'
                           : 'hover:bg-white/10 lg:hover:bg-white/5'
                       )}
                     >
@@ -115,7 +74,7 @@ export function PrimaryFeatures() {
                           )}
                         >
                           <span className="absolute inset-0 rounded-full lg:rounded-r-none lg:rounded-l-xl" />
-                          {feature.title}
+                          {feature.name}
                         </Tab>
                       </h3>
                       <p
@@ -134,7 +93,7 @@ export function PrimaryFeatures() {
               </div>
               <Tab.Panels className="lg:col-span-7">
                 {features.map((feature) => (
-                  <Tab.Panel key={feature.title} unmount={false}>
+                  <Tab.Panel key={feature.name} unmount={false}>
                     <div className="relative sm:px-6 lg:hidden">
                       <div className="absolute -inset-x-4 top-[-6.5rem] bottom-[-4.25rem] bg-white/10 ring-1 ring-inset ring-white/10 sm:inset-x-0 sm:rounded-t-xl" />
                       <p className="relative mx-auto max-w-2xl text-base text-white sm:text-center">
@@ -142,11 +101,12 @@ export function PrimaryFeatures() {
                       </p>
                     </div>
                     <div className="mt-10 w-full overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
-                      <Image
-                        className="h-full"
+                      <SimpleImage
+                        className="h-full rounded-xl border-2"
                         src={feature.image}
                         alt=""
                         priority
+                        width={1000}
                       />
                     </div>
                   </Tab.Panel>

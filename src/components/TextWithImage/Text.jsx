@@ -18,7 +18,11 @@ export default function Text({ title, description, label, button, children }) {
       <span className="mb-4 mt-4 inline-block rounded-full bg-violet-100 py-px px-2 text-xs font-medium uppercase leading-5 text-violet-500 shadow-sm">
         {label}
       </span>
-      <h1 className="mb-8 text-4xl font-bold leading-tight tracking-tighter text-indigo-400 md:text-5xl">
+      <h1
+        className="mb-8 font-display  text-4xl   leading-tight tracking-tight  text-indigo-400   sm:text-4xl   md:text-5xl  
+      
+      "
+      >
         {title}
       </h1>
       <p className="mb-6 text-lg font-medium text-stone-500 md:text-xl">

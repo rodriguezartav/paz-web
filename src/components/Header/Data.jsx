@@ -24,66 +24,94 @@ import { ChevronDownIcon } from '@heroicons/react/solid'
 
 export const wellnessMap = [
   {
-    name: 'Temazcal & Polar Pool',
+    name: 'Temazcal & Cold Tubs',
     href: '/experience/wellness#temazcal',
-    description: '',
+    description:
+      'Legend says the condor and the eagle meet here in Costa Rica to share knowledge, we fullfill this vision with North Ameerican Temazcal, Andean therapies',
     icon: InformationCircleIcon,
   },
   {
     name: 'Intuitive Detox Workouts',
     href: '/experience/wellness#yoga',
-    description: '',
+    description:
+      'Movement is key to the body and the mind. We may try execersies from arts such as qi gong, tai chi, yoga and functional training.',
     icon: BriefcaseIcon,
   },
   {
     name: 'Natural Meditations',
     href: '/experience/wellness#meditation',
-    description: '',
+    description:
+      'The Spa and Workouts help us relax and cleanse. Nature and its elements helps reach our natural state of awareness from where we recharge and heal.',
     icon: OfficeBuildingIcon,
   },
 
   {
-    name: 'Self Realization & Self-Healing',
+    name: 'Self Realization',
     href: '/experience/wellness#realization',
-    description: '',
+    description:
+      'We are much more than body and minds and we are more than the idea of a soul. Meditation + Self Inquiry can help us realize what we really are.',
     icon: NewspaperIcon,
   },
 ]
 
-export const adventureMap = [
+export const activityMap = [
   {
-    name: 'Surf & Paddle School',
+    parent: 'Wellness',
+    name: 'Wellness',
     href: '/experience/adventure#surf',
+    image: '/house/living/master.jpeg',
     description:
       'Learn or improve your surfing in front of our house with ISA certified instructors and surfboards with enhanced safety for begginers',
     icon: UserGroupIcon,
   },
   {
-    name: 'Wildlife & Hiking Tours',
+    parent: 'Wellness',
+    name: 'Adventure',
+    image: '/house/living/master.jpeg',
     href: '/experience/adventure#wildlife',
     description:
       '800 species of tress, 400 specifes birds, 90 species of mammals and the most amazing insects in a very small protected area is a show to be seen.',
     icon: GlobeAltIcon,
   },
   {
-    name: 'Pristine Beach Exploration',
+    parent: 'Food',
+    name: 'Wellness',
+    image: '/house/living/master.jpeg',
     href: '/experience/adventure#beach',
     description:
       'The feeling of walking alone on a pristine beach with huge primary trees, jumping on tide pools and swimming on its warm seas... you have to feel it',
     icon: GlobeAltIcon,
   },
+]
+
+export const adventureMap = [
   {
-    name: 'Fireside Science Talks',
-    href: '/experience/adventure#whales',
+    name: 'Soul Surfing School',
+    href: '/experience/adventure#surf',
     description:
-      "There is a tread that connects everything, from the largest clusters of galazies to the subatomic particles. Let's talk about it.",
-    icon: BookmarkAltIcon,
+      'Our surf spot in front is called Chill and its perfect to practice soul surfing. The meditative and healing branch of surfing that looks for connection with the wave of life.',
+    icon: UserGroupIcon,
   },
   {
-    name: 'Whales, Dolfines and Corcovado',
-    href: '/experience/adventure#corcovado',
-    description: '',
-    icon: DesktopComputerIcon,
+    name: 'Wildlife Inspiration',
+    href: '/experience/adventure#wildlife',
+    description:
+      'At Paz we look at nature as our guide to a happier life. They live in the natural state of awereness we look up to, our approach is that of student asking the master how it is done. ',
+    icon: GlobeAltIcon,
+  },
+  {
+    name: 'Pristine Beach Exploration',
+    href: '/experience/adventure#beach',
+    description:
+      'We call it free meditation, such a beautiful beach with the forest and so many little secret spots to swim, float or lay on the beach. Its really hard not to be present in the moment.',
+    icon: GlobeAltIcon,
+  },
+  {
+    name: 'Bonefire & BBQ',
+    href: '/experience/adventure#whales',
+    description:
+      'In Costa Rica we love bonefires, bbqs and cooking beans and rice in wood stoves. If we always in vacation we would do them every day. That is why in Paz, since our guests are on vacation, we decided to do them every day!',
+    icon: BookmarkAltIcon,
   },
 ]
 
@@ -123,14 +151,6 @@ export const propertyMap = [
     image: '/house/living/master.jpeg',
     icon: ChartBarIcon,
   },
-
-  {
-    name: 'Spa Shamanic',
-    description: `The goal of the ancestral "Spa" is to release tension and stress beyond the physical layers of the body assited by mother earth.`,
-    href: '/property/spa-shamanic',
-    image: '/spa/temazcal/master.jpg',
-    icon: ShieldCheckIcon,
-  },
   {
     name: 'Beach Club',
     description:
@@ -139,10 +159,17 @@ export const propertyMap = [
     image: '/lounge/master.jpg',
     icon: CursorClickIcon,
   },
-
   {
-    name: 'Practice Temple',
-    description: "Movement, Breathing, Relaxing - and lot's of science.",
+    name: 'Self-Healing Ceremonial Spa',
+    description: `Paz ancestral Spa goes beyond the physical into the emotional and energetic cleansing. Our own version of the Temazcal, mixed with cold water, sound and shamanic meditaitons as one holistic therapy that will empty your internal lougagge`,
+    href: '/property/spa-shamanic',
+    image: '/spa/temazcal/master.jpg',
+    icon: ShieldCheckIcon,
+  },
+  {
+    name: 'Temple of Human Sciences ',
+    description:
+      'Thinking about Science is great, but it does not compare with living it. Lets search toghether for the intersction between science, health and meditation while upgrading our knowledge about the universe, nature and quantum physics all in a spiritual setting in the jungle.',
     href: '/property/practice-temple',
     image: '/temple/master.jpg',
     icon: ViewGridIcon,

@@ -21,6 +21,7 @@ import { HorizontalFeatures } from '@/components/HorizontalFeatures'
 
 import {
   wellnessMap,
+  activityMap,
   adventureMap,
   propertyMap,
   mealMap,
@@ -43,14 +44,12 @@ export default function Home() {
         <TextWithImage
           label="Osa Peninsula"
           title="Feels like being in a National Park"
-          description={`The Osa Peninsula offers the opportunity to experience a tropical rainforest triving with life. 
-          You'll see, feel and hear the intensity of the most biodiverse place in world .
-          There are no pictures or words that can describe it. It's such an impression on the senses, that guests need a day or two to get used to it.
+          description={`Paz offers the opportunity to experience a tropical rainforest triving with life. 
+          Immerse in the life changing field of the most biodiverse rainforest while staying in our beautiful beachfront house and cabins.
+          
           `}
           image="guide/matapalo/matapalo.webp"
         />
-
-        <HorizontalFeatures features={propertyMap} />
 
         <ImageSlider
           images={[
@@ -63,52 +62,19 @@ export default function Home() {
           ]}
         />
 
+        <PrimaryFeatures features={propertyMap} />
+
         <TextWithImage
           label="Experience"
-          title="A Costa Rican adventure with fun activities and great food"
+          title="A Costa Rican adventure with fun activities and traditional food"
           description={`
-          We want you to experience the pura vida spirit of having an adventure with friends in Costa Rica.
+          Paz gives you the pura vida experience of having an adventure with friends the Costa Rican way with amazing wood 
           Bonefires, fishing and cooking with wood, bbq's, day trips to waterfalls. Mudbaths, tide pools, paddleboard and surfing.
           `}
           image="fun/fire2.jpg"
         />
 
-        <HorizontalFeatures features={adventureMap.concat(mealMap)} />
-
-        <ImageSlider
-          images={[
-            {
-              src: 'beach/beach_side.jpeg',
-              width: 250,
-              text: { lable: 'Beach Walking' },
-            },
-            {
-              src: 'beach/IMG_3119.jpeg',
-              width: 250,
-              text: { lable: 'Beach Walking' },
-            },
-            {
-              src: 'fun/fuego_candelas.jpeg',
-              width: 250,
-              text: { lable: 'Beach Walking' },
-            },
-            {
-              src: 'lounge/beach_kid.jpeg',
-              width: 250,
-              text: { lable: 'Beach Walking' },
-            },
-            {
-              src: 'forest/barrigon_alto.jpeg',
-              width: 250,
-              text: { lable: 'Beach Walking' },
-            },
-            {
-              src: 'wildlife/titis.webp',
-              width: 250,
-              text: { lable: 'Beach Walking' },
-            },
-          ]}
-        />
+        <HorizontalFeatures features={adventureMap} />
 
         <TextWithImage
           label="Wellness"
