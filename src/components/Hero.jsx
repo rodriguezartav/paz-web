@@ -67,7 +67,7 @@ export function Hero() {
 
       <div className="w-max-lg mx-auto mt-5">
         <p className="mb-8 py-5 text-lg font-medium text-slate-600 transition-all sm:my-0 md:text-xl">
-          Paz approach to{' '}
+          {"Paz's"} approach to{' '}
           <span className="font-bold text-indigo-500">Wellness </span> is to
           have lots of fun adventures in paradise
           <br />

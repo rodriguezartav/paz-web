@@ -27,21 +27,21 @@ export const wellnessMap = [
     name: 'Temazcal & Cold Tubs',
     href: '/experience/wellness#temazcal',
     description:
-      'Legend says the condor and the eagle meet here in Costa Rica to share knowledge, we fullfill this vision with North Ameerican Temazcal, Andean therapies',
+      'Legend says the condor and the eagle meet here in Costa Rica to share knowledge, we fulfill this vision with North American Temazcal, Andean therapies',
     icon: InformationCircleIcon,
   },
   {
     name: 'Intuitive Detox Workouts',
     href: '/experience/wellness#yoga',
     description:
-      'Movement is key to the body and the mind. We may try execersies from arts such as qi gong, tai chi, yoga and functional training.',
+      'Movement is key to the body and the mind. Therefore, we may try exercises from arts such as qi gong, tai chi, yoga, and functional training.',
     icon: BriefcaseIcon,
   },
   {
     name: 'Natural Meditations',
     href: '/experience/wellness#meditation',
     description:
-      'The Spa and Workouts help us relax and cleanse. Nature and its elements helps reach our natural state of awareness from where we recharge and heal.',
+      'The Spa and Workouts help us relax and cleanse. Nature and its elements help us reach our natural state of awareness from where we recharge and heal.',
     icon: OfficeBuildingIcon,
   },
 
@@ -49,7 +49,7 @@ export const wellnessMap = [
     name: 'Self Realization',
     href: '/experience/wellness#realization',
     description:
-      'We are much more than body and minds and we are more than the idea of a soul. Meditation + Self Inquiry can help us realize what we really are.',
+      'We are much more than body and minds, and we are more than the idea of a soul. Meditation + Self Inquiry can help us realize what we are.',
     icon: NewspaperIcon,
   },
 ]
@@ -89,28 +89,28 @@ export const adventureMap = [
     name: 'Soul Surfing School',
     href: '/experience/adventure#surf',
     description:
-      'Our surf spot in front is called Chill and its perfect to practice soul surfing. The meditative and healing branch of surfing that looks for connection with the wave of life.',
+      'Our surf spot in front is called Chill, which is perfect for practicing soul surfing. The meditative and healing branch of surfing looks for a connection with the wave of life.',
     icon: UserGroupIcon,
   },
   {
     name: 'Wildlife Inspiration',
     href: '/experience/adventure#wildlife',
     description:
-      'At Paz we look at nature as our guide to a happier life. They live in the natural state of awereness we look up to, our approach is that of student asking the master how it is done. ',
+      'At Paz, we look at nature as our guide to a happier life. They live in the natural state of awareness we look up to, and our approach is that of the student asking the master how it is done. ',
     icon: GlobeAltIcon,
   },
   {
     name: 'Pristine Beach Exploration',
     href: '/experience/adventure#beach',
     description:
-      'We call it free meditation, such a beautiful beach with the forest and so many little secret spots to swim, float or lay on the beach. Its really hard not to be present in the moment.',
+      'We call it free meditation, such a beautiful beach with the forest and so many little secret spots to swim, float or lay on the beach. It is tough not to be present at the moment.',
     icon: GlobeAltIcon,
   },
   {
     name: 'Bonefire & BBQ',
     href: '/experience/adventure#whales',
     description:
-      'In Costa Rica we love bonefires, bbqs and cooking beans and rice in wood stoves. If we always in vacation we would do them every day. That is why in Paz, since our guests are on vacation, we decided to do them every day!',
+      'We love bonfires, BBQs, and cooking beans and rice on wood stoves in Costa Rica. If we were always on vacation, we would do them every day. That is why we decided to do them every day in Paz since our guests are on vacation!',
     icon: BookmarkAltIcon,
   },
 ]
@@ -146,7 +146,7 @@ export const propertyMap = [
   {
     name: 'Beach House & Cabinas',
     description:
-      'The house is 50 steps from the sand surrounded by primary forest. Designed with huge screened windows to observe and be in nature all day long.',
+      'The house is 50 steps from the sand, surrounded by primary forest, and designed with huge screened windows to observe and be in nature all day.',
     href: '/property/beach-house',
     image: '/house/living/master.jpeg',
     icon: ChartBarIcon,
@@ -161,7 +161,7 @@ export const propertyMap = [
   },
   {
     name: 'Self-Healing Ceremonial Spa',
-    description: `Paz ancestral Spa goes beyond the physical into the emotional and energetic cleansing. Our own version of the Temazcal, mixed with cold water, sound and shamanic meditaitons as one holistic therapy that will empty your internal lougagge`,
+    description: `Paz ancestral Spa goes beyond the physical into the emotional and energetic cleansing. Our version of the Temazcal, mixed with cold water, sound and shamanic meditations as one holistic therapy that will empty your internal luggage`,
     href: '/property/spa-shamanic',
     image: '/spa/temazcal/master.jpg',
     icon: ShieldCheckIcon,
@@ -169,7 +169,7 @@ export const propertyMap = [
   {
     name: 'Temple of Human Sciences ',
     description:
-      'Thinking about Science is great, but it does not compare with living it. Lets search toghether for the intersction between science, health and meditation while upgrading our knowledge about the universe, nature and quantum physics all in a spiritual setting in the jungle.',
+      'Thinking about Science is excellent, but it does not compare with living it. So let us search together for the intersection between Science, health, and meditation while upgrading our knowledge about the universe, nature, and quantum physics, all in a spiritual setting in the jungle.',
     href: '/property/practice-temple',
     image: '/temple/master.jpg',
     icon: ViewGridIcon,

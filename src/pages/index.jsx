@@ -34,7 +34,7 @@ export default function Home() {
         <title>Paz - Costa Rican retreats</title>
         <meta
           name="description"
-          content="Paz approach to Wellness is to have lots of fun adventures in paradise. Osa Peninsula, Costa Rica"
+          content="Paz's approach to Wellness is to have lots of fun adventures in paradise. Osa Peninsula, Costa Rica"
         />
       </Head>
       <Header />
@@ -45,7 +45,7 @@ export default function Home() {
           label="Osa Peninsula"
           title="Feels like being in a National Park"
           description={`Paz offers the opportunity to experience a tropical rainforest thriving with life. 
-          Immerse in the life changing field of the most biodiverse rainforest while staying in our beautiful beachfront house and cabins.
+          Immerse in the life-changing field of the most biodiverse rainforest while staying in our beautiful beachfront house and cabins.
           
           `}
           image="guide/matapalo/matapalo.webp"
@@ -69,7 +69,7 @@ export default function Home() {
           title="A Costa Rican adventure with fun activities and traditional food"
           description={`
           Paz gives you the pura vida experience of having an adventure with friends the Costa Rican way with amazing wood 
-          Bonefires, fishing and cooking with wood, bbq's, day trips to waterfalls. Mudbaths, tide pools, paddleboard and surfing.
+          Bonfires, fishing, cooking with wood, BBQs, and day trips to waterfalls. Mudbaths, tide pools, paddleboards, and surfing.
           `}
           image="fun/fire2.jpg"
         />
@@ -80,9 +80,9 @@ export default function Home() {
           label="Wellness"
           right={true}
           title="Upgrade your perspective of life, nature and yourself"
-          description={`The Osa Peninsula is a mystic land of infinite profundity. Discovering it ignited a 20-year journey of self discovery and ultimately healing.
+          description={`The Osa Peninsula is a mystic land of infinite profundity. Discovering it ignited a 20-year journey of self-discovery and ultimately healing.
           
-          When you arrive at Paz you'll feel an opportunity to use your trip to improve your life. Our Meditation course includes the spa, movement, science, natural and advanced meditations to empower you to take control of your health both physical and mental.
+          When you arrive at Paz, you'll feel an opportunity to use your trip to improve your life. Our Meditation course includes the spa, movement, science, and natural and advanced meditations to empower you to take control of your health, both physical and mental.
           `}
           image="lounge/templo_from_back.jpg"
         />
