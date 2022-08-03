@@ -34,7 +34,7 @@ export default function Home() {
         <title>Paz - Costa Rican retreats</title>
         <meta
           name="description"
-          content="Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited."
+          content="Paz approach to Wellness is to have lots of fun adventures in paradise. Osa Peninsula, Costa Rica"
         />
       </Head>
       <Header />
