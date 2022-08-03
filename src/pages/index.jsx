@@ -44,7 +44,7 @@ export default function Home() {
         <TextWithImage
           label="Osa Peninsula"
           title="Feels like being in a National Park"
-          description={`Paz offers the opportunity to experience a tropical rainforest triving with life. 
+          description={`Paz offers the opportunity to experience a tropical rainforest thriving with life. 
           Immerse in the life changing field of the most biodiverse rainforest while staying in our beautiful beachfront house and cabins.
           
           `}
