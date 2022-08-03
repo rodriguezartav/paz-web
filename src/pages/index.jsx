@@ -68,7 +68,7 @@ export default function Home() {
           label="Experience"
           title="A Costa Rican adventure with fun activities and traditional food"
           description={`
-          Paz gives you the pura vida experience of having an adventure with friends the Costa Rican way with amazing wood 
+          Paz gives you the pura vida experience of having an adventure with friends the Costa Rican way 
           Bonfires, fishing, cooking with wood, BBQs, and day trips to waterfalls. Mudbaths, tide pools, paddleboards, and surfing.
           `}
           image="fun/fire2.jpg"
