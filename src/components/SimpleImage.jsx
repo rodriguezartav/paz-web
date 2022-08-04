@@ -19,7 +19,7 @@ export function SimpleImage(props) {
       className={className}
       urlEndpoint={urlEndpoint}
       lqip={{ active: true, quality: 1 }}
-      path={enableRaw ? src : 'raw/' + src}
+      path={enableRaw ? src : 'images/' + src}
       width={width + 'px'}
       transformation={finalTransform}
     />

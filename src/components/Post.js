@@ -45,7 +45,7 @@ export function Post() {
 
         <div className="w-max-lg mx-auto mt-5 text-left">
           <SimpleImage
-            src={'raw/beach/sun_palm2.jpeg'}
+            src={'/beach/sun_palm2.jpeg'}
             alt=""
             className="mx-auto"
             width={800}
