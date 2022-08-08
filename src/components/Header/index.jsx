@@ -62,8 +62,6 @@ export function Header() {
                 Pricing
               </span>
             </Link>
-
-            <GuidesPopover />
           </Popover.Group>
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
             <Link href="/podcast">
