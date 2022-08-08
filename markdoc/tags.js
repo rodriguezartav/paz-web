@@ -72,6 +72,20 @@ const tags = {
       href: { type: String },
     },
   },
+
+  podcast: {
+    selfClosing: true,
+    render: Podcast,
+    attributes: {
+      url: { type: String },
+    },
+  },
 }
 
 export default tags
+
+function Podcast({ url }) {
+  const script = `<div id="buzzsprout-player-11097332" ></div><script src="${url}?container_id=buzzsprout-player-11097332&player=small" type="text/javascript" charset="utf-8"></script>`
+
+  return <div dangerouslySetInnerHTML={{ __html: script }}></div>
+}
