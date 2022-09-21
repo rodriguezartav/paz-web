@@ -43,13 +43,17 @@ export default function Home() {
 
         <TextWithImage
           label="Osa Peninsula"
-          title="Feels like being in a National Park"
-          description={`Paz offers the opportunity to experience a tropical rainforest thriving with life. 
-          Immerse in the life-changing field of the most biodiverse rainforest while staying in our beautiful beachfront house and cabins.
-          
+          title="Una experiencia mística en la Peninsula de Osa"
+          description={`
+          El día a día moderno es la receta perfecta para agotar la energía del cuerpo, la mente y desconectarnos del espíritu humano.
+          Paz Corcovado es guiado por la madre naturaleza y esta enfocado enseñar a recargar energía durante actividades de aventura con ejercicios de conexión natural.
           `}
           image="guide/matapalo/matapalo.webp"
         />
+
+        <h1 className="mb-0 ml-10 font-display  text-4xl   leading-tight tracking-tight  text-indigo-400   sm:text-4xl   md:text-5xl  ">
+          Los maestros de Paz Corcovado
+        </h1>
 
         <ImageSlider
           images={[
@@ -62,32 +66,42 @@ export default function Home() {
           ]}
         />
 
-        <PrimaryFeatures features={propertyMap} />
-
         <TextWithImage
-          label="Experience"
-          title="A Costa Rican adventure with fun activities and traditional food"
-          description={`
-          Paz gives you the pura vida experience of having an adventure with friends the Costa Rican way 
-          Bonfires, fishing, cooking with wood, BBQs, and day trips to waterfalls. Mudbaths, tide pools, paddleboards, and surfing.
+          label="Osa Peninsula"
+          title="Una inmersión continua en la naturaleza. Segura y comoda "
+          description={`El diseño con cientos de iteraciones permite que uno se sienta afuera, disfrutando de los beneficios de acampar, pero estando adentro con comodidad.
+          Construido a mano y con amor, obtenemos la energia del sol, el agua de la tierra y estamos en medio de un bosque primario donde todos los animales se sienten protegidos.
           `}
-          image="fun/fire2.jpg"
+          image="guide/matapalo/matapalo.webp"
         />
 
-        <HorizontalFeatures features={adventureMap} />
+        <h1 className="mb-0 ml-10 font-display  text-4xl   leading-tight tracking-tight  text-indigo-400   sm:text-4xl   md:text-5xl  ">
+          Las instalaciones
+        </h1>
 
-        <TextWithImage
-          label="Wellness"
-          right={true}
-          title="Upgrade your perspective of life, nature and yourself"
-          description={`The Osa Peninsula is a mystic land of infinite profundity. Discovering it ignited a 20-year journey of self-discovery and ultimately healing.
-          
-          When you arrive at Paz, you'll feel an opportunity to use your trip to improve your life. Our Meditation course includes the spa, movement, science, and natural and advanced meditations to empower you to take control of your health, both physical and mental.
-          `}
-          image="lounge/templo_from_back.jpg"
+        <ImageSlider
+          images={[
+            { src: 'house/outside/from_outside.jpeg', width: 300 },
+            { src: 'forest/big_trees.jpg', width: 250 },
+            { src: 'wildlife/maccaw.webp', width: 280 },
+            { src: 'wildlife/perezozo.jpeg', width: 250 },
+            { src: 'forest/barrigon_alto.jpeg', width: 200 },
+            { src: 'wildlife/titis.webp', width: 250 },
+          ]}
         />
 
-        <HorizontalFeatures features={wellnessMap} />
+        <TextWithImage
+          label="Osa Peninsula"
+          title="Un paseo lleno de aventura y diversión, pero muy bien pensado para que sea sanador"
+          description={`El stress y sus amigos son el resultado de la educación de una cultura colonizadora limitada a lo mental la cual nunca podra conocer las mas poderosas facetas del ser humano.
+          En la naturaleza estan todas las respuestas, todos los problemas ya resueltos. Mas importante, esta aun guardado el espacio en la mesa para cuando decidamos regresar.
+          `}
+          image="guide/matapalo/matapalo.webp"
+        />
+
+        <h1 className="mb-0 ml-10 font-display  text-4xl   leading-tight tracking-tight  text-indigo-400   sm:text-4xl   md:text-5xl  ">
+          Las actividades
+        </h1>
 
         <ImageSlider
           images={[
@@ -122,6 +136,15 @@ export default function Home() {
               text: { lable: 'Beach Walking' },
             },
           ]}
+        />
+
+        <TextWithImage
+          label="Osa Peninsula"
+          title="La naturaleza es la autoridad en las formas positivas de existir"
+          description={`El stress y sus amigos son el resultado de la educación de una cultura colonizadora limitada a lo mental la cual nunca podra conocer las mas poderosas facetas del ser humano.
+          En la naturaleza estan todas las respuestas, todos los problemas ya resueltos. Mas importante, esta aun guardado el espacio en la mesa para cuando decidamos regresar.
+          `}
+          image="guide/matapalo/matapalo.webp"
         />
 
         <CallToAction />

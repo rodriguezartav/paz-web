@@ -39,8 +39,7 @@ export function PrimaryFeatures({ features }) {
       <Container className="relative">
         <div className=" md:mx-auto md:text-center xl:max-w-none">
           <h2 className=" mx-auto max-w-4xl  font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            An exclusive vacation with excelent services in an unbelivable
-            location.{' '}
+            Para nosotros es un priviliegio
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-blue-100"></p>
         </div>

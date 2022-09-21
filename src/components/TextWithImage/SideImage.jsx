@@ -24,7 +24,12 @@ export default function SideImage({ image }) {
           src="flex-ui-assets/elements/dots3-yellow.svg"
           alt=""
         />
-        <SimpleImage className="rounded-2xl" src={image} width={800} />
+        <SimpleImage
+          transformations={[{ height: 1100 }]}
+          className="rounded-2xl"
+          src={image}
+          width={800}
+        />
       </div>
     </div>
   )
