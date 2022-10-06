@@ -81,12 +81,12 @@ export default function Home() {
 
         <ImageSlider
           images={[
-            { src: 'house/outside/from_outside.jpeg', width: 300 },
-            { src: 'forest/big_trees.jpg', width: 250 },
-            { src: 'wildlife/maccaw.webp', width: 280 },
-            { src: 'wildlife/perezozo.jpeg', width: 250 },
-            { src: 'forest/barrigon_alto.jpeg', width: 200 },
-            { src: 'wildlife/titis.webp', width: 250 },
+            { src: 'house/outside/from_outside.jpeg', width: 320 },
+            { src: 'forest/big_trees.jpg', width: 320 },
+            { src: 'wildlife/maccaw.webp', width: 320 },
+            { src: 'wildlife/perezozo.jpeg', width: 320 },
+            { src: 'forest/barrigon_alto.jpeg', width: 320 },
+            { src: 'wildlife/titis.webp', width: 320 },
           ]}
         />
 
@@ -139,8 +139,9 @@ export default function Home() {
         />
 
         <TextWithImage
+          right={true}
           label="Osa Peninsula"
-          title="La naturaleza es la autoridad en las formas positivas de existir"
+          title="La naturaleza es la autoridad de la vida"
           description={`El stress y sus amigos son el resultado de la educación de una cultura colonizadora limitada a lo mental la cual nunca podra conocer las mas poderosas facetas del ser humano.
           En la naturaleza estan todas las respuestas, todos los problemas ya resueltos. Mas importante, esta aun guardado el espacio en la mesa para cuando decidamos regresar.
           `}

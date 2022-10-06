@@ -1,52 +1,8 @@
-import Image from 'next/future/image'
-
-import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import logoLaravel from '@/images/logos/laravel.svg'
-import logoMirage from '@/images/logos/mirage.svg'
-import logoStatamic from '@/images/logos/statamic.svg'
-import logoStaticKit from '@/images/logos/statickit.svg'
-import logoTransistor from '@/images/logos/transistor.svg'
-import logoTuple from '@/images/logos/tuple.svg'
-import SimpleImage from '@/components/SimpleImage'
-import { useState } from 'react'
-import useInterval from '@/utils/useInterval'
+
 import { CheckIcon } from '@heroicons/react/outline'
 
-const logos = [
-  [
-    { name: 'Transistor', logo: logoTransistor },
-    { name: 'Tuple', logo: logoTuple },
-    { name: 'StaticKit', logo: logoStaticKit },
-  ],
-  [
-    { name: 'Mirage', logo: logoMirage },
-    { name: 'Laravel', logo: logoLaravel },
-    { name: 'Statamic', logo: logoStatamic },
-  ],
-]
-
-const quotes = [
-  "what's important in life",
-  'how to live from the heart',
-  'who we always been',
-  'that feeling of peace',
-  'we are nature',
-]
-
 export function Hero() {
-  const [count, setCount] = useState(0)
-  // Dynamic delay
-  // ON/OFF
-
-  useInterval(
-    () => {
-      // Your custom logic here
-      if (count < quotes.length - 1) setCount(count + 1)
-    },
-    // Delay in milliseconds or null to stop it
-    4000
-  )
   return (
     <Container className="pt-16 pb-6 text-center text-indigo-500 lg:pt-28">
       <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight  sm:text-7xl">
@@ -67,8 +23,8 @@ export function Hero() {
       </h1>
 
       <div className="mx-auto  mt-5 max-w-xl">
-        <p className=" pt-5 text-left text-lg font-medium text-slate-600 transition-all sm:my-0 md:ml-14 md:text-xl">
-          <div className="text-left">Un paseo para recordar donde:</div>
+        <div className=" pt-5 text-left text-lg font-medium text-slate-600 transition-all sm:my-0 md:ml-14 md:text-xl">
+          <div className="text-left">Un paseo para recordar...</div>
           <ul className="">
             <li className="flex py-4 pt-8 md:mt-4 md:py-0 md:pb-4">
               <CheckIcon
@@ -76,7 +32,7 @@ export function Hero() {
                 aria-hidden="true"
               />
               <span className="ml-3 text-base text-gray-500">
-                descansar comodamente frente al mar
+                descanse comodamente frente al mar
               </span>
             </li>
             <li className="flex py-4 md:py-0 md:pb-4">
@@ -86,7 +42,7 @@ export function Hero() {
               />
               <span className="ml-3 text-base text-gray-500">
                 {' '}
-                divertirse en aventuras autenticas en rios, playas y cascadas
+                diviertase en aventuras autenticas en rios, playas y cascadas
               </span>
             </li>
             <li className="flex py-4 md:py-0 md:pb-4">
@@ -96,7 +52,7 @@ export function Hero() {
               />
               <span className="ml-3 text-base text-gray-500">
                 {' '}
-                descargar stress y agotamiento mental en el spa natural
+                descargue stress y agotamiento mental en el spa natural
               </span>
             </li>
 
@@ -107,15 +63,15 @@ export function Hero() {
               />
               <span className="ml-3 text-base text-gray-500">
                 {' '}
-                aprender a recargar energía con ejercicios de conexión natural
+                aprenda a recargar energía con ejercicios de conexión natural
               </span>
             </li>
           </ul>
-        </p>
+        </div>
       </div>
 
       <div className="mx-auto  max-w-xl">
-        <p className="mb-8 py-5 text-left text-lg font-medium text-slate-600 transition-all sm:my-0 md:ml-14 md:text-xl">
+        <div className="mb-8 py-5 text-left text-lg font-medium text-slate-600 transition-all sm:my-0 md:ml-14 md:text-xl">
           <div className="text-left">Que incluye:</div>
           <ul className="">
             <li className="flex py-4 md:py-0 md:pb-4">
@@ -125,6 +81,16 @@ export function Hero() {
               />
               <span className="ml-3 text-base text-gray-500">
                 Hospedaje de alta calidad
+              </span>
+            </li>
+
+            <li className="flex py-4 md:py-0 md:pb-4">
+              <CheckIcon
+                className="h-6 w-6 flex-shrink-0 text-green-500"
+                aria-hidden="true"
+              />
+              <span className="ml-3 text-base text-gray-500">
+                Todas las actividades guiadas por el fundador de Paz
               </span>
             </li>
 
@@ -164,7 +130,7 @@ export function Hero() {
               familias, amigos y empresas
             </span>{' '}
           </span>
-        </p>
+        </div>
       </div>
     </Container>
   )
